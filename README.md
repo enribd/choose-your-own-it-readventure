@@ -85,66 +85,59 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/kubernetes-up-and-running.jpeg) | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* | <ul><li>Kubernetes</li></ul> |
+| ![img](./assets/images/kubernetes-patterns.jpeg) | [**Kubernetes Patterns**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam and Roland Huss* <br> *Published in 2023* <br> *300 pages* | <ul><li>Kubernetes</li></ul> |
+| ![img](./assets/images/production-kubernetes.jpeg) | [**Production Kubernetes**](https://learning.oreilly.com/library/view/-/9781492092292/) <br> *Josh Rosso, Rich Lander, Alex Brand and John Harris* <br> *Published in 2021* <br> *506 pages* | <ul><li>Kubernetes</li></ul> |
+| ![img](./assets/images/kubernetes-best-practices.jpeg) | [**Kubernetes Best Practices**](https://learning.oreilly.com/library/view/-/9781492056461/) <br> *Brendan Burns, Eddie Villalba, Dave Strebel, Lachlan Evenson* <br> *Published in 2019* <br> *268 pages* <br> Needs update | <ul><li>Kubernetes</li></ul> |
+| ![img](./assets/images/kubernetes-operators.jpeg) | [**Kubernetes Operators**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies and Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> Needs update | <ul><li>Kubernetes</li></ul> |
+| ![img](./assets/images/service-mesh-patterns.jpeg) | [**Service Mesh Patterns**](https://learning.oreilly.com/library/view/-/9781492086444/) <br> *Lee Calcote, Nic Jackson and Paul Bouwer* <br> *Published in 2023* <br> *TBD pages* | <ul><li>Kubernetes</li></ul> |
 
-- Kubernetes: Up & Running
-- Kubernetes Patterns (Bilgin Ibryam and Roland Huss)
-- Production Kubernetes: Reusable Elements for Designing Cloud-Native Applications (Josh Rosso, Rich Lander, Alex Brand and John Harris)
-- Kubernetes Best Practices (Brendan Burns, Eddie Villalba, Dave Strebel, Lachlan Evenson) [needs update]
-- Kubernetes Operators (Jason Dobies and Joshua Wood) [needs update]
-
-- Service Mesh Patterns (Lee Calcote, Nic Jackson and Paul Bouwer)
 
 ### Observability
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/observability-engineering.jpeg) | [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones and George Miranda* <br> *Published in 2022* <br> *318 pages* | <ul><li>Observability</li></ul> |
 
-- Observability: Achieving Production Excellence Engineering (Charity Majors, Liz Fong-Jones and George Miranda)
 
-#### Certification oriented
+#### Certifications
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
-
-- Certified Kubernetes Administrator (CKA) Study Guide (Benjamin Muschko)
-- Certified Kubernetes Security Specialist (CKS) Study Guide (Benjamin Muschko)
-- Certified Kubernetes Application Developer (CKAD) Study Guide (Benjamin Muschko)
+| ![img](./assets/images/cka.jpeg) | [**Certified Kubernetes Administrator (CKA) Study Guide**](https://learning.oreilly.com/library/view/-/9781098107215/) <br> *Benjamin Muschko* <br> *Published in 2022* <br> *201 pages* | <ul><li>Certification</li><li>Kubernetes</li></ul> |
+| ![img](./assets/images/ckad.jpeg) | [**Certified Kubernetes Application Developer (CKAD) Study Guide**](https://learning.oreilly.com/library/view/-/9781492083726/) <br> *Benjamin Muschko* <br> *Published in 2021* <br> *188 pages* | <ul><li>Certification</li><li>Kubernetes</li></ul> |
+| ![img](./assets/images/cks.jpeg) | [**Certified Kubernetes Security Specialist (CKS) Study Guide**](https://learning.oreilly.com/library/view/-/9781098132965/) <br> *Benjamin Muschko* <br> *Published in 2023* <br> *200 pages* | <ul><li>Certification</li><li>Kubernetes</li></ul> |
 
 
 ### DevOps culture
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/the-devops-handbook.jpeg) | [**The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations**](https://learning.oreilly.com/library/view/-/9781457191381/) <br> *Gene Kim, Jez Humble and Patrick Debols* <br> *Published in 2016* <br> *480 pages* | <ul><li>DevOps</li></ul> |
+| ![img](./assets/images/the-phoenix-project.jpeg) | [**The Phoenix Project**](https://learning.oreilly.com/library/view/-/9781457191350/) <br> *Gene Kim, Kevin Behr and George Spafford* <br> *Published in 2013* <br> *384 pages* | <ul><li>DevOps</li></ul> |
+| ![img](./assets/images/the-unicorn-project.jpeg) | [**The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* | <ul><li>DevOps</li></ul> |
 
-- The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations (Gene Kim)
-- The Unicorn Project (Gene Kim)
-- The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win (Gene Kim)
 
 ### Infrastructure as Code (IaC)
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/terraform-up-and-running.jpeg) | [**Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* | <ul><li>IaC</li></ul> |
 
-- Terraform Up and Running
 
 ### SRE
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/site-reliability-engineering.jpeg) | [**Site Reliability Engineering**](https://sre.google/sre-book/table-of-contents/) <br> *Betsy Beyer, Chris Jones, Jennifer Petoff and Niall Myrphy* <br> *Published in 2017* <br> *unknown pages* | <ul><li>SRE</li></ul> |
+| ![img](./assets/images/sre-workbook.jpeg) | [**The Site Reliability Workbook**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara and Stephen Thorne* <br> *Published in 2018* <br> *unknown pages* | <ul><li>SRE</li></ul> |
+| ![img](./assets/images/building-secure-reliable-systems.jpeg) | [**Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems**](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) <br> *Heather Adkins, Betsy Beyer, Paul Blankship, Piotr Lewandowski, Ana OPera and Adam Stubblefield* <br> *Published in 2020* <br> *555 pages* | <ul><li>SRE</li></ul> |
 
-- Google SRE
 
 ### Other
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
 | ![img](./assets/images/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* | <ul><li>Organization design</li></ul> |
-
-- Team Topologies: Organizing Business and Technology Teams for Fast Flow (Matthew Skelton and Manuel Pais)
+| ![img](./assets/images/team-topologies.jpeg) | [**Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* | <ul><li>Product Management</li><li>Organization</li></ul> |
+| ![img](./assets/images/remote-teams-interactions-workbook.jpeg) | [**Remote Teams Interactions Workbook**](https://teamtopologies.com/workbook) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2022* <br> *80 pages* | <ul><li>Organization</li></ul> |
