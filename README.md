@@ -29,8 +29,8 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
-| ![img](./assets/images/system-design-interview-2) | [**System Design Interview volume 2 – An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/system-design-interview.jpeg) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/system-design-interview-2.jpeg) | [**System Design Interview volume 2 – An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* | <ul><li>System design</li></ul> |
 | ![img](./assets/images/building-an-event-driven-data-mesh.jpeg) | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* | <ul><li>System design</li></ul> |
 | ![img](./assets/images/designing-distributed-systems.jpeg) | [**Designing Distributed Systems**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* | <ul><li>System design</li><li>Architecture</li></ul> |
 
@@ -74,9 +74,8 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 | Cover | Info | Learning Paths |
 | --- | --- | --- |
-| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>Software development</li></ul> |
-| ![img](./assets/images/lets-go) | [**Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* | <ul><li>Software development</li></ul> |
-| ![img](./assets/images/lets-go-further) | [**Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/lets-go.jpeg) | [**Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/lets-go-further.jpeg) | [**Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* | <ul><li>Software development</li></ul> |
 | ![img](./assets/images/cloud-native-go.jpeg) | [**Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* | <ul><li>Software development</li></ul> |
 | ![img](./assets/images/clean-code.jpeg) | [**Clean Code: A Handbook of Agile Software Craftsmanship**](https://learning.oreilly.com/library/view/-/9780136083238/) <br> *Martin Robert* <br> *Published in 2008* <br> *464 pages* | <ul><li>Software development</li></ul> |
 | ![img](./assets/images/clean-architecture.jpeg) | [**Clean Architecture: A Craftsman's Guide to Software Structure and Design**](https://learning.oreilly.com/library/view/-/9780134494272/) <br> *Robert C. Martin* <br> *Published in 2017* <br> *432 pages* | <ul><li>Software development</li></ul> |
