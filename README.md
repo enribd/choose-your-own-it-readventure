@@ -15,61 +15,78 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 #### Architecture
 
-- Solutions Architect's Handbook: Kick-start your solutions architect career by learning architecture design principles and strategies (Saurabh Shrivastava)
-
 #### Microservices
 
-||Title|
-|---|---|
-|![img](https://www.oreilly.com/covers/urn:orm:book:9781492034018/160h/) | [**Building Microservices: Designing Fine-Grained Systems** *(Sam Newman)*](https://www.oreilly.com/search/?q=building%20microservices&type=*) |
-- Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith (Sam Newman)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Second edition published in 2022* <br> *616 pages* | <ul><li>Microservices</li><li> Architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/monolith-to-microservices.jpeg) | [**Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith**](https://learning.oreilly.com/library/view/-/9781492047834/) <br> *Sam Newman* <br> *Published in 2019* <br> *270 pages* | <ul><li>Microservices</li><li> Architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/microservices-patterns.jpeg) | [**Microservices Patterns**](https://learning.oreilly.com/library/view/-/9781617294549/) <br> *Chris Richardson* <br> *Published in 2018* <br> *520 pages* | <ul><li>Microservices</li><li> Architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/practical-process-automation.jpeg) | [**Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures**](https://learning.oreilly.com/library/view/-/9781492061441/) <br> *Bernd Ruecker* <br> *Published in 2021* <br> *520 pages* | <ul><li>Microservices</li><li> Architecture</li><li>System design</li></ul> |
 
-- Microservices Patterns (Chris Richardson)
-- Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures (Bernd Ruecker)
 
 #### System Design
 
-- System Design Interview – An insider's guide (Alex Xu)
-- System Design Interview – An Insider's Guide: Volume 2 (Alex Xu)
-
-- Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures (Adam Bellemare)
-- Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy (Vladik Khononov)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/system-design-interview-2) | [**System Design Interview volume 2 – An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/building-an-event-driven-data-mesh.jpeg) | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/designing-distributed-systems.jpeg) | [**Designing Distributed Systems**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* | <ul><li>System design</li><li>Architecture</li></ul> |
 
 
 #### APIs
 
-- Mastering API Architecture: Defining, Connecting, and Securing Distributed Systems and Microservices (James Gough, Daniel Bryant and Matthew Auburn)
-- gRPC: Up and Running: Building Cloud Native Applications with Go and Java for Docker and Kubernetes (Kasun Indrasiri)
-- Advanced API Security: OAuth 2.0 and Beyond (Prabath Siriwardena)
+| Cover | Info| Learning Paths |
+| --- | ---| --- |
+| ![img](./assets/images/mastering-api-architecture.jpeg) | [**Mastering API Architecture: Defining, Connecting, and Securing Distributed Systems and Microservices**](https://learning.oreilly.com/library/view/-/9781492090625/) <br> *James Gough, Daniel Bryant and Matthew Auburn* <br> *Published in 2022* <br> *286 pages* | <ul><li>API design</li></ul> |
+| ![img](./assets/images/advanced-api-security.jpeg)      | [**Advanced API Security: OAuth 2.0 and Beyond**](https://learning.oreilly.com/library/view/-/9781484220504/) <br> *Prabath Siriwardena* <br> *Published in 2019* <br> *455 pages*                                                                                    | <ul><li>API design</li></ul> |
 
 
 #### Serverless
 
-- Knative in Action (Jacques Chester)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/knative-in-action.jpeg) | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* | <ul><li>Serverless</li><li>Kubernetes</li></ul> |
+
 
 #### Event Driven Architecture
 
-- Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging (Chanaka Fernando)
-- Kafka - The Definitive Guide: Real-Time Data and Stream Processing at Scale (Gwen Shapira)
-- Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions (Hohpe Gregor and Woolf Bobby)
-- Enterprise Integration Patterns, Vol 2: Conversation Patterns (Hohpe Gregor)
-- Flow Architectures: The Future of Streaming and Event-Driven Integration (James Urquhart)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/designing-microservice-platforms-with-nats.jpeg) | [**Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging**](https://learning.oreilly.com/library/view/-/9781801072212/) <br> *Chanaka Fernando* <br> *Published in 2021* <br> *356 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/kafka-the-definitive-guide.jpeg) | [**Kafka - The Definitive Guide: Real-Time Data and Stream Processing at Scale **](https://learning.oreilly.com/library/view/-/9781492043072/) <br> *Gwen Shapira* <br> *Published in 2021* <br> *488 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/building-event-driven-microservices.jpeg) | [**Building Event-Driven Microservices**](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) <br> *Adam Bellemare* <br> *Published in 2020* <br> *321 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/enterprise-integration-patterns.jpeg) | [**Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions**](https://learning.oreilly.com/library/view/-/0321200683/) <br> *Hohpe Gregor and Woolf Bobby* <br> *Published in 2003* <br> *736 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/enterprise-integration-patterns.jpeg) | [**Enterprise Integration Patterns, Vol 2: Conversation Patterns**]() <br> *Hohpe Gregor* <br> *Published in 2018* <br> *500 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/flow-architectures.jpeg) | [**Flow Architectures: The Future of Streaming and Event-Driven Integration**](https://learning.oreilly.com/library/view/-/9781492075882/) <br> *James Urquhart* <br> *Published in 2021* <br> *252 pages* | <ul><li>Event driven architecture</li><li>System design</li></ul> |
+
 
 ### Software architecture
 
-- Design Patterns for Cloud Native Applications (Kasun Indrasiri, Sriskandarajah Suhothayan)
-- Accelerate: Building and Scaling High Performing Technology Organizations (Nicole Forsgren)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/design-patterns-for-cloud-native-applications.jpeg) | [**Design Patterns for Cloud Native Applications**](https://learning.oreilly.com/library/view/-/9781492090700/) <br> *Kasun Indrasiri, Sriskandarajah Suhothayan* <br> *Published in 2021* <br> *311 pages* | <ul><li>Software architecture</li><li>System design</li></ul> |
+| ![img](./assets/images/leagning-domain-driven-design.jpeg) | [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* | <ul><li>Software architecture</li><li>System design</li></ul> |
 
-### Coding
 
-- Let's Go (Alex Edwards)
-- Let's Go Further! (Alex Edwards)
-- Cloud Native Go (Matthew A. Titmus)
+### Software development
 
-- Clean Code (Martin Robert)
-- Clean Architecture (Robert C. Martin)
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/lets-go) | [**Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/lets-go-further) | [**Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/cloud-native-go.jpeg) | [**Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/clean-code.jpeg) | [**Clean Code: A Handbook of Agile Software Craftsmanship**](https://learning.oreilly.com/library/view/-/9780136083238/) <br> *Martin Robert* <br> *Published in 2008* <br> *464 pages* | <ul><li>Software development</li></ul> |
+| ![img](./assets/images/clean-architecture.jpeg) | [**Clean Architecture: A Craftsman's Guide to Software Structure and Design**](https://learning.oreilly.com/library/view/-/9780134494272/) <br> *Robert C. Martin* <br> *Published in 2017* <br> *432 pages* | <ul><li>Software development</li></ul> |
+
 
 ### Kubernetes
+
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
 
 - Kubernetes: Up & Running
 - Kubernetes Patterns (Bilgin Ibryam and Roland Huss)
@@ -81,9 +98,17 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 ### Observability
 
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+
 - Observability: Achieving Production Excellence Engineering (Charity Majors, Liz Fong-Jones and George Miranda)
 
 #### Certification oriented
+
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
 
 - Certified Kubernetes Administrator (CKA) Study Guide (Benjamin Muschko)
 - Certified Kubernetes Security Specialist (CKS) Study Guide (Benjamin Muschko)
@@ -92,18 +117,35 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 ### DevOps culture
 
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+
 - The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations (Gene Kim)
 - The Unicorn Project (Gene Kim)
 - The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win (Gene Kim)
 
 ### Infrastructure as Code (IaC)
 
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+
 - Terraform Up and Running
 
 ### SRE
 
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+
 - Google SRE
 
 ### Other
+
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
+| ![img](./assets/images/system-design-interview) | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* | <ul><li>System design</li></ul> |
+| ![img](./assets/images/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* | <ul><li>Organization design</li></ul> |
 
 - Team Topologies: Organizing Business and Technology Teams for Fast Flow (Matthew Skelton and Manuel Pais)
