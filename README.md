@@ -11,10 +11,10 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 ## Learning Paths
 
-- [System Design](./system-design.md)
-- [Golang](./golang.md)
-  - [Cloud Native Applications](./golang.md#cloud-native-applications)
-  - [Domain Driven Design (DDD)](./golang.md#cloud-native-applications)
+- [System Design](./paths/system-design.md)
+- [Golang](./paths/golang.md)
+  - [Cloud Native Applications](./paths/golang.md#cloud-native-applications)
+  - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
 
 ## Book Index
 
