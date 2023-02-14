@@ -19,6 +19,7 @@ Starting your own adventure is as easy as picking the set of skills that you wan
   - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
 - [Kubernetes](./paths/kubernetes.md)
 - [Software architecture](./paths/software-architecture.md)
+- [Management](./paths/management.md)
 
 Discover all books in the [book index](./book-index.md).
 
