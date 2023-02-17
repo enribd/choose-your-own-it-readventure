@@ -27,7 +27,7 @@ All books have some badges associated to describe some aspect of them:
 - Difficulty levels, from lower to higher (these are totally subjective):
 
 | Badge | Level |
-| --- | --- | --- |
+| --- | --- |
 | :ant: | 1 |
 | :hatched_chick: | 2 |
 | :dog2: | 3 |
@@ -51,7 +51,7 @@ All books have some badges associated to describe some aspect of them:
 | :cool: | 3 |
 | :top: | 4 |
 
-Note: there are just four levels because all books mentioned are good reads, bad books don't belong in this list :thumbsdown:.
+**Note**: there are just four levels because all books mentioned are good reads, bad books don't belong in this list :thumbsdown:.
 
 - Other badges:
 
