@@ -1,4 +1,4 @@
-# Choose your own IT readventure! :books: :computer: :bookmark: :sunrise_over_mountains:
+# Choose your own IT readventure! :books: :sunrise_over_mountains: :computer:
 
 If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you from no knowledge to advanced topics with the power and the fun of reading.
 
@@ -26,29 +26,39 @@ All books have some badges associated to describe some aspect of them:
 
 - Difficulty levels, from lower to higher (these are totally subjective):
 
-| Level | Badge |
+| Badge | Level |
+| --- | --- | --- |
+| :ant: | 1 |
+| :hatched_chick: | 2 |
+| :dog2: | 3 |
+| :tiger2: | 4 |
+| :dragon: | 5 |
+
+- Reading progress:
+
+| Badge | Meaning |
 | --- | --- |
-| 1 | :ant: |
-| 2 | :hatched_chick: |
-| 3 | :dog2: |
-| 4 | :tiger2: |
-| 5 | :dragon: |
+| :green_book: | Read |
+| :blue_book: | To be read soon |
+| :orange_book: | Not read and I don't know when I will |
 
 - My own opinion about the book, recommendation level from lower to higher:
 
-| Level | Badge |
+| Badge | Level |
 | --- | --- |
-| 1 | :ok: |
-| 1 | :up: |
-| 1 | :cool: |
-| 1 | :top: |
+| :ok: | 1 |
+| :up: | 2 |
+| :cool: | 3 |
+| :top: | 4 |
 
-- If a book it's somewhat 'old' and I think it would be great to have a new edition:
+Note: there are just four levels because all books mentioned are good reads, bad books don't belong in this list :thumbsdown:.
 
-| Level | Badge |
+- Other badges:
+
+| Badge | Meaning |
 | --- | --- |
-| 1 | :arrows_counterclockwise: |
-
+| :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
+| :bookmark: | Recommended read no matter the learning path, general | 
 
 :scroll: Discover all books in the [book index](./book-index.md).
 
