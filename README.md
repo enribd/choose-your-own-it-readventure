@@ -1,10 +1,12 @@
 # Choose your own IT readventure! :books: :sunrise_over_mountains: :computer:
 
-If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you from no knowledge to advanced topics with the power and the fun of reading.
+If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you to interesting places thanks to the power and the fun of reading.
 
 Finally, make sure you don’t forget about putting your newly acquired skills to the test, remember practice makes the master!
 
-Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point:
+Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point.
+
+:warning: **Disclaimer**: A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered somewhat advanced. If you are new to the IT world or if you want to follow a path of high difficult I recommend to grasp a good base of the basics and foundational concepts before proceeding.
 
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
@@ -28,15 +30,15 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 All books have some badges associated to describe some aspect of them:
 
-- Difficulty levels, from lower to higher (these are totally subjective):
+- You will read each book with the same amount of energy needed to fight these opponents, from lower to higher difficulty (these are totally subjective):
 
 | Badge | Level |
 | --- | --- |
-| :ant: | 1 |
-| :hatched_chick: | 2 |
-| :dog2: | 3 |
-| :tiger2: | 4 |
-| :dragon: | 5 |
+| :ant: | Petty ant |
+| :hatched_chick: | Naive chick |
+| :dog2: | Brave dog |
+| :tiger2: | Fierce tiger |
+| :dragon: | Mighty dragon |
 
 - Reading progress:
 
