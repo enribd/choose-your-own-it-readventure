@@ -1,6 +1,5 @@
 # [![icon](https://skillicons.dev/icons?i=go)](https://skillicons.dev) Golang Learning Path
 
-
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
 
 | Order | Badges        | Cover                                       | Info                                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                          |
@@ -30,4 +29,4 @@ From now the focus will learning all the necessary concepts and techniques to pr
 | ---   | ---   | ---                                         | ---                                                                                                                                                  | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **3** | :tiger2: :blue_book: | ![img](/assets/images/cloud-native-go.jpeg) | [**Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* | In this book you will discover what properties an application should have to be considered cloud native by reviewing and extending in detail the classic [12 factors](https://12factor.net/). It will show you some useful patterns used to achieve things like: scalability, resilience, observability, and more. Along the way the author drops some insightful best practice pills about essential things like logging, caching, configuration management, etc. |
 
-[**⬆ top**](#golang-learning-path)
+[**⬆ top**](#-golang-learning-path)

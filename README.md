@@ -11,20 +11,20 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-- [System Design](./paths/system-design.md)
-  - [APIs](./paths/apis.md)
-  - [Microservices](./paths/microservices.md)
-  - [Event Driven Architecture](./paths/eda.md)
-  - [Serverless](./paths/serverless.md)
-- [Golang](./paths/golang.md)
-  - [Cloud Native Applications](./paths/golang.md#cloud-native-applications)
-- [Kubernetes](./paths/kubernetes.md)
-- [Software architecture](./paths/software-architecture.md)
-  - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
-- [Management](./paths/management.md)
+- [System Design :new:](./paths/system-design.md)
+  - APIs :soon:
+  - [Microservices :new:](./paths/microservices.md)
+  - Event Driven Architecture :soon:
+  - Serverless :soon:
+- [Golang :new:](./paths/golang.md)
+  - [Cloud Native Applications :new:](./paths/golang.md#cloud-native-applications)
+- Kubernetes :soon:
+- Software architecture :soon:
+  - Domain Driven Design (DDD) :soon:
+- [Management :construction:](./paths/management.md)
 
 
-:scroll: Discover all books in the [book index](./book-index.md).
+Discover all books in the [:scroll: book index](./book-index.md).
 
 ## :name_badge: Badges
 
