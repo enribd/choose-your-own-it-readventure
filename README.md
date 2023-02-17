@@ -6,7 +6,7 @@ Finally, make sure you don’t forget about putting your newly acquired skills t
 
 Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point.
 
-:warning: **Disclaimer**: A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered somewhat advanced. If you are new to the IT world or if you want to follow a path of high difficult I recommend to grasp a good base of the basics and foundational concepts before proceeding.
+:warning: *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
 
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
@@ -48,14 +48,14 @@ All books have some badges associated to describe some aspect of them:
 | :blue_book: | To be read soon |
 | :orange_book: | Not read and I don't know when I will |
 
-- My own opinion about the book, recommendation level from lower to higher:
+- My book rating and recommendation level from lower to higher:
 
-| Badge | Level |
-| --- | --- |
-| :ok: | 1 |
-| :up: | 2 |
-| :cool: | 3 |
-| :top: | 4 |
+| Badge  | Level     |
+| ---    | ---       |
+| :ok:   | Nice      |
+| :up:   | Good      |
+| :cool: | Very Good |
+| :top:  | Excellent |
 
 **Note**: there are just four levels because all books mentioned are good reads, bad books don't belong in this list :thumbsdown:.
 
@@ -66,7 +66,7 @@ All books have some badges associated to describe some aspect of them:
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path, general | 
 
-## :alien: About me :bowtie:
+## :alien: About me
 
 I am a professional Cloud and Platform Engineer, DevOps practitioner, and Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
 
@@ -76,9 +76,13 @@ If you think some books may fit better in other categories, or the category name
 
 Of course, there will be books broadly considered a must-read that I have not listed, that's either because they don't fit in my career or simply because I don't know of their existence, in any case let me know!
 
+:bowtie: Thanks for stopping by, enjoy!
+
 ## :black_nib: Worthy metions
 
 - Icons:
   - [Skill icons](https://github.com/tandpfun/skill-icons)
   - [Tech icons](https://github.com/marwin1991/profile-technology-icons)
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
+
+[**⬆ top**](#choose-your-own-it-readventure!)
