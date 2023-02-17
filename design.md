@@ -1,10 +1,6 @@
 # Design
 
-It is a choose your own adventure type, maybe mixed a little with the narrative of a D&D master?.
-
-At the end of each learning path give some ideas about how to practice the skills acquired.
-
-- book information:
+Book information:
   - cover
   - title
   - author
@@ -20,4 +16,8 @@ At the end of each learning path give some ideas about how to practice the skill
 
 - Add icons:
   - Difficulty levels
-  - Learning paths
+    - :hatched_chick: = beginner
+    - :tiger2: = intermediate
+    - :dragon: = advanced
+    - Learning paths
+- At the end of each learning path give some ideas about how to practice the skills acquired.

@@ -1,4 +1,4 @@
-# Choose your own IT readventure! :books: :bookmark: :sunrise_over_mountains:
+# Choose your own IT readventure! :books: :computer: :bookmark: :sunrise_over_mountains:
 
 If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you from no knowledge to advanced topics with the power and the fun of reading.
 
@@ -37,4 +37,5 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 - Icons:
   - [Skill icons](https://github.com/tandpfun/skill-icons)
+  - [Tech icons](https://github.com/marwin1991/profile-technology-icons)
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
