@@ -26,7 +26,7 @@ All books have some badges associated to describe some aspect of them:
 
 - Difficulty levels, from lower to higher (these are totally subjective):
 
-| Level | Icon |
+| Level | Badge |
 | --- | --- |
 | 1 | :ant: |
 | 2 | :hatched_chick: |
@@ -36,7 +36,7 @@ All books have some badges associated to describe some aspect of them:
 
 - My own opinion about the book, recommendation level from lower to higher:
 
-| Level | Icon |
+| Level | Badge |
 | --- | --- |
 | 1 | :ok: |
 | 1 | :up: |
@@ -45,7 +45,7 @@ All books have some badges associated to describe some aspect of them:
 
 - If a book it's somewhat 'old' and I think it would be great to have a new edition:
 
-| Level | Icon |
+| Level | Badge |
 | --- | --- |
 | 1 | :arrows_counterclockwise: |
 

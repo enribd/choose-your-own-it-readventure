@@ -3,7 +3,7 @@
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 
 
-| Order | Level | Cover | Info | Description |
+| Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |
 | **1** | Beginner | ![img](/assets/images/designing-distributed-systems.jpeg) | [**Designing Distributed Systems**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages*                                                        | | desc |
 | **2** | Intermediate | ![img](/assets/images/system-design-interview.jpeg)        | [**System Design Interview – An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages*                                                            | | desc |
@@ -20,24 +20,24 @@ The following paths are opened to you now, choose wisely:
 
 ## Microservice Architectures
 
-| Order | Level        | Cover                                              | Info                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Order | Badges        | Cover                                              | Info                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ---   | ---          | ---                                                | ---                                                                                                                                                                                                 | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **1** | Intermediate | ![img](/assets/images/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Second edition published in 2022* <br> *616 pages* | One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures. |
 
 
 ## API Design
 
-| Order | Level | Cover | Info | Description |
+| Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |
 
 ## Event Driven Architectures (EDA)
 
-| Order | Level | Cover | Info | Description |
+| Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |
 
 ## Serverless
 
-| Order | Level | Cover | Info | Description |
+| Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |
 
 
