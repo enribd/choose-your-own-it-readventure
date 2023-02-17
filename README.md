@@ -22,6 +22,10 @@ Starting your adventure is as easy as picking the set of skills that you want to
 - [Management](./paths/management.md)
 
 
+:scroll: Discover all books in the [book index](./book-index.md).
+
+## :name_badge: Badges
+
 All books have some badges associated to describe some aspect of them:
 
 - Difficulty levels, from lower to higher (these are totally subjective):
@@ -59,8 +63,6 @@ All books have some badges associated to describe some aspect of them:
 | --- | --- |
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path, general | 
-
-:scroll: Discover all books in the [book index](./book-index.md).
 
 ## :alien: About me :bowtie:
 
