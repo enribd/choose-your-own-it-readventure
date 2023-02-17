@@ -7,7 +7,7 @@ Finally, make sure you don’t forget about putting your newly acquired skills t
 Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point:
 
 
-## Learning Paths
+## :checkered_flag: Start your adventure, choose your learning path wisely
 
 - [System Design](./paths/system-design.md)
   - [APIs](./paths/apis.md)
@@ -16,14 +16,43 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - [Serverless](./paths/serverless.md)
 - [Golang](./paths/golang.md)
   - [Cloud Native Applications](./paths/golang.md#cloud-native-applications)
-  - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
 - [Kubernetes](./paths/kubernetes.md)
 - [Software architecture](./paths/software-architecture.md)
+  - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
 - [Management](./paths/management.md)
 
-Discover all books in the [book index](./book-index.md).
 
-## :alien: About me 
+All books have some badges associated to describe some aspect of them:
+
+- Difficulty levels, from lower to higher (these are totally subjective):
+
+| Level | Icon |
+| --- | --- |
+| 1 | :ant: |
+| 2 | :hatched_chick: |
+| 3 | :dog2: |
+| 4 | :tiger2: |
+| 5 | :dragon: |
+
+- My own opinion about the book, recommendation level from lower to higher:
+
+| Level | Icon |
+| --- | --- |
+| 1 | :ok: |
+| 1 | :up: |
+| 1 | :cool: |
+| 1 | :top: |
+
+- If a book it's somewhat 'old' and I think it would be great to have a new edition:
+
+| Level | Icon |
+| --- | --- |
+| 1 | :arrows_counterclockwise: |
+
+
+:scroll: Discover all books in the [book index](./book-index.md).
+
+## :alien: About me :bowtie:
 
 I am a professional Cloud and Platform Engineer, DevOps practitioner, and Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
 
