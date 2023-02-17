@@ -9,22 +9,22 @@ Starting your adventure is as easy as picking the set of skills that you want to
 ## Learning Paths
 
 - [System Design](./paths/system-design.md)
-  - [APIs](./paths/apis.md)
   - [Microservices](./paths/microservices.md)
+  - [APIs](./paths/apis.md)
   - [Event Driven Architecture](./paths/eda.md)
   - [Serverless](./paths/serverless.md)
 - [Golang](./paths/golang.md)
   - [Cloud Native Applications](./paths/golang.md#cloud-native-applications)
   - [Domain Driven Design (DDD)](./paths/golang.md#domain-driven-design)
-- [Kubernetes](./paths/kubernetes.md)
-- [Software architecture](./paths/software-architecture.md)
-- [Management](./paths/management.md)
+- Software architecture *(coming soon)*
+- Kubernetes *(coming soon)*
+- Team management *(coming soon)*
 
 Discover all books in the [book index](./book-index.md).
 
 ## About me
 
-I am a professional Cloud Engineer / DevOps practicioner / Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
+I am a professional Cloud and platform Engineer, DevOps practicioner, Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
 
 This repo is conceived as a journal of my personal journey and a learning path to guide others who, like me, find in reading the best way to acquire deep knowledge in certain topics. I will put together a list that categorizes all the books I've read as well as those that I intend to read, or those that I consider of some importance in the IT field. The list is subjective, it will reflect my interests or the way I've decided to explore topics (most likely in a chaotic way).
 
