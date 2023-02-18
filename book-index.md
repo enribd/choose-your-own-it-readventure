@@ -101,11 +101,11 @@
 
 ### DevOps culture
 
-| Cover                                          | Info                                                                                                                                                 | Learning Paths                                  | Badges |
-| ---                                            | ---                                                                                                                                                  | ---                                             | ---    |
-| ![img](./assets/images/the-devops-handbook.jpeg) | [**The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations**](https://learning.oreilly.com/library/view/-/9781457191381/) <br> *Gene Kim, Jez Humble and Patrick Debols* <br> *Published in 2016* <br> *480 pages* | <ul><li>DevOps</li></ul> |
-| ![img](./assets/images/the-phoenix-project.jpeg) | [**The Phoenix Project**](https://learning.oreilly.com/library/view/-/9781457191350/) <br> *Gene Kim, Kevin Behr and George Spafford* <br> *Published in 2013* <br> *384 pages* | <ul><li>DevOps</li></ul> |
-| ![img](./assets/images/the-unicorn-project.jpeg) | [**The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* | <ul><li>DevOps</li></ul> |
+| Cover                                            | Info                                                                                                                                                                                                                                                                     | Learning Paths           | Badges |
+| ---                                              | ---                                                                                                                                                                                                                                                                      | ---                      | ---    |
+| ![img](./assets/images/the-devops-handbook.jpeg) | [**The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations**](https://learning.oreilly.com/library/view/-/9781457191381/) <br> *Gene Kim, Jez Humble and Patrick Debols* <br> *Published in 2016* <br> *480 pages* | <ul><li>DevOps</li></ul> |        |
+| ![img](./assets/images/the-phoenix-project.jpeg) | [**The Phoenix Project**](https://learning.oreilly.com/library/view/-/9781457191350/) <br> *Gene Kim, Kevin Behr and George Spafford* <br> *Published in 2013* <br> *384 pages*                                                                                          | <ul><li>DevOps</li></ul> |        |
+| ![img](./assets/images/the-unicorn-project.jpeg) | [**The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages*                                                                                                                          | <ul><li>DevOps</li></ul> |        |
 
 
 ### Infrastructure as Code (IaC)

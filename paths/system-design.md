@@ -18,24 +18,24 @@ The following paths are opened to you now, choose wisely:
   - [Serverless](#serverless): Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
 
 
-## Microservice Architectures
+## Microservice Architectures :construction:
 
-| Order | Badges        | Cover                                              | Info                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ---   | ---           | ---                                                | ---                                                                                                                                                                                                 | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **1** | :dog2: :green_book: :top: :bookmark: | ![img](/assets/images/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Second edition published in 2022* <br> *616 pages* | One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures. |
+| Order | Badges                               | Cover                                              | Info                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---   | ---                                  | ---                                                | ---                                                                                                                                                                                                 | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **1** | :dog2: :green_book: :top: :bookmark: | ![img](/assets/images/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* | One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures. |
 
 
-## API Design
-
-| Order | Badges | Cover | Info | Description |
-| --- | --- | ---| ---| --- |
-
-## Event Driven Architectures (EDA)
+## API Design :construction:
 
 | Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |
 
-## Serverless
+## Event Driven Architectures (EDA) :construction:
+
+| Order | Badges | Cover | Info | Description |
+| --- | --- | ---| ---| --- |
+
+## Serverless :construction:
 
 | Order | Badges | Cover | Info | Description |
 | --- | --- | ---| ---| --- |

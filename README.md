@@ -22,6 +22,8 @@ Starting your adventure is as easy as picking the set of skills that you want to
 - Software architecture :soon:
   - Domain Driven Design (DDD) :soon:
 - [Management :construction:](./paths/management.md)
+  - DevOps :soon:
+  - Team Management :soon:
 
 
 Discover all books in the [:scroll: book index](./book-index.md).
