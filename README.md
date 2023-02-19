@@ -66,7 +66,7 @@ All books have some badges associated to describe some aspect of them:
 | Badge | Meaning |
 | --- | --- |
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
-| :bookmark: | Recommended read no matter the learning path, general | 
+| :bookmark: | Recommended read no matter the learning path | 
 
 ## :alien: About me
 

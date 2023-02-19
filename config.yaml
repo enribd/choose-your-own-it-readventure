@@ -1,0 +1,82 @@
+log_level: debug
+layout:
+  readme: /
+  book_index: /
+  learning_paths: paths
+  book_covers: assets/covers
+learning_paths:
+  - name: "APIs"
+    reference: &apis apis
+    description: |
+      Test
+  - name: "System Design"
+    reference: &system_design system_design
+    description: |
+      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+    related_paths:
+      - *apis
+  - name: "Microservices"
+    reference: &microservices microservices
+    description: |
+      Test
+badges:
+  - category: &difficulty difficulty
+    icons:
+    - name: &beginner beginner
+      code: ant
+    - name: &easy easy
+      code: hatched_chick
+    - name: &intermediate intermediate
+      code: dog2
+    - name: &hard hard
+      code: tiger2
+    - name: &expert expert
+      code: dragon
+  - category: &progress progress
+    icons:
+    - name: &read read
+      code: green_book
+    - name: &scheduled scheduled
+      code: blue_book
+    - name: &scheduled not_scheduled
+      code: orange_book
+  - category: &rating rating
+    icons:
+    - name: &nice nice
+      code: ok
+    - name: &good good
+      code: up
+    - name: &very_good very_good
+      code: cool
+    - name: &excellent excellent
+      code: top
+  - category: &misc misc
+    icons:
+    - name: &must_read must_read
+      code: bookmark
+    - name: &old old
+      code: arrows_counterclockwise
+books:
+  - cover: building-microservices.jpeg
+    title: Building Microservices
+    subtitle: Designing Fine-Grained Systems
+    order: 1
+    url: https://learning.oreilly.com/library/view/-/9781492034018/
+    authors:
+      - Sam Newman
+    release: 2022
+    pages: 616
+    description: |
+      One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
+    learning_paths:
+      - *system_design
+      - *microservices
+    badges:
+      - category: *difficulty
+        value: *intermediate
+      - category: *progress
+        value: *read
+      - category: *rating
+        value: *excellent
+      - category: *misc
+        value: *must_read

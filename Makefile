@@ -12,6 +12,6 @@ pre-commit: resize-images
 
 resize-images: ## Resize all images
 	$(info: Resize all images)
-	@find ./assets/images -type f -exec convert {} -resize 122x160 {} \;
-	@git add ./assets/images/
+	@find ./assets/covers -type f -exec convert {} -resize 122x160 {} \;
+	@git add ./assets/covers/
 .PHONY: resize-images
