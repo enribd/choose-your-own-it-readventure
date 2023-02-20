@@ -42,11 +42,11 @@ type LearningPath struct {
 type LearningPathRef string
 
 type Badge struct {
-	Category   Category    `yaml:"category"`
-	BadgeIcons []BadgeIcon `yaml:"icons"`
+	Category   BadgeCategory `yaml:"category"`
+	BadgeIcons []BadgeIcon   `yaml:"icons"`
 }
 
-type Category string
+type BadgeCategory string
 
 type BadgeIcon struct {
 	Name string `yaml:"name"`
@@ -66,13 +66,10 @@ type Book struct {
 	Pages             string            `yaml:"pages"`
 	Desc              string            `yaml:"desc"`
 	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	Badges            []BookBadge       `yaml:"badges"`
+	BadgesRefs        []BadgeRef        `yaml:"badges"`
 }
 
-type BookBadge struct {
-	Category Category `yaml:"category"`
-	Value    string   `yaml:"value"`
-}
+type BadgeRef string
 
 var debug bool
 var trace bool
@@ -196,6 +193,8 @@ func main() {
 			}
 		}
 	}
+
+	log.Println("done.")
 }
 
 /*

@@ -18,8 +18,8 @@
 {{/* end Build book learning paths list */}}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
-{{- range .Badges -}}
-{{- $b := get $badgesData .Value | printf ":%s:" -}}
+{{- range .BadgesRefs -}}
+{{- $b := . | toString | get $badgesData | printf ":%s:" -}}
 {{- $badges = append $badges $b -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}

@@ -12,8 +12,8 @@
 {{- range $lpBooksData }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
-{{- range .Badges -}}
-{{- $b := get $badgesData .Value | printf ":%s:" -}}
+{{- range .BadgesRefs -}}
+{{- $b := . | toString | get $badgesData | printf ":%s:" -}}
 {{- $badges = append $badges $b -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
@@ -25,21 +25,25 @@ The following paths are opened to you now, choose wisely:
 
 {{ range $lp.Related -}}
 {{ $relPath := . | toString | get $lpData -}}
+{{ $relPathIcon :=  get $badgesData $relPath.Status | printf ":%s:" -}}
 {{ if (eq $relPath.Status "coming-soon") -}}
 - :{{ get $badgesData $relPath.Status }}: {{ $relPath.Name }}: {{ $relPath.Summary }}
 {{- else -}}
+- [{{ $relPath.Name }} {{ $relPathIcon }}]({{ $lpFolders }}/{{ $relPath.Ref }}.md): {{ $relPath.Summary }}
 {{- end -}}
-- [{{ $relPath.Name }}]({{ $lpFolders }}/{{ $relPath.Ref }}.md): {{ $relPath.Summary }}
 {{- end -}}
 {{- end }}
 
 {{- with $lp.Suggested }}
-Want to change the subject? Here are some suggestions about other paths you can explore:
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
 {{ range $lp.Suggested -}}
 {{ $sugPath := . | toString | get $lpData -}}
-{{ if (ne $sugPath.Status "coming-soon") -}}
-- [{{ $sugPath.Name }}]({{ $lpFolders }}/{{ $sugPath.Ref }}.md): {{ $sugPath.Summary }}
+{{ $sugPathIcon :=  get $badgesData $sugPath.Status | printf ":%s:" -}}
+{{ if (ne $sugPath.Status "coming-soon") }}
+- [{{ $sugPath.Name }} {{ $sugPathIcon }}]({{ $lpFolders }}/{{ $sugPath.Ref }}.md): {{ $sugPath.Summary }}
 {{- end -}}
 {{- end -}}
 {{- end }}
+
+[**⬆ top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)

@@ -47,6 +47,8 @@ badges:
       code: arrows_counterclockwise
   - category: &status status
     icons:
+    - name: &stable stable
+      code: stable
     - name: &new new
       code: new
     - name: &coming-soon coming-soon
@@ -80,6 +82,11 @@ learning_paths:
       TODO
     summary: |
       Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
+    suggested:
+      - system-design
+      - microservices
+      - apis
+      - serverless
   - name: "Serverless"
     ref: &serverless serverless
     status: *coming-soon
@@ -87,16 +94,39 @@ learning_paths:
       TODO
     summary: |
       Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
+    suggested:
+      - system-design
+      - microservices
+      - apis
+      - eda
   - name: "System Design"
     ref: &system-design system-design
-    status: *new
+    status: *stable
     desc: |
       You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+    summary: |
+      TODO
     related:
-      - *microservices
-      - *apis
-      - *eda
-      - *serverless
+      - microservices
+      - apis
+      - eda
+      - serverless
+    suggested:
+      - software-architecture
+  - name: "Software Architecture"
+    ref: &software-architecture software-architecture
+    status: *in-progress
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - microservices
+      - apis
+      - eda
+      - serverless
+    suggested:
+      - system-design
 books:
   - cover: building-microservices.jpeg
     title: Building Microservices
@@ -114,11 +144,7 @@ books:
       - *system-design
       - *microservices
     badges:
-      - category: *difficulty
-        value: *intermediate
-      - category: *progress
-        value: *read
-      - category: *rating
-        value: *excellent
-      - category: *misc
-        value: *must-read
+      - *intermediate
+      - *read
+      - *excellent
+      - *must-read
