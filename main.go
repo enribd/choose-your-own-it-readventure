@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/Masterminds/sprig/v3"
+	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
-  "golang.org/x/exp/slices"
 )
 
 type Config struct {
@@ -77,17 +77,17 @@ var trace bool
 var content string
 
 func main() {
-  // Parse flags
-  flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
-  flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
-  flag.StringVar(&content, "content", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
-  flag.Parse()
-  contents := strings.Split(content, ",")
+	// Parse flags
+	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
+	flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
+	flag.StringVar(&content, "content", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
+	flag.Parse()
+	contents := strings.Split(content, ",")
 
 	// Read the file
 	raw, err := ioutil.ReadFile("config.yaml")
 	if err != nil {
-    log.Fatalln(err)
+		log.Fatalln(err)
 		return
 	}
 
@@ -96,7 +96,7 @@ func main() {
 	// Unmarshal the YAML raw content into the struct
 	err = yaml.Unmarshal(raw, &config)
 	if err != nil {
-    log.Fatalln(err)
+		log.Fatalln(err)
 		return
 	}
 
@@ -164,31 +164,31 @@ func main() {
 		log.Fatalln(err)
 	}
 
-  if slices.Contains(contents, "book-index") {
-	  log.Printf("rendering book index in %s", config.Layout.BookIndex)
-	  if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
-	  	log.Fatalln(err)
-	  }
-  }
-
-  if slices.Contains(contents, "readme") {
-	  log.Printf("rendering readme in %s", config.Layout.Readme)
-	  if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil {
-	  	log.Fatalln(err)
-	  }
+	if slices.Contains(contents, "book-index") {
+		log.Printf("rendering book index in %s", config.Layout.BookIndex)
+		if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
+			log.Fatalln(err)
+		}
 	}
 
-  if slices.Contains(contents, "learning-paths") {
-	  for _, lp := range config.LearningPaths {
-	  	data.CurrentLearningPath = lp
-	  	data.LpBooksData = lpBooksData[lp.Ref]
-	  	// TODO remove -test from file name
-	  	file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
-	  	log.Printf("rendering learning-path %s in %s", lp.Ref, file)
-	  	if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
-	  		log.Fatalln(err)
-	  	}
-	  }
+	if slices.Contains(contents, "readme") {
+		log.Printf("rendering readme in %s", config.Layout.Readme)
+		if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil {
+			log.Fatalln(err)
+		}
+	}
+
+	if slices.Contains(contents, "learning-paths") {
+		for _, lp := range config.LearningPaths {
+			data.CurrentLearningPath = lp
+			data.LpBooksData = lpBooksData[lp.Ref]
+			// TODO remove -test from file name
+			file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
+			log.Printf("rendering learning-path %s in %s", lp.Ref, file)
+			if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+				log.Fatalln(err)
+			}
+		}
 	}
 }
 
