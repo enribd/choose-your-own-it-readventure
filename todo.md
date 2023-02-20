@@ -2,7 +2,6 @@
 
 ## App
 
-- related path structure in learning path template
 - render readme learning path toc
 - segregate files, in layout indicate where are the yamls to load and do it, move content from md files to the yaml files
 - Github actions

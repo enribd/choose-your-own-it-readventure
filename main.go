@@ -30,11 +30,13 @@ type Layout struct {
 }
 
 type LearningPath struct {
-	Name         string            `yaml:"name"`
-	Ref          LearningPathRef   `yaml:"ref"`
-	Status       string            `yaml:"status"`
-	Desc         string            `yaml:"desc"`
-	RelatedPaths []LearningPathRef `yaml:"related_paths,omitempty"`
+	Name      string            `yaml:"name"`
+	Ref       LearningPathRef   `yaml:"ref"`
+	Status    string            `yaml:"status"`
+	Desc      string            `yaml:"desc"`
+	Summary   string            `yaml:"summary"`
+	Related   []LearningPathRef `yaml:"related,omitempty"`
+	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
 }
 
 type LearningPathRef string
@@ -180,13 +182,17 @@ func main() {
 
 	if slices.Contains(contents, "learning-paths") {
 		for _, lp := range config.LearningPaths {
-			data.CurrentLearningPath = lp
-			data.LpBooksData = lpBooksData[lp.Ref]
-			// TODO remove -test from file name
-			file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
-			log.Printf("rendering learning-path %s in %s", lp.Ref, file)
-			if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
-				log.Fatalln(err)
+			if lp.Status != "coming-soon" {
+				data.CurrentLearningPath = lp
+				data.LpBooksData = lpBooksData[lp.Ref]
+
+				// TODO remove -test from file name
+				file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
+				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
+
+				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
 			}
 		}
 	}

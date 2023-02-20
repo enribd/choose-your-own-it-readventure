@@ -1,3 +1,5 @@
+content := "readme,book-index,learning-paths"
+
 help: ## Prints help for targets with comments
 	@cat $(MAKEFILE_LIST) | grep -E '^[a-zA-Z_-]+:.*?## .*$$' | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
@@ -29,15 +31,20 @@ format-code: ### Run go fmt
 	@go fmt ./...
 .PHONY: format-code
 
-run: ### Run go binary
+run: ### Run go binary (vars: content)
 	$(info Build and run code)
-	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go
+	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --content=${content}
 .PHONY: run
 
-debug: ### Run go binary in debug mode
+debug: ### Run go binary in debug mode (vars: content)
 	$(info Build and run code in debug mode)
-	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug
+	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug --content=${content}
 .PHONY: debug
+
+trace: ### Run go binary in trace mode (vars: content)
+	$(info Build and run code in trace mode)
+	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug --trace --content=${content}
+.PHONY: trace
 
 clean: ## Clean unneeded files
 	$(info: Clean unneeded files)

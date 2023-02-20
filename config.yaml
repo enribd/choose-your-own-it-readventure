@@ -45,6 +45,8 @@ badges:
       code: bookmark
     - name: &old old
       code: arrows_counterclockwise
+  - category: &status status
+    icons:
     - name: &new new
       code: new
     - name: &coming-soon coming-soon
@@ -52,23 +54,49 @@ badges:
     - name: &in-progress in-progress
       code: construction
 learning_paths:
-  - name: "APIs"
-    ref: &apis apis
-    status: *new
-    desc: |
-      Test
-  - name: "System Design"
-    ref: &system-design system-design
-    status: *coming-soon
-    desc: |
-      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
-    related_paths:
-      - *apis
   - name: "Microservices"
     ref: &microservices microservices
     status: *in-progress
     desc: |
-      Test
+      TODO
+    summary: |
+      Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+  - name: "APIs"
+    ref: &apis apis
+    status: *new
+    desc: |
+      TODO
+    summary: |
+      APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, patterns, api gateways, and more.
+    suggested:
+      - system-design
+      - microservices
+      - eda
+      - serverless
+  - name: "Event Driven Architecture (EDA)"
+    ref: &eda eda
+    status: *coming-soon
+    desc: |
+      TODO
+    summary: |
+      Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
+  - name: "Serverless"
+    ref: &serverless serverless
+    status: *coming-soon
+    desc: |
+      TODO
+    summary: |
+      Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
+  - name: "System Design"
+    ref: &system-design system-design
+    status: *new
+    desc: |
+      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+    related:
+      - *microservices
+      - *apis
+      - *eda
+      - *serverless
 books:
   - cover: building-microservices.jpeg
     title: Building Microservices
