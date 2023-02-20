@@ -1,7 +1,7 @@
 log_level: debug
 layout:
   readme: ./README.md
-  book_index: ./book-index.md
+  book_index: ./book-index-test.md
   learning_paths: ./paths
   book_covers: ./assets/covers
 learning_paths:
@@ -11,7 +11,7 @@ learning_paths:
     description: |
       Test
   - name: "System Design"
-    reference: &system_design system_design
+    reference: &system-design system-design
     status: soon
     description: |
       You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
@@ -55,7 +55,7 @@ badges:
       code: top
   - category: &misc misc
     icons:
-    - name: &must_read must_read
+    - name: &must-read must_read
       code: bookmark
     - name: &old old
       code: arrows_counterclockwise
@@ -73,7 +73,7 @@ books:
     description: |
       One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
     learning_paths:
-      - *system_design
+      - *system-design
       - *microservices
     badges:
       - category: *difficulty
@@ -83,4 +83,4 @@ books:
       - category: *rating
         value: *excellent
       - category: *misc
-        value: *must_read
+        value: *must-read

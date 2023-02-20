@@ -5,10 +5,9 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"path/filepath"
 	"text/template"
 
-	"github.com/Masterminds/sprig"
+	"github.com/Masterminds/sprig/v3"
 	"gopkg.in/yaml.v3"
 )
 
@@ -61,7 +60,7 @@ type Book struct {
 	Pages             string            `yaml:"pages"`
 	Description       string            `yaml:"description"`
 	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	BookBadges        []BookBadge       `yaml:"badges"`
+	Badges        []BookBadge       `yaml:"badges"`
 }
 
 type BookBadge struct {
@@ -97,7 +96,7 @@ func main() {
 	}
 
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
-	lpData := map[string]LearningPath{}
+	lpData := map[string]interface{}{}
 	for _, lp := range config.LearningPaths {
 		lpData[lp.Ref] = lp
 	}
@@ -116,12 +115,11 @@ func main() {
 		}
 	}
 
-	// Create auxiliar structure for easy access to badges badgesData["rating"]["excellent"] = top
-	badgesData := map[Category]map[string]string{}
+	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
+	badgesData := map[string]interface{}{}
 	for _, b := range config.Badges {
-		badgesData[b.Category] = map[string]string{}
 		for _, i := range b.BadgeIcons {
-			badgesData[b.Category][i.Name] = i.Code
+			badgesData[i.Name] = i.Code
 		}
 	}
 
@@ -134,15 +132,19 @@ func main() {
 
 	// Create template rendering data
 	var data = struct {
-		LpData      map[string]LearningPath
+		LpData      map[string]interface{}
 		LpBooksData map[LearningPathRef][]Book
 		BooksData   map[string]Book
-		BadgesData  map[Category]map[string]string
+		BadgesData  map[string]interface{}
+    BookCovers string
+    LearningPathsFolder string
 	}{
 		LpData:      lpData,
 		LpBooksData: lpBooksData,
 		BooksData:   booksData,
+    BookCovers: config.Layout.BookCovers,
 		BadgesData:  badgesData,
+    LearningPathsFolder: config.Layout.LearningPaths,
 	}
 
 	// Load templates and functions
@@ -155,16 +157,16 @@ func main() {
 	  log.Fatalln(err)
   }
 
-  if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil{
-	  log.Fatalln(err)
-  }
+  // if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil{
+	//   log.Fatalln(err)
+  // }
 
-  for _, lp := range config.LearningPaths {
-    file := filepath.Join(config.Layout.LearningPaths, lp.Ref + ".md")
-    if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
-	    log.Fatalln(err)
-    }
-  }
+  // for _, lp := range config.LearningPaths {
+  //   file := filepath.Join(config.Layout.LearningPaths, lp.Ref + ".md")
+  //   if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+	//     log.Fatalln(err)
+  //   }
+  // }
 }
 
 /*
