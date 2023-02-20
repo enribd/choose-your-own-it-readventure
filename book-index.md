@@ -125,7 +125,7 @@
 | ---                                            | ---                                                                                                                                                  | ---                                             | ---    |
 | ![img](./assets/covers/site-reliability-engineering.jpeg) | [**Site Reliability Engineering**](https://sre.google/sre-book/table-of-contents/) <br> *Betsy Beyer, Chris Jones, Jennifer Petoff and Niall Myrphy* <br> *Published in 2017* <br> *unknown pages* | <ul><li>SRE</li></ul> |
 | ![img](./assets/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara and Stephen Thorne* <br> *Published in 2018* <br> *unknown pages* | <ul><li>SRE</li></ul> |
-| ![img](./assets/covers/building-secure-reliable-systems.jpeg) | [**Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems**](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) <br> *Heather Adkins, Betsy Beyer, Paul Blankship, Piotr Lewandowski, Ana OPera and Adam Stubblefield* <br> *Published in 2020* <br> *555 pages* | <ul><li>SRE</li></ul> |
+| ![img](./assets/covers/building-secure-reliable-systems.jpeg) | [**Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems**](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) <br> *Heather Adkins, Betsy Beyer, Paul Blankship, Piotr Lewandowski, Ana OPera and Adam Stubblefield* <br> *Published in 2020* <br> *555 pages* | <ul><li>SRE</li></ul> | |
 
 
 ### Other
@@ -135,4 +135,5 @@
 | ![img](./assets/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* | <ul><li>Organization design</li></ul> |
 | ![img](./assets/covers/team-topologies.jpeg) | [**Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* | <ul><li>Product Management</li><li>Organization</li></ul> |
 | ![img](./assets/covers/remote-teams-interactions-workbook.jpeg) | [**Remote Teams Interactions Workbook**](https://teamtopologies.com/workbook) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2022* <br> *80 pages* | <ul><li>Organization</li></ul> |
+| ![img](./assets/covers/continuous-delivery.jpeg) | [**Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation**](https://learning.oreilly.com/library/view/-/9780321670250/) <br> *David Farley* <br> *Published in 2010* <br> *512 pages* | <ul><li>Software delivery</li></ul> | |
 
