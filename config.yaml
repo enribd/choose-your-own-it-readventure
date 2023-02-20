@@ -7,16 +7,19 @@ layout:
 learning_paths:
   - name: "APIs"
     reference: &apis apis
+    status: new
     description: |
       Test
   - name: "System Design"
     reference: &system_design system_design
+    status: soon
     description: |
       You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
     related_paths:
       - *apis
   - name: "Microservices"
     reference: &microservices microservices
+    status: construction
     description: |
       Test
 badges:

@@ -26,6 +26,7 @@ type Layout struct {
 type LearningPath struct {
 	Name         string            `yaml:"name"`
 	Ref          string            `yaml:"reference"`
+	Status       string            `yaml:"status"`
 	Desc         string            `yaml:"description"`
 	RelatedPaths []LearningPathRef `yaml:"related_paths,omitempty"`
 }
@@ -68,7 +69,7 @@ func main() {
 
 	// TODO segregate files, in layout indicate where are the yamls to load and do it
 	// Read the file
-	data, err := ioutil.ReadFile("config.yaml")
+	raw, err := ioutil.ReadFile("config.yaml")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -76,8 +77,8 @@ func main() {
 
 	var config Config
 
-	// Unmarshal the YAML data into the struct
-	err = yaml.Unmarshal(data, &config)
+	// Unmarshal the YAML raw content into the struct
+	err = yaml.Unmarshal(raw, &config)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -90,10 +91,10 @@ func main() {
 		log.Printf("%v\n", config)
 	}
 
-	// Create auxiliar structure for easy access to learning_path learningPathsData["apis"].Desc
-	learningPathsData := map[string]LearningPath{}
+	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
+	lpData := map[string]LearningPath{}
 	for _, lp := range config.LearningPaths {
-		learningPathsData[lp.Ref] = lp
+		lpData[lp.Ref] = lp
 	}
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
@@ -102,28 +103,41 @@ func main() {
 		booksData[b.Title] = b
 	}
 
-	// Create auxiliar structure for easy access to learning path books learningPathsBooksData["apis"] = [{book1}, {book2}, ...]
-  learningPathBooksData := map[LearningPathRef]Book{}
+	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
+	lpBooksData := map[LearningPathRef][]Book{}
 	for _, b := range config.Books {
-	  for _, r := range b.LearningPathsRefs {
-	  	learningPathBooksData[r] = b
-	  }
+		for _, r := range b.LearningPathsRefs {
+			lpBooksData[r] = append(lpBooksData[r], b)
+		}
 	}
 
-	// Create auxiliar structure for easy access to badges badgeIconsData["rating"]["excellent"] = top
-	badgeIconsData := map[Category]map[string]string{}
+	// Create auxiliar structure for easy access to badges badgesData["rating"]["excellent"] = top
+	badgesData := map[Category]map[string]string{}
 	for _, b := range config.Badges {
-		badgeIconsData[b.Category] = map[string]string{}
+		badgesData[b.Category] = map[string]string{}
 		for _, i := range b.BadgeIcons {
-			badgeIconsData[b.Category][i.Name] = i.Code
+			badgesData[b.Category][i.Name] = i.Code
 		}
 	}
 
 	if debug {
-		log.Printf("loaded learning paths: %v\n", learningPathsData)
-		log.Printf("loaded learning paths books: %v\n", learningPathBooksData)
+		log.Printf("loaded learning paths: %v\n", lpData)
+		log.Printf("loaded learning paths books: %v\n", lpBooksData)
 		log.Printf("loaded books: %v\n", booksData)
-		log.Printf("loaded badges: %v\n", badgeIconsData)
+		log.Printf("loaded badges: %v\n", badgesData)
+	}
+
+	// Create template rendering data
+	var data = struct {
+		LpData      map[string]LearningPath
+		LpBooksData map[LearningPathRef][]Book
+		BooksData   map[string]Book
+		BadgesData  map[Category]map[string]string
+	}{
+		LpData:      lpData,
+		LpBooksData: lpBooksData,
+		BooksData:   booksData,
+		BadgesData:  badgesData,
 	}
 
 	// Load templates and functions
@@ -145,7 +159,7 @@ func main() {
 	// }
 
 	// Render template
-	// err = temp.ExecuteTemplate(file, "learning-path.tpl", config)
+	// err = temp.ExecuteTemplate(file, "learning-path.tpl", data)
 	// if err != nil {
 	//     log.Fatalln(err)
 	// }
