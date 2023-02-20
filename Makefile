@@ -7,7 +7,7 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: resize-images
+pre-commit: format-code clean resize-images #lint-gh-actions
 .PHONY: pre-commit
 
 resize-images: ## Resize all images
@@ -33,3 +33,8 @@ run: ### Run go binary
 	$(info Build and run code)
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go
 .PHONY: run
+
+clean: ## Clean unneeded files
+	$(info: Clean unneeded files)
+	@find . -iname '*-test*.md' -exec rm {} \;
+.PHONY: clean

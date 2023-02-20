@@ -2,17 +2,16 @@
 
 ## App
 
-- refactor app structure
 - create and render templates: for lp in config.LearningPaths do render with lpbooksdata
 - render readme learning path toc
 - segregate files, in layout indicate where are the yamls to load and do it
 - move content from md files to the yaml files
-- how to manage what files to create (REAMDE, book index and paths)
 - Github actions
 - Makefile
 - Add cli flags for verbosity and dry-run
 
 TBD:
+- refactor app structure?
 - images to svg?
 - Github pages?
 - generate graph image of the learning paths?

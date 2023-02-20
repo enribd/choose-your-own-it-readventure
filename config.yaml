@@ -1,40 +1,27 @@
 log_level: debug
 layout:
-  readme: ./README.md
+  readme: ./README-test.md
   book_index: ./book-index-test.md
   learning_paths: ./paths
   book_covers: ./assets/covers
-learning_paths:
-  - name: "APIs"
-    reference: &apis apis
-    status: new
-    description: |
-      Test
-  - name: "System Design"
-    reference: &system-design system-design
-    status: soon
-    description: |
-      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
-    related_paths:
-      - *apis
-  - name: "Microservices"
-    reference: &microservices microservices
-    status: construction
-    description: |
-      Test
 badges:
   - category: &difficulty difficulty
     icons:
     - name: &beginner beginner
       code: ant
+      desc: "Petty ant"
     - name: &easy easy
       code: hatched_chick
+      desc: "Naive chicken"
     - name: &intermediate intermediate
       code: dog2
+      desc: "Brave Dog"
     - name: &hard hard
       code: tiger2
+      desc: "Fierce tiger"
     - name: &expert expert
       code: dragon
+      desc: "Mighty dragon"
   - category: &progress progress
     icons:
     - name: &read read
@@ -59,6 +46,30 @@ badges:
       code: bookmark
     - name: &old old
       code: arrows_counterclockwise
+    - name: &new new
+      code: new
+    - name: &coming-soon coming-soon
+      code: soon
+    - name: &in-progress in-progress
+      code: construction
+learning_paths:
+  - name: "APIs"
+    ref: &apis apis
+    status: *new
+    desc: |
+      Test
+  - name: "System Design"
+    ref: &system-design system-design
+    status: *coming-soon
+    desc: |
+      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+    related_paths:
+      - *apis
+  - name: "Microservices"
+    ref: &microservices microservices
+    status: *in-progress
+    desc: |
+      Test
 books:
   - cover: building-microservices.jpeg
     title: Building Microservices
@@ -70,7 +81,7 @@ books:
       - Sam Newman
     release: 2022
     pages: 616
-    description: |
+    desc: |-
       One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
     learning_paths:
       - *system-design

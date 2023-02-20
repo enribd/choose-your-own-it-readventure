@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"io/ioutil"
 	"log"
 	"os"
-	"text/template"
+	"path/filepath"
 
 	"github.com/Masterminds/sprig/v3"
 	"gopkg.in/yaml.v3"
@@ -28,9 +29,9 @@ type Layout struct {
 
 type LearningPath struct {
 	Name         string            `yaml:"name"`
-	Ref          string            `yaml:"reference"`
+	Ref          LearningPathRef   `yaml:"ref"`
 	Status       string            `yaml:"status"`
-	Desc         string            `yaml:"description"`
+	Desc         string            `yaml:"desc"`
 	RelatedPaths []LearningPathRef `yaml:"related_paths,omitempty"`
 }
 
@@ -46,6 +47,7 @@ type Category string
 type BadgeIcon struct {
 	Name string `yaml:"name"`
 	Code string `yaml:"code"`
+	Desc string `yaml:"desc"`
 }
 
 type Book struct {
@@ -58,9 +60,9 @@ type Book struct {
 	Authors           []string          `yaml:"authors"`
 	Release           string            `yaml:"release"`
 	Pages             string            `yaml:"pages"`
-	Description       string            `yaml:"description"`
+	Desc              string            `yaml:"desc"`
 	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	Badges        []BookBadge       `yaml:"badges"`
+	Badges            []BookBadge       `yaml:"badges"`
 }
 
 type BookBadge struct {
@@ -98,7 +100,7 @@ func main() {
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
 	for _, lp := range config.LearningPaths {
-		lpData[lp.Ref] = lp
+		lpData[string(lp.Ref)] = lp
 	}
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
@@ -132,41 +134,47 @@ func main() {
 
 	// Create template rendering data
 	var data = struct {
-		LpData      map[string]interface{}
-		LpBooksData map[LearningPathRef][]Book
-		BooksData   map[string]Book
-		BadgesData  map[string]interface{}
-    BookCovers string
-    LearningPathsFolder string
+		LpData              map[string]interface{}
+		LpBooksData         []Book
+		BooksData           map[string]Book
+		BadgesData          map[string]interface{}
+		BookCovers          string
+		LearningPathsFolder string
+		BooksIndex          string
+		CurrentLearningPath LearningPath
 	}{
-		LpData:      lpData,
-		LpBooksData: lpBooksData,
-		BooksData:   booksData,
-    BookCovers: config.Layout.BookCovers,
-		BadgesData:  badgesData,
-    LearningPathsFolder: config.Layout.LearningPaths,
+		LpData:              lpData,
+		BooksData:           booksData,
+		BookCovers:          config.Layout.BookCovers,
+		BadgesData:          badgesData,
+		LearningPathsFolder: config.Layout.LearningPaths,
+		BooksIndex:          config.Layout.BookIndex,
 	}
 
 	// Load templates and functions
 	templates, err := template.New("base").Funcs(sprig.FuncMap()).ParseGlob("templates/*")
 	if err != nil {
-	  log.Fatalln(err)
+		log.Fatalln(err)
 	}
 
-  if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
-	  log.Fatalln(err)
-  }
+	if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
+		log.Fatalln(err)
+	}
 
-  // if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil{
-	//   log.Fatalln(err)
-  // }
+	if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil {
+		log.Fatalln(err)
+	}
 
-  // for _, lp := range config.LearningPaths {
-  //   file := filepath.Join(config.Layout.LearningPaths, lp.Ref + ".md")
-  //   if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
-	//     log.Fatalln(err)
-  //   }
-  // }
+	for _, lp := range config.LearningPaths {
+		data.CurrentLearningPath = lp
+		data.LpBooksData = lpBooksData[lp.Ref]
+		// TODO remove -test from file name
+		file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
+		log.Printf("rendering learning-path %s in %s", lp.Ref, file)
+		if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+			log.Fatalln(err)
+		}
+	}
 }
 
 /*
@@ -176,28 +184,28 @@ func main() {
 *   data: data used to fill the templates
 *   templateName: template name to render
 *   dest: destination file
-*/
+ */
 func render(t *template.Template, templateName, dest string, data interface{}) error {
 	// Create destination file
 	var file *os.File
-  var err error
+	var err error
 
 	if debug {
-	  file = os.Stdout
+		file = os.Stdout
 	} else {
-    file, err = os.Create(dest)
-	  if err != nil {
-	    log.Fatalln("create file: ", err)
-      return err
-	  }
+		file, err = os.Create(dest)
+		if err != nil {
+			log.Fatalln("create file: ", err)
+			return err
+		}
 	}
 
 	// Render template
-  err = t.ExecuteTemplate(file, templateName, data)
+	err = t.ExecuteTemplate(file, templateName, data)
 	if err != nil {
-	  log.Fatalln(err)
-    return err
+		log.Fatalln(err)
+		return err
 	}
 
-  return nil
+	return nil
 }
