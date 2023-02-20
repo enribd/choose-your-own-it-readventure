@@ -34,6 +34,11 @@ run: ### Run go binary
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go
 .PHONY: run
 
+debug: ### Run go binary in debug mode
+	$(info Build and run code in debug mode)
+	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug
+.PHONY: debug
+
 clean: ## Clean unneeded files
 	$(info: Clean unneeded files)
 	@find . -iname '*-test*.md' -exec rm {} \;

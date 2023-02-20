@@ -2,13 +2,11 @@
 
 ## App
 
-- create and render templates: for lp in config.LearningPaths do render with lpbooksdata
+- related path structure in learning path template
 - render readme learning path toc
-- segregate files, in layout indicate where are the yamls to load and do it
-- move content from md files to the yaml files
+- segregate files, in layout indicate where are the yamls to load and do it, move content from md files to the yaml files
 - Github actions
-- Makefile
-- Add cli flags for verbosity and dry-run
+- Add cli flags for verbosity, dry-run and choose what to render
 
 TBD:
 - refactor app structure?
