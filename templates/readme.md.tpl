@@ -1,3 +1,6 @@
+
+[//]: # (Auto generated file from templates)
+
 # Choose your own IT readventure! :books: :sunrise_over_mountains: :computer:
 
 If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you to interesting places thanks to the power and the fun of reading.

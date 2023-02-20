@@ -4,6 +4,9 @@
 {{- $badgesData := .BadgesData -}}
 {{- $lpFolders := .LearningPathsFolder -}}
 {{- $lp := .CurrentLearningPath -}}
+
+[//]: # (Auto generated file from templates)
+
 # {{ $lp.Name }} Learning Path
 
 {{ $lp.Desc }}
