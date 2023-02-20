@@ -15,3 +15,21 @@ resize-images: ## Resize all images
 	@find ./assets/covers -type f -exec convert {} -resize 122x160 {} \;
 	@git add ./assets/covers/
 .PHONY: resize-images
+
+lint-gh-actions: ### Lint Github Actions files with actionlint
+	$(info Ling Github Actions)
+	@docker run --rm \
+		-v $(shell pwd):/workflows \
+		-w /workflows \
+		rhysd/actionlint:latest -color
+.PHONY: lint-gh-actions
+
+format-code: ### Run go fmt
+	$(info Format code)
+	@go fmt ./...
+.PHONY: format-code
+
+run: ### Run go binary
+	$(info Build and run code)
+	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go
+.PHONY: run
