@@ -1,3 +1,6 @@
+
+[//]: # (Auto generated file from templates)
+
 # Choose your own IT readventure! :books: :sunrise_over_mountains: :computer:
 
 If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you to interesting places thanks to the power and the fun of reading.
@@ -11,22 +14,35 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-- [System Design :new:](./paths/system-design.md)
+{{/* Build learning paths index 
+{{ $badgesData := .BadgesData -}}
+{{- $lpFolders := .LearningPathsFolder -}}
+{{- range .LpData -}}
+{{ $icon := get $badgesData .Status | printf ":%s:" -}}
+{{- if (eq .Status "soon") -}}
+{{ if (len .RelatedPaths gt 0) }}  {{ end }}- *{{ .Name }}* {{ $icon }}
+{{- else }}
+- [{{ .Name }} {{ $icon }}]({{ $lpFolders }}/{{ .Ref }}.md)
+{{ end -}}
+{{ end }}
+*/}}
+
+- [System Design :new:]({{ .LearningPathsFolder }}/system-design.md)
   - APIs :soon:
-  - [Microservices :new:](./paths/microservices.md)
+  - [Microservices :new:]({{ .LearningPathsFolder }}/microservices.md)
   - Event Driven Architecture :soon:
   - Serverless :soon:
-- [Golang :new:](./paths/golang.md)
-  - [Cloud Native Applications :new:](./paths/golang.md#cloud-native-applications)
+- [Golang :new:]({{ .LearningPathsFolder }}/golang.md)
+  - [Cloud Native Applications :new:]({{ .LearningPathsFolder }}/golang.md#cloud-native-applications)
 - Kubernetes :soon:
 - Software architecture :soon:
   - Domain Driven Design (DDD) :soon:
-- [Management :construction:](./paths/management.md)
+- [Management :construction:]({{ .LearningPathsFolder }}/management.md)
   - DevOps :soon:
   - Team Management :soon:
 
 
-Discover all books in the [:scroll: book index](./book-index.md).
+Discover all books in the [:scroll: book index]({{ .BooksIndex }}).
 
 ## :name_badge: Badges
 
@@ -88,4 +104,3 @@ Of course, there will be books broadly considered a must-read that I have not li
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
 
 [**⬆ top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)
-

@@ -1,0 +1,150 @@
+layout:
+  readme: ./README-test.md
+  book_index: ./book-index-test.md
+  learning_paths: ./paths
+  book_covers: ./assets/covers
+badges:
+  - category: &difficulty difficulty
+    icons:
+    - name: &beginner beginner
+      code: ant
+      desc: "Petty ant"
+    - name: &easy easy
+      code: hatched_chick
+      desc: "Naive chicken"
+    - name: &intermediate intermediate
+      code: dog2
+      desc: "Brave Dog"
+    - name: &hard hard
+      code: tiger2
+      desc: "Fierce tiger"
+    - name: &expert expert
+      code: dragon
+      desc: "Mighty dragon"
+  - category: &progress progress
+    icons:
+    - name: &read read
+      code: green_book
+    - name: &scheduled scheduled
+      code: blue_book
+    - name: &scheduled not_scheduled
+      code: orange_book
+  - category: &rating rating
+    icons:
+    - name: &nice nice
+      code: ok
+    - name: &good good
+      code: up
+    - name: &very_good very_good
+      code: cool
+    - name: &excellent excellent
+      code: top
+  - category: &misc misc
+    icons:
+    - name: &must-read must_read
+      code: bookmark
+    - name: &old old
+      code: arrows_counterclockwise
+  - category: &status status
+    icons:
+    - name: &stable stable
+      code: stable
+    - name: &new new
+      code: new
+    - name: &coming-soon coming-soon
+      code: soon
+    - name: &in-progress in-progress
+      code: construction
+learning_paths:
+  - name: "Microservices"
+    ref: &microservices microservices
+    status: *in-progress
+    desc: |
+      TODO
+    summary: |
+      Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+  - name: "APIs"
+    ref: &apis apis
+    status: *new
+    desc: |
+      TODO
+    summary: |
+      APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, patterns, api gateways, and more.
+    suggested:
+      - system-design
+      - microservices
+      - eda
+      - serverless
+  - name: "Event Driven Architecture (EDA)"
+    ref: &eda eda
+    status: *coming-soon
+    desc: |
+      TODO
+    summary: |
+      Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
+    suggested:
+      - system-design
+      - microservices
+      - apis
+      - serverless
+  - name: "Serverless"
+    ref: &serverless serverless
+    status: *coming-soon
+    desc: |
+      TODO
+    summary: |
+      Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
+    suggested:
+      - system-design
+      - microservices
+      - apis
+      - eda
+  - name: "System Design"
+    ref: &system-design system-design
+    status: *stable
+    desc: |
+      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+    summary: |
+      TODO
+    related:
+      - microservices
+      - apis
+      - eda
+      - serverless
+    suggested:
+      - software-architecture
+  - name: "Software Architecture"
+    ref: &software-architecture software-architecture
+    status: *in-progress
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - microservices
+      - apis
+      - eda
+      - serverless
+    suggested:
+      - system-design
+books:
+  - cover: building-microservices.jpeg
+    title: Building Microservices
+    subtitle: Designing Fine-Grained Systems
+    order: 1
+    draft: false
+    url: https://learning.oreilly.com/library/view/-/9781492034018/
+    authors:
+      - Sam Newman
+    release: 2022
+    pages: 616
+    desc: |-
+      One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
+    learning_paths:
+      - *system-design
+      - *microservices
+    badges:
+      - *intermediate
+      - *read
+      - *excellent
+      - *must-read
