@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
+	"path/filepath"
+	"text/template"
 
+	"github.com/Masterminds/sprig"
 	"gopkg.in/yaml.v3"
 )
 
@@ -50,6 +54,7 @@ type Book struct {
 	Title             string            `yaml:"title"`
 	Subtitle          string            `yaml:"subtitle"`
 	Order             string            `yaml:"order"`
+	Draft             bool              `yaml:"draft"`
 	Url               string            `yaml:"url"`
 	Authors           []string          `yaml:"authors"`
 	Release           string            `yaml:"release"`
@@ -64,9 +69,9 @@ type BookBadge struct {
 	Value    string   `yaml:"value"`
 }
 
-func main() {
-	debug := false
+var debug bool
 
+func main() {
 	// TODO segregate files, in layout indicate where are the yamls to load and do it
 	// Read the file
 	raw, err := ioutil.ReadFile("config.yaml")
@@ -141,26 +146,56 @@ func main() {
 	}
 
 	// Load templates and functions
-	// temp, err := template.New("base").Funcs(sprig.FuncMap()).ParseGlob("templates/*")
-	// if err != nil {
-	//   log.Fatalln(err)
-	// }
+	templates, err := template.New("base").Funcs(sprig.FuncMap()).ParseGlob("templates/*")
+	if err != nil {
+	  log.Fatalln(err)
+	}
 
+  if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
+	  log.Fatalln(err)
+  }
+
+  if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil{
+	  log.Fatalln(err)
+  }
+
+  for _, lp := range config.LearningPaths {
+    file := filepath.Join(config.Layout.LearningPaths, lp.Ref + ".md")
+    if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+	    log.Fatalln(err)
+    }
+  }
+}
+
+/*
+* Render templates with a given data and export them to files or stdout
+* Params:
+*   t: templates loaded
+*   data: data used to fill the templates
+*   templateName: template name to render
+*   dest: destination file
+*/
+func render(t *template.Template, templateName, dest string, data interface{}) error {
 	// Create destination file
-	// var file *os.File
-	// if debug {
-	//   file = os.Stdout
-	// } else {
-	//   // TODO how to manage what files to create (REAMDE, book index and paths)
-	//   file, err = os.Create("./myfile")
-	//   if err != nil {
-	//     log.Fatalln("create file: ", err)
-	//   }
-	// }
+	var file *os.File
+  var err error
+
+	if debug {
+	  file = os.Stdout
+	} else {
+    file, err = os.Create(dest)
+	  if err != nil {
+	    log.Fatalln("create file: ", err)
+      return err
+	  }
+	}
 
 	// Render template
-	// err = temp.ExecuteTemplate(file, "learning-path.tpl", data)
-	// if err != nil {
-	//     log.Fatalln(err)
-	// }
+  err = t.ExecuteTemplate(file, templateName, data)
+	if err != nil {
+	  log.Fatalln(err)
+    return err
+	}
+
+  return nil
 }

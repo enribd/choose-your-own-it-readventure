@@ -1,9 +1,9 @@
 log_level: debug
 layout:
-  readme: /
-  book_index: /
-  learning_paths: paths
-  book_covers: assets/covers
+  readme: ./README.md
+  book_index: ./book-index.md
+  learning_paths: ./paths
+  book_covers: ./assets/covers
 learning_paths:
   - name: "APIs"
     reference: &apis apis
@@ -64,6 +64,7 @@ books:
     title: Building Microservices
     subtitle: Designing Fine-Grained Systems
     order: 1
+    draft: false
     url: https://learning.oreilly.com/library/view/-/9781492034018/
     authors:
       - Sam Newman
