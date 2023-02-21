@@ -16,30 +16,24 @@ import (
 )
 
 type Config struct {
-	Layout        Layout         `yaml:"layout"`
-	LearningPaths []LearningPath `yaml:"learning_paths"`
-	Badges        []Badge        `yaml:"badges"`
-	Books         []Book         `yaml:"books"`
+	Sources Sources `yaml:"sources"`
+	Content Content `yaml:"content"`
+	Badges  []Badge `yaml:"badges"`
 }
 
-type Layout struct {
+// Location of data used to generate content
+type Sources struct {
+	BookCovers    string `yaml:"books_covers"`
+	BookData      string `yaml:"books_data"`
+	LearningPaths string `yaml:"learning_paths_data"`
+}
+
+// Destination for generated content
+type Content struct {
 	Readme        string `yaml:"readme"`
 	BookIndex     string `yaml:"book_index"`
 	LearningPaths string `yaml:"learning_paths"`
-	BookCovers    string `yaml:"book_covers"`
 }
-
-type LearningPath struct {
-	Name      string            `yaml:"name"`
-	Ref       LearningPathRef   `yaml:"ref"`
-	Status    string            `yaml:"status"`
-	Desc      string            `yaml:"desc"`
-	Summary   string            `yaml:"summary"`
-	Related   []LearningPathRef `yaml:"related,omitempty"`
-	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
-}
-
-type LearningPathRef string
 
 type Badge struct {
 	Category   BadgeCategory `yaml:"category"`
@@ -53,23 +47,6 @@ type BadgeIcon struct {
 	Code string `yaml:"code"`
 	Desc string `yaml:"desc"`
 }
-
-type Book struct {
-	Cover             string            `yaml:"cover"`
-	Title             string            `yaml:"title"`
-	Subtitle          string            `yaml:"subtitle"`
-	Order             string            `yaml:"order"`
-	Draft             bool              `yaml:"draft"`
-	Url               string            `yaml:"url"`
-	Authors           []string          `yaml:"authors"`
-	Release           string            `yaml:"release"`
-	Pages             string            `yaml:"pages"`
-	Desc              string            `yaml:"desc"`
-	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	BadgesRefs        []BadgeRef        `yaml:"badges"`
-}
-
-type BadgeRef string
 
 var debug bool
 var trace bool
@@ -104,19 +81,19 @@ func main() {
 
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
-	for _, lp := range config.LearningPaths {
+	for _, lp := range lpContent {
 		lpData[string(lp.Ref)] = lp
 	}
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
 	booksData := map[string]Book{}
-	for _, b := range config.Books {
+	for _, b := range booksContent {
 		booksData[b.Title] = b
 	}
 
 	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
 	lpBooksData := map[LearningPathRef][]Book{}
-	for _, b := range config.Books {
+	for _, b := range booksContent {
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
 		}
@@ -150,10 +127,10 @@ func main() {
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
-		BookCovers:          config.Layout.BookCovers,
+		BookCovers:          config.Sources.BookCovers,
 		BadgesData:          badgesData,
-		LearningPathsFolder: config.Layout.LearningPaths,
-		BooksIndex:          config.Layout.BookIndex,
+		LearningPathsFolder: config.Sources.LearningPaths,
+		BooksIndex:          config.Content.BookIndex,
 	}
 
 	// Load templates and functions
@@ -163,27 +140,27 @@ func main() {
 	}
 
 	if slices.Contains(contents, "book-index") {
-		log.Printf("rendering book index in %s", config.Layout.BookIndex)
-		if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
+		log.Printf("rendering book index in %s", config.Content.BookIndex)
+		if err = render(templates, "book-index.md.tpl", config.Content.BookIndex, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "readme") {
-		log.Printf("rendering readme in %s", config.Layout.Readme)
-		if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil {
+		log.Printf("rendering readme in %s", config.Content.Readme)
+		if err = render(templates, "readme.md.tpl", config.Content.Readme, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range config.LearningPaths {
+		for _, lp := range lpContent {
 			if lp.Status != "coming-soon" {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
 
 				// TODO remove -test from file name
-				file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
+				file := filepath.Join(config.Sources.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
 				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
 
 				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {

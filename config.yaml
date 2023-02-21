@@ -1,8 +1,11 @@
-layout:
+sources:
+  books_covers: ./assets/books/covers
+  books_data: ./assets/books/data
+  learning_paths_data: ./assets/paths/data
+content:
   readme: ./README-test.md
   book_index: ./book-index-test.md
   learning_paths: ./paths
-  book_covers: ./assets/covers
 badges:
   - category: &difficulty difficulty
     icons:
@@ -128,9 +131,9 @@ learning_paths:
     suggested:
       - system-design
 books:
-  - cover: building-microservices.jpeg
-    title: Building Microservices
+  - title: Building Microservices
     subtitle: Designing Fine-Grained Systems
+    cover: building-microservices.jpeg
     order: 1
     draft: false
     url: https://learning.oreilly.com/library/view/-/9781492034018/
