@@ -127,6 +127,84 @@ learning_paths:
       - serverless
     suggested:
       - system-design
+  - name: "Software Architecture"
+    ref: &software-architecture software-architecture
+    status: *in-progress
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - microservices
+      - apis
+      - eda
+      - serverless
+    suggested:
+      - system-design
+  - name: "Golang"
+    ref: &golang golang
+    status: *stable
+    desc: |
+      This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
+    summary: |
+      TODO
+    related:
+      - TODO
+    suggested:
+      - cloud-native-apps
+      - apis
+      - serverless
+      - software-architecture
+  - name: "Cloud Native Applications"
+    ref: &cloud-native-apps cloud-native-apps
+    status: *new
+    desc: |
+      From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
+    summary: |
+      discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
+    related:
+      - golang
+    suggested:
+      - software-architecture
+      - apis
+      - serverless
+  - name: "Domain Driven Design (DDD)"
+    ref: &ddd ddd
+    status: *new
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - software-architecture
+    suggested:
+      - golang
+      - apis
+      - serverless
+  - name: "Kubernetes"
+    ref: &kubernetes kubernetes
+    status: *soon
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - team-management
+      - devops
+    suggested:
+      - TODO
+  - name: "Management"
+    ref: &management management
+    status: *new
+    desc: |
+      TODO
+    summary: |
+      TODO
+    related:
+      - team-management
+      - devops
+    suggested:
+      - TODO
 books:
   - cover: building-microservices.jpeg
     title: Building Microservices
