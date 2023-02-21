@@ -74,6 +74,8 @@ type BadgeRef string
 var debug bool
 var trace bool
 var content string
+var config Config
+
 
 func main() {
 	// Parse flags
@@ -89,8 +91,6 @@ func main() {
 		log.Fatalln(err)
 		return
 	}
-
-	var config Config
 
 	// Unmarshal the YAML raw content into the struct
 	err = yaml.Unmarshal(raw, &config)
@@ -206,13 +206,13 @@ func main() {
 *   dest: destination file
  */
 func render(t *template.Template, templateName, dest string, data interface{}) error {
-	// Create destination file
 	var file *os.File
 	var err error
 
 	if debug {
 		file = os.Stdout
 	} else {
+	  // Create destination file
 		file, err = os.Create(dest)
 		if err != nil {
 			log.Fatalln("create file: ", err)
