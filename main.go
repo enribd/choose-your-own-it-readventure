@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/Masterminds/sprig/v3"
+	"github.com/enribd/choose-your-own-it-readventure/internal/content"
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
 )
@@ -50,16 +51,16 @@ type BadgeIcon struct {
 
 var debug bool
 var trace bool
-var content string
+var contents string
 var config Config
 
 func main() {
 	// Parse flags
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
-	flag.StringVar(&content, "content", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&contents, "contents", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
 	flag.Parse()
-	contents := strings.Split(content, ",")
+	contents := strings.Split(contents, ",")
 
 	// Read the file
 	raw, err := ioutil.ReadFile("config.yaml")
@@ -79,21 +80,35 @@ func main() {
 		log.Printf("%v\n", config)
 	}
 
+	content.LoadBooks(config.Sources.BookData)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
+	log.Printf("books: %T\n", content.Books)
+
+	content.LoadLearningPaths(config.Sources.LearningPaths)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
+	log.Printf("learning paths: %T\n", content.LearningPaths)
+
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
-	for _, lp := range lpContent {
+	for _, lp := range content.LearningPaths {
 		lpData[string(lp.Ref)] = lp
 	}
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
-	booksData := map[string]Book{}
-	for _, b := range booksContent {
+	booksData := map[string]content.Book{}
+	for _, b := range content.Books {
 		booksData[b.Title] = b
 	}
 
 	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
-	lpBooksData := map[LearningPathRef][]Book{}
-	for _, b := range booksContent {
+	lpBooksData := map[content.LearningPathRef][]content.Book{}
+	for _, b := range content.Books {
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
 		}
@@ -117,13 +132,13 @@ func main() {
 	// Create template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
-		LpBooksData         []Book
-		BooksData           map[string]Book
+		LpBooksData         []content.Book
+		BooksData           map[string]content.Book
 		BadgesData          map[string]interface{}
 		BookCovers          string
 		LearningPathsFolder string
 		BooksIndex          string
-		CurrentLearningPath LearningPath
+		CurrentLearningPath content.LearningPath
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
@@ -154,7 +169,7 @@ func main() {
 	}
 
 	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range lpContent {
+		for _, lp := range content.LearningPaths {
 			if lp.Status != "coming-soon" {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]

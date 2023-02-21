@@ -1,10 +1,10 @@
 package content
 
 import (
+	"fmt"
 	"io/ioutil"
 	"path/filepath"
 
-	"golang.org/x/exp/maps"
 	"gopkg.in/yaml.v2"
 )
 
@@ -37,46 +37,55 @@ type Book struct {
 
 type BadgeRef string
 
-var LearningPaths *map[string]LearningPath
-var Books *map[string]Book
+var LearningPaths map[string]LearningPath = make(map[string]LearningPath)
+var Books map[string]Book = make(map[string]Book)
 
 func LoadBooks(basepath string) error {
+	fmt.Printf("load books from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
 		return err
 	}
+	fmt.Printf("book files %v\n", files)
 
 	// Load the content of the files and populate the Books var
-	var content interface{}
+	var content []Book
 	for _, f := range files {
-		content, err = loadFile(f)
+		content, err = loadBooksFile(f)
 		if err != nil {
 			return err
 		}
+		fmt.Printf("content: %v\n", content)
 
-		c := content.(*map[string]Book)
-		maps.Copy(Books, c)
+		for _, book := range content {
+			Books[book.Title] = book
+		}
 	}
 
+	fmt.Printf("books content: %v\n", Books)
 	return nil
 }
 
 func LoadLearningPaths(basepath string) error {
+	fmt.Printf("load learning paths from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
 		return err
 	}
+	fmt.Printf("learning path files %v\n", files)
 
 	// Load the content of the files and populate the Books var
-	var content interface{}
+	var content []LearningPath
 	for _, f := range files {
-		content, err = loadFile(f)
+		content, err = loadLearningPathsFile(f)
 		if err != nil {
 			return err
 		}
+		fmt.Printf("content: %v\n", content)
 
-		c := content.(*map[string]LearningPath)
-		maps.Copy(LearningPaths, c)
+		for _, lp := range content {
+			LearningPaths[string(lp.Ref)] = lp
+		}
 	}
 
 	return nil
@@ -91,8 +100,26 @@ func getFiles(basepath string) ([]string, error) {
 	return files, err
 }
 
-func loadFile(path string) (interface{}, error) {
-	var content interface{}
+func loadBooksFile(path string) ([]Book, error) {
+	var content []Book
+
+	// Read the file
+	raw, err := ioutil.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+
+	// Unmarshal the YAML raw content into the struct
+	err = yaml.Unmarshal(raw, &content)
+	if err != nil {
+		return nil, err
+	}
+
+	return content, nil
+}
+
+func loadLearningPathsFile(path string) ([]LearningPath, error) {
+	var content []LearningPath
 
 	// Read the file
 	raw, err := ioutil.ReadFile(path)
