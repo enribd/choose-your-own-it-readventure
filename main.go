@@ -76,7 +76,6 @@ var trace bool
 var content string
 var config Config
 
-
 func main() {
 	// Parse flags
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
@@ -212,7 +211,7 @@ func render(t *template.Template, templateName, dest string, data interface{}) e
 	if debug {
 		file = os.Stdout
 	} else {
-	  // Create destination file
+		// Create destination file
 		file, err = os.Create(dest)
 		if err != nil {
 			log.Fatalln("create file: ", err)
