@@ -3,9 +3,9 @@ sources:
   books_data: ./assets/books/data
   learning_paths_data: ./assets/paths/data
 content:
-  readme: ./README-test.md
-  book_index: ./book-index-test.md
-  learning_paths: ./paths
+  readme: ./README.md
+  book_index: ./content/book-index.md
+  learning_paths: ./content/paths
 badges:
   - category: &difficulty difficulty
     icons:

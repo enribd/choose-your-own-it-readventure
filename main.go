@@ -159,8 +159,7 @@ func main() {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
 
-				// TODO remove -test from file name
-				file := filepath.Join(config.Sources.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
+				file := filepath.Join(config.Sources.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
 
 				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
