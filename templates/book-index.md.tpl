@@ -30,7 +30,8 @@
 {{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
-| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} |
+{{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
+| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} |
 {{- end }}
 
 [**⬆ top**](#book-index)
