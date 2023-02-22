@@ -14,19 +14,23 @@
 {{/* Build book learning paths section */}}
 {{- $paths := list -}}
 {{- range .LearningPathsRefs -}}
-{{- $p := . | toString | get $lpData -}}
-{{- $name := print "<li>[" $p.Name "](" $lpFolders "/" $p.Ref ".md)</li>" | trim -}}
+{{- $lp := get $lpData (. | toString) -}}
+{{- if (empty $lp | not) -}}
+{{- $name := printf "<li>[%s](%s/%s.md)</li>" $lp.Name $lpFolders . | trim -}}
 {{- $paths = append $paths $name -}}
+{{- end -}}
 {{- end -}}
 {{/* end Build book learning paths list */}}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
 {{- range .BadgesRefs -}}
-{{- $b := . | toString | get $badgesData | printf ":%s:" -}}
-{{- $badges = append $badges $b -}}
+{{- $b := get $badgesData (. | toString) -}}
+{{- if (empty $b | not) -}}
+{{- $badges = append $badges (printf ":%s:" $b) -}}
+{{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
-| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{$covers}}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* | <ul>{{ $paths | join "" }}</ul> | {{ $badges | join " " }} |
+| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} | {{ $badges | join " " }} |
 {{- end }}
 
 [**⬆ top**](#book-index)

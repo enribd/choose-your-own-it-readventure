@@ -1,228 +1,60 @@
-layout:
-  readme: ./README-test.md
-  book_index: ./book-index-test.md
-  learning_paths: ./paths
-  book_covers: ./assets/covers
+sources:
+  books_covers: ./assets/books/covers
+  books_data: ./assets/books/data
+  learning_paths_data: ./assets/paths/data
+content:
+  readme: ./README.md
+  book_index: ./content/book-index.md
+  learning_paths: ./content/paths
 badges:
-  - category: &difficulty difficulty
+  - category: difficulty
     icons:
-    - name: &beginner beginner
+    - name: beginner
       code: ant
       desc: "Petty ant"
-    - name: &easy easy
+    - name: easy
       code: hatched_chick
       desc: "Naive chicken"
-    - name: &intermediate intermediate
+    - name: intermediate
       code: dog2
       desc: "Brave Dog"
-    - name: &hard hard
+    - name: hard
       code: tiger2
       desc: "Fierce tiger"
-    - name: &expert expert
+    - name: expert
       code: dragon
       desc: "Mighty dragon"
-  - category: &progress progress
+  - category: progress
     icons:
-    - name: &read read
+    - name: read
       code: green_book
-    - name: &scheduled scheduled
+    - name: scheduled
       code: blue_book
-    - name: &scheduled not_scheduled
+    - name: not_scheduled
       code: orange_book
-  - category: &rating rating
+  - category: rating
     icons:
-    - name: &nice nice
+    - name: nice
       code: ok
-    - name: &good good
+    - name: good
       code: up
-    - name: &very_good very_good
+    - name: very_good
       code: cool
-    - name: &excellent excellent
+    - name: excellent
       code: top
-  - category: &misc misc
+  - category: misc
     icons:
-    - name: &must-read must_read
+    - name: must-read
       code: bookmark
-    - name: &old old
+    - name: old
       code: arrows_counterclockwise
-  - category: &status status
+  - category: status
     icons:
-    - name: &stable stable
+    - name: stable
       code: stable
-    - name: &new new
+    - name: new
       code: new
-    - name: &coming-soon coming-soon
+    - name: coming-soon
       code: soon
-    - name: &in-progress in-progress
+    - name: in-progress
       code: construction
-learning_paths:
-  - name: "Microservices"
-    ref: &microservices microservices
-    status: *in-progress
-    desc: |
-      TODO
-    summary: |
-      Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
-  - name: "APIs"
-    ref: &apis apis
-    status: *new
-    desc: |
-      TODO
-    summary: |
-      APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, patterns, api gateways, and more.
-    suggested:
-      - system-design
-      - microservices
-      - eda
-      - serverless
-  - name: "Event Driven Architecture (EDA)"
-    ref: &eda eda
-    status: *coming-soon
-    desc: |
-      TODO
-    summary: |
-      Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
-    suggested:
-      - system-design
-      - microservices
-      - apis
-      - serverless
-  - name: "Serverless"
-    ref: &serverless serverless
-    status: *coming-soon
-    desc: |
-      TODO
-    summary: |
-      Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
-    suggested:
-      - system-design
-      - microservices
-      - apis
-      - eda
-  - name: "System Design"
-    ref: &system-design system-design
-    status: *stable
-    desc: |
-      You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
-    summary: |
-      TODO
-    related:
-      - microservices
-      - apis
-      - eda
-      - serverless
-    suggested:
-      - software-architecture
-  - name: "Software Architecture"
-    ref: &software-architecture software-architecture
-    status: *in-progress
-    desc: |
-      TODO
-    summary: |
-      TODO
-    related:
-      - microservices
-      - apis
-      - eda
-      - serverless
-    suggested:
-      - system-design
-  - name: "Software Architecture"
-    ref: &software-architecture software-architecture
-    status: *in-progress
-    desc: |
-      TODO
-    summary: |
-      TODO
-    related:
-      - microservices
-      - apis
-      - eda
-      - serverless
-    suggested:
-      - system-design
-  - name: "Golang"
-    ref: &golang golang
-    status: *stable
-    desc: |
-      This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
-    summary: |
-      TODO
-    related:
-      - TODO
-    suggested:
-      - cloud-native-apps
-      - apis
-      - serverless
-      - software-architecture
-  - name: "Cloud Native Applications"
-    ref: &cloud-native-apps cloud-native-apps
-    status: *new
-    desc: |
-      From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
-    summary: |
-      discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
-    related:
-      - golang
-    suggested:
-      - software-architecture
-      - apis
-      - serverless
-  - name: "Domain Driven Design (DDD)"
-    ref: &ddd ddd
-    status: *new
-    desc: |
-      TODO
-    summary: |
-      TODO
-    related:
-      - software-architecture
-    suggested:
-      - golang
-      - apis
-      - serverless
-  - name: "Kubernetes"
-    ref: &kubernetes kubernetes
-    status: *soon
-    desc: |
-      TODO
-    summary: |
-      TODO
-    related:
-      - team-management
-      - devops
-    suggested:
-      - TODO
-  - name: "Management"
-    ref: &management management
-    status: *new
-    desc: |
-      TODO
-    summary: |
-      TODO
-    related:
-      - team-management
-      - devops
-    suggested:
-      - TODO
-books:
-  - cover: building-microservices.jpeg
-    title: Building Microservices
-    subtitle: Designing Fine-Grained Systems
-    order: 1
-    draft: false
-    url: https://learning.oreilly.com/library/view/-/9781492034018/
-    authors:
-      - Sam Newman
-    release: 2022
-    pages: 616
-    desc: |-
-      One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
-    learning_paths:
-      - *system-design
-      - *microservices
-    badges:
-      - *intermediate
-      - *read
-      - *excellent
-      - *must-read
