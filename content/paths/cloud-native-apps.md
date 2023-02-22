@@ -6,6 +6,7 @@ From now the focus will learning all the necessary concepts and techniques to pr
 
 | Order | Badges | Cover | Info | Description |
 | --- | --- | --- | --- | --- |
+
 The following paths are opened to you now, choose wisely:
 
 - [Golang :stable:](./content/paths/golang.md): TODO

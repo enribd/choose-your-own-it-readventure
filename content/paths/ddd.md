@@ -6,6 +6,7 @@ TODO
 
 | Order | Badges | Cover | Info | Description |
 | --- | --- | --- | --- | --- |
+
 The following paths are opened to you now, choose wisely:
 
 - [Software Architecture :construction:](./content/paths/software-architecture.md): TODO
