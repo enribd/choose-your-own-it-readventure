@@ -8,8 +8,8 @@
 
 # Book Index
 
-| Cover | Info | Learning Paths | Badges |
-| --- | --- | --- | --- |
+| Cover | Info | Learning Paths |
+| --- | --- | --- |
 {{- range $books -}}
 {{/* Build book learning paths section */}}
 {{- $paths := list -}}
@@ -30,7 +30,7 @@
 {{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
-| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} | {{ $badges | join " " }} |
+| ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} |
 {{- end }}
 
 [**⬆ top**](#book-index)

@@ -9,7 +9,8 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: format-code clean resize-images #lint-gh-actions
+pre-commit: run format-code resize-images #lint-gh-actions
+	@git add ./content
 .PHONY: pre-commit
 
 resize-images: ## Resize all images
@@ -45,8 +46,3 @@ trace: ### Run go binary in trace mode (vars: contents)
 	$(info Build and run code in trace mode)
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug --trace --contents=${contents}
 .PHONY: trace
-
-clean: ## Clean unneeded files
-	$(info: Clean unneeded files)
-	@find . -iname '*-test*.md' -exec rm {} \;
-.PHONY: clean
