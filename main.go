@@ -130,6 +130,12 @@ func main() {
 		log.Printf("loaded badges: %v\n", badgesData)
 	}
 
+	// Create content dirs
+	if err = os.MkdirAll(config.Content.LearningPaths, os.ModePerm); err != nil {
+		log.Println(err)
+		return
+	}
+
 	// Create template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
@@ -175,7 +181,7 @@ func main() {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
 
-				file := filepath.Join(config.Sources.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+				file := filepath.Join(config.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
 
 				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {

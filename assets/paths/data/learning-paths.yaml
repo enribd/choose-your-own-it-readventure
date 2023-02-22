@@ -131,7 +131,6 @@
   summary: |
     TODO
   related:
-    - team-management
     - devops
   suggested:
     - TODO
@@ -144,6 +143,17 @@
     TODO
   related:
     - team-management
+    - devops
+  suggested:
+    - TODO
+- name: "Team Management"
+  ref: team-management
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
     - devops
   suggested:
     - TODO
