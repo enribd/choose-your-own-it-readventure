@@ -6,7 +6,6 @@
 - Github actions
 
 TBD:
-- refactor app structure?
 - images to svg?
 - Github pages?
 - generate graph image of the learning paths?
@@ -21,5 +20,5 @@ TBD:
 
 - Review book order
 - Review book badges
-- book order based in weights
 - At the end of each learning path give some ideas about how to practice the skills acquired.
+- At the end of each learning path put some hashtags of related concepts and buzz words (for example, for system design #aws #cloud #architecture)

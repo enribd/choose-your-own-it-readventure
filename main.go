@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"text/template"
 
@@ -57,7 +58,6 @@ var contents string
 var config Config
 
 func main() {
-	// Parse flags
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
 	flag.StringVar(&contents, "contents", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
@@ -82,12 +82,14 @@ func main() {
 		log.Printf("%v\n", config)
 	}
 
+	// Load raw content from yaml files
 	sources.LoadBooks(config.Sources.BookData)
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
+	// Load raw content from yaml files
 	sources.LoadLearningPaths(config.Sources.LearningPaths)
 	if err != nil {
 		log.Fatalln(err)
@@ -105,7 +107,6 @@ func main() {
 	for _, lp := range sources.LearningPaths {
 		lpData[string(lp.Ref)] = lp
 	}
-	// log.Printf("LPDATA: %v", lpData["apis"])
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
 	booksData := map[string]sources.Book{}
@@ -114,10 +115,21 @@ func main() {
 	}
 
 	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
+	// Books are ordered by order and weight
 	lpBooksData := map[sources.LearningPathRef][]sources.Book{}
 	for _, b := range sources.Books {
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
+
+			// Sort books by order ascendant and by heavier weight
+			sort.SliceStable(lpBooksData[r], func(i, j int) bool {
+				if lpBooksData[r][i].Order != lpBooksData[r][j].Order {
+					return lpBooksData[r][i].Order < lpBooksData[r][j].Order
+				}
+
+				// If order is equal then order by weight
+				return lpBooksData[r][i].Weight > lpBooksData[r][j].Weight
+			})
 		}
 	}
 
