@@ -9,7 +9,7 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- [Team Management :new:](./content/paths/team-management.md): TODO
+- [Team Management :new:](/content/paths/team-management.md): TODO
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
