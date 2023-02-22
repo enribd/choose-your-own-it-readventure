@@ -10,8 +10,8 @@
 # {{ $lp.Name }} Learning Path
 
 {{ $lp.Desc }}
-| Reading Order | Badges | Cover | Info | Description |
-| --- | --- | --- | --- | --- |
+| Reading Order | Cover | Info | Description |
+| --- | --- | --- | --- |
 {{- range $lpBooksData }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
@@ -22,7 +22,7 @@
 {{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
-| **{{ .Order }}** | {{ $badges | join " " }} | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* | {{ .Desc }} |
+| **{{ .Order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
 {{- end }}
 
 {{- with $lp.Related }}
