@@ -16,17 +16,17 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 
 
-- [System Design :new:](./assets/paths/data/system-design.md)
+- [System Design :new:](./content/paths/system-design.md)
   - APIs :soon:
-  - [Microservices :new:](./assets/paths/data/microservices.md)
+  - [Microservices :new:](./content/paths/microservices.md)
   - Event Driven Architecture :soon:
   - Serverless :soon:
-- [Golang :new:](./assets/paths/data/golang.md)
-  - [Cloud Native Applications :new:](./assets/paths/data/golang.md#cloud-native-applications)
+- [Golang :new:](./content/paths/golang.md)
+  - [Cloud Native Applications :new:](./content/paths/golang.md#cloud-native-applications)
 - Kubernetes :soon:
 - Software architecture :soon:
   - Domain Driven Design (DDD) :soon:
-- [Management :construction:](./assets/paths/data/management.md)
+- [Management :construction:](./content/paths/management.md)
   - DevOps :soon:
   - Team Management :soon:
 

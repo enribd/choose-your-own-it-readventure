@@ -14,7 +14,10 @@
     - microservices
     - system-design
   badges:
-    - TODO
+    - intermediate
+    - read
+    - excellent
+    - must-read
 - title: Monolith to Microservices
   subtitle: Evolutionary Patterns to Transform Your Monolith
   cover: monolith-to-microservices.jpeg
@@ -162,7 +165,7 @@
   desc: |-
     TODO
   learning_paths:
-    - api-design
+    - apis
   badges:
     - TODO
 - title: Advanced API Security
@@ -178,7 +181,7 @@
   desc: |-
     TODO
   learning_paths:
-    - api-design
+    - apis
   badges:
     - TODO
 - title: Knative in Action

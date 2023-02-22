@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	"html/template"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
@@ -99,6 +99,7 @@ func main() {
 	for _, lp := range content.LearningPaths {
 		lpData[string(lp.Ref)] = lp
 	}
+	// log.Printf("LPDATA: %v", lpData["apis"])
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
 	booksData := map[string]content.Book{}
@@ -144,12 +145,12 @@ func main() {
 		BooksData:           booksData,
 		BookCovers:          config.Sources.BookCovers,
 		BadgesData:          badgesData,
-		LearningPathsFolder: config.Sources.LearningPaths,
+		LearningPathsFolder: config.Content.LearningPaths,
 		BooksIndex:          config.Content.BookIndex,
 	}
 
 	// Load templates and functions
-	templates, err := template.New("base").Funcs(sprig.FuncMap()).ParseGlob("templates/*")
+	templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).ParseGlob("templates/*")
 	if err != nil {
 		log.Fatalln(err)
 	}

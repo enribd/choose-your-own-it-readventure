@@ -46,23 +46,21 @@ func LoadBooks(basepath string) error {
 	if err != nil {
 		return err
 	}
-	fmt.Printf("book files %v\n", files)
 
 	// Load the content of the files and populate the Books var
 	var content []Book
 	for _, f := range files {
+		fmt.Printf("book files %v\n", files)
 		content, err = loadBooksFile(f)
 		if err != nil {
 			return err
 		}
-		fmt.Printf("content: %v\n", content)
 
 		for _, book := range content {
 			Books[book.Title] = book
 		}
 	}
 
-	fmt.Printf("books content: %v\n", Books)
 	return nil
 }
 
@@ -72,16 +70,15 @@ func LoadLearningPaths(basepath string) error {
 	if err != nil {
 		return err
 	}
-	fmt.Printf("learning path files %v\n", files)
 
 	// Load the content of the files and populate the Books var
 	var content []LearningPath
 	for _, f := range files {
+		fmt.Printf("learning path files %v\n", files)
 		content, err = loadLearningPathsFile(f)
 		if err != nil {
 			return err
 		}
-		fmt.Printf("content: %v\n", content)
 
 		for _, lp := range content {
 			LearningPaths[string(lp.Ref)] = lp

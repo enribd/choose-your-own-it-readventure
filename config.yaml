@@ -7,54 +7,54 @@ content:
   book_index: ./content/book-index.md
   learning_paths: ./content/paths
 badges:
-  - category: &difficulty difficulty
+  - category: difficulty
     icons:
-    - name: &beginner beginner
+    - name: beginner
       code: ant
       desc: "Petty ant"
-    - name: &easy easy
+    - name: easy
       code: hatched_chick
       desc: "Naive chicken"
-    - name: &intermediate intermediate
+    - name: intermediate
       code: dog2
       desc: "Brave Dog"
-    - name: &hard hard
+    - name: hard
       code: tiger2
       desc: "Fierce tiger"
-    - name: &expert expert
+    - name: expert
       code: dragon
       desc: "Mighty dragon"
-  - category: &progress progress
+  - category: progress
     icons:
-    - name: &read read
+    - name: read
       code: green_book
-    - name: &scheduled scheduled
+    - name: scheduled
       code: blue_book
-    - name: &scheduled not_scheduled
+    - name: not_scheduled
       code: orange_book
-  - category: &rating rating
+  - category: rating
     icons:
-    - name: &nice nice
+    - name: nice
       code: ok
-    - name: &good good
+    - name: good
       code: up
-    - name: &very_good very_good
+    - name: very_good
       code: cool
-    - name: &excellent excellent
+    - name: excellent
       code: top
-  - category: &misc misc
+  - category: misc
     icons:
-    - name: &must-read must_read
+    - name: must-read
       code: bookmark
-    - name: &old old
+    - name: old
       code: arrows_counterclockwise
-  - category: &status status
+  - category: status
     icons:
-    - name: &stable stable
+    - name: stable
       code: stable
-    - name: &new new
+    - name: new
       code: new
-    - name: &coming-soon coming-soon
+    - name: coming-soon
       code: soon
-    - name: &in-progress in-progress
+    - name: in-progress
       code: construction
