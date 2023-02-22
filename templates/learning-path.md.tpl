@@ -48,9 +48,12 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{ range $lp.Suggested -}}
 {{ $sugPath := get $lpData (. | toString ) -}}
 {{- if (empty $sugPath | not) -}}
-{{ $sugPathIcon :=  get $badgesData $sugPath.Status | printf ":%s:" -}}
+{{ $sugPathIcon :=  printf "" -}}
+{{- if (eq (get $badgesData $sugPath.Status) "stable" | not) -}}
+{{ $sugPathIcon =  get $badgesData $sugPath.Status | printf " :%s:" -}}
+{{- end -}}
 {{ if (ne $sugPath.Status "coming-soon") }}
-- [{{ $sugPath.Name }} {{ $sugPathIcon }}]({{ $lpFolders }}/{{ $sugPath.Ref }}.md): {{ $sugPath.Summary }}
+- [{{ $sugPath.Name }}{{ $sugPathIcon }}]({{ $lpFolders }}/{{ $sugPath.Ref }}.md): {{ $sugPath.Summary }}
 {{- end -}}
 {{- end -}}
 {{- end -}}

@@ -11,7 +11,7 @@ TODO
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [System Design :stable:](/content/paths/system-design.md): TODO
+- [System Design](/content/paths/system-design.md): TODO
 
 - [Microservices :construction:](/content/paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
