@@ -200,6 +200,7 @@ func main() {
 
 	if slices.Contains(contents, "learning-paths") {
 		for _, lp := range sources.LearningPaths {
+			// Render learning paths that are only marked as either stable, new or in-progress
 			if lp.Status != "coming-soon" {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
