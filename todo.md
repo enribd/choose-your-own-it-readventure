@@ -22,3 +22,4 @@ TBD:
 - Review book order
 - Review book badges
 - book order based in weights
+- At the end of each learning path give some ideas about how to practice the skills acquired.

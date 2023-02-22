@@ -1,4 +1,4 @@
-package content
+package sources
 
 import (
 	"io/ioutil"
