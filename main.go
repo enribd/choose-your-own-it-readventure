@@ -85,14 +85,18 @@ func main() {
 		log.Fatalln(err)
 		return
 	}
-	log.Printf("books: %T\n", content.Books)
 
 	content.LoadLearningPaths(config.Sources.LearningPaths)
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
-	log.Printf("learning paths: %T\n", content.LearningPaths)
+
+	// Create content dirs
+	if err = os.MkdirAll(config.Content.LearningPaths, os.ModePerm); err != nil {
+		log.Println(err)
+		return
+	}
 
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
@@ -128,12 +132,6 @@ func main() {
 		log.Printf("loaded learning paths books: %v\n", lpBooksData)
 		log.Printf("loaded books: %v\n", booksData)
 		log.Printf("loaded badges: %v\n", badgesData)
-	}
-
-	// Create content dirs
-	if err = os.MkdirAll(config.Content.LearningPaths, os.ModePerm); err != nil {
-		log.Println(err)
-		return
 	}
 
 	// Create template rendering data

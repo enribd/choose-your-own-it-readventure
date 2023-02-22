@@ -1,8 +1,8 @@
 package content
 
 import (
-	"fmt"
 	"io/ioutil"
+	"log"
 	"path/filepath"
 
 	"gopkg.in/yaml.v2"
@@ -41,7 +41,7 @@ var LearningPaths map[string]LearningPath = make(map[string]LearningPath)
 var Books map[string]Book = make(map[string]Book)
 
 func LoadBooks(basepath string) error {
-	fmt.Printf("load books from %s\n", basepath)
+	log.Printf("load books from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
 		return err
@@ -50,7 +50,7 @@ func LoadBooks(basepath string) error {
 	// Load the content of the files and populate the Books var
 	var content []Book
 	for _, f := range files {
-		fmt.Printf("book files %v\n", files)
+		log.Printf("book files %s\n", files)
 		content, err = loadBooksFile(f)
 		if err != nil {
 			return err
@@ -65,16 +65,16 @@ func LoadBooks(basepath string) error {
 }
 
 func LoadLearningPaths(basepath string) error {
-	fmt.Printf("load learning paths from %s\n", basepath)
+	log.Printf("load learning paths from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
 		return err
 	}
+	log.Printf("learning path files %s\n", files)
 
 	// Load the content of the files and populate the Books var
 	var content []LearningPath
 	for _, f := range files {
-		fmt.Printf("learning path files %v\n", files)
 		content, err = loadLearningPathsFile(f)
 		if err != nil {
 			return err
