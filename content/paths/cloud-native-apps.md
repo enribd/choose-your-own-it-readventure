@@ -4,7 +4,7 @@
 
 From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
 
-| Order | Badges | Cover | Info | Description |
+| Reading Order | Badges | Cover | Info | Description |
 | --- | --- | --- | --- | --- |
 
 The following paths are opened to you now, choose wisely:

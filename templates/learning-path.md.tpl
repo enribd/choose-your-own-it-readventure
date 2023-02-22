@@ -10,7 +10,7 @@
 # {{ $lp.Name }} Learning Path
 
 {{ $lp.Desc }}
-| Order | Badges | Cover | Info | Description |
+| Reading Order | Badges | Cover | Info | Description |
 | --- | --- | --- | --- | --- |
 {{- range $lpBooksData }}
 {{/* Build book badges section */}}

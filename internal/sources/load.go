@@ -24,7 +24,8 @@ type Book struct {
 	Cover             string            `yaml:"cover"`
 	Title             string            `yaml:"title"`
 	Subtitle          string            `yaml:"subtitle"`
-	Order             string            `yaml:"order"`
+	Order             int               `yaml:"order"`
+	Weight            int               `yaml:"weight"`
 	Draft             bool              `yaml:"draft"`
 	Url               string            `yaml:"url"`
 	Authors           []string          `yaml:"authors"`

@@ -1,7 +1,8 @@
 - title: Building Microservices
   subtitle: Designing Fine-Grained Systems
   cover: building-microservices.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492034018/
   authors:
@@ -21,7 +22,8 @@
 - title: Monolith to Microservices
   subtitle: Evolutionary Patterns to Transform Your Monolith
   cover: monolith-to-microservices.jpeg
-  order: TODO
+  order: 2
+  weight: 2
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492047834/
   authors:
@@ -38,7 +40,8 @@
 - title: Microservices Patterns
   subtitle: Microservices Patterns
   cover: microservices-patterns.jpeg
-  order: TODO
+  order: 3
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781617294549/
   authors:
@@ -55,7 +58,8 @@
 - title: Practical Process Automation
   subtitle: Orchestration and Integration in Microservices and Cloud Native Architectures
   cover: practical-process-automation.jpeg
-  order: TODO
+  order: 2
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492061441/
   authors:
@@ -72,7 +76,8 @@
 - title: System Design Interview – An insider's guide
   subtitle: System Design Interview – An insider's guide
   cover: system-design-interview.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.goodreads.com/book/show/54617137-system-design-interview
   authors:
@@ -88,7 +93,8 @@
 - title: System Design Interview volume 2 – An insider's guide
   subtitle: System Design Interview volume 2 – An insider's guide
   cover: system-design-interview-2.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
   authors:
@@ -104,7 +110,8 @@
 - title: Building an Event-Driven Data Mesh
   subtitle: Patterns for Designing & Building Event-Driven Architectures
   cover: building-an-event-driven-data-mesh.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098127596/
   authors:
@@ -120,7 +127,8 @@
 - title: Designing Distributed Systems
   subtitle: Designing Distributed Systems
   cover: designing-distributed-systems.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/
   authors:
@@ -136,7 +144,8 @@
 - title: Foundations of Scalable Systems
   subtitle: Designing Distributed Architectures
   cover: foundations-of-scalable-systems.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/
   authors:
@@ -153,7 +162,8 @@
 - title: Mastering API Architecture
   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
   cover: mastering-api-architecture.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492090625/
   authors:
@@ -171,7 +181,8 @@
 - title: Advanced API Security
   subtitle: OAuth 2.0 and Beyond
   cover: advanced-api-security.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781484220504/
   authors:
@@ -187,7 +198,8 @@
 - title: Knative in Action
   subtitle: Knative in Action
   cover: knative-in-action.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781617296642/
   authors:
@@ -204,7 +216,8 @@
 - title: Designing Microservices Platforms with NATS
   subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
   cover: designing-microservice-platforms-with-nats.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781801072212/
   authors:
@@ -221,7 +234,8 @@
 - title: Kafka - The Definitive Guide
   subtitle: Real-Time Data and Stream Processing at Scale
   cover: kafka-the-definitive-guide.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492043072/
   authors:
@@ -238,7 +252,8 @@
 - title: Building Event-Driven Microservices
   subtitle: Building Event-Driven Microservices
   cover: building-event-driven-microservices.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
   authors:
@@ -255,7 +270,8 @@
 - title: Enterprise Integration Patterns
   subtitle: Designing, Building, and Deploying Messaging Solutions
   cover: enterprise-integration-patterns.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/0321200683/
   authors:
@@ -274,7 +290,8 @@
     - Vol 2
   subtitle: Conversation Patterns
   cover: enterprise-integration-patterns.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url:
   authors:
@@ -291,7 +308,8 @@
 - title: Flow Architectures
   subtitle: The Future of Streaming and Event-Driven Integration
   cover: flow-architectures.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492075882/
   authors:
@@ -308,7 +326,8 @@
 - title: Fundamentals of Software Architecture
   subtitle: An Engineering Approach
   cover: fundamentals-of-software-architecture.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
   authors:
@@ -325,7 +344,8 @@
 - title: Software Architecture
   subtitle: The Hard Parts
   cover: software-architecture-the-hard-parts.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492086888/
   authors:
@@ -343,7 +363,8 @@
 - title: Design Patterns for Cloud Native Applications
   subtitle: Design Patterns for Cloud Native Applications
   cover: design-patterns-for-cloud-native-applications.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492090700/
   authors:
@@ -361,7 +382,8 @@
 - title: Learning Domain-Driven Design
   subtitle: Aligning Software Architecture and Business Strategy
   cover: leagning-domain-driven-design.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098100124/
   authors:
@@ -378,7 +400,8 @@
 - title: Designing Data-Intensive Applications
   subtitle: Designing Data-Intensive Applications
   cover: designing-data-intensive-applications.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781491903063/
   authors:
@@ -395,7 +418,8 @@
 - title: Let's Go
   subtitle: Let's Go
   cover: lets-go.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://lets-go.alexedwards.net/
   authors:
@@ -412,7 +436,8 @@
 - title: Let's Go Further!
   subtitle: Let's Go Further!
   cover: lets-go-further.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://lets-go-further.alexedwards.net/
   authors:
@@ -429,7 +454,8 @@
 - title: Cloud Native Go
   subtitle: Cloud Native Go
   cover: cloud-native-go.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492076322/
   authors:
@@ -446,7 +472,8 @@
 - title: Clean Code
   subtitle: A Handbook of Agile Software Craftsmanship
   cover: clean-code.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9780136083238/
   authors:
@@ -462,7 +489,8 @@
 - title: Clean Architecture
   subtitle: A Craftsman's Guide to Software Structure and Design
   cover: clean-architecture.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9780134494272/
   authors:
@@ -478,7 +506,8 @@
 - title: Kubernetes
   subtitle: Up & Running
   cover: kubernetes-up-and-running.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098110192/
   authors:
@@ -496,7 +525,8 @@
 - title: Kubernetes Patterns
   subtitle: Kubernetes Patterns
   cover: kubernetes-patterns.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098131678/
   authors:
@@ -513,7 +543,8 @@
 - title: Production Kubernetes
   subtitle: Production Kubernetes
   cover: production-kubernetes.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492092292/
   authors:
@@ -532,7 +563,8 @@
 - title: Kubernetes Best Practices
   subtitle: Kubernetes Best Practices
   cover: kubernetes-best-practices.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492056461/
   authors:
@@ -551,7 +583,8 @@
 - title: Kubernetes Operators
   subtitle: Kubernetes Operators
   cover: kubernetes-operators.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492048039/
   authors:
@@ -568,7 +601,8 @@
 - title: Service Mesh Patterns
   subtitle: Service Mesh Patterns
   cover: service-mesh-patterns.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492086444/
   authors:
@@ -586,7 +620,8 @@
 - title: Observability Engineering
   subtitle: Achieving Production Excellence Engineering
   cover: observability-engineering.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.goodreads.com/book/show/54617137-system-design-interview
   authors:
@@ -604,7 +639,8 @@
 - title: Certified Kubernetes Administrator (CKA) Study Guide
   subtitle: Certified Kubernetes Administrator (CKA) Study Guide
   cover: cka.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: CKA Study Guide**]https://learning.oreilly.com/library/view/-/9781098107215/
   authors:
@@ -621,7 +657,8 @@
 - title: Certified Kubernetes Application Developer (CKAD) Study Guide
   subtitle: Certified Kubernetes Application Developer (CKAD) Study Guide
   cover: ckad.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: CKAD Study Guide**]https://learning.oreilly.com/library/view/-/9781492083726/
   authors:
@@ -638,7 +675,8 @@
 - title: Certified Kubernetes Security Specialist (CKS) Study Guide
   subtitle: Certified Kubernetes Security Specialist (CKS) Study Guide
   cover: cks.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: CKS Study Guide**]https://learning.oreilly.com/library/view/-/9781098132965/
   authors:
@@ -655,7 +693,8 @@
 - title: The DevOPS Handbook
   subtitle: How to Create World-Class Agility, Reliability, and Security in Technology Organizations
   cover: the-devops-handbook.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781457191381/
   authors:
@@ -673,7 +712,8 @@
 - title: The Phoenix Project
   subtitle: The Phoenix Project
   cover: the-phoenix-project.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781457191350/
   authors:
@@ -691,7 +731,8 @@
 - title: The Unicorn Project
   subtitle: The Unicorn Project
   cover: the-unicorn-project.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098124175/
   authors:
@@ -707,7 +748,8 @@
 - title: Terraform Up & Running
   subtitle: Terraform Up & Running
   cover: terraform-up-and-running.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781098116736/
   authors:
@@ -723,7 +765,8 @@
 - title: Site Reliability Engineering
   subtitle: Site Reliability Engineering
   cover: site-reliability-engineering.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://sre.google/sre-book/table-of-contents/
   authors:
@@ -742,7 +785,8 @@
 - title: The Site Reliability Workbook
   subtitle: The Site Reliability Workbook
   cover: sre-workbook.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://sre.google/workbook/table-of-contents/
   authors:
@@ -762,7 +806,8 @@
 - title: Building Secure & Reliable Systems
   subtitle: Best Practices for Designing, Implementing and Maintaining Systems
   cover: building-secure-reliable-systems.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf
   authors:
@@ -783,7 +828,8 @@
 - title: Accelerate
   subtitle: Building and Scaling High Performing Technology Organizations
   cover: accelerate.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://www.goodreads.com/book/show/35747076-accelerate
   authors:
@@ -799,7 +845,8 @@
 - title: Team Topologies
   subtitle: Team Topologies
   cover: team-topologies.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://teamtopologies.com/book
   authors:
@@ -817,7 +864,8 @@
 - title: Remote Teams Interactions Workbook
   subtitle: Remote Teams Interactions Workbook
   cover: remote-teams-interactions-workbook.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://teamtopologies.com/workbook
   authors:
@@ -834,7 +882,8 @@
 - title: Continuous Delivery
   subtitle: Reliable Software Releases through Build, Test, and Deployment Automation
   cover: continuous-delivery.jpeg
-  order: TODO
+  order: 1
+  weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9780321670250/
   authors:
