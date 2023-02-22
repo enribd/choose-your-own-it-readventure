@@ -10,8 +10,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/Masterminds/sprig/v3"
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
+	"github.com/enribd/choose-your-own-it-readventure/internal/sources"
+
+	"github.com/Masterminds/sprig/v3"
 	"golang.org/x/exp/slices"
 	"gopkg.in/yaml.v3"
 )
@@ -80,13 +82,13 @@ func main() {
 		log.Printf("%v\n", config)
 	}
 
-	content.LoadBooks(config.Sources.BookData)
+	sources.LoadBooks(config.Sources.BookData)
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
-	content.LoadLearningPaths(config.Sources.LearningPaths)
+	sources.LoadLearningPaths(config.Sources.LearningPaths)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -100,20 +102,20 @@ func main() {
 
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
-	for _, lp := range content.LearningPaths {
+	for _, lp := range sources.LearningPaths {
 		lpData[string(lp.Ref)] = lp
 	}
 	// log.Printf("LPDATA: %v", lpData["apis"])
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
-	booksData := map[string]content.Book{}
-	for _, b := range content.Books {
+	booksData := map[string]sources.Book{}
+	for _, b := range sources.Books {
 		booksData[b.Title] = b
 	}
 
 	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
-	lpBooksData := map[content.LearningPathRef][]content.Book{}
-	for _, b := range content.Books {
+	lpBooksData := map[sources.LearningPathRef][]sources.Book{}
+	for _, b := range sources.Books {
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
 		}
@@ -137,13 +139,13 @@ func main() {
 	// Create template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
-		LpBooksData         []content.Book
-		BooksData           map[string]content.Book
+		LpBooksData         []sources.Book
+		BooksData           map[string]sources.Book
 		BadgesData          map[string]interface{}
 		BookCovers          string
 		LearningPathsFolder string
 		BooksIndex          string
-		CurrentLearningPath content.LearningPath
+		CurrentLearningPath sources.LearningPath
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
@@ -159,30 +161,43 @@ func main() {
 		log.Fatalln(err)
 	}
 
+	// Render content
+	file := "stdout" // if debug mode spit to stdout
+
 	if slices.Contains(contents, "book-index") {
 		log.Printf("rendering book index in %s", config.Content.BookIndex)
-		if err = render(templates, "book-index.md.tpl", config.Content.BookIndex, data); err != nil {
+		if !debug {
+			file = config.Content.BookIndex
+		}
+
+		if err = content.Render(templates, "book-index.md.tpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "readme") {
 		log.Printf("rendering readme in %s", config.Content.Readme)
-		if err = render(templates, "readme.md.tpl", config.Content.Readme, data); err != nil {
+		if !debug {
+			file = config.Content.Readme
+		}
+
+		if err = content.Render(templates, "readme.md.tpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range content.LearningPaths {
+		for _, lp := range sources.LearningPaths {
 			if lp.Status != "coming-soon" {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
 
-				file := filepath.Join(config.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+				if !debug {
+					file = filepath.Join(config.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+				}
 				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
 
-				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+				if err = content.Render(templates, "learning-path.md.tpl", file, data); err != nil {
 					log.Fatalln(err)
 				}
 			}
@@ -190,37 +205,4 @@ func main() {
 	}
 
 	log.Println("done.")
-}
-
-/*
-* Render templates with a given data and export them to files or stdout
-* Params:
-*   t: templates loaded
-*   data: data used to fill the templates
-*   templateName: template name to render
-*   dest: destination file
- */
-func render(t *template.Template, templateName, dest string, data interface{}) error {
-	var file *os.File
-	var err error
-
-	if debug {
-		file = os.Stdout
-	} else {
-		// Create destination file
-		file, err = os.Create(dest)
-		if err != nil {
-			log.Fatalln("create file: ", err)
-			return err
-		}
-	}
-
-	// Render template
-	err = t.ExecuteTemplate(file, templateName, data)
-	if err != nil {
-		log.Fatalln(err)
-		return err
-	}
-
-	return nil
 }
