@@ -5,6 +5,11 @@
     TODO
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+  suggested:
+    - system-design
+    - apis
+    - eda
+    - serverless
 - name: "APIs"
   ref: apis
   status: new
