@@ -37,6 +37,7 @@ type Sources struct {
 type Content struct {
 	Readme        string `yaml:"readme"`
 	BookIndex     string `yaml:"book_index"`
+	AuthorIndex   string `yaml:"author_index"`
 	LearningPaths string `yaml:"learning_paths"`
 }
 
@@ -61,7 +62,7 @@ var config Config
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
-	flag.StringVar(&contents, "contents", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&contents, "contents", "readme,book-index,author-index,learning-paths", "list of content to generate, accepts comma-separated values")
 	flag.Parse()
 	contents := strings.Split(contents, ",")
 
@@ -115,10 +116,16 @@ func main() {
 		booksData[b.Title] = b
 	}
 
-	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
-	// Books are ordered by order and weight
+	// Create auxiliar structure to search books by learning path or author seamlessly
+	authorsData := map[string][]sources.Book{}
 	lpBooksData := map[sources.LearningPathRef][]sources.Book{}
 	for _, b := range sources.Books {
+		// authorsData["name"] = [{book1}, {book2}, ...]
+		for _, a := range b.Authors {
+			authorsData[a] = append(authorsData[a], b)
+		}
+
+		// lpBooksData["apis"] = [{book1}, {book2}, ...]
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
 
@@ -136,12 +143,13 @@ func main() {
 
 	// Initialize stats
 	totalBooks := len(sources.Books)
+	totalAuthors := len(authorsData)
 	totalLPs := len(sources.LearningPaths)
 	booksInLPs := make(map[sources.LearningPathRef]int)
 	for lp, books := range lpBooksData {
 		booksInLPs[lp] = len(books)
 	}
-	stats.New(totalBooks, totalLPs, booksInLPs)
+	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
 
 	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
 	badgesData := map[string]interface{}{}
@@ -163,19 +171,23 @@ func main() {
 		LpData              map[string]interface{}
 		LpBooksData         []sources.Book
 		BooksData           map[string]sources.Book
+		AuthorsData         map[string][]sources.Book
 		BadgesData          map[string]interface{}
 		BookCovers          string
 		LearningPathsFolder string
-		BooksIndex          string
+		BookIndex           string
+		AuthorIndex         string
 		CurrentLearningPath sources.LearningPath
 		Stats               stats.Stats
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
+		AuthorsData:         authorsData,
 		BookCovers:          config.Sources.BookCovers,
 		BadgesData:          badgesData,
 		LearningPathsFolder: config.Content.LearningPaths,
-		BooksIndex:          config.Content.BookIndex,
+		BookIndex:           config.Content.BookIndex,
+		AuthorIndex:         config.Content.AuthorIndex,
 		Stats:               stats.Data,
 	}
 
@@ -195,6 +207,17 @@ func main() {
 		}
 
 		if err = content.Render(templates, "book-index.md.tpl", file, data); err != nil {
+			log.Fatalln(err)
+		}
+	}
+
+	if slices.Contains(contents, "author-index") {
+		log.Printf("rendering author index in %s", config.Content.AuthorIndex)
+		if !debug {
+			file = config.Content.AuthorIndex
+		}
+
+		if err = content.Render(templates, "author-index.md.tpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}

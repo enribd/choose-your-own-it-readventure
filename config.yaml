@@ -5,6 +5,7 @@ sources:
 content:
   readme: ./README.md
   book_index: ./content/book-index.md
+  author_index: ./content/author-index.md
   learning_paths: ./content/paths
 badges:
   - category: difficulty

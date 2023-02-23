@@ -3,7 +3,7 @@
   cover: building-microservices.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492034018/
   authors:
     - Sam Newman
@@ -24,7 +24,7 @@
   cover: monolith-to-microservices.jpeg
   order: 2
   weight: 2
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492047834/
   authors:
     - Sam Newman
@@ -42,7 +42,7 @@
   cover: microservices-patterns.jpeg
   order: 3
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781617294549/
   authors:
     - Chris Richardson
@@ -60,7 +60,7 @@
   cover: practical-process-automation.jpeg
   order: 2
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492061441/
   authors:
     - Bernd Ruecker
@@ -73,12 +73,12 @@
     - system-design
   badges:
     - TODO
-- title: System Design Interview – An insider's guide
-  subtitle: System Design Interview – An insider's guide
+- title: System Design Interview
+  subtitle: An insider's guide
   cover: system-design-interview.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.goodreads.com/book/show/54617137-system-design-interview
   authors:
     - Alex Xu
@@ -90,12 +90,12 @@
     - system-design
   badges:
     - TODO
-- title: System Design Interview volume 2 – An insider's guide
-  subtitle: System Design Interview volume 2 – An insider's guide
+- title: System Design Interview volume 2
+  subtitle: An insider's guide
   cover: system-design-interview-2.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
   authors:
     - Alex Xu
@@ -112,7 +112,7 @@
   cover: building-an-event-driven-data-mesh.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098127596/
   authors:
     - Adam Bellemare
@@ -129,7 +129,7 @@
   cover: designing-distributed-systems.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/
   authors:
     - Brendan Burns
@@ -146,7 +146,7 @@
   cover: foundations-of-scalable-systems.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/
   authors:
     - Ian Gorton
@@ -164,7 +164,7 @@
   cover: mastering-api-architecture.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492090625/
   authors:
     - James Gough
@@ -183,7 +183,7 @@
   cover: advanced-api-security.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781484220504/
   authors:
     - Prabath Siriwardena
@@ -200,7 +200,7 @@
   cover: knative-in-action.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781617296642/
   authors:
     - Jacques Chester
@@ -218,7 +218,7 @@
   cover: designing-microservice-platforms-with-nats.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781801072212/
   authors:
     - Chanaka Fernando
@@ -236,7 +236,7 @@
   cover: kafka-the-definitive-guide.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492043072/
   authors:
     - Gwen Shapira
@@ -254,7 +254,7 @@
   cover: building-event-driven-microservices.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
   authors:
     - Adam Bellemare
@@ -272,7 +272,7 @@
   cover: enterprise-integration-patterns.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/0321200683/
   authors:
     - Hohpe Gregor
@@ -292,7 +292,7 @@
   cover: enterprise-integration-patterns.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url:
   authors:
     - Hohpe Gregor
@@ -310,7 +310,7 @@
   cover: flow-architectures.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492075882/
   authors:
     - James Urquhart
@@ -328,7 +328,7 @@
   cover: fundamentals-of-software-architecture.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
   authors:
     - Mark Richards
@@ -346,7 +346,7 @@
   cover: software-architecture-the-hard-parts.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492086888/
   authors:
     - Neal Ford
@@ -365,7 +365,7 @@
   cover: design-patterns-for-cloud-native-applications.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492090700/
   authors:
     - Kasun Indrasiri
@@ -384,7 +384,7 @@
   cover: leagning-domain-driven-design.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098100124/
   authors:
     - Vladik Khononov
@@ -402,7 +402,7 @@
   cover: designing-data-intensive-applications.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781491903063/
   authors:
     - Martin Kleppmann
@@ -420,7 +420,7 @@
   cover: lets-go.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://lets-go.alexedwards.net/
   authors:
     - Alex Edwards
@@ -438,7 +438,7 @@
   cover: lets-go-further.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://lets-go-further.alexedwards.net/
   authors:
     - Alex Edwards
@@ -456,7 +456,7 @@
   cover: cloud-native-go.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492076322/
   authors:
     - Matthew A. Titmus
@@ -474,7 +474,7 @@
   cover: clean-code.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9780136083238/
   authors:
     - Martin Robert
@@ -491,7 +491,7 @@
   cover: clean-architecture.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9780134494272/
   authors:
     - Robert C. Martin
@@ -508,7 +508,7 @@
   cover: kubernetes-up-and-running.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098110192/
   authors:
     - Brendan Burns
@@ -527,7 +527,7 @@
   cover: kubernetes-patterns.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098131678/
   authors:
     - Bilgin Ibryam
@@ -545,7 +545,7 @@
   cover: production-kubernetes.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492092292/
   authors:
     - Josh Rosso
@@ -565,7 +565,7 @@
   cover: kubernetes-best-practices.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492056461/
   authors:
     - Brendan Burns
@@ -585,7 +585,7 @@
   cover: kubernetes-operators.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781492048039/
   authors:
     - Jason Dobies
@@ -622,7 +622,7 @@
   cover: observability-engineering.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.goodreads.com/book/show/54617137-system-design-interview
   authors:
     - Charity Majors
@@ -637,12 +637,12 @@
   badges:
     - TODO
 - title: Certified Kubernetes Administrator (CKA) Study Guide
-  subtitle: Certified Kubernetes Administrator (CKA) Study Guide
+  subtitle: In Depth Guidance and Practice
   cover: cka.jpeg
   order: 1
   weight: 1
-  draft: true
-  url: CKA Study Guide**]https://learning.oreilly.com/library/view/-/9781098107215/
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781098107215/
   authors:
     - Benjamin Muschko
   release: 2022
@@ -655,12 +655,12 @@
   badges:
     - TODO
 - title: Certified Kubernetes Application Developer (CKAD) Study Guide
-  subtitle: Certified Kubernetes Application Developer (CKAD) Study Guide
+  subtitle: In Depth Guidance and Practice
   cover: ckad.jpeg
   order: 1
   weight: 1
-  draft: true
-  url: CKAD Study Guide**]https://learning.oreilly.com/library/view/-/9781492083726/
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492083726/
   authors:
     - Benjamin Muschko
   release: 2021
@@ -673,12 +673,12 @@
   badges:
     - TODO
 - title: Certified Kubernetes Security Specialist (CKS) Study Guide
-  subtitle: Certified Kubernetes Security Specialist (CKS) Study Guide
+  subtitle: In Depth Guidance and Practice
   cover: cks.jpeg
   order: 1
   weight: 1
-  draft: true
-  url: CKS Study Guide**]https://learning.oreilly.com/library/view/-/9781098132965/
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781098132965/
   authors:
     - Benjamin Muschko
   release: 2023
@@ -695,7 +695,7 @@
   cover: the-devops-handbook.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781457191381/
   authors:
     - Gene Kim
@@ -714,7 +714,7 @@
   cover: the-phoenix-project.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781457191350/
   authors:
     - Gene Kim
@@ -733,7 +733,7 @@
   cover: the-unicorn-project.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098124175/
   authors:
     - Gene Kim
@@ -750,7 +750,7 @@
   cover: terraform-up-and-running.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9781098116736/
   authors:
     - Yevgenly Brikman
@@ -767,7 +767,7 @@
   cover: site-reliability-engineering.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://sre.google/sre-book/table-of-contents/
   authors:
     - Betsy Beyer
@@ -787,7 +787,7 @@
   cover: sre-workbook.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://sre.google/workbook/table-of-contents/
   authors:
     - Betsy Beyer
@@ -808,7 +808,7 @@
   cover: building-secure-reliable-systems.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf
   authors:
     - Heather Adkins
@@ -830,7 +830,7 @@
   cover: accelerate.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.goodreads.com/book/show/35747076-accelerate
   authors:
     - Nicole Forsgren
@@ -847,7 +847,7 @@
   cover: team-topologies.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://teamtopologies.com/book
   authors:
     - Matthew Skelton
@@ -866,7 +866,7 @@
   cover: remote-teams-interactions-workbook.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://teamtopologies.com/workbook
   authors:
     - Matthew Skelton
@@ -884,7 +884,7 @@
   cover: continuous-delivery.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://learning.oreilly.com/library/view/-/9780321670250/
   authors:
     - David Farley

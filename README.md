@@ -21,7 +21,8 @@ Stats:
   - **4** [*Microservices*](/content/paths/microservices.md) books :construction:
   - **6** [*Software Architecture*](/content/paths/software-architecture.md) books :construction:
   - **18** [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:
-- **49** books :books: . Discover them all in the [:scroll: book index](./content/book-index.md).
+- **49** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **70** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 
@@ -75,7 +76,7 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 :bowtie: Thanks for stopping by, enjoy!
 
-## :black_nib: Worthy metions
+## :pushpin: Worthy metions
 
 - Icons:
   - [Skill icons](https://github.com/tandpfun/skill-icons)

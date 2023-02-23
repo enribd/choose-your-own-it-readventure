@@ -27,7 +27,8 @@ Stats:
 {{- end -}}
 {{- end -}}
 {{- end }}
-- **{{ .Stats.TotalBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BooksIndex }}).
+- **{{ .Stats.TotalBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BookIndex }}).
+- **{{ .Stats.TotalAuthors }}** authors :black_nib: , discover them all in the [:scroll: author index]({{ .AuthorIndex }}).
 
 ## :name_badge: Badges
 
@@ -81,7 +82,7 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 :bowtie: Thanks for stopping by, enjoy!
 
-## :black_nib: Worthy metions
+## :pushpin: Worthy metions
 
 - Icons:
   - [Skill icons](https://github.com/tandpfun/skill-icons)
