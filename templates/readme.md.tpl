@@ -44,6 +44,19 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 Discover all books in the [:scroll: book index]({{ .BooksIndex }}).
 
+Stats:
+
+{{- $lpData := .LpData }}
+- **{{ .Stats.TotalBooks }}** books.
+- **{{ .Stats.TotalLearningPaths }}** learning paths:
+{{- range $ref, $num := .Stats.BooksInLearningPath -}}
+{{- with $lp := get $lpData ($ref | toString) }}
+{{- if ne $lp.Status "coming-soon" }}
+  - *{{ $lp.Name }}*: **{{ $num }}** books.
+{{- end -}}
+{{- end -}}
+{{- end }}
+
 ## :name_badge: Badges
 
 All books have some badges associated to describe some aspect of them:

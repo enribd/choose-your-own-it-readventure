@@ -9,7 +9,7 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: run format-code resize-images #lint-gh-actions
+pre-commit: run format resize-images #lint-gh-actions
 	@git add ./content
 .PHONY: pre-commit
 
@@ -27,10 +27,10 @@ lint-gh-actions: ### Lint Github Actions files with actionlint
 		rhysd/actionlint:latest -color
 .PHONY: lint-gh-actions
 
-format-code: ### Run go fmt
+format: ### Run go fmt
 	$(info Format code)
 	@go fmt ./...
-.PHONY: format-code
+.PHONY: format
 
 run: ### Run go binary (vars: contents)
 	$(info Build and run code)

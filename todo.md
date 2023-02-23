@@ -22,3 +22,5 @@ TBD:
 - Review book badges
 - At the end of each learning path give some ideas about how to practice the skills acquired.
 - At the end of each learning path put some hashtags of related concepts and buzz words (for example, for system design #aws #cloud #architecture)
+- statistics: total authors
+- author index and their books

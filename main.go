@@ -13,6 +13,7 @@ import (
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
 	"github.com/enribd/choose-your-own-it-readventure/internal/sources"
+	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"github.com/Masterminds/sprig/v3"
 	"golang.org/x/exp/slices"
@@ -133,6 +134,15 @@ func main() {
 		}
 	}
 
+	// Initialize stats
+	totalBooks := len(sources.Books)
+	totalLPs := len(sources.LearningPaths)
+	booksInLPs := make(map[sources.LearningPathRef]int)
+	for lp, books := range lpBooksData {
+		booksInLPs[lp] = len(books)
+	}
+	stats.New(totalBooks, totalLPs, booksInLPs)
+
 	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
 	badgesData := map[string]interface{}{}
 	for _, b := range config.Badges {
@@ -158,6 +168,7 @@ func main() {
 		LearningPathsFolder string
 		BooksIndex          string
 		CurrentLearningPath sources.LearningPath
+		Stats               stats.Stats
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
@@ -165,6 +176,7 @@ func main() {
 		BadgesData:          badgesData,
 		LearningPathsFolder: config.Content.LearningPaths,
 		BooksIndex:          config.Content.BookIndex,
+		Stats:               stats.Data,
 	}
 
 	// Load templates and functions

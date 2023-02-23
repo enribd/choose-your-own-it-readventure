@@ -33,6 +33,15 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 Discover all books in the [:scroll: book index](./content/book-index.md).
 
+Stats:
+- **12** learning paths:
+- **49** books.
+  - *APIs*: **2** books.
+  - *Golang*: **3** books.
+  - *Microservices*: **4** books.
+  - *Software Architecture*: **6** books.
+  - *System Design*: **18** books.
+
 ## :name_badge: Badges
 
 All books have some badges associated to describe some aspect of them:
