@@ -14,48 +14,20 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-{{/* Build learning paths index 
-{{ $badgesData := .BadgesData -}}
-{{- $lpFolders := .LearningPathsFolder -}}
-{{- range .LpData -}}
-{{ $icon := get $badgesData .Status | printf ":%s:" -}}
-{{- if (eq .Status "soon") -}}
-{{ if (len .RelatedPaths gt 0) }}  {{ end }}- *{{ .Name }}* {{ $icon }}
-{{- else }}
-- [{{ .Name }} {{ $icon }}]({{ $lpFolders }}/{{ .Ref }}.md)
-{{ end -}}
-{{ end }}
-*/}}
-
-- [System Design :new:]({{ .LearningPathsFolder }}/system-design.md)
-  - APIs :soon:
-  - [Microservices :new:]({{ .LearningPathsFolder }}/microservices.md)
-  - Event Driven Architecture :soon:
-  - Serverless :soon:
-- [Golang :new:]({{ .LearningPathsFolder }}/golang.md)
-  - [Cloud Native Applications :new:]({{ .LearningPathsFolder }}/golang.md#cloud-native-applications)
-- Kubernetes :soon:
-- Software architecture :soon:
-  - Domain Driven Design (DDD) :soon:
-- [Management :construction:]({{ .LearningPathsFolder }}/management.md)
-  - DevOps :soon:
-  - Team Management :soon:
-
-
-Discover all books in the [:scroll: book index]({{ .BooksIndex }}).
-
 Stats:
 
+{{- $badgesData := .BadgesData -}}
 {{- $lpData := .LpData }}
-- **{{ .Stats.TotalBooks }}** books.
-- **{{ .Stats.TotalLearningPaths }}** learning paths:
+- **{{ .Stats.TotalLearningPaths }}** learning paths :runner:
 {{- range $ref, $num := .Stats.BooksInLearningPath -}}
 {{- with $lp := get $lpData ($ref | toString) }}
 {{- if ne $lp.Status "coming-soon" }}
-  - *{{ $lp.Name }}*: **{{ $num }}** books.
+{{- $icon := get $badgesData $lp.Status }}
+  - **{{ $num }}** [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | trimPrefix "." }}/{{ $ref }}.md) books :{{ $icon }}:
 {{- end -}}
 {{- end -}}
 {{- end }}
+- **{{ .Stats.TotalBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BooksIndex }}).
 
 ## :name_badge: Badges
 

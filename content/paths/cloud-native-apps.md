@@ -9,7 +9,7 @@ From now the focus will learning all the necessary concepts and techniques to pr
 
 The following paths are opened to you now, choose wisely:
 
-- [Golang :stable:](/content/paths/golang.md): TODO
+- [Golang :ballot_box_with_check:](/content/paths/golang.md): TODO
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

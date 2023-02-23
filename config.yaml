@@ -51,7 +51,7 @@ badges:
   - category: status
     icons:
     - name: stable
-      code: stable
+      code: ballot_box_with_check
     - name: new
       code: new
     - name: coming-soon

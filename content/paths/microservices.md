@@ -13,7 +13,7 @@ TODO
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [System Design](/content/paths/system-design.md): TODO
+- [System Design :ballot_box_with_check:](/content/paths/system-design.md): TODO
 
 - [APIs :new:](/content/paths/apis.md): APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, patterns, api gateways, and more.
 

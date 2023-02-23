@@ -14,33 +14,14 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-
-
-- [System Design :new:](./content/paths/system-design.md)
-  - APIs :soon:
-  - [Microservices :new:](./content/paths/microservices.md)
-  - Event Driven Architecture :soon:
-  - Serverless :soon:
-- [Golang :new:](./content/paths/golang.md)
-  - [Cloud Native Applications :new:](./content/paths/golang.md#cloud-native-applications)
-- Kubernetes :soon:
-- Software architecture :soon:
-  - Domain Driven Design (DDD) :soon:
-- [Management :construction:](./content/paths/management.md)
-  - DevOps :soon:
-  - Team Management :soon:
-
-
-Discover all books in the [:scroll: book index](./content/book-index.md).
-
 Stats:
-- **12** learning paths:
-- **49** books.
-  - *APIs*: **2** books.
-  - *Golang*: **3** books.
-  - *Microservices*: **4** books.
-  - *Software Architecture*: **6** books.
-  - *System Design*: **18** books.
+- **12** learning paths :runner:
+  - **2** [*APIs*](/content/paths/apis.md) books :new:
+  - **3** [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:
+  - **4** [*Microservices*](/content/paths/microservices.md) books :construction:
+  - **6** [*Software Architecture*](/content/paths/software-architecture.md) books :construction:
+  - **18** [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:
+- **49** books :books: . Discover them all in the [:scroll: book index](./content/book-index.md).
 
 ## :name_badge: Badges
 
