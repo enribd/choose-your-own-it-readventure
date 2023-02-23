@@ -14,16 +14,16 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-Stats:
-
-{{- $badgesData := .BadgesData -}}
-{{- $lpData := .LpData }}
-- **{{ .Stats.TotalLearningPaths }}** learning paths :runner:
+{{ $badgesData := .BadgesData -}}
+{{ $lpData := .LpData -}}
+- **{{ .Stats.TotalLearningPaths }}** learning paths :mortar_board:
 {{- range $ref, $num := .Stats.BooksInLearningPath -}}
-{{- with $lp := get $lpData ($ref | toString) }}
+{{- with $lp := get $lpData ($ref | toString) -}}
+{{- $icon := get $badgesData $lp.Status -}}
 {{- if ne $lp.Status "coming-soon" }}
-{{- $icon := get $badgesData $lp.Status }}
-  - **{{ $num }}** [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | trimPrefix "." }}/{{ $ref }}.md) books :{{ $icon }}:
+  - **{{ $num }}** [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | trimPrefix "." }}/{{ $ref }}.md) books :{{ $icon }}:: *{{ $lp.Summary | trim }}*
+{{- else }}
+  - *{{ $lp.Name }}* :{{ $icon }}: *{{ $lp.Summary | trim }}*
 {{- end -}}
 {{- end -}}
 {{- end }}
