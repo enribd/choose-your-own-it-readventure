@@ -16,12 +16,13 @@
   desc: |
     TODO
   summary: |
-    APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, patterns, api gateways, and more.
+    APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
   suggested:
     - system-design
     - microservices
     - eda
     - serverless
+  tags: ["grpc", "http", "graphql", "websocket", "api-gateway", "rate-limit", "quotas", "openapi", "contract-testing"]
 - name: "Event Driven Architecture (EDA)"
   ref: eda
   status: coming-soon

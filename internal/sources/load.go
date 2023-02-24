@@ -16,9 +16,11 @@ type LearningPath struct {
 	Summary   string            `yaml:"summary"`
 	Related   []LearningPathRef `yaml:"related,omitempty"`
 	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
+	Tags      []Tag             `yaml:"tags,omitempty"`
 }
 
 type LearningPathRef string
+type Tag string
 
 type Book struct {
 	Cover             string            `yaml:"cover"`

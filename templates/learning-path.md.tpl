@@ -43,7 +43,7 @@ The following paths are opened to you now, choose wisely:
 {{- end -}}
 {{- end }}
 
-{{- with $lp.Suggested }}
+{{- with $lp.Tags }}
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 {{ range $lp.Suggested -}}
@@ -60,13 +60,19 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{- end -}}
 {{- end }}
 
+{{ with $lp.Tags -}}
+{{- $tags := list -}}
+{{ range $lp.Tags -}}
+{{- $tags = append $tags (. | toString | lower | replace " " "-" | printf "#%s") -}}
+{{- end -}}
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
 
-<sub>#api-gateway</sub>  <sub>#openapi</sub>
+<sub>{{ $tags | join " " }}</sub>
 
 </p>
 </details>
+{{- end }}
 
 ---
 [**⬆ back to top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)

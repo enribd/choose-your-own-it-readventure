@@ -19,7 +19,7 @@ Want to change the subject? Here are some suggestions about other paths you can 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
 
-<sub>#api-gateway</sub>  <sub>#openapi</sub>
+<sub>#grpc #http #graphql #websocket #api-gateway #rate-limit #quotas #openapi #contract-testing</sub>
 
 </p>
 </details>

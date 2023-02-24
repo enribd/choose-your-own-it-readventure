@@ -11,20 +11,7 @@ TODO
 | **2** | ![img](/assets/books/covers/practical-process-automation.jpeg) | [**Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures**](https://learning.oreilly.com/library/view/-/9781492061441/) <br> *Bernd Ruecker* <br> *Published in 2021* <br> *520 pages* <br>  | TODO |
 | **3** | ![img](/assets/books/covers/microservices-patterns.jpeg) | [**Microservices Patterns: Microservices Patterns**](https://learning.oreilly.com/library/view/-/9781617294549/) <br> *Chris Richardson* <br> *Published in 2018* <br> *520 pages* <br>  | TODO |
 
-Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [System Design :ballot_box_with_check:](/content/paths/system-design.md): TODO
-
-- [APIs :new:](/content/paths/apis.md): APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
-
-
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
-
-<sub>#api-gateway</sub>  <sub>#openapi</sub>
-
-</p>
-</details>
 
 ---
 [**⬆ back to top**](#microservices-learning-path)
