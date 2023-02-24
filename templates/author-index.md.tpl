@@ -13,4 +13,5 @@
 | {{ $author }} | <ul>{{ $books | join " " }}</ul> |
 {{ end }}
 
+---
 [**⬆ top**](#author-index)
