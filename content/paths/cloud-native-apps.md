@@ -15,6 +15,6 @@ The following paths are opened to you now, choose wisely:
 
 
 ---
-<div style="text-align: right"><sub><i>Last modified 2023-02-24</i></sub></div>
+<sub>Last modified 2023-02-24</sub>
 
 [**⬆ back to top**](#cloud-native-applications-learning-path)

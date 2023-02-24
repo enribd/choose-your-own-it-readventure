@@ -14,6 +14,6 @@ TODO
 
 
 ---
-<div style="text-align: right"><sub><i>Last modified 2023-02-24</i></sub></div>
+<sub>Last modified 2023-02-24</sub>
 
 [**⬆ back to top**](#microservices-learning-path)
