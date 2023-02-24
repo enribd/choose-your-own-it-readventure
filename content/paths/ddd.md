@@ -19,5 +19,13 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [APIs :new:](/content/paths/apis.md): APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
 
 
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
+
+<sub>#api-gateway</sub>  <sub>#openapi</sub>
+
+</p>
+</details>
+
 ---
 [**⬆ back to top**](#domain-driven-design-(ddd)-learning-path)
