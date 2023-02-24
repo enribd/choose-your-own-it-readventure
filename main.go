@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,53 +10,18 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/enribd/choose-your-own-it-readventure/config"
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
 	"github.com/enribd/choose-your-own-it-readventure/internal/sources"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"github.com/Masterminds/sprig/v3"
 	"golang.org/x/exp/slices"
-	"gopkg.in/yaml.v3"
 )
-
-type Config struct {
-	Sources Sources `yaml:"sources"`
-	Content Content `yaml:"content"`
-	Badges  []Badge `yaml:"badges"`
-}
-
-// Location of data used to generate content
-type Sources struct {
-	BookCovers    string `yaml:"books_covers"`
-	BookData      string `yaml:"books_data"`
-	LearningPaths string `yaml:"learning_paths_data"`
-}
-
-// Destination for generated content
-type Content struct {
-	Readme        string `yaml:"readme"`
-	BookIndex     string `yaml:"book_index"`
-	AuthorIndex   string `yaml:"author_index"`
-	LearningPaths string `yaml:"learning_paths"`
-}
-
-type Badge struct {
-	Category   BadgeCategory `yaml:"category"`
-	BadgeIcons []BadgeIcon   `yaml:"icons"`
-}
-
-type BadgeCategory string
-
-type BadgeIcon struct {
-	Name string `yaml:"name"`
-	Code string `yaml:"code"`
-	Desc string `yaml:"desc"`
-}
 
 var debug bool
 var trace bool
 var contents string
-var config Config
 
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
@@ -66,40 +30,32 @@ func main() {
 	flag.Parse()
 	contents := strings.Split(contents, ",")
 
-	// Read the file
-	raw, err := ioutil.ReadFile("config.yaml")
-	if err != nil {
-		log.Fatalln(err)
-		return
-	}
-
-	// Unmarshal the YAML raw content into the struct
-	err = yaml.Unmarshal(raw, &config)
+	err := config.Load()
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
 	if trace {
-		log.Printf("%v\n", config)
+		log.Printf("%v\n", config.Cfg)
 	}
 
 	// Load raw content from yaml files
-	sources.LoadBooks(config.Sources.BookData)
+	sources.LoadBooks(config.Cfg.Sources.BookData)
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
 	// Load raw content from yaml files
-	sources.LoadLearningPaths(config.Sources.LearningPaths)
+	sources.LoadLearningPaths(config.Cfg.Sources.LearningPaths)
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
 	// Create content dirs
-	if err = os.MkdirAll(config.Content.LearningPaths, os.ModePerm); err != nil {
+	if err = os.MkdirAll(config.Cfg.Content.LearningPaths, os.ModePerm); err != nil {
 		log.Println(err)
 		return
 	}
@@ -141,19 +97,9 @@ func main() {
 		}
 	}
 
-	// Initialize stats
-	totalBooks := len(sources.Books)
-	totalAuthors := len(authorsData)
-	totalLPs := len(sources.LearningPaths)
-	booksInLPs := make(map[sources.LearningPathRef]int)
-	for lp, books := range lpBooksData {
-		booksInLPs[lp] = len(books)
-	}
-	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
-
 	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
 	badgesData := map[string]interface{}{}
-	for _, b := range config.Badges {
+	for _, b := range config.Cfg.Badges {
 		for _, i := range b.BadgeIcons {
 			badgesData[i.Name] = i.Code
 		}
@@ -166,7 +112,17 @@ func main() {
 		log.Printf("loaded badges: %v\n", badgesData)
 	}
 
-	// Create template rendering data
+	// Initialize stats
+	totalBooks := len(sources.Books)
+	totalAuthors := len(authorsData)
+	totalLPs := len(sources.LearningPaths)
+	booksInLPs := make(map[sources.LearningPathRef]int)
+	for lp, books := range lpBooksData {
+		booksInLPs[lp] = len(books)
+	}
+	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
+
+	// Prepare template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
 		LpBooksData         []sources.Book
@@ -183,11 +139,11 @@ func main() {
 		LpData:              lpData,
 		BooksData:           booksData,
 		AuthorsData:         authorsData,
-		BookCovers:          config.Sources.BookCovers,
+		BookCovers:          config.Cfg.Sources.BookCovers,
 		BadgesData:          badgesData,
-		LearningPathsFolder: config.Content.LearningPaths,
-		BookIndex:           config.Content.BookIndex,
-		AuthorIndex:         config.Content.AuthorIndex,
+		LearningPathsFolder: config.Cfg.Content.LearningPaths,
+		BookIndex:           config.Cfg.Content.BookIndex,
+		AuthorIndex:         config.Cfg.Content.AuthorIndex,
 		Stats:               stats.Data,
 	}
 
@@ -198,37 +154,37 @@ func main() {
 	}
 
 	// Render content
-	file := "stdout" // if debug mode spit to stdout
+	file := "stdout" // if in debug mode spit to stdout
 
 	if slices.Contains(contents, "book-index") {
-		log.Printf("rendering book index in %s", config.Content.BookIndex)
+		log.Printf("rendering book index in %s", config.Cfg.Content.BookIndex)
 		if !debug {
-			file = config.Content.BookIndex
+			file = config.Cfg.Content.BookIndex
 		}
 
-		if err = content.Render(templates, "book-index.md.tpl", file, data); err != nil {
+		if err = content.Render(templates, "book-index.md.tmpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "author-index") {
-		log.Printf("rendering author index in %s", config.Content.AuthorIndex)
+		log.Printf("rendering author index in %s", config.Cfg.Content.AuthorIndex)
 		if !debug {
-			file = config.Content.AuthorIndex
+			file = config.Cfg.Content.AuthorIndex
 		}
 
-		if err = content.Render(templates, "author-index.md.tpl", file, data); err != nil {
+		if err = content.Render(templates, "author-index.md.tmpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "readme") {
-		log.Printf("rendering readme in %s", config.Content.Readme)
+		log.Printf("rendering readme in %s", config.Cfg.Content.Readme)
 		if !debug {
-			file = config.Content.Readme
+			file = config.Cfg.Content.Readme
 		}
 
-		if err = content.Render(templates, "readme.md.tpl", file, data); err != nil {
+		if err = content.Render(templates, "readme.md.tmpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
@@ -241,11 +197,11 @@ func main() {
 				data.LpBooksData = lpBooksData[lp.Ref]
 
 				if !debug {
-					file = filepath.Join(config.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 				}
 				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
 
-				if err = content.Render(templates, "learning-path.md.tpl", file, data); err != nil {
+				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
 					log.Fatalln(err)
 				}
 			}
