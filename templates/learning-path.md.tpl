@@ -11,7 +11,7 @@
 
 {{ $lp.Desc }}
 | Reading Order | Cover | Info | Description |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :--- | :--- |
 {{- range $lpBooksData }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}

@@ -5,7 +5,7 @@
 TODO
 
 | Reading Order | Cover | Info | Description |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :--- | :--- |
 
 The following paths are opened to you now, choose wisely:
 
