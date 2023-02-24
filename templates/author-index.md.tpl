@@ -3,7 +3,7 @@
 # Author Index
 
 | Name | Books |
-| --- | --- |
+| :---: | :---: | :---: |
 {{ $authorsData := .AuthorsData -}}
 {{- range $author, $booksData := $authorsData -}}
 {{- $books := list -}}

@@ -9,7 +9,7 @@
 # Book Index
 
 | Cover | Info | Learning Paths |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 {{- range $books -}}
 {{- if .Draft | not -}}
 {{/* Build book learning paths section */}}

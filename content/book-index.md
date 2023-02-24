@@ -3,7 +3,7 @@
 # Book Index
 
 | Cover | Info | Learning Paths |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br>  |  |
 | ![img](/assets/books/covers/advanced-api-security.jpeg) | [**Advanced API Security: OAuth 2.0 and Beyond**](https://learning.oreilly.com/library/view/-/9781484220504/) <br> *Prabath Siriwardena* <br> *Published in 2019* <br> *455 pages* <br>  | <ul><li>[APIs](./content/paths/apis.md)</li></ul> |
 | ![img](/assets/books/covers/building-event-driven-microservices.jpeg) | [**Building Event-Driven Microservices: Building Event-Driven Microservices**](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) <br> *Adam Bellemare* <br> *Published in 2020* <br> *321 pages* <br>  | <ul><li>[System Design](./content/paths/system-design.md)</li></ul> |

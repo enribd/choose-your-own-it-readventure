@@ -37,7 +37,7 @@ All books have some badges associated to describe some aspect of them:
 - You will read each book with the same amount of energy needed to fight these opponents, from lower to higher difficulty (these are totally subjective):
 
 | Badge | Level |
-| --- | --- |
+| :---: | :---: |
 | :ant: | Petty ant |
 | :hatched_chick: | Naive chick |
 | :dog2: | Brave dog |
@@ -47,7 +47,7 @@ All books have some badges associated to describe some aspect of them:
 - Reading progress:
 
 | Badge | Meaning |
-| --- | --- |
+| :---: | :---: |
 | :green_book: | Read |
 | :blue_book: | To be read soon |
 | :orange_book: | Not read and I don't know when I will |
@@ -55,7 +55,7 @@ All books have some badges associated to describe some aspect of them:
 - My book rating and recommendation level from lower to higher:
 
 | Badge  | Level     |
-| ---    | ---       |
+| :---:  | :---:     |
 | :ok:   | Nice      |
 | :up:   | Good      |
 | :cool: | Very Good |
@@ -66,7 +66,7 @@ All books have some badges associated to describe some aspect of them:
 - Other badges:
 
 | Badge | Meaning |
-| --- | --- |
+| :---:  | :---:  |
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path | 
 

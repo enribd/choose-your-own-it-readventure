@@ -2,7 +2,6 @@
 
 ## App
 
-- render readme learning path toc
 - Github actions
 
 TBD:

@@ -11,7 +11,7 @@
 
 {{ $lp.Desc }}
 | Reading Order | Cover | Info | Description |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 {{- range $lpBooksData }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
@@ -60,4 +60,5 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{- end -}}
 {{- end }}
 
+---
 [**⬆ top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)
