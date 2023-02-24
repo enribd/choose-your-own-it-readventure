@@ -199,7 +199,7 @@ func main() {
 				if !debug {
 					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 				}
-				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
+				log.Printf("rendering learning-path %s in %s (%d books)", lp.Ref, file, len(lpBooksData[lp.Ref]))
 
 				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
 					log.Fatalln(err)
@@ -208,5 +208,8 @@ func main() {
 		}
 	}
 
+	log.Printf("rendered %d books", stats.Data.TotalBooks)
+	log.Printf("rendered %d authors", stats.Data.TotalAuthors)
+	log.Printf("rendered %d learning paths", stats.Data.TotalLearningPaths)
 	log.Println("done.")
 }
