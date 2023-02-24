@@ -10,6 +10,7 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 .PHONY: enable-pre-commit-hook
 
 pre-commit: run format resize-images #lint-gh-actions
+	@git add README.md
 	@git add ./content
 .PHONY: pre-commit
 
