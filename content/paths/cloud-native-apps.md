@@ -20,4 +20,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 
 ---
-[**⬆ top**](#cloud-native-applications-learning-path)
+[**⬆ back to top**](#cloud-native-applications-learning-path)

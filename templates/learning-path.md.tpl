@@ -61,4 +61,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{- end }}
 
 ---
-[**⬆ top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)
+[**⬆ back to top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)

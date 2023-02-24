@@ -14,4 +14,4 @@
 {{ end }}
 
 ---
-[**⬆ top**](#author-index)
+[**⬆ back to top**](#author-index)
