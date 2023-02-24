@@ -22,6 +22,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - *Serverless* :soon: *Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.*
   - **6** [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
   - **18** [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:: *TODO*
+  - **1** [*Team Management*](/content/paths/team-management.md) books :new:: *TODO*
 - **49** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **70** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 

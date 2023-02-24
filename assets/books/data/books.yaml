@@ -10,7 +10,7 @@
   release: 2022
   pages: 616
   desc: |-
-    TODO
+    One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
   learning_paths:
     - microservices
     - system-design
@@ -463,7 +463,7 @@
   release: 2021
   pages: 433
   desc: |-
-    TODO
+    In this book you will discover what properties an application should have to be considered cloud native by reviewing and extending in detail the classic [12 factors](https://12factor.net/). It will show you some useful patterns used to achieve things like: scalability, resilience, observability, and more. Along the way the author drops some insightful best practice pills about essential things like logging, caching, configuration management, etc. 
   learning_paths:
     - software-development
     - golang
@@ -855,10 +855,9 @@
   release: 2019
   pages: 240
   desc: |-
-    TODO
+    Team Topologies offers a modern vision about how teams should be created and managed to optimize a company's internal functioning as well as the output it produces. It uses ideas from other management books, like *Accelerate* (Nicole Forsgren), and takes them a step further to create a framework that will teach you form, combine and coordinate teams. The authors present four different kinds of teams, the role they play for a business domain and how they should communicate between them to achieve the organization goals as efficiently as possible. Also, you will discover things to avoid when managing teams, and what affect negatively to their performance.
   learning_paths:
-    - product-management
-    - organization
+    - team-management
   badges:
     - TODO
 - title: Remote Teams Interactions Workbook
