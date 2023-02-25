@@ -650,7 +650,6 @@
   desc: |-
     TODO
   learning_paths:
-    - certification
     - kubernetes
   badges:
     - TODO
@@ -668,7 +667,6 @@
   desc: |-
     TODO
   learning_paths:
-    - certification
     - kubernetes
   badges:
     - TODO
@@ -686,7 +684,6 @@
   desc: |-
     TODO
   learning_paths:
-    - certification
     - kubernetes
   badges:
     - TODO
@@ -760,6 +757,7 @@
     TODO
   learning_paths:
     - iac
+    - devops
   badges:
     - TODO
 - title: Site Reliability Engineering
@@ -875,7 +873,7 @@
   desc: |-
     TODO
   learning_paths:
-    - organization
+    - team-management
   badges:
     - TODO
 - title: Continuous Delivery
@@ -892,6 +890,6 @@
   desc: |-
     TODO
   learning_paths:
-    - software-delivery
+    - devops
   badges:
     - TODO

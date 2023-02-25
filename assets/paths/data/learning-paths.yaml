@@ -8,7 +8,7 @@
   suggested:
     - system-design
     - apis
-    - eda
+    - event-driven-architecture
     - serverless
 - name: "APIs"
   ref: apis
@@ -20,11 +20,11 @@
   suggested:
     - system-design
     - microservices
-    - eda
+    - event-driven-architecture
     - serverless
   tags: ["grpc", "http", "graphql", "websocket", "api-gateway", "rate-limit", "quotas", "openapi", "contract-testing"]
 - name: "Event Driven Architecture (EDA)"
-  ref: eda
+  ref: event-driven-architecture
   status: coming-soon
   desc: |
     TODO
@@ -46,7 +46,7 @@
     - system-design
     - microservices
     - apis
-    - eda
+    - event-driven-architecture
 - name: "System Design"
   ref: system-design
   status: stable
@@ -57,7 +57,7 @@
   related:
     - microservices
     - apis
-    - eda
+    - event-driven-architecture
     - serverless
   suggested:
     - software-architecture
@@ -71,10 +71,21 @@
   related:
     - microservices
     - apis
-    - eda
+    - event-driven-architecture
     - serverless
   suggested:
     - system-design
+- name: "Software Development"
+  ref: software-development
+  status: in-progress
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - golang
+  suggested:
+    - software-architecture
 - name: "Golang"
   ref: golang
   status: stable
@@ -159,5 +170,40 @@
     TODO
   related:
     - team-management
+  suggested:
+    - TODO
+- name: "SRE"
+  ref: sre
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - devops
+  suggested:
+    - TODO
+- name: "IaC"
+  ref: iac
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - devops
+  suggested:
+    - TODO
+- name: "Observability"
+  ref: Observability
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - sre
+    - devops
+    - microservices
   suggested:
     - TODO

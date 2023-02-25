@@ -14,16 +14,20 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-- **13** learning paths :mortar_board:
+- **17** learning paths :mortar_board:
   - **2** [*APIs*](/content/paths/apis.md) books :new:: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
-  - **3** [*DevOps*](/content/paths/devops.md) books :new:: *TODO*
+  - **5** [*DevOps*](/content/paths/devops.md) books :new:: *TODO*
+  - *Event Driven Architecture (EDA)* :soon: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.*
   - **3** [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:: *TODO*
+  - **1** [*IaC*](/content/paths/iac.md) books :new:: *TODO*
   - *Kubernetes* :soon: *TODO*
   - **4** [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
   - *Serverless* :soon: *Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.*
   - **6** [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
+  - **5** [*Software Development*](/content/paths/software-development.md) books :construction:: *TODO*
+  - **3** [*SRE*](/content/paths/sre.md) books :new:: *TODO*
   - **18** [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:: *TODO*
-  - **2** [*Team Management*](/content/paths/team-management.md) books :new:: *TODO*
+  - **3** [*Team Management*](/content/paths/team-management.md) books :new:: *TODO*
 - **49** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **70** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
