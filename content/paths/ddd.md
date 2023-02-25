@@ -15,6 +15,6 @@ The following paths are opened to you now, choose wisely:
 
 
 ---
-<sub>Last modified 2023-02-24</sub>
+<sub>Last modified 2023-02-25</sub>
 
 [**⬆ back to top**](#domain-driven-design-(ddd)-learning-path)

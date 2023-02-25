@@ -4,7 +4,7 @@
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
-| ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br>  |  |
+| ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br>  | <ul><li>[Team Management](./content/paths/team-management.md)</li></ul> |
 | ![img](/assets/books/covers/advanced-api-security.jpeg) | [**Advanced API Security: OAuth 2.0 and Beyond**](https://learning.oreilly.com/library/view/-/9781484220504/) <br> *Prabath Siriwardena* <br> *Published in 2019* <br> *455 pages* <br>  | <ul><li>[APIs](./content/paths/apis.md)</li></ul> |
 | ![img](/assets/books/covers/building-event-driven-microservices.jpeg) | [**Building Event-Driven Microservices: Building Event-Driven Microservices**](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) <br> *Adam Bellemare* <br> *Published in 2020* <br> *321 pages* <br>  | <ul><li>[System Design](./content/paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :top: :bookmark: | <ul><li>[Microservices](./content/paths/microservices.md)</li><li>[System Design](./content/paths/system-design.md)</li></ul> |
@@ -54,6 +54,6 @@
 | ![img](/assets/books/covers/the-unicorn-project.jpeg) | [**The Unicorn Project: The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* <br>  |  |
 
 ---
-<sub>Last modified 2023-02-24</sub>
+<sub>Last modified 2023-02-25</sub>
 
 [**⬆ back to top**](#book-index)
