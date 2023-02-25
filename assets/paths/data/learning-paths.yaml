@@ -128,7 +128,7 @@
     - serverless
 - name: "Kubernetes"
   ref: kubernetes
-  status: coming-soon
+  status: new
   desc: |
     TODO
   summary: |

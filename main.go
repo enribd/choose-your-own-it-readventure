@@ -116,16 +116,15 @@ func main() {
 	totalBooks := len(sources.Books)
 	totalAuthors := len(authorsData)
 	totalLPs := len(sources.LearningPaths)
-	booksInLPs := make(map[sources.LearningPathRef]int)
+	booksInLPs := make(map[string]int)
 	for lp, books := range lpBooksData {
-		booksInLPs[lp] = len(books)
+		booksInLPs[string(lp)] = len(books)
 	}
 	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
 
 	// Prepare template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
-		LpBooksData         []sources.Book
 		BooksData           map[string]sources.Book
 		AuthorsData         map[string][]sources.Book
 		BadgesData          map[string]interface{}
@@ -133,14 +132,16 @@ func main() {
 		LearningPathsFolder string
 		BookIndex           string
 		AuthorIndex         string
-		CurrentLearningPath sources.LearningPath
 		Stats               stats.Stats
+		// used only when rendering the learning paths template
+		LpBooksData         []sources.Book
+		CurrentLearningPath sources.LearningPath
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
 		AuthorsData:         authorsData,
-		BookCovers:          config.Cfg.Sources.BookCovers,
 		BadgesData:          badgesData,
+		BookCovers:          config.Cfg.Sources.BookCovers,
 		LearningPathsFolder: config.Cfg.Content.LearningPaths,
 		BookIndex:           config.Cfg.Content.BookIndex,
 		AuthorIndex:         config.Cfg.Content.AuthorIndex,
