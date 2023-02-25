@@ -75,20 +75,6 @@
     - serverless
   suggested:
     - system-design
-- name: "Software Architecture"
-  ref: software-architecture
-  status: in-progress
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - microservices
-    - apis
-    - eda
-    - serverless
-  suggested:
-    - system-design
 - name: "Golang"
   ref: golang
   status: stable
