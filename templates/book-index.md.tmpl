@@ -2,7 +2,7 @@
 {{- $books := .BooksData -}}
 {{- $covers := .BookCovers -}}
 {{- $badgesData := .BadgesData -}}
-{{- $lpFolders := .LearningPathsFolder -}}
+{{- $lpFolders := .LearningPathsFolder | trimPrefix "." -}}
 
 [//]: # (Auto generated file from templates)
 
