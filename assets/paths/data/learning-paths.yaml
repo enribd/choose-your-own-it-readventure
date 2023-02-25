@@ -147,5 +147,17 @@
     TODO
   related:
     - devops
+    - management
+  suggested:
+    - TODO
+- name: "DevOps"
+  ref: devops
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - team-management
   suggested:
     - TODO

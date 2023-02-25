@@ -11,6 +11,8 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
+- [DevOps :new:](/content/paths/devops.md): TODO
+- [Management :new:](/content/paths/management.md): TODO
 
 
 

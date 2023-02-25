@@ -14,8 +14,9 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
-- **12** learning paths :mortar_board:
+- **13** learning paths :mortar_board:
   - **2** [*APIs*](/content/paths/apis.md) books :new:: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
+  - **3** [*DevOps*](/content/paths/devops.md) books :new:: *TODO*
   - **3** [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:: *TODO*
   - *Kubernetes* :soon: *TODO*
   - **4** [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
