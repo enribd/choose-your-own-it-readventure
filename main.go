@@ -3,129 +3,103 @@ package main
 import (
 	"flag"
 	"fmt"
-	"html/template"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
+	"text/template"
+
+	"github.com/enribd/choose-your-own-it-readventure/config"
+	"github.com/enribd/choose-your-own-it-readventure/internal/content"
+	"github.com/enribd/choose-your-own-it-readventure/internal/sources"
+	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"github.com/Masterminds/sprig/v3"
 	"golang.org/x/exp/slices"
-	"gopkg.in/yaml.v3"
 )
-
-type Config struct {
-	Layout        Layout         `yaml:"layout"`
-	LearningPaths []LearningPath `yaml:"learning_paths"`
-	Badges        []Badge        `yaml:"badges"`
-	Books         []Book         `yaml:"books"`
-}
-
-type Layout struct {
-	Readme        string `yaml:"readme"`
-	BookIndex     string `yaml:"book_index"`
-	LearningPaths string `yaml:"learning_paths"`
-	BookCovers    string `yaml:"book_covers"`
-}
-
-type LearningPath struct {
-	Name      string            `yaml:"name"`
-	Ref       LearningPathRef   `yaml:"ref"`
-	Status    string            `yaml:"status"`
-	Desc      string            `yaml:"desc"`
-	Summary   string            `yaml:"summary"`
-	Related   []LearningPathRef `yaml:"related,omitempty"`
-	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
-}
-
-type LearningPathRef string
-
-type Badge struct {
-	Category   BadgeCategory `yaml:"category"`
-	BadgeIcons []BadgeIcon   `yaml:"icons"`
-}
-
-type BadgeCategory string
-
-type BadgeIcon struct {
-	Name string `yaml:"name"`
-	Code string `yaml:"code"`
-	Desc string `yaml:"desc"`
-}
-
-type Book struct {
-	Cover             string            `yaml:"cover"`
-	Title             string            `yaml:"title"`
-	Subtitle          string            `yaml:"subtitle"`
-	Order             string            `yaml:"order"`
-	Draft             bool              `yaml:"draft"`
-	Url               string            `yaml:"url"`
-	Authors           []string          `yaml:"authors"`
-	Release           string            `yaml:"release"`
-	Pages             string            `yaml:"pages"`
-	Desc              string            `yaml:"desc"`
-	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	BadgesRefs        []BadgeRef        `yaml:"badges"`
-}
-
-type BadgeRef string
 
 var debug bool
 var trace bool
-var content string
+var contents string
 
 func main() {
-	// Parse flags
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.BoolVar(&trace, "trace", false, "Enable trace mode (default: false).")
-	flag.StringVar(&content, "content", "readme,book-index,learning-paths", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&contents, "contents", "readme,book-index,author-index,learning-paths", "list of content to generate, accepts comma-separated values")
 	flag.Parse()
-	contents := strings.Split(content, ",")
+	contents := strings.Split(contents, ",")
 
-	// Read the file
-	raw, err := ioutil.ReadFile("config.yaml")
-	if err != nil {
-		log.Fatalln(err)
-		return
-	}
-
-	var config Config
-
-	// Unmarshal the YAML raw content into the struct
-	err = yaml.Unmarshal(raw, &config)
+	err := config.Load()
 	if err != nil {
 		log.Fatalln(err)
 		return
 	}
 
 	if trace {
-		log.Printf("%v\n", config)
+		log.Printf("%v\n", config.Cfg)
+	}
+
+	// Load raw content from yaml files
+	sources.LoadBooks(config.Cfg.Sources.BookData)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
+
+	// Load raw content from yaml files
+	sources.LoadLearningPaths(config.Cfg.Sources.LearningPaths)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
+
+	// Create content dirs
+	if err = os.MkdirAll(config.Cfg.Content.LearningPaths, os.ModePerm); err != nil {
+		log.Println(err)
+		return
 	}
 
 	// Create auxiliar structure for easy access to learning paths lpData["apis"].Desc
 	lpData := map[string]interface{}{}
-	for _, lp := range config.LearningPaths {
+	for _, lp := range sources.LearningPaths {
 		lpData[string(lp.Ref)] = lp
 	}
 
 	// Create auxiliar structure for easy access to books booksData["Building Microservices"].Desc
-	booksData := map[string]Book{}
-	for _, b := range config.Books {
+	booksData := map[string]sources.Book{}
+	for _, b := range sources.Books {
 		booksData[b.Title] = b
 	}
 
-	// Create auxiliar structure for easy access to learning path books lpBooksData["apis"] = [{book1}, {book2}, ...]
-	lpBooksData := map[LearningPathRef][]Book{}
-	for _, b := range config.Books {
+	// Create auxiliar structure to search books by learning path or author seamlessly
+	authorsData := map[string][]sources.Book{}
+	lpBooksData := map[sources.LearningPathRef][]sources.Book{}
+	for _, b := range sources.Books {
+		// authorsData["name"] = [{book1}, {book2}, ...]
+		for _, a := range b.Authors {
+			authorsData[a] = append(authorsData[a], b)
+		}
+
+		// lpBooksData["apis"] = [{book1}, {book2}, ...]
 		for _, r := range b.LearningPathsRefs {
 			lpBooksData[r] = append(lpBooksData[r], b)
+
+			// Sort books by order ascendant and by heavier weight
+			sort.SliceStable(lpBooksData[r], func(i, j int) bool {
+				if lpBooksData[r][i].Order != lpBooksData[r][j].Order {
+					return lpBooksData[r][i].Order < lpBooksData[r][j].Order
+				}
+
+				// If order is equal then order by weight
+				return lpBooksData[r][i].Weight > lpBooksData[r][j].Weight
+			})
 		}
 	}
 
 	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
 	badgesData := map[string]interface{}{}
-	for _, b := range config.Badges {
+	for _, b := range config.Cfg.Badges {
 		for _, i := range b.BadgeIcons {
 			badgesData[i.Name] = i.Code
 		}
@@ -138,94 +112,104 @@ func main() {
 		log.Printf("loaded badges: %v\n", badgesData)
 	}
 
-	// Create template rendering data
+	// Initialize stats
+	totalBooks := len(sources.Books)
+	totalAuthors := len(authorsData)
+	totalLPs := len(sources.LearningPaths)
+	booksInLPs := make(map[sources.LearningPathRef]int)
+	for lp, books := range lpBooksData {
+		booksInLPs[lp] = len(books)
+	}
+	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
+
+	// Prepare template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
-		LpBooksData         []Book
-		BooksData           map[string]Book
+		LpBooksData         []sources.Book
+		BooksData           map[string]sources.Book
+		AuthorsData         map[string][]sources.Book
 		BadgesData          map[string]interface{}
 		BookCovers          string
 		LearningPathsFolder string
-		BooksIndex          string
-		CurrentLearningPath LearningPath
+		BookIndex           string
+		AuthorIndex         string
+		CurrentLearningPath sources.LearningPath
+		Stats               stats.Stats
 	}{
 		LpData:              lpData,
 		BooksData:           booksData,
-		BookCovers:          config.Layout.BookCovers,
+		AuthorsData:         authorsData,
+		BookCovers:          config.Cfg.Sources.BookCovers,
 		BadgesData:          badgesData,
-		LearningPathsFolder: config.Layout.LearningPaths,
-		BooksIndex:          config.Layout.BookIndex,
+		LearningPathsFolder: config.Cfg.Content.LearningPaths,
+		BookIndex:           config.Cfg.Content.BookIndex,
+		AuthorIndex:         config.Cfg.Content.AuthorIndex,
+		Stats:               stats.Data,
 	}
 
 	// Load templates and functions
-	templates, err := template.New("base").Funcs(sprig.FuncMap()).ParseGlob("templates/*")
+	templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).ParseGlob("templates/*")
 	if err != nil {
 		log.Fatalln(err)
 	}
 
+	// Render content
+	file := "stdout" // if in debug mode spit to stdout
+
 	if slices.Contains(contents, "book-index") {
-		log.Printf("rendering book index in %s", config.Layout.BookIndex)
-		if err = render(templates, "book-index.md.tpl", config.Layout.BookIndex, data); err != nil {
+		log.Printf("rendering book index in %s", config.Cfg.Content.BookIndex)
+		if !debug {
+			file = config.Cfg.Content.BookIndex
+		}
+
+		if err = content.Render(templates, "book-index.md.tmpl", file, data); err != nil {
+			log.Fatalln(err)
+		}
+	}
+
+	if slices.Contains(contents, "author-index") {
+		log.Printf("rendering author index in %s", config.Cfg.Content.AuthorIndex)
+		if !debug {
+			file = config.Cfg.Content.AuthorIndex
+		}
+
+		if err = content.Render(templates, "author-index.md.tmpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "readme") {
-		log.Printf("rendering readme in %s", config.Layout.Readme)
-		if err = render(templates, "readme.md.tpl", config.Layout.Readme, data); err != nil {
+		log.Printf("rendering readme in %s", config.Cfg.Content.Readme)
+		if !debug {
+			file = config.Cfg.Content.Readme
+		}
+
+		if err = content.Render(templates, "readme.md.tmpl", file, data); err != nil {
 			log.Fatalln(err)
 		}
 	}
 
 	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range config.LearningPaths {
+		for _, lp := range sources.LearningPaths {
+			// Render learning paths that are only marked as either stable, new or in-progress
 			if lp.Status != "coming-soon" {
 				data.CurrentLearningPath = lp
 				data.LpBooksData = lpBooksData[lp.Ref]
 
-				// TODO remove -test from file name
-				file := filepath.Join(config.Layout.LearningPaths, fmt.Sprintf("%s-test.md", lp.Ref))
-				log.Printf("rendering learning-path %s in %s", lp.Ref, file)
+				if !debug {
+					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+				}
+				log.Printf("rendering learning-path %s in %s (%d books)", lp.Ref, file, len(lpBooksData[lp.Ref]))
 
-				if err = render(templates, "learning-path.md.tpl", file, data); err != nil {
+				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
 					log.Fatalln(err)
 				}
 			}
 		}
 	}
 
+	log.Printf("rendered %d books", stats.Data.TotalBooks)
+	log.Printf("rendered %d authors", stats.Data.TotalAuthors)
+	log.Printf("rendered %d learning paths", stats.Data.TotalLearningPaths)
 	log.Println("done.")
-}
-
-/*
-* Render templates with a given data and export them to files or stdout
-* Params:
-*   t: templates loaded
-*   data: data used to fill the templates
-*   templateName: template name to render
-*   dest: destination file
- */
-func render(t *template.Template, templateName, dest string, data interface{}) error {
-	// Create destination file
-	var file *os.File
-	var err error
-
-	if debug {
-		file = os.Stdout
-	} else {
-		file, err = os.Create(dest)
-		if err != nil {
-			log.Fatalln("create file: ", err)
-			return err
-		}
-	}
-
-	// Render template
-	err = t.ExecuteTemplate(file, templateName, data)
-	if err != nil {
-		log.Fatalln(err)
-		return err
-	}
-
-	return nil
 }
