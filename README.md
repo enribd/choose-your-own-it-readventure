@@ -15,7 +15,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
 
-- **18** learning paths :mortar_board:
+- **20** learning paths :mortar_board:
   - **2**  [*APIs*](/content/paths/apis.md) books :new:: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
   - **5**  [*DevOps*](/content/paths/devops.md) books :new:: *TODO*
   - **1**  [*Domain Driven Design (DDD)*](/content/paths/domain-driven-design.md) books :new:: *TODO*
