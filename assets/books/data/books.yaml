@@ -393,6 +393,7 @@
   desc: |-
     TODO
   learning_paths:
+    - domain-driven-design
     - software-architecture
     - system-design
   badges:

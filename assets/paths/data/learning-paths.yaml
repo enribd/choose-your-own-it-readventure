@@ -100,6 +100,8 @@
     - apis
     - serverless
     - software-architecture
+  logo:
+    source: https://skillicons.dev/icons?i=go
 - name: "Cloud Native Applications"
   ref: cloud-native-apps
   status: new
@@ -114,7 +116,7 @@
     - apis
     - serverless
 - name: "Domain Driven Design (DDD)"
-  ref: ddd
+  ref: domain-driven-design
   status: new
   desc: |
     TODO
@@ -126,6 +128,20 @@
     - golang
     - apis
     - serverless
+- name: "Docker"
+  ref: docker
+  status: coming-soon
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - kubernetes
+    - software-development
+  suggested:
+    - devops
+  logo:
+    source: https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png
 - name: "Kubernetes"
   ref: kubernetes
   status: new
@@ -134,9 +150,11 @@
   summary: |
     TODO
   related:
-    - devops
+    - docker
   suggested:
-    - TODO
+    - devops
+  logo:
+    source: https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png
 - name: "Management"
   ref: management
   status: new
@@ -195,7 +213,7 @@
   suggested:
     - TODO
 - name: "Observability"
-  ref: Observability
+  ref: observability
   status: new
   desc: |
     TODO

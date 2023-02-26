@@ -5,7 +5,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 )
 
 type LearningPath struct {
@@ -17,6 +17,7 @@ type LearningPath struct {
 	Related   []LearningPathRef `yaml:"related,omitempty"`
 	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
 	Tags      []Tag             `yaml:"tags,omitempty"`
+	Logo      Logo              `yaml:"logo,omitempty"`
 }
 
 type LearningPathRef string
@@ -39,6 +40,12 @@ type Book struct {
 }
 
 type BadgeRef string
+
+type Logo struct {
+	Source string `yaml:"source"`
+	Height string `yaml:"height,omitempty"`
+	Width  string `yaml:"width,omitempty"`
+}
 
 var LearningPaths map[string]LearningPath = make(map[string]LearningPath)
 var Books map[string]Book = make(map[string]Book)

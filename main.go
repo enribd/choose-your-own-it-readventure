@@ -22,6 +22,7 @@ import (
 var debug bool
 var trace bool
 var contents string
+var totalSkippedBooks int
 
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
@@ -70,6 +71,9 @@ func main() {
 	booksData := map[string]sources.Book{}
 	for _, b := range sources.Books {
 		booksData[b.Title] = b
+		if b.Draft {
+			totalSkippedBooks++
+		}
 	}
 
 	// Create auxiliar structure to search books by learning path or author seamlessly
@@ -114,13 +118,14 @@ func main() {
 
 	// Initialize stats
 	totalBooks := len(sources.Books)
+	totalActiveBooks := totalBooks - totalSkippedBooks
 	totalAuthors := len(authorsData)
 	totalLPs := len(sources.LearningPaths)
 	booksInLPs := make(map[string]int)
 	for lp, books := range lpBooksData {
 		booksInLPs[string(lp)] = len(books)
 	}
-	stats.New(totalBooks, totalAuthors, totalLPs, booksInLPs)
+	stats.New(totalBooks, totalActiveBooks, totalSkippedBooks, totalAuthors, totalLPs, 0, 0, booksInLPs)
 
 	// Prepare template rendering data
 	var data = struct {
@@ -157,6 +162,31 @@ func main() {
 	// Render content
 	file := "stdout" // if in debug mode spit to stdout
 
+	if slices.Contains(contents, "learning-paths") {
+		for _, lp := range sources.LearningPaths {
+			// Render learning paths that are only marked as either stable, new or in-progress, and have at least 1 book
+			if lp.Status != "coming-soon" && len(lpBooksData[lp.Ref]) > 0 {
+				data.CurrentLearningPath = lp
+				data.LpBooksData = lpBooksData[lp.Ref]
+
+				if !debug {
+					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
+				}
+				log.Printf("rendering '%s' learning path in %s (%d books)", lp.Ref, file, len(lpBooksData[lp.Ref]))
+
+				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
+			} else {
+				stats.Data.TotalSkippedLearningPaths++
+				log.Printf("skipping '%s' learning-path status is %s and has %d books", lp.Ref, lp.Status, len(lpBooksData[lp.Ref]))
+			}
+		}
+	}
+
+	// Update stats
+	stats.Data.TotalActiveLearningPaths = stats.Data.TotalLearningPaths - stats.Data.TotalSkippedLearningPaths
+
 	if slices.Contains(contents, "book-index") {
 		log.Printf("rendering book index in %s", config.Cfg.Content.BookIndex)
 		if !debug {
@@ -190,27 +220,12 @@ func main() {
 		}
 	}
 
-	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range sources.LearningPaths {
-			// Render learning paths that are only marked as either stable, new or in-progress
-			if lp.Status != "coming-soon" {
-				data.CurrentLearningPath = lp
-				data.LpBooksData = lpBooksData[lp.Ref]
-
-				if !debug {
-					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
-				}
-				log.Printf("rendering learning-path %s in %s (%d books)", lp.Ref, file, len(lpBooksData[lp.Ref]))
-
-				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
-					log.Fatalln(err)
-				}
-			}
-		}
-	}
-
-	log.Printf("rendered %d books", stats.Data.TotalBooks)
-	log.Printf("rendered %d authors", stats.Data.TotalAuthors)
-	log.Printf("rendered %d learning paths", stats.Data.TotalLearningPaths)
+	log.Printf("learning paths found %d", stats.Data.TotalLearningPaths)
+	log.Printf("learning paths rendered %d", stats.Data.TotalActiveLearningPaths)
+	log.Printf("learning paths skipped  %d", stats.Data.TotalSkippedLearningPaths)
+	log.Printf("books found %d", stats.Data.TotalBooks)
+	log.Printf("books rendered %d", stats.Data.TotalActiveBooks)
+	log.Printf("books skipped %d", stats.Data.TotalSkippedBooks)
+	log.Printf("authors rendered %d", stats.Data.TotalAuthors)
 	log.Println("done.")
 }

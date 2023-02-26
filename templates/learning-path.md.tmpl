@@ -7,12 +7,13 @@
 
 [//]: # (Auto generated file from templates)
 
-# {{ $lp.Name }} Learning Path
+# {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path
 
 {{ $lp.Desc }}
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 {{- range $lpBooksData }}
+{{- if .Draft | not }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
 {{- range .BadgesRefs -}}
@@ -24,6 +25,7 @@
 {{- /* end Build book badges section */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
 | **{{ .Order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+{{- end }}
 {{- end }}
 
 {{- with $lp.Related }}

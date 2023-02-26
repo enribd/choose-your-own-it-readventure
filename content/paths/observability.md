@@ -1,11 +1,12 @@
 [//]: # (Auto generated file from templates)
 
-# Observability Learning Path
+#  Observability Learning Path
 
 TODO
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
+| **1** | ![img](/assets/books/covers/observability-engineering.jpeg) | [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones, George Miranda* <br> *Published in 2022* <br> *318 pages* <br>  | TODO |
 
 The following paths are opened to you now, choose wisely:
 
@@ -17,6 +18,6 @@ The following paths are opened to you now, choose wisely:
 
 
 ---
-<sub>Last modified 2023-02-25</sub>
+<sub>Last modified 2023-02-26</sub>
 
 [**⬆ back to top**](#observability-learning-path)
