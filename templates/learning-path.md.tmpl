@@ -32,20 +32,23 @@
 
 The following paths are opened to you now, choose wisely:
 
+{{ $notReady := list -}}
 {{ range $lp.Related -}}
 {{ $relPath := get $lpData (. | toString) -}}
 {{- if (empty $relPath | not) -}}
 {{ $relPathIcon :=  get $badgesData $relPath.Status | printf ":%s:" -}}
 {{ if (eq $relPath.Status "coming-soon") -}}
-- :{{ get $badgesData $relPath.Status }}: {{ $relPath.Name }}: {{ $relPath.Summary }}
+{{ $pathRow := printf "- :%s: %s: %s" (get $badgesData $relPath.Status) $relPath.Name $relPath.Summary -}}
+{{- $notReady = append $notReady $pathRow -}}
 {{- else -}}
 - [{{ $relPath.Name }} {{ $relPathIcon }}]({{ $lpFolders }}/{{ $relPath.Ref }}.md): {{ $relPath.Summary }}
 {{- end -}}
 {{- end -}}
 {{- end -}}
+{{ $notReady | join "\n" }}
 {{- end }}
 
-{{- with $lp.Tags }}
+{{- with $lp.Suggested }}
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 {{ range $lp.Suggested -}}
