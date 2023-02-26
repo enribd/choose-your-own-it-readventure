@@ -54,6 +54,6 @@
 | ![img](/assets/books/covers/the-unicorn-project.jpeg) | [**The Unicorn Project: The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* <br>  | <ul><li>[DevOps](/content/paths/devops.md)</li></ul> |
 
 ---
-<sub>Last modified 2023-02-26</sub>
+<sub>Last modified 2023-02-27</sub>
 
 [**⬆ back to top**](#book-index)

@@ -62,6 +62,7 @@
     - serverless
   suggested:
     - software-architecture
+  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "hig-availability", "databases", "algorithms"]
 - name: "Software Architecture"
   ref: software-architecture
   status: in-progress
