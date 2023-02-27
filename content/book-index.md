@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# Book Index
+# :clipboard: Book Index (48 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |

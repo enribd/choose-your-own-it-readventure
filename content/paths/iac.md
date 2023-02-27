@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  IaC Learning Path
+#  IaC Learning Path (1 :books:)
 
 TODO
 

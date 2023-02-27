@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  Observability Learning Path
+#  Observability Learning Path (1 :books:)
 
 TODO
 

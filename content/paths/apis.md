@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  APIs Learning Path
+#  APIs Learning Path (2 :books:)
 
 TODO
 

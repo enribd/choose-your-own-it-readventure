@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  Domain Driven Design (DDD) Learning Path
+#  Domain Driven Design (DDD) Learning Path (1 :books:)
 
 TODO
 

@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> Golang Learning Path
+# <img height="35" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> Golang Learning Path (3 :books:)
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
 

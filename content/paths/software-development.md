@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  Software Development Learning Path
+#  Software Development Learning Path (5 :books:)
 
 TODO
 
