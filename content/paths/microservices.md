@@ -11,16 +11,24 @@ TODO
 | **2** | ![img](/assets/books/covers/practical-process-automation.jpeg) | [**Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures**](https://learning.oreilly.com/library/view/-/9781492061441/) <br> *Bernd Ruecker* <br> *Published in 2021* <br> *520 pages* <br>  | TODO |
 | **3** | ![img](/assets/books/covers/microservices-patterns.jpeg) | [**Microservices Patterns: Microservices Patterns**](https://learning.oreilly.com/library/view/-/9781617294549/) <br> *Chris Richardson* <br> *Published in 2018* <br> *520 pages* <br>  | TODO |
 
-Want to change the subject? Here are some suggestions about other paths you can explore:
+The following paths are opened to you now, choose wisely:
 
 - [System Design :ballot_box_with_check:](/content/paths/system-design.md): TODO
-
+- [Kubernetes :ballot_box_with_check:](/content/paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 - [APIs :new:](/content/paths/apis.md): APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
+- :soon: Event Driven Architecture (EDA): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
+
+
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [Golang :ballot_box_with_check:](/content/paths/golang.md): TODO
+
+- [Observability :new:](/content/paths/observability.md): TODO
 
 
 
 
 ---
-<sub>Last modified 2023-02-27</sub>
+<sub>Last modified 2023-02-28</sub>
 
 [**⬆ back to top**](#microservices-learning-path)

@@ -28,7 +28,7 @@
 | ![img](/assets/books/covers/fundamentals-of-software-architecture.jpeg) | [**Fundamentals of Software Architecture: An Engineering Approach**](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) <br> *Mark Richards, Neal Ford* <br> *Published in 2020* <br> *419 pages* <br>  | <ul><li>[Software Architecture](/content/paths/software-architecture.md)</li></ul> |
 | ![img](/assets/books/covers/kafka-the-definitive-guide.jpeg) | [**Kafka - The Definitive Guide: Real-Time Data and Stream Processing at Scale**](https://learning.oreilly.com/library/view/-/9781492043072/) <br> *Gwen Shapira* <br> *Published in 2021* <br> *488 pages* <br>  | <ul><li>[Event Driven Architecture (EDA)](/content/paths/event-driven-architecture.md)</li><li>[System Design](/content/paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/knative-in-action.jpeg) | [**Knative in Action: Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br>  | <ul><li>[Serverless](/content/paths/serverless.md)</li><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
-| ![img](/assets/books/covers/kubernetes-up-and-running.jpeg) | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
+| ![img](/assets/books/covers/kubernetes-up-and-running.jpeg) | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-best-practices.jpeg) | [**Kubernetes Best Practices: Kubernetes Best Practices**](https://learning.oreilly.com/library/view/-/9781492056461/) <br> *Brendan Burns, Eddie Villalba, Dave Strebel, Lachlan Evenson* <br> *Published in 2019* <br> *268 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-operators.jpeg) | [**Kubernetes Operators: Kubernetes Operators**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-patterns.jpeg) | [**Kubernetes Patterns: Kubernetes Patterns**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023* <br> *300 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
@@ -54,6 +54,6 @@
 | ![img](/assets/books/covers/the-unicorn-project.jpeg) | [**The Unicorn Project: The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* <br>  | <ul><li>[DevOps](/content/paths/devops.md)</li></ul> |
 
 ---
-<sub>Last modified 2023-02-27</sub>
+<sub>Last modified 2023-02-28</sub>
 
 [**⬆ back to top**](#book-index)

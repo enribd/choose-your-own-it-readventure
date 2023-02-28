@@ -522,7 +522,9 @@
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - easy
+    - read
+    - very_good
 - title: Kubernetes Patterns
   subtitle: Kubernetes Patterns
   cover: kubernetes-patterns.jpeg
