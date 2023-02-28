@@ -2,7 +2,7 @@
   ref: microservices
   status: in-progress
   desc: |
-    TODO
+    Distributed systems are not new but the way they are built nowadays is. Monolithic architectures need to evolve to leverage the cloud and the many advantages that microservices offer (scalability, fast releases, high-availability, resilience, and more). As usually happen in life, nothing is just benefits, and microservices architectures are not different, they bring many challenges with them like a more complicated management or debugging, economic costs and the necessary knowledge to build and run them. However, if this kind of architecture fit your needs or if you are interested in finding out what all the fuss about microservices is about don't hesitate and dive in!.
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
   related:
@@ -15,6 +15,9 @@
     - golang
     - docker
     - observability
+  tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
+  logo:
+    source: /assets/paths/icons/microservices.png
 - name: APIs
   ref: apis
   status: new
@@ -67,7 +70,7 @@
     - serverless
   suggested:
     - software-architecture
-  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "hig-availability", "databases", "algorithms"]
+  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
 - name: Software Architecture
   ref: software-architecture
   status: in-progress

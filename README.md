@@ -22,7 +22,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - **3** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:: *TODO*
   - **1**  [*IaC*](/content/paths/iac.md) books :new:: *TODO*
   - **10** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
-  - **4**  [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+  - **4** <img height="20" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
   - **1**  [*Observability*](/content/paths/observability.md) books :new:: *TODO*
   - **6**  [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
   - **5**  [*Software Development*](/content/paths/software-development.md) books :construction:: *TODO*

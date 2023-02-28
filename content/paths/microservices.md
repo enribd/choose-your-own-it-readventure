@@ -1,8 +1,8 @@
 [//]: # (Auto generated file from templates)
 
-#  Microservices Learning Path (4 :books:)
+# <img height="35" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> Microservices Learning Path (4 :books:)
 
-TODO
+Distributed systems are not new but the way they are built nowadays is. Monolithic architectures need to evolve to leverage the cloud and the many advantages that microservices offer (scalability, fast releases, high-availability, resilience, and more). As usually happen in life, nothing is just benefits, and microservices architectures are not different, they bring many challenges with them like a more complicated management or debugging, economic costs and the necessary knowledge to build and run them. However, if this kind of architecture fit your needs or if you are interested in finding out what all the fuss about microservices is about don't hesitate and dive in!.
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
@@ -26,7 +26,13 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Observability :new:](/content/paths/observability.md): TODO
 
 
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
 
+<sub>#distributed-systems #architecture #scalability #resilience #observability #kubernetes #lambda #faas</sub>
+
+</p>
+</details>
 
 ---
 <sub>Last modified 2023-02-28</sub>
