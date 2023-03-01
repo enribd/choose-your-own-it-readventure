@@ -6,7 +6,7 @@ TODO
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** | ![img](/assets/books/covers/leagning-domain-driven-design.jpeg) | [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* <br>  | TODO |
+| **1** | ![img](/assets/books/covers/learning-domain-driven-design.jpeg) | [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* <br>  | TODO |
 
 The following paths are opened to you now, choose wisely:
 

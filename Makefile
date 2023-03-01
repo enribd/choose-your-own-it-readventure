@@ -9,16 +9,10 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: run format resize-images #lint-gh-actions
+pre-commit: run format #lint-gh-actions
 	@git add README.md
 	@git add ./content
 .PHONY: pre-commit
-
-resize-images: ## Resize all images
-	$(info: Resize all images)
-	@find ./assets/books/covers -type f -exec convert {} -resize 122x160 {} \;
-	@git add ./assets/books/covers
-.PHONY: resize-images
 
 lint-gh-actions: ### Lint Github Actions files with actionlint
 	$(info Ling Github Actions)
