@@ -198,7 +198,7 @@
 - title: Knative in Action
   subtitle: Knative in Action
   cover: knative-in-action.jpeg
-  order: 1
+  order: 5
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781617296642/
@@ -528,7 +528,7 @@
 - title: Kubernetes Patterns
   subtitle: Kubernetes Patterns
   cover: kubernetes-patterns.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098131678/
@@ -546,7 +546,7 @@
 - title: Production Kubernetes
   subtitle: Production Kubernetes
   cover: production-kubernetes.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492092292/
@@ -566,7 +566,7 @@
 - title: Kubernetes Best Practices
   subtitle: Kubernetes Best Practices
   cover: kubernetes-best-practices.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492056461/
@@ -586,7 +586,7 @@
 - title: Kubernetes Operators
   subtitle: Kubernetes Operators
   cover: kubernetes-operators.jpeg
-  order: 1
+  order: 5
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492048039/
@@ -604,7 +604,7 @@
 - title: Service Mesh Patterns
   subtitle: Service Mesh Patterns
   cover: service-mesh-patterns.jpeg
-  order: 1
+  order: 6
   weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492086444/
@@ -642,7 +642,7 @@
 - title: Certified Kubernetes Administrator (CKA) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: cka.jpeg
-  order: 1
+  order: 4
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098107215/
@@ -659,7 +659,7 @@
 - title: Certified Kubernetes Application Developer (CKAD) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: ckad.jpeg
-  order: 1
+  order: 4
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492083726/
@@ -676,7 +676,7 @@
 - title: Certified Kubernetes Security Specialist (CKS) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: cks.jpeg
-  order: 1
+  order: 4
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098132965/
