@@ -7,14 +7,14 @@
 | Adam Bellemare | <ul><li>[*Building Event-Driven Microservices*](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)</li> <li>[*Building an Event-Driven Data Mesh*](https://learning.oreilly.com/library/view/-/9781098127596/)</li></ul> |
 | Adam Stubblefield | <ul><li>[*Building Secure & Reliable Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Alex Brand | <ul><li>[*Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
-| Alex Edwards | <ul><li>[*Let's Go*](https://lets-go.alexedwards.net/)</li> <li>[*Let's Go Further!*](https://lets-go-further.alexedwards.net/)</li></ul> |
+| Alex Edwards | <ul><li>[*Let's Go Further!*](https://lets-go-further.alexedwards.net/)</li> <li>[*Let's Go*](https://lets-go.alexedwards.net/)</li></ul> |
 | Alex Xu | <ul><li>[*System Design Interview*](https://www.goodreads.com/book/show/54617137-system-design-interview)</li> <li>[*System Design Interview volume 2*](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide)</li></ul> |
 | Ana OPera | <ul><li>[*Building Secure & Reliable Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Benjamin Muschko | <ul><li>[*Certified Kubernetes Administrator (CKA) Study Guide*](https://learning.oreilly.com/library/view/-/9781098107215/)</li> <li>[*Certified Kubernetes Application Developer (CKAD) Study Guide*](https://learning.oreilly.com/library/view/-/9781492083726/)</li> <li>[*Certified Kubernetes Security Specialist (CKS) Study Guide*](https://learning.oreilly.com/library/view/-/9781098132965/)</li></ul> |
 | Bernd Ruecker | <ul><li>[*Practical Process Automation*](https://learning.oreilly.com/library/view/-/9781492061441/)</li></ul> |
-| Betsy Beyer | <ul><li>[*The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li> <li>[*Building Secure & Reliable Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li> <li>[*Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)</li></ul> |
+| Betsy Beyer | <ul><li>[*Building Secure & Reliable Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li> <li>[*The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li> <li>[*Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)</li></ul> |
 | Bilgin Ibryam | <ul><li>[*Kubernetes Patterns*](https://learning.oreilly.com/library/view/-/9781098131678/)</li></ul> |
-| Brendan Burns | <ul><li>[*Designing Distributed Systems*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)</li> <li>[*Kubernetes*](https://learning.oreilly.com/library/view/-/9781098110192/)</li> <li>[*Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li></ul> |
+| Brendan Burns | <ul><li>[*Kubernetes*](https://learning.oreilly.com/library/view/-/9781098110192/)</li> <li>[*Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li> <li>[*Designing Distributed Systems*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)</li></ul> |
 | Chanaka Fernando | <ul><li>[*Designing Microservices Platforms with NATS*](https://learning.oreilly.com/library/view/-/9781801072212/)</li></ul> |
 | Charity Majors | <ul><li>[*Observability Engineering*](https://www.goodreads.com/book/show/54617137-system-design-interview)</li></ul> |
 | Chris Jones | <ul><li>[*Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)</li></ul> |
@@ -24,7 +24,7 @@
 | David Farley | <ul><li>[*Continuous Delivery*](https://learning.oreilly.com/library/view/-/9780321670250/)</li></ul> |
 | David K. Rensin | <ul><li>[*The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li></ul> |
 | Eddie Villalba | <ul><li>[*Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li></ul> |
-| Gene Kim | <ul><li>[*The Phoenix Project*](https://learning.oreilly.com/library/view/-/9781457191350/)</li> <li>[*The Unicorn Project*](https://learning.oreilly.com/library/view/-/9781098124175/)</li> <li>[*The DevOPS Handbook*](https://learning.oreilly.com/library/view/-/9781457191381/)</li></ul> |
+| Gene Kim | <ul><li>[*The Phoenix Project*](https://learning.oreilly.com/library/view/-/9781457191350/)</li> <li>[*The DevOPS Handbook*](https://learning.oreilly.com/library/view/-/9781457191381/)</li> <li>[*The Unicorn Project*](https://learning.oreilly.com/library/view/-/9781098124175/)</li></ul> |
 | George Miranda | <ul><li>[*Observability Engineering*](https://www.goodreads.com/book/show/54617137-system-design-interview)</li></ul> |
 | George Spafford | <ul><li>[*The Phoenix Project*](https://learning.oreilly.com/library/view/-/9781457191350/)</li></ul> |
 | Gwen Shapira | <ul><li>[*Kafka - The Definitive Guide*](https://learning.oreilly.com/library/view/-/9781492043072/)</li></ul> |

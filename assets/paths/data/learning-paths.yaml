@@ -140,11 +140,11 @@
     - serverless
 - name: Docker
   ref: docker
-  status: coming-soon
+  status: new
   desc: |
-    TODO
+    Applications are not easy to develop, build and deploy, Docker containers help to ease that pain and also to deliver faster, more reliably and make apps amazingly portable. Linux containers are a technological revolution that transformed the industry forever, Docker was the catalyst, it drew near containers to developers and operators, nowadays is used world wide do develop and deploy applications in many ways. 
   summary: |
-    TODO
+    What is a container? How is that useful? Why use it?, you will find all that and more if you follow this path. Discover what is behind the container revolution and start taking advantage of it!.
   related:
     - kubernetes
     - software-development
@@ -160,8 +160,8 @@
   summary: |
     Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
   related:
-    - docker
     - microservices
+    - docker
   suggested:
     - devops
   tags: ["container-runtime", "ingress", "controller", "crd", "operator", "csi-driver", "admission-controller", "service-mesh", "platform-engineering"]

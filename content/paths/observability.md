@@ -6,7 +6,7 @@ TODO
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** | ![img](/assets/books/covers/observability-engineering.jpeg) | [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones, George Miranda* <br> *Published in 2022* <br> *318 pages* <br>  | TODO |
+| **1** | ![img](/assets/books/covers/observability-engineering.jpeg) | [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones, George Miranda* <br> *Published in 2022* <br> *318 pages* <br> :dog2: :orange_book: | TODO |
 
 The following paths are opened to you now, choose wisely:
 
