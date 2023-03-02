@@ -233,6 +233,8 @@
     - devops
   suggested:
     - TODO
+  logo:
+    source: /assets/paths/icons/iac.png
 - name: Observability
   ref: observability
   status: new

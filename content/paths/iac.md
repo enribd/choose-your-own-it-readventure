@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  IaC Learning Path (1 :books:)
+# <img height="35" src="/assets/paths/icons/iac.png" alt="iac" title="IaC"/> IaC Learning Path (1 :books:)
 
 TODO
 
