@@ -91,7 +91,7 @@
     source: /assets/paths/icons/software-architecture.png
 - name: Software Development
   ref: software-development
-  status: in-progress
+  status: coming-soon
   desc: |
     TODO
   summary: |
