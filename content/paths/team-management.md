@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-#  Team Management Learning Path (3 :books:)
+# <img height="35" src="/assets/paths/icons/team-management.png" alt="team-management" title="Team Management"/> Team Management Learning Path (3 :books:)
 
 TODO
 

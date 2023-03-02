@@ -71,6 +71,8 @@
   suggested:
     - software-architecture
   tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
+  logo:
+    source: /assets/paths/icons/system-design.png
 - name: Software Architecture
   ref: software-architecture
   status: in-progress
@@ -191,6 +193,8 @@
     - management
   suggested:
     - TODO
+  logo:
+    source: /assets/paths/icons/team-management.png
 - name: DevOps
   ref: devops
   status: coming-soon
@@ -213,6 +217,9 @@
     - devops
   suggested:
     - TODO
+  tags: []
+  logo:
+    source: /assets/paths/icons/sre.png
 - name: IaC
   ref: iac
   status: new
