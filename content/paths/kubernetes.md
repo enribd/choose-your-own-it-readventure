@@ -13,8 +13,8 @@ After mastering building and running containers at small scale, orchestration is
 | **4** | ![img](/assets/books/covers/ckad.jpeg) | [**Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781492083726/) <br> *Benjamin Muschko* <br> *Published in 2021* <br> *188 pages* <br> :dog2: :orange_book: | If you are interested in getting certified as Kubernetes application developer this book offers you a guide to do just that. |
 | **4** | ![img](/assets/books/covers/cka.jpeg) | [**Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098107215/) <br> *Benjamin Muschko* <br> *Published in 2022* <br> *201 pages* <br> :dog2: :orange_book: | If you are interested in getting certified as Kubernetes administrator this book offers you a guide to do just that. |
 | **4** | ![img](/assets/books/covers/cks.jpeg) | [**Certified Kubernetes Security Specialist (CKS) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098132965/) <br> *Benjamin Muschko* <br> *Published in 2023* <br> *200 pages* <br>  | If you are interested in getting certified as Kubernetes security specialist this book offers you a guide to do just that. |
-| **5** | ![img](/assets/books/covers/knative-in-action.jpeg) | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br> :tiger2: :green_book: :ok: | Knative is, along [OpenFaaS](https://www.openfaas.com), one of the most popular ways to build a serverless platform over Kubernetes. The author starts from zero explaining the motivation to adopt a serverless paradigm, then presents Knative in a technical demonstration of all its basic and some of the more advanced features like traffic management and application delivery. There are not many books on the topic yet as Knative is still a relatively young project. |
 | **5** | ![img](/assets/books/covers/kubernetes-operators.jpeg) | [**Kubernetes Operators: Automating the Container Orchestration Platform**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> :tiger2: :orange_book: :arrows_counterclockwise: | Operators are another way of leveraging Kubernetes itself, they offer you the possibility to customize and automate your workloads management. Its a very popular pattern, in this book you will find what you need to get started to develop your own operator and all the tooling around the process. This book is a little bit 'old', many things have changed in this topic since 2020, it needs a second edition to adapt its contents to more updated practices. |
+| **5** | ![img](/assets/books/covers/knative-in-action.jpeg) | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br> :tiger2: :green_book: :ok: | Knative is, along [OpenFaaS](https://www.openfaas.com), one of the most popular ways to build a serverless platform over Kubernetes. The author starts from zero explaining the motivation to adopt a serverless paradigm, then presents Knative in a technical demonstration of all its basic and some of the more advanced features like traffic management and application delivery. There are not many books on the topic yet as Knative is still a relatively young project. |
 
 The following paths are opened to you now, choose wisely:
 
@@ -23,8 +23,6 @@ The following paths are opened to you now, choose wisely:
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
-
-- [DevOps :new:](/content/paths/devops.md): TODO
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -36,6 +34,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-01</sub>
+<sub>Last modified 2023-03-02</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path)

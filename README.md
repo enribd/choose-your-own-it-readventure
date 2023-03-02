@@ -17,21 +17,21 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 - **20** learning paths :mortar_board:
   - **2**  [*APIs*](/content/paths/apis.md) books :new:: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
-  - **5**  [*DevOps*](/content/paths/devops.md) books :new:: *TODO*
   - **1**  [*Domain Driven Design (DDD)*](/content/paths/domain-driven-design.md) books :new:: *TODO*
   - **3** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:: *TODO*
   - **1**  [*IaC*](/content/paths/iac.md) books :new:: *TODO*
   - **10** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
   - **4** <img height="20" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
   - **1**  [*Observability*](/content/paths/observability.md) books :new:: *TODO*
-  - **6**  [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
+  - **7**  [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
   - **5**  [*Software Development*](/content/paths/software-development.md) books :construction:: *TODO*
   - **3**  [*SRE*](/content/paths/sre.md) books :new:: *TODO*
   - **18**  [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:: *TODO*
   - **3**  [*Team Management*](/content/paths/team-management.md) books :new:: *TODO*
+  - *DevOps* :soon: *TODO*
   - *Event Driven Architecture (EDA)* :soon: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.*
   - *Serverless* :soon: *Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.*
-- **48** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **47** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **70** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
@@ -65,7 +65,7 @@ All books have some badges associated to describe some aspect of them:
 | :cool: | Very Good |
 | :top:  | Excellent |
 
-**Note**: there are just four levels because all books mentioned are good reads, bad books don't belong in this list :thumbsdown:.
+**Note**: there are just four levels because all books mentioned are good reads, bad books don't belong here :thumbsdown:.
 
 - Other badges:
 
@@ -94,6 +94,6 @@ Of course, there will be books broadly considered a must-read that I have not li
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
 
 ---
-<sub>Last modified 2023-03-01</sub>
+<sub>Last modified 2023-03-02</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

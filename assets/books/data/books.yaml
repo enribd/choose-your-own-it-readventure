@@ -502,9 +502,11 @@
   desc: |-
     TODO
   learning_paths:
+    - software-architecture
     - software-development
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Kubernetes
   subtitle: Up & Running
   cover: kubernetes-up-and-running.jpeg
@@ -841,7 +843,7 @@
 - title: Accelerate
   subtitle: Building and Scaling High Performing Technology Organizations
   cover: accelerate.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://www.goodreads.com/book/show/35747076-accelerate
@@ -850,11 +852,13 @@
   release: 2018
   pages: 288
   desc: |-
-    TODO
+    This books is born from a task of data collected by the authors during their career participating in software projets. The experience was converted to book format with added conclusions and it has been a reference since the publication. Common problems of communication and team misfunction are exposed as well as some remedies to avoid them when building teams or organizations.
   learning_paths:
     - team-management
   badges:
-    - TODO
+    - intermediate
+    - read
+    - very_good
 - title: Team Topologies
   subtitle: Team Topologies
   cover: team-topologies.jpeg
@@ -872,13 +876,15 @@
   learning_paths:
     - team-management
   badges:
-    - TODO
+    - easy
+    - read
+    - good
 - title: Remote Teams Interactions Workbook
-  subtitle: Remote Teams Interactions Workbook
+  subtitle: Using Team Topologies Patterns for Remote Working
   cover: remote-teams-interactions-workbook.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://teamtopologies.com/workbook
   authors:
     - Matthew Skelton

@@ -10,7 +10,7 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/content/paths/devops.md): TODO
+- :soon: DevOps: TODO
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -19,6 +19,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 
 ---
-<sub>Last modified 2023-03-01</sub>
+<sub>Last modified 2023-03-02</sub>
 
 [**⬆ back to top**](#iac-learning-path)

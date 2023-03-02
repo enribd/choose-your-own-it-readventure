@@ -193,7 +193,7 @@
     - TODO
 - name: DevOps
   ref: devops
-  status: new
+  status: coming-soon
   desc: |
     TODO
   summary: |

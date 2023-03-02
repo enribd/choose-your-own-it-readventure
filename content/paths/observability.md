@@ -11,8 +11,8 @@ TODO
 The following paths are opened to you now, choose wisely:
 
 - [SRE :new:](/content/paths/sre.md): TODO
-- [DevOps :new:](/content/paths/devops.md): TODO
 - [Microservices :construction:](/content/paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- :soon: DevOps: TODO
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -21,6 +21,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 
 ---
-<sub>Last modified 2023-03-01</sub>
+<sub>Last modified 2023-03-02</sub>
 
 [**⬆ back to top**](#observability-learning-path)

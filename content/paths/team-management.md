@@ -6,14 +6,13 @@ TODO
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** | ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br>  | TODO |
-| **1** | ![img](/assets/books/covers/team-topologies.jpeg) | [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br>  | Team Topologies offers a modern vision about how teams should be created and managed to optimize a company's internal functioning as well as the output it produces. It uses ideas from other management books, like *Accelerate* (Nicole Forsgren), and takes them a step further to create a framework that will teach you form, combine and coordinate teams. The authors present four different kinds of teams, the role they play for a business domain and how they should communicate between them to achieve the organization goals as efficiently as possible. Also, you will discover things to avoid when managing teams, and what affect negatively to their performance. |
-| **1** | ![img](/assets/books/covers/remote-teams-interactions-workbook.jpeg) | [**Remote Teams Interactions Workbook: Remote Teams Interactions Workbook**](https://teamtopologies.com/workbook) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2022* <br> * pages* <br>  | TODO |
+| **1** | ![img](/assets/books/covers/team-topologies.jpeg) | [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br> :hatched_chick: :green_book: :up: | Team Topologies offers a modern vision about how teams should be created and managed to optimize a company's internal functioning as well as the output it produces. It uses ideas from other management books, like *Accelerate* (Nicole Forsgren), and takes them a step further to create a framework that will teach you form, combine and coordinate teams. The authors present four different kinds of teams, the role they play for a business domain and how they should communicate between them to achieve the organization goals as efficiently as possible. Also, you will discover things to avoid when managing teams, and what affect negatively to their performance. |
+| **2** | ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br> :dog2: :green_book: :cool: | This books is born from a task of data collected by the authors during their career participating in software projets. The experience was converted to book format with added conclusions and it has been a reference since the publication. Common problems of communication and team misfunction are exposed as well as some remedies to avoid them when building teams or organizations. |
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/content/paths/devops.md): TODO
 - [Management :new:](/content/paths/management.md): TODO
+- :soon: DevOps: TODO
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -22,6 +21,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 
 ---
-<sub>Last modified 2023-03-01</sub>
+<sub>Last modified 2023-03-02</sub>
 
 [**⬆ back to top**](#team-management-learning-path)
