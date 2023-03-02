@@ -20,7 +20,7 @@
     source: /assets/paths/icons/microservices.png
 - name: APIs
   ref: apis
-  status: new
+  status: coming-soon
   desc: |
     TODO
   summary: |
@@ -131,7 +131,7 @@
     - serverless
 - name: Domain Driven Design (DDD)
   ref: domain-driven-design
-  status: new
+  status: coming-soon
   desc: |
     TODO
   summary: |
@@ -246,6 +246,8 @@
     - microservices
   suggested:
     - TODO
+  logo:
+    source: /assets/paths/icons/observability.png
 - name: CI/CD
   ref: cicd
   status: coming-soon

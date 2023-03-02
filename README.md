@@ -16,18 +16,18 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 
 - **20** learning paths :mortar_board:
-  - **2**  [*APIs*](/content/paths/apis.md) books :new:: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
-  - **1**  [*Domain Driven Design (DDD)*](/content/paths/domain-driven-design.md) books :new:: *TODO*
   - **3** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/paths/golang.md) books :ballot_box_with_check:: *TODO*
   - **1**  [*IaC*](/content/paths/iac.md) books :new:: *TODO*
   - **10** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
   - **4** <img height="20" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
-  - **1**  [*Observability*](/content/paths/observability.md) books :new:: *TODO*
+  - **1** <img height="20" src="/assets/paths/icons/observability.png" alt="observability" title="Observability"/> [*Observability*](/content/paths/observability.md) books :new:: *TODO*
   - **7** <img height="20" src="/assets/paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
   - **3** <img height="20" src="/assets/paths/icons/sre.png" alt="sre" title="SRE"/> [*SRE*](/content/paths/sre.md) books :new:: *TODO*
   - **18** <img height="20" src="/assets/paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:: *TODO*
   - **3** <img height="20" src="/assets/paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/paths/team-management.md) books :new:: *TODO*
+  - *APIs* :soon: *APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.*
   - *DevOps* :soon: *TODO*
+  - *Domain Driven Design (DDD)* :soon: *TODO*
   - *Event Driven Architecture (EDA)* :soon: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.*
   - *Serverless* :soon: *Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.*
   - *Software Development* :soon: *TODO*
