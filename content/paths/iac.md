@@ -10,7 +10,7 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- :soon: DevOps: TODO
+- :soon: DevOps: Coming soon
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

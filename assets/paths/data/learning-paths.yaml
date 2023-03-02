@@ -36,7 +36,7 @@
   ref: event-driven-architecture
   status: coming-soon
   desc: |
-    TODO
+    Coming soon
   summary: |
     Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
   suggested:
@@ -48,7 +48,7 @@
   ref: serverless
   status: coming-soon
   desc: |
-    TODO
+    Coming soon
   summary: |
     Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
   suggested:
@@ -93,9 +93,9 @@
   ref: software-development
   status: coming-soon
   desc: |
-    TODO
+    Coming soon
   summary: |
-    TODO
+    Coming soon
   related:
     - golang
   suggested:
@@ -133,9 +133,9 @@
   ref: domain-driven-design
   status: coming-soon
   desc: |
-    TODO
+    Coming soon
   summary: |
-    TODO
+    Coming soon
   related:
     - software-architecture
   suggested:
@@ -201,9 +201,9 @@
   ref: devops
   status: coming-soon
   desc: |
-    TODO
+    Coming soon
   summary: |
-    TODO
+    Coming soon
   related:
     - team-management
   suggested:
