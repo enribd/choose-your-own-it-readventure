@@ -23,7 +23,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - **10** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
   - **4** <img height="20" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
   - **1**  [*Observability*](/content/paths/observability.md) books :new:: *TODO*
-  - **7**  [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
+  - **7** <img height="20" src="/assets/paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> [*Software Architecture*](/content/paths/software-architecture.md) books :construction:: *TODO*
   - **5**  [*Software Development*](/content/paths/software-development.md) books :construction:: *TODO*
   - **3** <img height="20" src="/assets/paths/icons/sre.png" alt="sre" title="SRE"/> [*SRE*](/content/paths/sre.md) books :new:: *TODO*
   - **18** <img height="20" src="/assets/paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/paths/system-design.md) books :ballot_box_with_check:: *TODO*

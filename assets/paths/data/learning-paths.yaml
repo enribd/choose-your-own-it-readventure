@@ -87,6 +87,8 @@
     - serverless
   suggested:
     - system-design
+  logo:
+    source: /assets/paths/icons/software-architecture.png
 - name: Software Development
   ref: software-development
   status: in-progress
