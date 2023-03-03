@@ -118,7 +118,7 @@
     source: https://skillicons.dev/icons?i=go
 - name: Cloud Native Applications
   ref: cloud-native-apps
-  status: new
+  status: coming-soon
   desc: |
     From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
   summary: |
