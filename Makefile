@@ -36,8 +36,3 @@ debug: ### Run go binary in debug mode (vars: contents)
 	$(info Build and run code in debug mode)
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug --contents=${contents}
 .PHONY: debug
-
-trace: ### Run go binary in trace mode (vars: contents)
-	$(info Build and run code in trace mode)
-	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --debug --trace --contents=${contents}
-.PHONY: trace

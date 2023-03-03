@@ -17,9 +17,9 @@ Starting your adventure is as easy as picking the set of skills that you want to
 {{/* Build learning path index with the coming soon paths at the end*/}}
 {{ $badgesData := .BadgesData -}}
 {{ $lpData := .LpData -}}
-- **{{ .Stats.TotalActiveLearningPaths }}** learning paths :mortar_board:
+- **{{ .Stats.TotalLearningPaths }}** learning paths :mortar_board:
 {{- $notReady := list -}}
-{{- range $ref, $num := .Stats.BooksInLearningPath -}}
+{{- range $ref, $num := .Stats.TotalLearningPathBooks -}}
 {{- with $lp := get $lpData ($ref | toString) -}}
 {{- $icon := get $badgesData $lp.Status -}}
 {{- if or (eq $num 0) (eq $lp.Status "coming-soon") }}
@@ -31,7 +31,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
 {{- end -}}
 {{- end }}
 {{ $notReady | join "\n" }}
-- **{{ .Stats.TotalActiveBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BookIndex }}).
+- **{{ .Stats.TotalBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BookIndex }}).
 - **{{ .Stats.TotalAuthors }}** authors :black_nib: , discover them all in the [:scroll: author index]({{ .AuthorIndex }}).
 
 ## :name_badge: Badges

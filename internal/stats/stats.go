@@ -1,25 +1,42 @@
 package stats
 
 type Stats struct {
-	TotalBooks                int
-	TotalActiveBooks          int
-	TotalSkippedBooks         int
-	TotalAuthors              int
-	TotalLearningPaths        int
-	TotalActiveLearningPaths  int
-	TotalSkippedLearningPaths int
-	BooksInLearningPath       map[string]int
+	TotalBooks                int            // Books shown in content
+	TotalSkippedBooks         int            // Books marked as draft
+	TotalAuthors              int            // Authors shown in content
+	TotalLearningPaths        int            // Learning paths shown in content
+	TotalSkippedLearningPaths int            // Learning paths marked as coming soon
+	TotalLearningPathBooks    map[string]int // Number of books in learning path
 }
 
+// Global stats data
 var Data Stats
 
-func New(tb, tab, tsb, ta, tlp, talp, tslp int, bilp map[string]int) {
-	Data.TotalBooks = tb
-	Data.TotalActiveBooks = tab
-	Data.TotalSkippedBooks = tsb
-	Data.TotalAuthors = ta
-	Data.TotalLearningPaths = tlp
-	Data.TotalActiveLearningPaths = tlp - tslp
-	Data.TotalSkippedLearningPaths = tslp
-	Data.BooksInLearningPath = bilp
+// Initialize stats data
+func New() {
+	Data.TotalLearningPathBooks = make(map[string]int)
+}
+
+func SetTotalAuthors(total int) {
+	Data.TotalAuthors = total
+}
+
+func SetTotalBooks(total int) {
+	Data.TotalBooks = total
+}
+
+func IncSkippedBook() {
+	Data.TotalSkippedBooks++
+}
+
+func SetTotalLearningPaths(total int) {
+	Data.TotalLearningPaths = total
+}
+
+func IncSkippedLearningPath() {
+	Data.TotalSkippedLearningPaths++
+}
+
+func SetTotalLearningPathBooks(lpRef string, total int) {
+	Data.TotalLearningPathBooks[lpRef] = total
 }

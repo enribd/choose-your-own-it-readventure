@@ -4,53 +4,45 @@ import (
 	"io/ioutil"
 	"log"
 	"path/filepath"
+	"sort"
+
+	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"gopkg.in/yaml.v3"
 )
 
-type LearningPath struct {
-	Name      string            `yaml:"name"`
-	Ref       LearningPathRef   `yaml:"ref"`
-	Status    string            `yaml:"status"`
-	Desc      string            `yaml:"desc"`
-	Summary   string            `yaml:"summary"`
-	Related   []LearningPathRef `yaml:"related,omitempty"`
-	Suggested []LearningPathRef `yaml:"suggested,omitempty"`
-	Tags      []Tag             `yaml:"tags,omitempty"`
-	Logo      Logo              `yaml:"logo,omitempty"`
-}
-
-type LearningPathRef string
-type Tag string
-
-type Book struct {
-	Cover             string            `yaml:"cover"`
-	Title             string            `yaml:"title"`
-	Subtitle          string            `yaml:"subtitle"`
-	Order             int               `yaml:"order"`
-	Weight            int               `yaml:"weight"`
-	Draft             bool              `yaml:"draft"`
-	Url               string            `yaml:"url"`
-	Authors           []string          `yaml:"authors"`
-	Release           string            `yaml:"release"`
-	Pages             string            `yaml:"pages"`
-	Desc              string            `yaml:"desc"`
-	LearningPathsRefs []LearningPathRef `yaml:"learning_paths"`
-	BadgesRefs        []BadgeRef        `yaml:"badges"`
-}
-
-type BadgeRef string
-
-type Logo struct {
-	Source string `yaml:"source"`
-	Height string `yaml:"height,omitempty"`
-	Width  string `yaml:"width,omitempty"`
-}
-
+// LearningPaths["ref"] = LearningPath{}
 var LearningPaths map[string]LearningPath = make(map[string]LearningPath)
+
+// This structure is the same as LearningPaths but type agnostic, used in
+// template data because it only allows map[string]interface{} types
+var LearningPathsTmpl map[string]interface{} = make(map[string]interface{})
+
+// Books["title"] = Book{}
 var Books map[string]Book = make(map[string]Book)
 
-func LoadBooks(basepath string) error {
+// Authors["name"] = []Book{}
+var Authors map[string][]Book = make(map[string][]Book)
+
+// LearningPathBooks["ref"] = []Book{}
+var LearningPathBooks map[LearningPathRef][]Book = make(map[LearningPathRef][]Book)
+
+func Load(booksPath, lpsPath string) error {
+	err := loadBooks(booksPath)
+	if err != nil {
+		return err
+	}
+
+	// Always load learning paths after books because learning paths without books are skipped.
+	err = loadLearningPaths(lpsPath)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func loadBooks(basepath string) error {
 	log.Printf("load books from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
@@ -67,14 +59,52 @@ func LoadBooks(basepath string) error {
 		}
 
 		for _, book := range content {
-			Books[book.Title] = book
+			// if book is in draft mode skip it
+			if book.Draft {
+				stats.IncSkippedBook()
+			} else {
+				// Add book to content
+				Books[book.Title] = book
+				stats.SetTotalBooks(len(Books))
+
+				// Extract authors data
+				for _, name := range book.Authors {
+					Authors[name] = append(Authors[name], book)
+					stats.SetTotalAuthors(len(Authors))
+				}
+
+				// Insert book in learning path
+				for _, lpRef := range book.LearningPathsRefs {
+					LearningPathBooks[lpRef] = append(LearningPathBooks[lpRef], book)
+				}
+			}
 		}
 	}
+
+	sortAndCountLearningPathBooks()
 
 	return nil
 }
 
-func LoadLearningPaths(basepath string) error {
+// Sort and count books in each learning path by order ascendant and heavier weight
+func sortAndCountLearningPathBooks() {
+	for lpRef, books := range LearningPathBooks {
+		// Sort
+		sort.SliceStable(books, func(i, j int) bool {
+			if books[i].Order != books[j].Order {
+				return books[i].Order < books[j].Order
+			}
+
+			// If orders are equal then sort by weight
+			return books[i].Weight > books[j].Weight
+		})
+
+		// Count
+		stats.SetTotalLearningPathBooks(string(lpRef), len(LearningPathBooks[lpRef]))
+	}
+}
+
+func loadLearningPaths(basepath string) error {
 	log.Printf("load learning paths from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
@@ -91,7 +121,14 @@ func LoadLearningPaths(basepath string) error {
 		}
 
 		for _, lp := range content {
-			LearningPaths[string(lp.Ref)] = lp
+			// skip if lp has no books or if status is coming soon
+			if lp.Status == "coming-soon" || len(LearningPathBooks[lp.Ref]) == 0 {
+				stats.IncSkippedLearningPath()
+			} else {
+				LearningPaths[string(lp.Ref)] = lp
+				LearningPathsTmpl[string(lp.Ref)] = lp
+				stats.SetTotalLearningPaths(len(LearningPaths))
+			}
 		}
 	}
 
