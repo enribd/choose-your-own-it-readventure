@@ -31,7 +31,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - *Event Driven Architecture (EDA)* :soon: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.*
   - *Serverless* :soon: *Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.*
   - *Software Development* :soon: *Coming soon*
-- **47** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **46** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **70** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
@@ -94,6 +94,6 @@ Of course, there will be books broadly considered a must-read that I have not li
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
 
 ---
-<sub>Last modified 2023-03-02</sub>
+<sub>Last modified 2023-03-03</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

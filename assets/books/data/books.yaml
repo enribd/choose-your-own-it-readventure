@@ -591,7 +591,8 @@
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - easy
+    - not_scheduled
 - title: Kubernetes Operators
   subtitle: Automating the Container Orchestration Platform
   cover: kubernetes-operators.jpeg
@@ -692,7 +693,7 @@
   cover: cks.jpeg
   order: 4
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/9781098132965/
   authors:
     - Benjamin Muschko

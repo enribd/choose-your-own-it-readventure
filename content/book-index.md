@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (47 :books:)
+# :clipboard: Book Index (46 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -12,7 +12,6 @@
 | ![img](/assets/books/covers/building-an-event-driven-data-mesh.jpeg) | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* <br>  | <ul><li>[System Design](/content/paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/cka.jpeg) | [**Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098107215/) <br> *Benjamin Muschko* <br> *Published in 2022* <br> *201 pages* <br> :dog2: :orange_book: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/ckad.jpeg) | [**Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781492083726/) <br> *Benjamin Muschko* <br> *Published in 2021* <br> *188 pages* <br> :dog2: :orange_book: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
-| ![img](/assets/books/covers/cks.jpeg) | [**Certified Kubernetes Security Specialist (CKS) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098132965/) <br> *Benjamin Muschko* <br> *Published in 2023* <br> *200 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/clean-architecture.jpeg) | [**Clean Architecture: A Craftsman's Guide to Software Structure and Design**](https://learning.oreilly.com/library/view/-/9780134494272/) <br> *Robert C. Martin* <br> *Published in 2017* <br> *432 pages* <br> :dog2: :orange_book: | <ul><li>[Software Architecture](/content/paths/software-architecture.md)</li><li>[Software Development](/content/paths/software-development.md)</li></ul> |
 | ![img](/assets/books/covers/clean-code.jpeg) | [**Clean Code: A Handbook of Agile Software Craftsmanship**](https://learning.oreilly.com/library/view/-/9780136083238/) <br> *Martin Robert* <br> *Published in 2008* <br> *464 pages* <br>  | <ul><li>[Software Development](/content/paths/software-development.md)</li></ul> |
 | ![img](/assets/books/covers/cloud-native-go.jpeg) | [**Cloud Native Go: Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* <br>  | <ul><li>[Software Development](/content/paths/software-development.md)</li><li>[Golang](/content/paths/golang.md)</li></ul> |
@@ -29,7 +28,7 @@
 | ![img](/assets/books/covers/kafka-the-definitive-guide.jpeg) | [**Kafka - The Definitive Guide: Real-Time Data and Stream Processing at Scale**](https://learning.oreilly.com/library/view/-/9781492043072/) <br> *Gwen Shapira* <br> *Published in 2021* <br> *488 pages* <br>  | <ul><li>[Event Driven Architecture (EDA)](/content/paths/event-driven-architecture.md)</li><li>[System Design](/content/paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/knative-in-action.jpeg) | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Serverless](/content/paths/serverless.md)</li><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-up-and-running.jpeg) | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
-| ![img](/assets/books/covers/kubernetes-best-practices.jpeg) | [**Kubernetes Best Practices: Kubernetes Best Practices**](https://learning.oreilly.com/library/view/-/9781492056461/) <br> *Brendan Burns, Eddie Villalba, Dave Strebel, Lachlan Evenson* <br> *Published in 2019* <br> *268 pages* <br>  | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
+| ![img](/assets/books/covers/kubernetes-best-practices.jpeg) | [**Kubernetes Best Practices: Kubernetes Best Practices**](https://learning.oreilly.com/library/view/-/9781492056461/) <br> *Brendan Burns, Eddie Villalba, Dave Strebel, Lachlan Evenson* <br> *Published in 2019* <br> *268 pages* <br> :hatched_chick: :orange_book: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-operators.jpeg) | [**Kubernetes Operators: Automating the Container Orchestration Platform**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> :tiger2: :orange_book: :arrows_counterclockwise: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-patterns.jpeg) | [**Kubernetes Patterns: Kubernetes Patterns**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023* <br> *300 pages* <br> :hatched_chick: :green_book: :cool: :arrows_counterclockwise: :soon: | <ul><li>[Kubernetes](/content/paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/learning-domain-driven-design.jpeg) | [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* <br>  | <ul><li>[Domain Driven Design (DDD)](/content/paths/domain-driven-design.md)</li><li>[Software Architecture](/content/paths/software-architecture.md)</li><li>[System Design](/content/paths/system-design.md)</li></ul> |
@@ -53,6 +52,6 @@
 | ![img](/assets/books/covers/the-unicorn-project.jpeg) | [**The Unicorn Project: The Unicorn Project**](https://learning.oreilly.com/library/view/-/9781098124175/) <br> *Gene Kim* <br> *Published in 2019* <br> *352 pages* <br>  | <ul><li>[DevOps](/content/paths/devops.md)</li></ul> |
 
 ---
-<sub>Last modified 2023-03-02</sub>
+<sub>Last modified 2023-03-03</sub>
 
 [**⬆ back to top**](#book-index)
