@@ -20,8 +20,7 @@ The following paths are opened to you now, choose wisely:
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
 - [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): TODO
-- [Observability :new:](/content/learning-paths/observability.md): TODO
-- [Observability :new:](/content/learning-paths/observability.md): TODO
+
 - [Observability :new:](/content/learning-paths/observability.md): TODO
 
 

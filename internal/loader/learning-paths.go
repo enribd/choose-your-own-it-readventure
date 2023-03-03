@@ -31,10 +31,14 @@ func loadLearningPaths(basepath string) error {
 				stats.IncSkippedLearningPath()
 			} else {
 				LearningPaths[string(lp.Ref)] = lp
-				LearningPathsTmpl[string(lp.Ref)] = lp
 				stats.SetTotalLearningPaths(len(LearningPaths))
 			}
 		}
+	}
+
+	// Build auxiliar template structure
+	for lpRef, lp := range LearningPaths {
+		LearningPathsTmpl[string(lpRef)] = lp
 	}
 
 	return nil
