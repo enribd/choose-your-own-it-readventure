@@ -17,7 +17,7 @@
     - observability
   tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
-    source: /assets/paths/icons/microservices.png
+    source: /assets/learning-paths/icons/microservices.png
 - name: APIs
   ref: apis
   status: coming-soon
@@ -72,7 +72,7 @@
     - software-architecture
   tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
   logo:
-    source: /assets/paths/icons/system-design.png
+    source: /assets/learning-paths/icons/system-design.png
 - name: Software Architecture
   ref: software-architecture
   status: in-progress
@@ -88,7 +88,7 @@
   suggested:
     - system-design
   logo:
-    source: /assets/paths/icons/software-architecture.png
+    source: /assets/learning-paths/icons/software-architecture.png
 - name: Software Development
   ref: software-development
   status: coming-soon
@@ -196,7 +196,7 @@
   suggested:
     - TODO
   logo:
-    source: /assets/paths/icons/team-management.png
+    source: /assets/learning-paths/icons/team-management.png
 - name: DevOps
   ref: devops
   status: coming-soon
@@ -221,7 +221,7 @@
     - TODO
   tags: []
   logo:
-    source: /assets/paths/icons/sre.png
+    source: /assets/learning-paths/icons/sre.png
 - name: IaC
   ref: iac
   status: new
@@ -234,7 +234,7 @@
   suggested:
     - TODO
   logo:
-    source: /assets/paths/icons/iac.png
+    source: /assets/learning-paths/icons/iac.png
 - name: Observability
   ref: observability
   status: new
@@ -249,7 +249,7 @@
   suggested:
     - TODO
   logo:
-    source: /assets/paths/icons/observability.png
+    source: /assets/learning-paths/icons/observability.png
 - name: CI/CD
   ref: cicd
   status: coming-soon

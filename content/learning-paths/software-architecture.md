@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> Software Architecture Learning Path (7 :books:)
+# <img height="35" src="/assets/learning-paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> Software Architecture Learning Path (7 :books:)
 
 TODO
 

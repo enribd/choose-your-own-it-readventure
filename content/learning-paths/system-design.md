@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/paths/icons/system-design.png" alt="system-design" title="System Design"/> System Design Learning Path (18 :books:)
+# <img height="35" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> System Design Learning Path (18 :books:)
 
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 

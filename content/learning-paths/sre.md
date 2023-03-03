@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/paths/icons/sre.png" alt="sre" title="SRE"/> SRE Learning Path (3 :books:)
+# <img height="35" src="/assets/learning-paths/icons/sre.png" alt="sre" title="SRE"/> SRE Learning Path (3 :books:)
 
 TODO
 

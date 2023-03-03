@@ -17,14 +17,14 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 - **9** learning paths :mortar_board:
   - **3** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang.md) books :ballot_box_with_check:: *TODO*
-  - **1** <img height="20" src="/assets/paths/icons/iac.png" alt="iac" title="IaC"/> [*IaC*](/content/learning-paths/iac.md) books :new:: *TODO*
+  - **1** <img height="20" src="/assets/learning-paths/icons/iac.png" alt="iac" title="IaC"/> [*IaC*](/content/learning-paths/iac.md) books :new:: *TODO*
   - **8** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/learning-paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
-  - **4** <img height="20" src="/assets/paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
-  - **1** <img height="20" src="/assets/paths/icons/observability.png" alt="observability" title="Observability"/> [*Observability*](/content/learning-paths/observability.md) books :new:: *TODO*
-  - **7** <img height="20" src="/assets/paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> [*Software Architecture*](/content/learning-paths/software-architecture.md) books :construction:: *TODO*
-  - **3** <img height="20" src="/assets/paths/icons/sre.png" alt="sre" title="SRE"/> [*SRE*](/content/learning-paths/sre.md) books :new:: *TODO*
-  - **18** <img height="20" src="/assets/paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design.md) books :ballot_box_with_check:: *TODO*
-  - **2** <img height="20" src="/assets/paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management.md) books :new:: *TODO*
+  - **4** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+  - **1** <img height="20" src="/assets/learning-paths/icons/observability.png" alt="observability" title="Observability"/> [*Observability*](/content/learning-paths/observability.md) books :new:: *TODO*
+  - **7** <img height="20" src="/assets/learning-paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> [*Software Architecture*](/content/learning-paths/software-architecture.md) books :construction:: *TODO*
+  - **3** <img height="20" src="/assets/learning-paths/icons/sre.png" alt="sre" title="SRE"/> [*SRE*](/content/learning-paths/sre.md) books :new:: *TODO*
+  - **18** <img height="20" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design.md) books :ballot_box_with_check:: *TODO*
+  - **2** <img height="20" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management.md) books :new:: *TODO*
 
 - **46** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **67** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).

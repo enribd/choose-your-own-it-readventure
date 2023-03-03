@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/paths/icons/observability.png" alt="observability" title="Observability"/> Observability Learning Path (1 :books:)
+# <img height="35" src="/assets/learning-paths/icons/observability.png" alt="observability" title="Observability"/> Observability Learning Path (1 :books:)
 
 TODO
 
