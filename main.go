@@ -11,7 +11,8 @@ import (
 
 	"github.com/enribd/choose-your-own-it-readventure/config"
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
-	"github.com/enribd/choose-your-own-it-readventure/internal/sources"
+	"github.com/enribd/choose-your-own-it-readventure/internal/loader"
+	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"github.com/Masterminds/sprig/v3"
@@ -20,7 +21,6 @@ import (
 
 var debug bool
 var contents string
-var totalSkippedBooks int
 
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
@@ -39,7 +39,7 @@ func main() {
 	stats.New()
 
 	// Load books and learning paths raw content from yaml files
-	err = sources.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths)
+	err = loader.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -62,8 +62,8 @@ func main() {
 	// Prepare template rendering data
 	var data = struct {
 		LpData              map[string]interface{}
-		BooksData           map[string]sources.Book
-		AuthorsData         map[string][]sources.Book
+		BooksData           map[string]models.Book
+		AuthorsData         map[string][]models.Book
 		BadgesData          map[string]interface{}
 		BookCovers          string
 		LearningPathsFolder string
@@ -71,12 +71,12 @@ func main() {
 		AuthorIndex         string
 		Stats               stats.Stats
 		// used only when rendering the learning paths template
-		LpBooksData         []sources.Book
-		CurrentLearningPath sources.LearningPath
+		LpBooksData         []models.Book
+		CurrentLearningPath models.LearningPath
 	}{
-		LpData:              sources.LearningPathsTmpl,
-		BooksData:           sources.Books,
-		AuthorsData:         sources.Authors,
+		LpData:              loader.LearningPathsTmpl,
+		BooksData:           loader.Books,
+		AuthorsData:         loader.Authors,
 		BadgesData:          badgesData,
 		BookCovers:          config.Cfg.Sources.BookCovers,
 		LearningPathsFolder: config.Cfg.Content.LearningPaths,
@@ -95,16 +95,16 @@ func main() {
 	file := "stdout" // if in debug mode spit to stdout
 
 	if slices.Contains(contents, "learning-paths") {
-		for _, lp := range sources.LearningPaths {
+		for _, lp := range loader.LearningPaths {
 			// Render learning paths that are only marked as either stable, new or in-progress, and have at least 1 book
-			if lp.Status != "coming-soon" && len(sources.LearningPathBooks[lp.Ref]) > 0 {
+			if lp.Status != "coming-soon" && len(loader.LearningPathBooks[lp.Ref]) > 0 {
 				data.CurrentLearningPath = lp
-				data.LpBooksData = sources.LearningPathBooks[lp.Ref]
+				data.LpBooksData = loader.LearningPathBooks[lp.Ref]
 
 				if !debug {
 					file = filepath.Join(config.Cfg.Content.LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 				}
-				log.Printf("rendering '%s' learning path in %s (%d books)", lp.Ref, file, len(sources.LearningPathBooks[lp.Ref]))
+				log.Printf("rendering '%s' learning path in %s (%d books)", lp.Ref, file, len(loader.LearningPathBooks[lp.Ref]))
 
 				if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
 					log.Fatalln(err)

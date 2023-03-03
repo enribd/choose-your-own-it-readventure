@@ -1,4 +1,4 @@
-package sources
+package loader
 
 import (
 	"io/ioutil"
@@ -6,26 +6,27 @@ import (
 	"path/filepath"
 	"sort"
 
+	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 
 	"gopkg.in/yaml.v3"
 )
 
 // LearningPaths["ref"] = LearningPath{}
-var LearningPaths map[string]LearningPath = make(map[string]LearningPath)
+var LearningPaths map[string]models.LearningPath = make(map[string]models.LearningPath)
 
 // This structure is the same as LearningPaths but type agnostic, used in
 // template data because it only allows map[string]interface{} types
 var LearningPathsTmpl map[string]interface{} = make(map[string]interface{})
 
 // Books["title"] = Book{}
-var Books map[string]Book = make(map[string]Book)
+var Books map[string]models.Book = make(map[string]models.Book)
 
 // Authors["name"] = []Book{}
-var Authors map[string][]Book = make(map[string][]Book)
+var Authors map[string][]models.Book = make(map[string][]models.Book)
 
 // LearningPathBooks["ref"] = []Book{}
-var LearningPathBooks map[LearningPathRef][]Book = make(map[LearningPathRef][]Book)
+var LearningPathBooks map[models.LearningPathRef][]models.Book = make(map[models.LearningPathRef][]models.Book)
 
 func Load(booksPath, lpsPath string) error {
 	err := loadBooks(booksPath)
@@ -50,7 +51,7 @@ func loadBooks(basepath string) error {
 	}
 
 	// Load the content of the files and populate the Books var
-	var content []Book
+	var content []models.Book
 	for _, f := range files {
 		log.Printf("book files %s\n", files)
 		content, err = loadBooksFile(f)
@@ -113,7 +114,7 @@ func loadLearningPaths(basepath string) error {
 	log.Printf("learning path files %s\n", files)
 
 	// Load the content of the files and populate the Books var
-	var content []LearningPath
+	var content []models.LearningPath
 	for _, f := range files {
 		content, err = loadLearningPathsFile(f)
 		if err != nil {
@@ -144,8 +145,8 @@ func getFiles(basepath string) ([]string, error) {
 	return files, err
 }
 
-func loadBooksFile(path string) ([]Book, error) {
-	var content []Book
+func loadBooksFile(path string) ([]models.Book, error) {
+	var content []models.Book
 
 	// Read the file
 	raw, err := ioutil.ReadFile(path)
@@ -162,8 +163,8 @@ func loadBooksFile(path string) ([]Book, error) {
 	return content, nil
 }
 
-func loadLearningPathsFile(path string) ([]LearningPath, error) {
-	var content []LearningPath
+func loadLearningPathsFile(path string) ([]models.LearningPath, error) {
+	var content []models.LearningPath
 
 	// Read the file
 	raw, err := ioutil.ReadFile(path)
