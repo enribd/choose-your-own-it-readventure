@@ -9,7 +9,6 @@ import (
 type Config struct {
 	Sources Sources `yaml:"sources"`
 	Content Content `yaml:"content"`
-	Badges  []Badge `yaml:"badges"`
 }
 
 // Location of data used to generate content
@@ -17,6 +16,7 @@ type Sources struct {
 	BookCovers    string `yaml:"books_covers"`
 	BookData      string `yaml:"books_data"`
 	LearningPaths string `yaml:"learning_paths_data"`
+	BadgesData    string `yaml:"badges_data"`
 }
 
 // Destination for generated content
@@ -25,20 +25,6 @@ type Content struct {
 	BookIndex     string `yaml:"book_index"`
 	AuthorIndex   string `yaml:"author_index"`
 	LearningPaths string `yaml:"learning_paths"`
-}
-
-// Icons by category
-type Badge struct {
-	Category   BadgeCategory `yaml:"category"`
-	BadgeIcons []BadgeIcon   `yaml:"icons"`
-}
-
-type BadgeCategory string
-
-type BadgeIcon struct {
-	Name string `yaml:"name"`
-	Code string `yaml:"code"`
-	Desc string `yaml:"desc"`
 }
 
 var Cfg Config

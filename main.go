@@ -39,7 +39,7 @@ func main() {
 	stats.New()
 
 	// Load books and learning paths raw content from yaml files
-	err = loader.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths)
+	err = loader.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths, config.Cfg.Sources.BadgesData)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -49,14 +49,6 @@ func main() {
 	if err = os.MkdirAll(config.Cfg.Content.LearningPaths, os.ModePerm); err != nil {
 		log.Println(err)
 		return
-	}
-
-	// Create auxiliar structure for easy access to badges badgesData["excellent"] = top
-	badgesData := map[string]interface{}{}
-	for _, b := range config.Cfg.Badges {
-		for _, i := range b.BadgeIcons {
-			badgesData[i.Name] = i.Code
-		}
 	}
 
 	// Prepare template rendering data
@@ -77,7 +69,7 @@ func main() {
 		LpData:              loader.LearningPathsTmpl,
 		BooksData:           loader.Books,
 		AuthorsData:         loader.Authors,
-		BadgesData:          badgesData,
+		BadgesData:          loader.Badges,
 		BookCovers:          config.Cfg.Sources.BookCovers,
 		LearningPathsFolder: config.Cfg.Content.LearningPaths,
 		BookIndex:           config.Cfg.Content.BookIndex,
