@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/paths/icons/team-management.png" alt="team-management" title="Team Management"/> Team Management Learning Path (3 :books:)
+# <img height="35" src="/assets/paths/icons/team-management.png" alt="team-management" title="Team Management"/> Team Management Learning Path (2 :books:)
 
 TODO
 
@@ -11,8 +11,6 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- [Management :new:](/content/paths/management.md): TODO
-- :soon: DevOps: Coming soon
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

@@ -7,13 +7,13 @@ I made this simple application to make easier adding content avoiding the toil o
 ## Architecture
 
 Components:
-- core:
-  - **loader**: reads the `yaml` files and load the data in go structures.
+- *input*:
+  - **yaml** files: contains all books, learning paths and badges information.
+- *core*:
+  - **loader**: reads the `yaml` files and load the data into go structs.
   - **stats**: keeps count of books, authors and learning paths.
-  - **render**: uses the loaded data, the book `covers` and the stats to render the `templates` and produce the final markdown `content`.
-- other:
-  - **yaml** files: contains all book and learning path information.
-  - book **covers**: just that, covers to make things fancy.
+  - **render**: uses the loaded data, the stats and the assets (book covers, icons, etc) to render the `templates` and produce the final markdown `content`.
+- *output*:
   - **content** files: the result of the rendering process in markdown format.
  
 <p align="center">

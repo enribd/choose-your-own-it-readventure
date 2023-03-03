@@ -13,20 +13,15 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 
 The following paths are opened to you now, choose wisely:
 
-- [System Design :ballot_box_with_check:](/content/paths/system-design.md): TODO
-- [Kubernetes :ballot_box_with_check:](/content/paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
-- :soon: APIs: APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
-
-- :soon: Event Driven Architecture (EDA): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about information distribution.
+- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Golang :ballot_box_with_check:](/content/paths/golang.md): TODO
+- [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): TODO
 
-- [Docker :new:](/content/paths/docker.md): What is a container? How is that useful? Why use it?, you will find all that and more if you follow this path. Discover what is behind the container revolution and start taking advantage of it!.
-
-- [Observability :new:](/content/paths/observability.md): TODO
+- [Observability :new:](/content/learning-paths/observability.md): TODO
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>

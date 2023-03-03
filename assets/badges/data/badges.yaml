@@ -1,0 +1,51 @@
+- category: difficulty
+  icons:
+  - name: beginner
+    code: ant
+    desc: "Petty ant"
+  - name: easy
+    code: hatched_chick
+    desc: "Naive chicken"
+  - name: intermediate
+    code: dog2
+    desc: "Brave Dog"
+  - name: hard
+    code: tiger2
+    desc: "Fierce tiger"
+  - name: expert
+    code: dragon
+    desc: "Mighty dragon"
+- category: progress
+  icons:
+  - name: read
+    code: green_book
+  - name: scheduled
+    code: blue_book
+  - name: not_scheduled
+    code: orange_book
+- category: rating
+  icons:
+  - name: nice
+    code: ok
+  - name: good
+    code: up
+  - name: very_good
+    code: cool
+  - name: excellent
+    code: top
+- category: misc
+  icons:
+  - name: must-read
+    code: bookmark
+  - name: old
+    code: arrows_counterclockwise
+- category: status
+  icons:
+  - name: stable
+    code: ballot_box_with_check
+  - name: new
+    code: new
+  - name: coming-soon
+    code: soon
+  - name: in-progress
+    code: construction
