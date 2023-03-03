@@ -1,10 +1,10 @@
 sources:
   books_covers: ./assets/books/covers
   books_data: ./assets/books/data
-  learning_paths_data: ./assets/paths/data
+  learning_paths_data: ./assets/learning-paths/data
   badges_data: ./assets/badges/data
 content:
   readme: ./README.md
   book_index: ./content/book-index.md
   author_index: ./content/author-index.md
-  learning_paths: ./content/paths
+  learning_paths: ./content/learning-paths

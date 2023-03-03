@@ -13,15 +13,15 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 
 The following paths are opened to you now, choose wisely:
 
-- [System Design :ballot_box_with_check:](/content/paths/system-design.md): TODO
-- [Kubernetes :ballot_box_with_check:](/content/paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Golang :ballot_box_with_check:](/content/paths/golang.md): TODO
+- [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): TODO
 
-- [Observability :new:](/content/paths/observability.md): TODO
+- [Observability :new:](/content/learning-paths/observability.md): TODO
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>

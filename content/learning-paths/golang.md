@@ -16,7 +16,7 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Software Architecture :construction:](/content/paths/software-architecture.md): TODO
+- [Software Architecture :construction:](/content/learning-paths/software-architecture.md): TODO
 
 
 
