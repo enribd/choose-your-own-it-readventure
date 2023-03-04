@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> Team Management Learning Path (2 :books:)
 
-TODO
+With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster.
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
