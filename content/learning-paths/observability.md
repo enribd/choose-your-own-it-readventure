@@ -14,12 +14,9 @@ The following paths are opened to you now, choose wisely:
 - [Microservices :construction:](/content/learning-paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
-Want to change the subject? Here are some suggestions about other paths you can explore:
-
-
 
 
 ---
-<sub>Last modified 2023-03-03</sub>
+<sub>Last modified 2023-03-04</sub>
 
 [**⬆ back to top**](#observability-learning-path)

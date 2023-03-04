@@ -36,6 +36,10 @@ func loadLearningPaths(basepath string) error {
 		}
 	}
 
+	// Avoid learning paths having empty related or suggested learning paths
+	purgeEmtpyRelatedLearningPaths()
+	purgeEmtpySuggestedLearningPaths()
+
 	// Build auxiliar template structure
 	for lpRef, lp := range LearningPaths {
 		LearningPathsTmpl[string(lpRef)] = lp
@@ -60,4 +64,33 @@ func loadLearningPathsFile(path string) ([]models.LearningPath, error) {
 	}
 
 	return content, nil
+}
+
+// Avoid learning paths having empty related learning paths
+func purgeEmtpyRelatedLearningPaths() {
+	for _, lp := range LearningPaths {
+		// Remove empty related paths
+		for i, relatedRef := range lp.Related {
+			if len(LearningPathBooks[relatedRef]) == 0 {
+				lp.Related = append(lp.Related[:i], lp.Related[i+1:]...)
+				// log.Printf("'%s' is an empty or a coming soon learning path, remove from '%s' related paths", relatedRef, lp.Ref)
+				LearningPaths[string(lp.Ref)] = lp
+			}
+		}
+	}
+}
+
+// Avoid learning paths having empty suggested learning paths
+func purgeEmtpySuggestedLearningPaths() {
+	for _, lp := range LearningPaths {
+		// Remove empty suggested paths
+		for i, suggestedRef := range lp.Suggested {
+			// If the suggested lp does no exist in the active lps map remove it from suggested
+			if _, ok := LearningPaths[string(suggestedRef)]; !ok {
+				lp.Suggested = append(lp.Suggested[:i], lp.Suggested[i+1:]...)
+				// log.Printf("'%s' is an empty or a coming soon learning path, remove from '%s' suggested paths", suggestedRef, lp.Ref)
+				LearningPaths[string(lp.Ref)] = lp
+			}
+		}
+	}
 }
