@@ -20,6 +20,13 @@ The following paths are opened to you now, choose wisely:
 - [Microservices :construction:](/content/learning-paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
+
+- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): TODO
+
+
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
 
@@ -29,6 +36,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path)

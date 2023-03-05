@@ -18,6 +18,173 @@
   tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
     source: /assets/learning-paths/icons/microservices.png
+- name: Kubernetes
+  ref: kubernetes
+  status: stable
+  desc: |
+    After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a very good option to run microservice platforms at scale.
+  summary: |
+    Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+  related:
+    - microservices
+    - docker
+  suggested:
+    - devops
+    - system-design
+    - serverless
+    - sre
+  tags: ["container-runtime", "ingress", "controller", "crd", "operator", "csi-driver", "admission-controller", "service-mesh", "platform-engineering"]
+  logo:
+    source: https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png
+- name: Golang
+  ref: golang
+  status: stable
+  desc: |
+    This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
+  summary: |
+    TODO
+  related:
+    - software-development 
+    - software-architecture
+    - cloud-native-apps
+  suggested:
+    - apis
+    - serverless
+    - docker
+    - kubernetes
+    - microservices
+  tags: ["goroutines", "concurrency", "channels", "context", "waitgroup", "command-line"]
+  logo:
+    source: https://skillicons.dev/icons?i=go
+- name: System Design
+  ref: system-design
+  status: stable
+  desc: |
+    You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+  summary: |
+    TODO
+  related:
+    - microservices
+    - apis
+    - event-driven-architecture
+    - serverless
+  suggested:
+    - cloud
+    - software-architecture
+    - kubernetes
+  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
+  logo:
+    source: /assets/learning-paths/icons/system-design.png
+- name: Software Architecture
+  ref: software-architecture
+  status: in-progress
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - software-development
+    - domain-driven-design
+    - microservices
+    - apis
+    - event-driven-architecture
+    - serverless
+  suggested:
+    - system-design
+    - golang
+    - observability
+    - cloud-native-apps
+  tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
+  logo:
+    source: /assets/learning-paths/icons/software-architecture.png
+- name: Site Reliability Engineering (SRE)
+  ref: sre
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - observability
+    - devops
+    - software-development
+  suggested:
+    - docker
+    - cloud
+  tags: ["risk-management", "sla", "sli", "slo", "error-budget", "toil", "post-mortems", "cascading-failures"]
+  logo:
+    source: /assets/learning-paths/icons/sre.png
+- name: Observability
+  ref: observability
+  status: in-progress
+  desc: |
+    Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
+  summary: |
+    The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
+  related:
+    - sre
+    - devops
+    - microservices
+  suggested:
+    - sre
+    - software-development
+  tags: ["open-telemetry", "troubleshooting", "debugging", "structured-logs", "tracing", "metrics-aggregation", "logs-aggregation", "data-retention", "alarm", "events"]
+  logo:
+    source: /assets/learning-paths/icons/observability.png
+- name: Infrastructure as Code (IaC)
+  ref: iac
+  status: new
+  desc: |
+    TODO
+  summary: |
+    TODO
+  related:
+    - cloud
+    - devops
+  suggested:
+    - cicd
+  tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
+  logo:
+    source: /assets/learning-paths/icons/iac.png
+- name: Team Management
+  ref: team-management
+  status: new
+  desc: |
+    With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster.
+  summary: |
+    TODO
+  related:
+    - devops
+    - management
+  suggested:
+    - sre
+  tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
+  logo:
+    source: /assets/learning-paths/icons/team-management.png
+- name: Cloud Native Applications
+  ref: cloud-native-apps
+  status: coming-soon
+  desc: |
+    From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
+  summary: |
+    discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
+  related:
+    - golang
+  suggested:
+    - software-architecture
+    - apis
+    - serverless
+- name: DevOps
+  ref: devops
+  status: coming-soon
+  desc: |
+    Coming soon
+  summary: |
+    Coming soon
+  related:
+    - team-management
+  suggested:
+    - TODO
 - name: APIs
   ref: apis
   status: coming-soon
@@ -56,39 +223,6 @@
     - microservices
     - apis
     - event-driven-architecture
-- name: System Design
-  ref: system-design
-  status: stable
-  desc: |
-    You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
-  summary: |
-    TODO
-  related:
-    - microservices
-    - apis
-    - event-driven-architecture
-    - serverless
-  suggested:
-    - software-architecture
-  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
-  logo:
-    source: /assets/learning-paths/icons/system-design.png
-- name: Software Architecture
-  ref: software-architecture
-  status: in-progress
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - microservices
-    - apis
-    - event-driven-architecture
-    - serverless
-  suggested:
-    - system-design
-  logo:
-    source: /assets/learning-paths/icons/software-architecture.png
 - name: Software Development
   ref: software-development
   status: coming-soon
@@ -100,35 +234,6 @@
     - golang
   suggested:
     - software-architecture
-- name: Golang
-  ref: golang
-  status: stable
-  desc: |
-    This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
-  summary: |
-    TODO
-  related:
-    - TODO
-  suggested:
-    - cloud-native-apps
-    - apis
-    - serverless
-    - software-architecture
-  logo:
-    source: https://skillicons.dev/icons?i=go
-- name: Cloud Native Applications
-  ref: cloud-native-apps
-  status: coming-soon
-  desc: |
-    From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
-  summary: |
-    discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
-  related:
-    - golang
-  suggested:
-    - software-architecture
-    - apis
-    - serverless
 - name: Domain Driven Design (DDD)
   ref: domain-driven-design
   status: coming-soon
@@ -156,21 +261,6 @@
     - devops
   logo:
     source: https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png
-- name: Kubernetes
-  ref: kubernetes
-  status: stable
-  desc: |
-    After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a very good option to run microservice platforms at scale.
-  summary: |
-    Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
-  related:
-    - microservices
-    - docker
-  suggested:
-    - devops
-  tags: ["container-runtime", "ingress", "controller", "crd", "operator", "csi-driver", "admission-controller", "service-mesh", "platform-engineering"]
-  logo:
-    source: https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png
 - name: Management
   ref: management
   status: new
@@ -183,73 +273,6 @@
     - devops
   suggested:
     - TODO
-- name: Team Management
-  ref: team-management
-  status: new
-  desc: |
-    With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster.
-  summary: |
-    TODO
-  related:
-    - devops
-    - management
-  suggested:
-    - TODO
-  logo:
-    source: /assets/learning-paths/icons/team-management.png
-- name: DevOps
-  ref: devops
-  status: coming-soon
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  related:
-    - team-management
-  suggested:
-    - TODO
-- name: SRE
-  ref: sre
-  status: new
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - devops
-  suggested:
-    - TODO
-  tags: []
-  logo:
-    source: /assets/learning-paths/icons/sre.png
-- name: IaC
-  ref: iac
-  status: new
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - devops
-  suggested:
-    - TODO
-  logo:
-    source: /assets/learning-paths/icons/iac.png
-- name: Observability
-  ref: observability
-  status: new
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - sre
-    - devops
-    - microservices
-  suggested:
-    - TODO
-  logo:
-    source: /assets/learning-paths/icons/observability.png
 - name: CI/CD
   ref: cicd
   status: coming-soon

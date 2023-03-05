@@ -87,7 +87,11 @@ func purgeEmtpySuggestedLearningPaths() {
 		for i, suggestedRef := range lp.Suggested {
 			// If the suggested lp does no exist in the active lps map remove it from suggested
 			if _, ok := LearningPaths[string(suggestedRef)]; !ok {
-				lp.Suggested = append(lp.Suggested[:i], lp.Suggested[i+1:]...)
+				if len(lp.Suggested) > 1 {
+					lp.Suggested = append(lp.Suggested[:i], lp.Suggested[i+1:]...)
+				} else {
+					lp.Suggested = []models.LearningPathRef{}
+				}
 				// log.Printf("'%s' is an empty or a coming soon learning path, remove from '%s' suggested paths", suggestedRef, lp.Ref)
 				LearningPaths[string(lp.Ref)] = lp
 			}

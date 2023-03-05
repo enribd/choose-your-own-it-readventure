@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/learning-paths/icons/sre.png" alt="sre" title="SRE"/> SRE Learning Path (3 :books:)
+# <img height="35" src="/assets/learning-paths/icons/sre.png" alt="sre" title="Site Reliability Engineering (SRE)"/> Site Reliability Engineering (SRE) Learning Path (3 :books:)
 
 TODO
 
@@ -12,11 +12,18 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
+- [Observability :construction:](/content/learning-paths/observability.md): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
 
 
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
 
+<sub>#risk-management #sla #sli #slo #error-budget #toil #post-mortems #cascading-failures</sub>
+
+</p>
+</details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
-[**⬆ back to top**](#sre-learning-path)
+[**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)

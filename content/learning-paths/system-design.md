@@ -34,6 +34,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 - [Software Architecture :construction:](/content/learning-paths/software-architecture.md): TODO
 
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
@@ -44,6 +46,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
 [**⬆ back to top**](#system-design-learning-path)

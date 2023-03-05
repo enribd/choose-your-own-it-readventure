@@ -23,10 +23,20 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 - [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
 
+- [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): TODO
+
+- [Observability :construction:](/content/learning-paths/observability.md): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
 
 
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
+
+<sub>#extensibility #scalability #clean-code #domain-driven-design #heaxagonal-architecture</sub>
+
+</p>
+</details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
 [**⬆ back to top**](#software-architecture-learning-path)

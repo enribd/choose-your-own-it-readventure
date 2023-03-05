@@ -13,9 +13,20 @@ The following paths are opened to you now, choose wisely:
 
 
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): TODO
+
+
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
+
+<sub>#efficiency #software-delivery #team-design #organization-structure</sub>
+
+</p>
+</details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
 [**⬆ back to top**](#team-management-learning-path)

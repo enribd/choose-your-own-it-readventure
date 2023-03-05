@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/learning-paths/icons/iac.png" alt="iac" title="IaC"/> IaC Learning Path (1 :books:)
+# <img height="35" src="/assets/learning-paths/icons/iac.png" alt="iac" title="Infrastructure as Code (IaC)"/> Infrastructure as Code (IaC) Learning Path (1 :books:)
 
 TODO
 
@@ -12,9 +12,15 @@ The following paths are opened to you now, choose wisely:
 
 
 
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
 
+<sub>#cloud-engineering #automation #state-management #fault-recovery #terraform #pulumi #crossplane #ansible</sub>
+
+</p>
+</details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
-[**⬆ back to top**](#iac-learning-path)
+[**⬆ back to top**](#infrastructure-as-code-(iac)-learning-path)

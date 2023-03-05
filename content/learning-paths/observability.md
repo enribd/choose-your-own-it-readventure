@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/observability.png" alt="observability" title="Observability"/> Observability Learning Path (1 :books:)
 
-TODO
+Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
@@ -10,13 +10,24 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- [SRE :new:](/content/learning-paths/sre.md): TODO
+- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): TODO
 - [Microservices :construction:](/content/learning-paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): TODO
+
+
+<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<p>
+
+<sub>#open-telemetry #troubleshooting #debugging #structured-logs #tracing #metrics-aggregation #logs-aggregation #data-retention #alarm #events</sub>
+
+</p>
+</details>
 
 ---
-<sub>Last modified 2023-03-04</sub>
+<sub>Last modified 2023-03-05</sub>
 
 [**⬆ back to top**](#observability-learning-path)
