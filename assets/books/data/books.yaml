@@ -492,9 +492,8 @@
     - software-development
     - golang
   badges:
-    - hard
-    - read
-    - excellent
+    - intermediate
+    - not_scheduled
 - title: Cloud Native Go
   subtitle: Cloud Native Go
   cover: cloud-native-go.jpeg
