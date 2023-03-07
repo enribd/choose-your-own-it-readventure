@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (69 :black_nib:)
+# :clipboard: Author Index (68 :black_nib:)
 
 | Name | Books |
 | :---: | :--- |
@@ -54,7 +54,6 @@
 | Martin Robert | <ul><li>[*Clean Code*](https://learning.oreilly.com/library/view/-/9780136083238/)</li></ul> |
 | Matthew A. Titmus | <ul><li>[*Cloud Native Go*](https://learning.oreilly.com/library/view/-/9781492076322/)</li></ul> |
 | Matthew Auburn | <ul><li>[*Mastering API Architecture*](https://learning.oreilly.com/library/view/-/9781492090625/)</li></ul> |
-| Matthew Boyle | <ul><li>[*Domain-Driven Design with Golang*](https://learning.oreilly.com/library/view/-/9781804613450/)</li></ul> |
 | Matthew Skelton | <ul><li>[*Team Topologies*](https://teamtopologies.com/book)</li></ul> |
 | Neal Ford | <ul><li>[*Fundamentals of Software Architecture*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li> <li>[*Software Architecture*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 | Niall Myrphy | <ul><li>[*Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)</li> <li>[*The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li></ul> |

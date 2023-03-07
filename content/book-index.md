@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (48 :books:)
+# :clipboard: Book Index (47 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -20,7 +20,6 @@
 | ![img](/assets/books/covers/designing-data-intensive-applications.jpeg) | [**Designing Data-Intensive Applications: Designing Data-Intensive Applications**](https://learning.oreilly.com/library/view/-/9781491903063/) <br> *Martin Kleppmann* <br> *Published in 2017* <br> *616 pages* <br>  | <ul><li>[Software Architecture](/content/learning-paths/software-architecture.md)</li><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/designing-distributed-systems.jpeg) | [**Designing Distributed Systems: Designing Distributed Systems**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* <br>  | <ul><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/designing-microservice-platforms-with-nats.jpeg) | [**Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging**](https://learning.oreilly.com/library/view/-/9781801072212/) <br> *Chanaka Fernando* <br> *Published in 2021* <br> *356 pages* <br>  | <ul><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
-| ![img](/assets/books/covers/domain-driven-design-with-golang.jpeg) | [**Domain-Driven Design with Golang**](https://learning.oreilly.com/library/view/-/9781804613450/) <br> *Matthew Boyle* <br> *Published in 2022* <br> *204 pages* <br> :dog2: :orange_book: | <ul><li>[Golang](/content/learning-paths/golang.md)</li></ul> |
 | ![img](/assets/books/covers/enterprise-integration-patterns.jpeg) | [**Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions**](https://learning.oreilly.com/library/view/-/0321200683/) <br> *Hohpe Gregor, Woolf Bobby* <br> *Published in 2003* <br> *736 pages* <br>  | <ul><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/enterprise-integration-patterns.jpeg) | [**Enterprise Integration Patterns - Vol 2: Conversation Patterns**]() <br> *Hohpe Gregor* <br> *Published in 2018* <br> *500 pages* <br>  | <ul><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
 | ![img](/assets/books/covers/flow-architectures.jpeg) | [**Flow Architectures: The Future of Streaming and Event-Driven Integration**](https://learning.oreilly.com/library/view/-/9781492075882/) <br> *James Urquhart* <br> *Published in 2021* <br> *252 pages* <br>  | <ul><li>[System Design](/content/learning-paths/system-design.md)</li></ul> |
