@@ -23,7 +23,7 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 - [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
 
-- [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): TODO
+- [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
 
 - [Observability :construction:](/content/learning-paths/observability.md): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
 
@@ -37,6 +37,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-05</sub>
+<sub>Last modified 2023-03-07</sub>
 
 [**⬆ back to top**](#software-architecture-learning-path)
