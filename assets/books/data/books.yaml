@@ -448,7 +448,7 @@
   release: 2019
   pages: 305
   desc: |-
-    Once you familiarize yourself with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!.
+    Once you are familiarized with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!.
   learning_paths:
     - software-development
     - golang
