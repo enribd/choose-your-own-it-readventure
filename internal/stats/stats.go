@@ -1,19 +1,42 @@
 package stats
 
-import "github.com/enribd/choose-your-own-it-readventure/internal/sources"
-
 type Stats struct {
-	TotalBooks          int
-	TotalAuthors        int
-	TotalLearningPaths  int
-	BooksInLearningPath map[sources.LearningPathRef]int
+	TotalBooks                int            // Books shown in content
+	TotalSkippedBooks         int            // Books marked as draft
+	TotalAuthors              int            // Authors shown in content
+	TotalLearningPaths        int            // Learning paths shown in content
+	TotalSkippedLearningPaths int            // Learning paths marked as coming soon
+	TotalLearningPathBooks    map[string]int // Number of books in learning path
 }
 
+// Global stats data
 var Data Stats
 
-func New(tb, ta, tlp int, bilp map[sources.LearningPathRef]int) {
-	Data.TotalBooks = tb
-	Data.TotalAuthors = ta
-	Data.TotalLearningPaths = tlp
-	Data.BooksInLearningPath = bilp
+// Initialize stats data
+func New() {
+	Data.TotalLearningPathBooks = make(map[string]int)
+}
+
+func SetTotalAuthors(total int) {
+	Data.TotalAuthors = total
+}
+
+func SetTotalBooks(total int) {
+	Data.TotalBooks = total
+}
+
+func IncSkippedBook() {
+	Data.TotalSkippedBooks++
+}
+
+func SetTotalLearningPaths(total int) {
+	Data.TotalLearningPaths = total
+}
+
+func IncSkippedLearningPath() {
+	Data.TotalSkippedLearningPaths++
+}
+
+func SetTotalLearningPathBooks(lpRef string, total int) {
+	Data.TotalLearningPathBooks[lpRef] = total
 }

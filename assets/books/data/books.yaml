@@ -196,9 +196,8 @@
   badges:
     - TODO
 - title: Knative in Action
-  subtitle: Knative in Action
   cover: knative-in-action.jpeg
-  order: 1
+  order: 5
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781617296642/
@@ -207,12 +206,14 @@
   release: 2021
   pages: 272
   desc: |-
-    TODO
+    Knative is, along [OpenFaaS](https://www.openfaas.com), one of the most popular ways to build a serverless platform over Kubernetes. The author starts from zero explaining the motivation to adopt a serverless paradigm, then presents Knative in a technical demonstration of all its basic and some of the more advanced features like traffic management and application delivery. There are not many books on the topic yet as Knative is still a relatively young project.
   learning_paths:
     - serverless
     - kubernetes
   badges:
-    - TODO
+    - hard
+    - read
+    - nice
 - title: Designing Microservices Platforms with NATS
   subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
   cover: designing-microservice-platforms-with-nats.jpeg
@@ -361,7 +362,7 @@
   badges:
     - TODO
 - title: Design Patterns for Cloud Native Applications
-  subtitle: Design Patterns for Cloud Native Applications
+  subtitle: Patterns in Practice Using APIs, Data, Events and Streams
   cover: design-patterns-for-cloud-native-applications.jpeg
   order: 1
   weight: 1
@@ -381,7 +382,7 @@
     - TODO
 - title: Learning Domain-Driven Design
   subtitle: Aligning Software Architecture and Business Strategy
-  cover: leagning-domain-driven-design.jpeg
+  cover: learning-domain-driven-design.jpeg
   order: 1
   weight: 1
   draft: false
@@ -393,6 +394,7 @@
   desc: |-
     TODO
   learning_paths:
+    - domain-driven-design
     - software-architecture
     - system-design
   badges:
@@ -500,9 +502,11 @@
   desc: |-
     TODO
   learning_paths:
+    - software-architecture
     - software-development
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Kubernetes
   subtitle: Up & Running
   cover: kubernetes-up-and-running.jpeg
@@ -517,15 +521,17 @@
   release: 2022
   pages: 326
   desc: |-
-    TODO
+    Start your Kubernetes journey from the very basics. Learn the building blocks to get a solid knowledge base that will allow you advance in the fascinating world of container orchestration and microservice platforms. Recommended to every developer, software architect, infrastructure engineer or platform engineer due to the Kubernetes relevance nowadays.
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - easy
+    - read
+    - very_good
 - title: Kubernetes Patterns
   subtitle: Kubernetes Patterns
   cover: kubernetes-patterns.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098131678/
@@ -535,15 +541,19 @@
   release: 2023
   pages: 300
   desc: |-
-    TODO
+    After a few years of using Kubernetes teams started to detect recognizable patterns that are commonly replicated. From the famous sidecar pattern and init containers to the necessary configuration patterns and beyond. This book will teach you how to solve common challenges in cloud native environments. 
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - easy
+    - read
+    - very_good
+    - old
+    - coming-soon
 - title: Production Kubernetes
   subtitle: Production Kubernetes
   cover: production-kubernetes.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492092292/
@@ -555,15 +565,17 @@
   release: 2021
   pages: 506
   desc: |-
-    TODO
+    Production Kubernetes will guide you from the view of an amateur to the vision of all you need to know and implement in order to build a professional and productive microservice platform. It also demonstrates the Kubernetes API extensibility through drivers for networking, storage and more. Other interesting topis are admission controllers, operators, service meshes and security. Definitely this is a book I really enjoyed, I recommend to read it at the same time with [Design Patterns for Cloud Native Applications](https://www.oreilly.com/library/view/design-patterns-for/9781492090700/), it will broaden your vision as a developer as well as your perspective as platform engineer.
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - hard
+    - read
+    - excellent
 - title: Kubernetes Best Practices
   subtitle: Kubernetes Best Practices
   cover: kubernetes-best-practices.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492056461/
@@ -575,15 +587,16 @@
   release: 2019
   pages: 268
   desc: |-
-    TODO
+    Usually, after being familiar with the basics of any technology, learning the best practices is a nice step, it will help you to avoid common mistakes and open new ways of thinking and doing things. This book will do exaclty that, from basic to more advanced topics.
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - easy
+    - not_scheduled
 - title: Kubernetes Operators
-  subtitle: Kubernetes Operators
+  subtitle: Automating the Container Orchestration Platform
   cover: kubernetes-operators.jpeg
-  order: 1
+  order: 5
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492048039/
@@ -593,15 +606,17 @@
   release: 2020
   pages: 154
   desc: |-
-    TODO
+    Operators are another way of leveraging Kubernetes itself, they offer you the possibility to customize and automate your workloads management. Its a very popular pattern, in this book you will find what you need to get started to develop your own operator and all the tooling around the process. This book is a little bit 'old', many things have changed in this topic since 2020, it needs a second edition to adapt its contents to more updated practices.
   learning_paths:
     - kubernetes
   badges:
-    - TODO
+    - hard
+    - not_scheduled
+    - old
 - title: Service Mesh Patterns
   subtitle: Service Mesh Patterns
   cover: service-mesh-patterns.jpeg
-  order: 1
+  order: 6
   weight: 1
   draft: true
   url: https://learning.oreilly.com/library/view/-/9781492086444/
@@ -635,12 +650,13 @@
   learning_paths:
     - observability
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Certified Kubernetes Administrator (CKA) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: cka.jpeg
-  order: 1
-  weight: 1
+  order: 4
+  weight: 2
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098107215/
   authors:
@@ -648,17 +664,17 @@
   release: 2022
   pages: 201
   desc: |-
-    TODO
+    If you are interested in getting certified as Kubernetes administrator this book offers you a guide to do just that.
   learning_paths:
-    - certification
     - kubernetes
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Certified Kubernetes Application Developer (CKAD) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: ckad.jpeg
-  order: 1
-  weight: 1
+  order: 4
+  weight: 3
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492083726/
   authors:
@@ -666,27 +682,26 @@
   release: 2021
   pages: 188
   desc: |-
-    TODO
+    If you are interested in getting certified as Kubernetes application developer this book offers you a guide to do just that.
   learning_paths:
-    - certification
     - kubernetes
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Certified Kubernetes Security Specialist (CKS) Study Guide
   subtitle: In Depth Guidance and Practice
   cover: cks.jpeg
-  order: 1
+  order: 4
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/9781098132965/
   authors:
     - Benjamin Muschko
   release: 2023
   pages: 200
   desc: |-
-    TODO
+    If you are interested in getting certified as Kubernetes security specialist this book offers you a guide to do just that.
   learning_paths:
-    - certification
     - kubernetes
   badges:
     - TODO
@@ -760,6 +775,7 @@
     TODO
   learning_paths:
     - iac
+    - devops
   badges:
     - TODO
 - title: Site Reliability Engineering
@@ -828,7 +844,7 @@
 - title: Accelerate
   subtitle: Building and Scaling High Performing Technology Organizations
   cover: accelerate.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://www.goodreads.com/book/show/35747076-accelerate
@@ -837,11 +853,13 @@
   release: 2018
   pages: 288
   desc: |-
-    TODO
+    This books is born from a task of data collected by the authors during their career participating in software projets. The experience was converted to book format with added conclusions and it has been a reference since the publication. Common problems of communication and team misfunction are exposed as well as some remedies to avoid them when building teams or organizations.
   learning_paths:
     - team-management
   badges:
-    - TODO
+    - intermediate
+    - read
+    - very_good
 - title: Team Topologies
   subtitle: Team Topologies
   cover: team-topologies.jpeg
@@ -859,13 +877,15 @@
   learning_paths:
     - team-management
   badges:
-    - TODO
+    - easy
+    - read
+    - good
 - title: Remote Teams Interactions Workbook
-  subtitle: Remote Teams Interactions Workbook
+  subtitle: Using Team Topologies Patterns for Remote Working
   cover: remote-teams-interactions-workbook.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://teamtopologies.com/workbook
   authors:
     - Matthew Skelton
@@ -875,7 +895,7 @@
   desc: |-
     TODO
   learning_paths:
-    - organization
+    - team-management
   badges:
     - TODO
 - title: Continuous Delivery
@@ -892,6 +912,6 @@
   desc: |-
     TODO
   learning_paths:
-    - software-delivery
+    - devops
   badges:
     - TODO

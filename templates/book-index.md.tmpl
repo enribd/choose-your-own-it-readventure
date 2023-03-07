@@ -2,11 +2,11 @@
 {{- $books := .BooksData -}}
 {{- $covers := .BookCovers -}}
 {{- $badgesData := .BadgesData -}}
-{{- $lpFolders := .LearningPathsFolder -}}
+{{- $lpFolders := .LearningPathsFolder | trimPrefix "." -}}
 
 [//]: # (Auto generated file from templates)
 
-# Book Index
+# :clipboard: Book Index ({{ .Stats.TotalBooks }} :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
