@@ -31,6 +31,15 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 ## :name_badge: Badges
 
+Learning path badges:
+
+| Badge | Level |
+| :---: | --- |
+| :soon: | Coming soon! |
+| :in-progress: | In construction |
+| :new: | Just released! |
+| :ballot_box_with_check: | Have fund and enjoy! |
+
 All books have some badges associated to describe some aspect of them:
 
 - You will read each book with the same amount of energy needed to fight these opponents, from lower to higher difficulty (these are totally subjective):
