@@ -21,7 +21,7 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
+- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
 
 - [Golang :ballot_box_with_check:](/content/learning-paths/golang.md): A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
 
