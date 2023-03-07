@@ -13,7 +13,7 @@ This path starts with some books to grasp the basics of the language but buildin
 
 The following paths are opened to you now, choose wisely:
 
-- [Software Architecture :construction:](/content/learning-paths/software-architecture.md): TODO
+- [Software Architecture :construction:](/content/learning-paths/software-architecture.md): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

@@ -13,7 +13,7 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 
 The following paths are opened to you now, choose wisely:
 
-- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): TODO
+- [System Design :ballot_box_with_check:](/content/learning-paths/system-design.md): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
 - [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 

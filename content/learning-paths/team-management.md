@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> Team Management Learning Path (2 :books:)
 
-With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster.
+With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
 
 | Reading Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
@@ -15,7 +15,7 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): TODO
+- [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre.md): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
