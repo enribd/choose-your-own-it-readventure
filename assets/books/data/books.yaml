@@ -417,10 +417,29 @@
     - system-design
   badges:
     - TODO
+- title: Learning Go
+  subtitle: 
+  cover: learning-go.jpeg
+  order: 1
+  weight: 1
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492077206/
+  authors:
+    - Jon Bodner
+  release: 2021
+  pages: 375
+  desc: |-
+    TODO
+  learning_paths:
+    - software-development
+    - golang
+  badges:
+    - easy
+    - not_scheduled
 - title: Let's Go
   subtitle: Let's Go
   cover: lets-go.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://lets-go.alexedwards.net/
@@ -429,16 +448,18 @@
   release: 2019
   pages: 305
   desc: |-
-    TODO
+    Once you familiarize yourself with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!.
   learning_paths:
     - software-development
     - golang
   badges:
-    - TODO
+    - intermediate
+    - read
+    - excellent
 - title: Let's Go Further!
   subtitle: Let's Go Further!
   cover: lets-go-further.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://lets-go-further.alexedwards.net/
@@ -447,16 +468,37 @@
   release: 2021
   pages: 582
   desc: |-
+    Following Let's Go comes this book, where the author teachs you how to build an API and some common techniques to manage thinks like encoding/decoding JSON messages, rate limiting, CORS, pagination techniques, user data management, etc. Definitely a wothy read if you want to increase your knowledge in Go and how modern applications are built.
+  learning_paths:
+    - software-development
+    - golang
+  badges:
+    - hard
+    - read
+    - excellent
+- title: Domain-Driven Design with Golang
+  cover: domain-driven-design-with-golang.jpeg
+  order: 4
+  weight: 1
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781804613450/
+  authors:
+    - Matthew Boyle
+  release: 2022
+  pages: 204
+  desc: |-
     TODO
   learning_paths:
     - software-development
     - golang
   badges:
-    - TODO
+    - hard
+    - read
+    - excellent
 - title: Cloud Native Go
   subtitle: Cloud Native Go
   cover: cloud-native-go.jpeg
-  order: 1
+  order: 4
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492076322/
@@ -470,7 +512,9 @@
     - software-development
     - golang
   badges:
-    - TODO
+    - expert
+    - read
+    - excellent
 - title: Clean Code
   subtitle: A Handbook of Agile Software Craftsmanship
   cover: clean-code.jpeg

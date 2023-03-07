@@ -16,7 +16,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 
 - **9** learning paths :mortar_board:
-  - **3** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang.md) books :ballot_box_with_check:: *TODO*
+  - **5** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang.md) books :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
   - **1** <img height="20" src="/assets/learning-paths/icons/iac.png" alt="iac" title="Infrastructure as Code (IaC)"/> [*Infrastructure as Code (IaC)*](/content/learning-paths/iac.md) books :new:: *TODO*
   - **8** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/learning-paths/kubernetes.md) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
   - **4** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices.md) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
@@ -26,8 +26,8 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - **18** <img height="20" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design.md) books :ballot_box_with_check:: *TODO*
   - **2** <img height="20" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management.md) books :new:: *TODO*
 
-- **46** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
-- **67** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+- **48** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **69** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 
@@ -89,6 +89,6 @@ Of course, there will be books broadly considered a must-read that I have not li
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
 
 ---
-<sub>Last modified 2023-03-05</sub>
+<sub>Last modified 2023-03-07</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (67 :black_nib:)
+# :clipboard: Author Index (69 :black_nib:)
 
 | Name | Books |
 | :---: | :--- |
@@ -39,6 +39,7 @@
 | Jez Humble | <ul><li>[*The DevOPS Handbook*](https://learning.oreilly.com/library/view/-/9781457191381/)</li></ul> |
 | Joe Beda | <ul><li>[*Kubernetes*](https://learning.oreilly.com/library/view/-/9781098110192/)</li></ul> |
 | John Harris | <ul><li>[*Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
+| Jon Bodner | <ul><li>[*Learning Go*](https://learning.oreilly.com/library/view/-/9781492077206/)</li></ul> |
 | Josh Rosso | <ul><li>[*Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
 | Joshua Wood | <ul><li>[*Kubernetes Operators*](https://learning.oreilly.com/library/view/-/9781492048039/)</li></ul> |
 | Kasun Indrasiri | <ul><li>[*Design Patterns for Cloud Native Applications*](https://learning.oreilly.com/library/view/-/9781492090700/)</li></ul> |
@@ -53,6 +54,7 @@
 | Martin Robert | <ul><li>[*Clean Code*](https://learning.oreilly.com/library/view/-/9780136083238/)</li></ul> |
 | Matthew A. Titmus | <ul><li>[*Cloud Native Go*](https://learning.oreilly.com/library/view/-/9781492076322/)</li></ul> |
 | Matthew Auburn | <ul><li>[*Mastering API Architecture*](https://learning.oreilly.com/library/view/-/9781492090625/)</li></ul> |
+| Matthew Boyle | <ul><li>[*Domain-Driven Design with Golang*](https://learning.oreilly.com/library/view/-/9781804613450/)</li></ul> |
 | Matthew Skelton | <ul><li>[*Team Topologies*](https://teamtopologies.com/book)</li></ul> |
 | Neal Ford | <ul><li>[*Fundamentals of Software Architecture*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li> <li>[*Software Architecture*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 | Niall Myrphy | <ul><li>[*Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)</li> <li>[*The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li></ul> |
@@ -74,6 +76,6 @@
 
 
 ---
-<sub>Last modified 2023-03-05</sub>
+<sub>Last modified 2023-03-07</sub>
 
 [**⬆ back to top**](#author-index)

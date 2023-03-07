@@ -40,9 +40,9 @@
   ref: golang
   status: stable
   desc: |
-    This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following learning path depending on your needs or interests.
+    This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
   summary: |
-    TODO
+    A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
   related:
     - software-development 
     - software-architecture
