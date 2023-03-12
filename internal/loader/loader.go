@@ -37,6 +37,9 @@ func Load(booksPath, lpsPath, badgesPath string) error {
 		return err
 	}
 
+	// Remove empty learning paths from books
+	purgeEmtpyLearningPathRefsFromBooks()
+
 	err = loadBadges(badgesPath)
 	if err != nil {
 		return err

@@ -89,3 +89,36 @@ func sortAndCountLearningPathBooks() {
 		stats.SetTotalLearningPathBooks(string(lpRef), len(LearningPathBooks[lpRef]))
 	}
 }
+
+// Remove empty learning paths from books
+func purgeEmtpyLearningPathRefsFromBooks() {
+	for _, book := range Books {
+		for i, lpRef := range book.LearningPathsRefs {
+			if _, ok := LearningPaths[string(lpRef)]; !ok {
+				book.LearningPathsRefs = append(book.LearningPathsRefs[:i], book.LearningPathsRefs[i+1:]...)
+				// log.Printf("'%s' is an empty or a coming soon learning path, remove learning path reference from '%s' book", lpRef, book.Title)
+
+				// Remove the book from the authors
+				for _, name := range book.Authors {
+					for h, b := range Authors[name] {
+						if b.Title == book.Title {
+							Authors[name] = append(Authors[name][:h], Authors[name][h+1:]...)
+							// log.Printf("'%s' book is removed, delete it from author '%s' too", b.Title, name)
+						}
+					}
+					// If an author has 0 books then remove it
+					if len(Authors[name]) == 0 {
+						delete(Authors, name)
+						stats.SetTotalAuthors(len(Authors))
+					}
+				}
+			}
+		}
+
+		// if the book doesn't have any learning path remove it
+		if len(book.LearningPathsRefs) == 0 {
+			delete(Books, book.Title)
+			stats.SetTotalBooks(len(Books))
+		}
+	}
+}
