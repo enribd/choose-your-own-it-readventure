@@ -22,6 +22,7 @@
 {{- end -}}
 {{- end -}}
 {{/* end Build book learning paths list */}}
+{{- if gt ($paths | len) 0 }} {{/* If book has not empty learning paths show it */}}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
 {{- range .BadgesRefs -}}
@@ -35,6 +36,7 @@
 | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{if gt ($paths | len) 0 }}<ul>{{ $paths | join "" }}</ul>{{ end }} |
 {{- end }}
 {{- end }}
+{{- end }} {{/* end If book has not empty learning paths show it */}} 
 
 ---
 <sub>Last modified {{ now | date "2006-01-02" }}</sub>
