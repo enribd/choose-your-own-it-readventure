@@ -121,7 +121,7 @@
   desc: |-
     TODO
   learning_paths:
-    - system-design
+    - event-driven-architecture
   badges:
     - TODO
 - title: Designing Distributed Systems
@@ -229,7 +229,6 @@
     TODO
   learning_paths:
     - event-driven-architecture
-    - system-design
   badges:
     - TODO
 - title: Kafka - The Definitive Guide
@@ -247,7 +246,6 @@
     TODO
   learning_paths:
     - event-driven-architecture
-    - system-design
   badges:
     - TODO
 - title: Building Event-Driven Microservices
@@ -265,7 +263,6 @@
     TODO
   learning_paths:
     - event-driven-architecture
-    - system-design
   badges:
     - TODO
 - title: Enterprise Integration Patterns
@@ -284,7 +281,6 @@
     TODO
   learning_paths:
     - event-driven-architecture
-    - system-design
   badges:
     - TODO
 - title: Enterprise Integration Patterns
@@ -303,7 +299,6 @@
     TODO
   learning_paths:
     - event-driven-architecture
-    - system-design
   badges:
     - TODO
 - title: Flow Architectures
@@ -396,7 +391,6 @@
   learning_paths:
     - domain-driven-design
     - software-architecture
-    - system-design
   badges:
     - TODO
 - title: Designing Data-Intensive Applications

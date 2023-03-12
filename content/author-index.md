@@ -1,10 +1,9 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (45 :black_nib:)
+# :clipboard: Author Index (44 :black_nib:)
 
 | Name | Books |
 | :---: | :--- |
-| Adam Bellemare | <ul><li>[*Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures*](https://learning.oreilly.com/library/view/-/9781098127596/)</li></ul> |
 | Adam Stubblefield | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Alex Brand | <ul><li>[*Production Kubernetes: Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
 | Alex Xu | <ul><li>[*System Design Interview: An insider's guide*](https://www.goodreads.com/book/show/54617137-system-design-interview)</li> <li>[*System Design Interview volume 2: An insider's guide*](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide)</li></ul> |
