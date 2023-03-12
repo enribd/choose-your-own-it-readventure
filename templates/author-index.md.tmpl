@@ -8,7 +8,7 @@
 {{- range $author, $booksData := $authorsData -}}
 {{- $books := list -}}
 {{- range $booksData -}}
-{{- $books = append $books (printf "<li>[*%s*](%s)</li>" .Title .Url) -}}
+{{- $books = append $books (printf "<li>[*%s: %s*](%s)</li>" .Title .Subtitle .Url) -}}
 {{- end -}}
 | {{ $author }} | <ul>{{ $books | join " " }}</ul> |
 {{ end }}
