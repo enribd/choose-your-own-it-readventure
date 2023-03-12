@@ -52,9 +52,10 @@ mkdocs-build-site: ## Build site
 	$(info: Build site)
 	@docker container run --rm -t --name mkdocs \
 		--user $(shell id -u):$(shell id -g) \
-		--volume ${PWD}:/docs \
-		--volume ${PWD}/assets/books/covers:/docs/docs/assets/books/covers \
-		--volume ${PWD}/assets/learning-paths/icons:/docs/docs/assets/learning-paths/icons \
+		--workdir /src/mkdocs \
+		--volume ${PWD}:/src \
+		--volume ${PWD}/assets/books/covers:/src/docs/assets/books/covers \
+		--volume ${PWD}/assets/learning-paths/icons:/src/docs/assets/learning-paths/icons \
 		${image} build
 .PHONY: build
 
@@ -64,8 +65,14 @@ mkdocs-run: ## Run site in localhost
 	@docker container run --rm -t --name mkdocs \
 	  --publish 8000:8000 \
 		--user $(shell id -u):$(shell id -g) \
-		--volume ${PWD}:/docs \
+		--workdir /src/mkdocs \
+		--volume ${PWD}:/src \
 		--volume ${PWD}/assets/books/covers:/docs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/docs/docs/assets/learning-paths/icons \
 		${image}
 .PHONY: run
+
+clean: ## Clean files
+	$(info: Clean files)
+	@rm -rf mkdocs/site
+.PHONY: clean
