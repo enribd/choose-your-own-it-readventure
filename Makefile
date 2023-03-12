@@ -18,7 +18,6 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 pre-commit: run format mkdocs-build-site #lint-gh-actions
 	@git add README.md
 	@git add ./content
-	@git add site/sitemap.xml.gz
 .PHONY: pre-commit
 
 lint-gh-actions: ### Lint Github Actions files with actionlint
