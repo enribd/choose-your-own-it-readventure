@@ -41,7 +41,7 @@ The following paths are opened to you now, choose wisely:
 {{ $pathRow := printf "- :%s: %s: %s" (get $badgesData $relPath.Status) $relPath.Name $relPath.Summary -}}
 {{- $notReady = append $notReady $pathRow -}}
 {{- else -}}
-- [{{ $relPath.Name }} {{ $relPathIcon }}]({{ $lpFolders }}/{{ $relPath.Ref }}.md): {{ $relPath.Summary }}
+- [{{ $relPath.Name }} {{ $relPathIcon }}]({{ $lpFolders }}/{{ $relPath.Ref }}): {{ $relPath.Summary }}
 {{- end -}}
 {{- end -}}
 {{- end -}}
@@ -59,7 +59,7 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{ $sugPathIcon =  get $badgesData $sugPath.Status | printf " :%s:" -}}
 {{- end -}}
 {{ if (ne $sugPath.Status "coming-soon") }}
-- [{{ $sugPath.Name }}{{ $sugPathIcon }}]({{ $lpFolders }}/{{ $sugPath.Ref }}.md): {{ $sugPath.Summary }}
+- [{{ $sugPath.Name }}{{ $sugPathIcon }}]({{ $lpFolders }}/{{ $sugPath.Ref }}): {{ $sugPath.Summary }}
 {{- end -}}
 {{- end -}}
 {{- end -}}
@@ -78,8 +78,5 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </p>
 </details>
 {{- end }}
-
----
-<sub>Last modified {{ now | date "2006-01-02" }}</sub>
 
 [**⬆ back to top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path)

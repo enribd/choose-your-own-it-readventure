@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: "Choose your own IT readventure!"
+site_author: enribd
+# site_url: https://
+repo_url: https://github.com/enribd/choose-your-own-it-readventure
+# nav: setup with awesome-pages plugin
+theme:
+  name: material
+  # logo: 
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Montserrat
+    # text: Source Sans Pro
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/enribd/choose-your-own-it-readventure
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - smarty
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # - toc:
+  #     permalink: "#"
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+  - glightbox
+  - awesome-pages

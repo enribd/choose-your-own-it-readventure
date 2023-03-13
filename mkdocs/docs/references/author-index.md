@@ -50,7 +50,5 @@
 | Stephen Thorne | <ul><li>[*The Site Reliability Workbook: The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li></ul> |
 
 
----
-<sub>Last modified 2023-03-13</sub>
 
 [**⬆ back to top**](#author-index)

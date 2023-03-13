@@ -12,7 +12,7 @@ TODO
 
 The following paths are opened to you now, choose wisely:
 
-- [Observability :construction:](/content/learning-paths/observability): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
+- [Observability :construction:](/mkdocs/docs/learning-paths/observability): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -22,8 +22,5 @@ The following paths are opened to you now, choose wisely:
 
 </p>
 </details>
-
----
-<sub>Last modified 2023-03-13</sub>
 
 [**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)

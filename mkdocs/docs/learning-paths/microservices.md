@@ -13,15 +13,15 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 
 The following paths are opened to you now, choose wisely:
 
-- [System Design :ballot_box_with_check:](/content/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
-- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [System Design :ballot_box_with_check:](/mkdocs/docs/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
+- [Kubernetes :ballot_box_with_check:](/mkdocs/docs/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Golang :ballot_box_with_check:](/content/learning-paths/golang): A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
+- [Golang :ballot_box_with_check:](/mkdocs/docs/learning-paths/golang): A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
 
-- [Observability :construction:](/content/learning-paths/observability): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
+- [Observability :construction:](/mkdocs/docs/learning-paths/observability): The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -31,8 +31,5 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 </p>
 </details>
-
----
-<sub>Last modified 2023-03-13</sub>
 
 [**⬆ back to top**](#microservices-learning-path)
