@@ -46,6 +46,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - smarty
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   # - toc:
   #     permalink: "#"
   - pymdownx.emoji:

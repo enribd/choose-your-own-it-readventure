@@ -9,8 +9,9 @@ Finally, make sure you don’t forget about putting your newly acquired skills t
 
 Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point. There are paths focused on a particular technology or skill, and more generic ones, but both are useful and can be combined depending of your goal.
 
-:warning: *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
+!!! warning ""
 
+    :warning: *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
