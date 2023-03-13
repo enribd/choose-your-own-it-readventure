@@ -10,13 +10,13 @@ Observability is the ability to measure a system's current state based on the da
 
 The following paths are opened to you now, choose wisely:
 
-- [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
-- [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Site Reliability Engineering (SRE) :new:](/mkdocs/docs/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
+- [Microservices :construction:](/mkdocs/docs/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
+- [Site Reliability Engineering (SRE) :new:](/mkdocs/docs/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -26,8 +26,5 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 </p>
 </details>
-
----
-<sub>Last modified 2023-03-12</sub>
 
 [**⬆ back to top**](#observability-learning-path)

@@ -3,12 +3,14 @@ package config
 import (
 	"io/ioutil"
 
+	"github.com/enribd/choose-your-own-it-readventure/internal/content"
+
 	"gopkg.in/yaml.v3"
 )
 
 type Config struct {
-	Sources Sources `yaml:"sources"`
-	Content Content `yaml:"content"`
+	Sources Sources                     `yaml:"sources"`
+	Content map[content.Provider]Format `yaml:"content"`
 }
 
 // Location of data used to generate content
@@ -20,11 +22,14 @@ type Sources struct {
 }
 
 // Destination for generated content
-type Content struct {
-	Readme        string `yaml:"readme"`
+type Format struct {
+	Index         string `yaml:"index"`
 	BookIndex     string `yaml:"book_index"`
 	AuthorIndex   string `yaml:"author_index"`
 	LearningPaths string `yaml:"learning_paths"`
+	Badges        string `yaml:"badges"`
+	About         string `yaml:"about"`
+	Mentions      string `yaml:"mentions"`
 }
 
 var Cfg Config

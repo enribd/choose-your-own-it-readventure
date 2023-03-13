@@ -1,13 +1,15 @@
 
 [//]: # (Auto generated file from templates)
 
+
 # Choose your own IT readventure! :books: :sunrise_over_mountains: :computer:
 
 If you are a stubborn learner, eat books for breakfast, and want to discover new concepts or hunt new skills related to the IT world, I can assure you that you are in the right nook of the Internet. Prepare yourself to be amazed by a choose-your-own-adventure journey in the IT world. Hopefully, it will take you to interesting places thanks to the power and the fun of reading.
 
-Finally, make sure you don’t forget about putting your newly acquired skills to the test, remember practice makes the master!
+Finally, make sure you don’t forget about putting your newly acquired skills to the test, remember that practice makes the master!
 
 Starting your adventure is as easy as picking the set of skills that you want to learn or improve, check out the learning paths and choose your starting point. There are paths focused on a particular technology or skill, and more generic ones, but both are useful and can be combined depending of your goal.
+
 
 :warning: *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
 
@@ -28,6 +30,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 - **34** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **44** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+
 
 ## :name_badge: Badges
 
@@ -78,6 +81,7 @@ All books have some badges associated to describe some aspect of them:
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path | 
 
+
 ## :alien: About me
 
 I am a professional Cloud and Platform Engineer, DevOps practitioner, and Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
@@ -90,12 +94,14 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 :bowtie: Thanks for stopping by, enjoy!
 
+
 ## :pushpin: Worthy metions
 
 - Icons:
   - [Skill icons](https://github.com/tandpfun/skill-icons)
   - [Tech icons](https://github.com/marwin1991/profile-technology-icons)
   - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
+
 
 ---
 <sub>Last modified 2023-03-13</sub>

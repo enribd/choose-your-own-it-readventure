@@ -3,7 +3,7 @@ version = latest
 registry = ghcr.io/enribd
 repository = ${registry}/${app}
 image = ${repository}:${version}
-contents := "readme,book-index,author-index,learning-paths"
+contents := "index,book-index,author-index,learning-paths,badges,about,mentions"
 
 
 help: ## Prints help for targets with comments
@@ -15,9 +15,10 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: run format mkdocs-build-site #lint-gh-actions
+pre-commit: run format clean #lint-gh-actions
 	@git add README.md
 	@git add ./content
+	@git add ./mkdocs
 .PHONY: pre-commit
 
 lint-gh-actions: ### Lint Github Actions files with actionlint
@@ -54,8 +55,8 @@ mkdocs-build-site: ## Build site
 		--user $(shell id -u):$(shell id -g) \
 		--workdir /src/mkdocs \
 		--volume ${PWD}:/src \
-		--volume ${PWD}/assets/books/covers:/src/docs/assets/books/covers \
-		--volume ${PWD}/assets/learning-paths/icons:/src/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
+		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		${image} build
 .PHONY: build
 
@@ -67,12 +68,14 @@ mkdocs-run: ## Run site in localhost
 		--user $(shell id -u):$(shell id -g) \
 		--workdir /src/mkdocs \
 		--volume ${PWD}:/src \
-		--volume ${PWD}/assets/books/covers:/docs/docs/assets/books/covers \
-		--volume ${PWD}/assets/learning-paths/icons:/docs/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
+		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		${image}
 .PHONY: run
 
 clean: ## Clean files
 	$(info: Clean files)
+	@rm -rf /site
 	@rm -rf mkdocs/site
+	@rm -rf mkdocs/assets
 .PHONY: clean

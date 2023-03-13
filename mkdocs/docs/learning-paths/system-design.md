@@ -20,14 +20,14 @@ You want to create systems that resolve complicated technical problems, to find 
 
 The following paths are opened to you now, choose wisely:
 
-- [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Microservices :construction:](/mkdocs/docs/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Software Architecture :construction:](/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+- [Software Architecture :construction:](/mkdocs/docs/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
 
-- [Kubernetes :ballot_box_with_check:](/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [Kubernetes :ballot_box_with_check:](/mkdocs/docs/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -37,8 +37,5 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 </p>
 </details>
-
----
-<sub>Last modified 2023-03-12</sub>
 
 [**⬆ back to top**](#system-design-learning-path)
