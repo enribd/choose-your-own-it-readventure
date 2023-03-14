@@ -33,4 +33,4 @@ Starting your adventure is as easy as picking the set of skills that you want to
 - **34** books :books: , discover them all in the [:scroll: book index](./mkdocs/docs/references/book-index.md).
 - **44** authors :black_nib: , discover them all in the [:scroll: author index](./mkdocs/docs/references/author-index.md).
 
-[**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)
+[**⬆ back to top**](#choose-your-own-it-readventure)

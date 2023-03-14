@@ -23,4 +23,4 @@ The following paths are opened to you now, choose wisely:
 </p>
 </details>
 
-[**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)
+[**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path-3)

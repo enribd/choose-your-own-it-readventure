@@ -39,4 +39,4 @@
 | ![img](/assets/books/covers/terraform-up-and-running.jpeg) | [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | <ul><li>[Infrastructure as Code (IaC)](/mkdocs/docs/learning-paths/iac)</li></ul> |
 | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: The Site Reliability Workbook**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> * pages* <br>  | <ul><li>[Site Reliability Engineering (SRE)](/mkdocs/docs/learning-paths/sre)</li></ul> |
 
-[**⬆ back to top**](#book-index)
+[**⬆ back to top**](#book-index-34)

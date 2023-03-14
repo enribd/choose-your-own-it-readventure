@@ -20,4 +20,4 @@ The following paths are opened to you now, choose wisely:
 </p>
 </details>
 
-[**⬆ back to top**](#infrastructure-as-code-(iac)-learning-path)
+[**⬆ back to top**](#infrastructure-as-code-(iac)-learning-path-1)
