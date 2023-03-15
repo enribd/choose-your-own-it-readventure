@@ -1,12 +1,12 @@
 [//]: # (Auto generated file from templates)
 
-# <img height="35" src="/assets/learning-paths/icons/observability.png" alt="observability" title="Observability"/> Observability Learning Path (1 :books:)
+# ![img](/assets/learning-paths/icons/observability.png){: style="height:35px"} Observability Learning Path (1 :books:)
 
 Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** | ![img](/assets/books/covers/observability-engineering.jpeg) | [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones, George Miranda* <br> *Published in 2022* <br> *318 pages* <br> :dog2: :orange_book: | TODO |
+| **1** |![img](/assets/books/covers/observability-engineering.jpeg){: style="height:124px;width:91px"}| [**Observability Engineering: Achieving Production Excellence Engineering**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Charity Majors, Liz Fong-Jones, George Miranda* <br> *Published in 2022* <br> *318 pages* <br> :dog2: :orange_book: | TODO |
 
 The following paths are opened to you now, choose wisely:
 

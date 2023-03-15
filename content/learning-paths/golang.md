@@ -4,7 +4,7 @@
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/learning-go.jpeg) | [**Learning Go**](https://learning.oreilly.com/library/view/-/9781492077206/) <br> *Jon Bodner* <br> *Published in 2021* <br> *375 pages* <br> :hatched_chick: :orange_book: | Golang from the ground up, learn the basics and all the language tools at your disposal to create applications in a modern programming language. |
 | **2** | ![img](/assets/books/covers/lets-go.jpeg) | [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2: :green_book: :top: | Once you are familiarized with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!. |
@@ -32,6 +32,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#golang-learning-path)

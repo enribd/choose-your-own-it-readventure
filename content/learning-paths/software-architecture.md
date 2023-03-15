@@ -4,7 +4,7 @@
 
 TODO
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/foundations-of-scalable-systems.jpeg) | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br>  | TODO |
 | **1** | ![img](/assets/books/covers/fundamentals-of-software-architecture.jpeg) | [**Fundamentals of Software Architecture: An Engineering Approach**](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/) <br> *Mark Richards, Neal Ford* <br> *Published in 2020* <br> *419 pages* <br>  | TODO |
@@ -37,6 +37,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#software-architecture-learning-path)

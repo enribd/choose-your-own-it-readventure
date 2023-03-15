@@ -6,6 +6,10 @@ import (
 	"text/template"
 )
 
+func Args(args ...interface{}) []interface{} {
+	return args
+}
+
 /*
 * Render templates with a given data and export them to files or stdout
 * Params:

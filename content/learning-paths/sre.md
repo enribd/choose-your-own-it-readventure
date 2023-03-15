@@ -4,7 +4,7 @@
 
 TODO
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/site-reliability-engineering.jpeg) | [**Site Reliability Engineering: Site Reliability Engineering**](https://sre.google/sre-book/table-of-contents/) <br> *Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Myrphy* <br> *Published in 2017* <br> * pages* <br>  | TODO |
 | **1** | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: The Site Reliability Workbook**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> * pages* <br>  | TODO |
@@ -24,6 +24,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)

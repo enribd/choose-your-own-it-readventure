@@ -10,7 +10,7 @@
 # {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path ({{ $lpBooksData | len }} :books:)
 
 {{ $lp.Desc }}
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 {{- range $lpBooksData }}
 {{- if .Draft | not }}

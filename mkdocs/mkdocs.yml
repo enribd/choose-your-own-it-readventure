@@ -30,9 +30,8 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
-    - navigation.path
+    - navigation.indexes
     - navigation.top
-    - navigation.footer
     - toc.follow
     - toc.integrate
     - search.suggest
@@ -41,7 +40,13 @@ extra:
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/enribd/choose-your-own-it-readventure
+      name: github
+    - icon: fontawesome/brands/golang 
+      name: golang
+    - icon: fontawesome/brands/docker 
+      name: docker
 markdown_extensions:
+  - def_list
   - tables
   - attr_list
   - md_in_html
@@ -49,11 +54,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_css:
+  - stylesheets/extra.css
 plugins:
   - search
   - git-revision-date-localized:

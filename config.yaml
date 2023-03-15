@@ -14,6 +14,6 @@ content:
     learning_paths: ./mkdocs/docs/learning-paths
     book_index: ./mkdocs/docs/references/book-index.md
     author_index: ./mkdocs/docs/references/author-index.md
-    badges: ./mkdocs/docs/more/badges.md
+    badges: ./mkdocs/docs/badges.md
     about: ./mkdocs/docs/more/about.md
     mentions: ./mkdocs/docs/more/mentions.md

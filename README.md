@@ -31,10 +31,13 @@ Starting your adventure is as easy as picking the set of skills that you want to
 - **34** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **44** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
-
 ## :name_badge: Badges
 
-Learning path badges:
+Badges indicates some aspects of the learning paths or books, like status, difficulty, rating, and more!
+
+### :mortar_board: Learning path badges
+
+These badges show the current status of the learning path:
 
 | Badge | Level |
 | :---: | --- |
@@ -42,6 +45,8 @@ Learning path badges:
 | :construction: | In construction |
 | :new: | Just released! |
 | :ballot_box_with_check: | Have fund and enjoy! |
+
+### :books: Books badges
 
 All books have some badges associated to describe some aspect of them:
 
@@ -81,7 +86,6 @@ All books have some badges associated to describe some aspect of them:
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path | 
 
-
 ## :alien: About me
 
 I am a professional Cloud and Platform Engineer, DevOps practitioner, and Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
@@ -94,16 +98,16 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 :bowtie: Thanks for stopping by, enjoy!
 
-
 ## :pushpin: Worthy metions
 
 - Icons:
-  - [Skill icons](https://github.com/tandpfun/skill-icons)
-  - [Tech icons](https://github.com/marwin1991/profile-technology-icons)
-  - [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
+
+    * [Skill icons](https://github.com/tandpfun/skill-icons)
+    * [Tech icons](https://github.com/marwin1991/profile-technology-icons)
+    * [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
 
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

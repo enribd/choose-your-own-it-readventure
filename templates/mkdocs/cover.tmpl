@@ -1,0 +1,23 @@
+{{define "cover"}}
+{{- $cover := index . 0 -}}
+{{- $coversPath := index . 1 -}}
+{{- if empty $cover | not -}}
+{{- if ($cover | hasPrefix "http") -}}
+![img]({{ $cover }}){: style="height:166px;width:122px"}
+{{- else -}}
+![img]({{ $coversPath | trimPrefix "." }}/{{ $cover }}){: style="height:166px;width:122px"}
+{{- end -}}
+{{- end -}}
+{{end}}
+
+{{define "small-cover"}}
+{{- $cover := index . 0 -}}
+{{- $coversPath := index . 1 -}}
+{{- if empty $cover | not -}}
+{{- if ($cover | hasPrefix "http") -}}
+![img]({{ $cover }}){: style="height:124px;width:91px"}
+{{- else -}}
+![img]({{ $coversPath | trimPrefix "." }}/{{ $cover }}){: style="height:124px;width:91px"}
+{{- end -}}
+{{- end -}}
+{{end}}

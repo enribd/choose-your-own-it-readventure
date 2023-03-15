@@ -4,7 +4,7 @@
 
 TODO
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/terraform-up-and-running.jpeg) | [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | TODO |
 
@@ -21,6 +21,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#infrastructure-as-code-(iac)-learning-path)

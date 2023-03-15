@@ -20,12 +20,13 @@ import (
 )
 
 var debug bool
-var formats, contents string
+var formats, contents, mkdocsRoot string
 
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.StringVar(&formats, "formats", "github,mkdocs", "generate content with format for different hosting providers, accepts comma-separated values")
 	flag.StringVar(&contents, "contents", "index,book-index,author-index,learning-paths,badges,about,mentions", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&mkdocsRoot, "mkdocs-root-dir", "/", "build document links from this path")
 	flag.Parse()
 	contents := strings.Split(contents, ",")
 	formats := strings.Split(formats, ",")
@@ -63,7 +64,10 @@ func main() {
 
 		// Load templates and functions
 		providerTmpls := filepath.Join("templates", p.String(), "*")
-		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).ParseGlob(providerTmpls)
+		funcMap := template.FuncMap{
+			"args": content.Args,
+		}
+		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).Funcs(funcMap).ParseGlob(providerTmpls)
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -77,6 +81,7 @@ func main() {
 
 		// Prepare template rendering data
 		var data = struct {
+			Format              string
 			LpData              map[string]interface{}
 			BooksData           map[string]models.Book
 			AuthorsData         map[string][]models.Book
@@ -90,6 +95,7 @@ func main() {
 			LpBooksData         []models.Book
 			CurrentLearningPath models.LearningPath
 		}{
+			Format:              p.String(),
 			LpData:              loader.LearningPathsTmpl,
 			BooksData:           loader.Books,
 			AuthorsData:         loader.Authors,
@@ -183,9 +189,17 @@ func main() {
 			}
 
 			if p == content.Mkdocs {
+				// render .pages
 				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].Index), ".pages")
 				log.Printf("[%s] rendering .pages in %s", p, file)
 				if err = content.Render(templates, "pages_index.tmpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
+
+				// render extra.css
+				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].Index), "stylesheets/extra.css")
+				log.Printf("[%s] rendering extra.css in %s", p, file)
+				if err = content.Render(templates, "extra.css.tmpl", file, data); err != nil {
 					log.Fatalln(err)
 				}
 			}
@@ -210,6 +224,14 @@ func main() {
 
 			if err = content.Render(templates, "about.md.tmpl", file, data); err != nil {
 				log.Fatalln(err)
+			}
+
+			if p == content.Mkdocs {
+				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].About), ".pages")
+				log.Printf("[%s] rendering .pages in %s", p, file)
+				if err = content.Render(templates, "pages_more.tmpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
 			}
 		}
 

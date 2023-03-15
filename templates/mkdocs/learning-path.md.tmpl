@@ -10,7 +10,7 @@
 # {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path ({{ $lpBooksData | len }} :books:)
 
 {{ $lp.Desc }}
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 {{- range $lpBooksData }}
 {{- if .Draft | not }}
@@ -24,7 +24,7 @@
 {{- end -}}
 {{- /* end Build book badges section */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ .Order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+| **{{ .Order }}** | {{- template "small-cover" (args .Cover $covers) -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
 {{- end }}
 {{- end }}
 

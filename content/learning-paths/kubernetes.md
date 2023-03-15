@@ -4,7 +4,7 @@
 
 After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a very good option to run microservice platforms at scale.
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/kubernetes-up-and-running.jpeg) | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br> :hatched_chick: :green_book: :cool: | Start your Kubernetes journey from the very basics. Learn the building blocks to get a solid knowledge base that will allow you advance in the fascinating world of container orchestration and microservice platforms. Recommended to every developer, software architect, infrastructure engineer or platform engineer due to the Kubernetes relevance nowadays. |
 | **2** | ![img](/assets/books/covers/kubernetes-patterns.jpeg) | [**Kubernetes Patterns: Kubernetes Patterns**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023* <br> *300 pages* <br> :hatched_chick: :green_book: :cool: :arrows_counterclockwise: :soon: | After a few years of using Kubernetes teams started to detect recognizable patterns that are commonly replicated. From the famous sidecar pattern and init containers to the necessary configuration patterns and beyond. This book will teach you how to solve common challenges in cloud native environments.  |
@@ -36,6 +36,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-14</sub>
+<sub>Last modified 2023-03-15</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path)

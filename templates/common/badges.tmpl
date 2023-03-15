@@ -1,7 +1,11 @@
 {{define "badges"}}
-## :name_badge: Badges
+{{- if ne . "mkdocs" }}#{{- end -}}# :name_badge: Badges
 
-Learning path badges:
+Badges indicates some aspects of the learning paths or books, like status, difficulty, rating, and more!
+
+{{ if ne . "mkdocs" }}#{{- end -}}## :mortar_board: Learning path badges
+
+These badges show the current status of the learning path:
 
 | Badge | Level |
 | :---: | --- |
@@ -9,6 +13,8 @@ Learning path badges:
 | :construction: | In construction |
 | :new: | Just released! |
 | :ballot_box_with_check: | Have fund and enjoy! |
+
+{{ if ne . "mkdocs" }}#{{- end -}}## :books: Books badges
 
 All books have some badges associated to describe some aspect of them:
 

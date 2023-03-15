@@ -1,7 +1,10 @@
+# :name_badge: Badges
 
-## :name_badge: Badges
+Badges indicates some aspects of the learning paths or books, like status, difficulty, rating, and more!
 
-Learning path badges:
+## :mortar_board: Learning path badges
+
+These badges show the current status of the learning path:
 
 | Badge | Level |
 | :---: | --- |
@@ -9,6 +12,8 @@ Learning path badges:
 | :construction: | In construction |
 | :new: | Just released! |
 | :ballot_box_with_check: | Have fund and enjoy! |
+
+## :books: Books badges
 
 All books have some badges associated to describe some aspect of them:
 
