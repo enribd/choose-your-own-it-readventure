@@ -85,7 +85,7 @@ All books have some badges associated to describe some aspect of them:
 | :arrows_counterclockwise: | The book it's somewhat 'old' and I think it would be great to have a new edition to refresh the content |
 | :bookmark: | Recommended read no matter the learning path | 
 
-## :alien: About me
+## :alien:About me
 
 I am a professional Cloud and Platform Engineer, DevOps practitioner, and Architect in construction. Also I develop things in my free time just for the fun of learning how not to do things. My main interests are the cloud, microservice architectures, EDA, serverless, system design, Kubernetes, and Golang.
 
@@ -95,7 +95,7 @@ If you think some books may fit better in other categories, or the category name
 
 Of course, there will be books broadly considered a must-read that I have not listed, that's either because they don't fit in my career or simply because I don't know of their existence, in any case let me know!
 
-:bowtie: Thanks for stopping by, enjoy!
+Thanks for stopping by, enjoy! :open_hands:
 
 ## :pushpin: Worthy metions
 
