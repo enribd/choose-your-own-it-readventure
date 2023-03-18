@@ -83,16 +83,16 @@ func purgeEmtpyRelatedLearningPaths() {
 // Avoid learning paths having empty suggested learning paths
 func purgeEmtpySuggestedLearningPaths() {
 	for _, lp := range LearningPaths {
-    var notEmtpyLPs []models.LearningPathRef
+		var notEmtpyLPs []models.LearningPathRef
 		for _, suggestedRef := range lp.Suggested {
 			// If the suggested exists in the active lps map add it to the new suggested list
 			if _, ok := LearningPaths[string(suggestedRef)]; ok {
-        notEmtpyLPs = append(notEmtpyLPs, suggestedRef)
+				notEmtpyLPs = append(notEmtpyLPs, suggestedRef)
 			} /* else {
-				log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' suggested paths", suggestedRef, lp.Ref)
-      } */
+							log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' suggested paths", suggestedRef, lp.Ref)
+			      } */
 		}
-    lp.Suggested = notEmtpyLPs
+		lp.Suggested = notEmtpyLPs
 		LearningPaths[string(lp.Ref)] = lp
 	}
 }
