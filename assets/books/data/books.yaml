@@ -685,7 +685,7 @@
   desc: |-
     TODO
   learning_paths:
-    - observability
+    - sre
   badges:
     - intermediate
     - not_scheduled

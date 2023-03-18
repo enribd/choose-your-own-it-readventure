@@ -92,8 +92,8 @@
   suggested:
     - system-design
     - golang
-    - observability
     - cloud-native-apps
+    - observability
   tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
   logo:
     source: /assets/learning-paths/icons/software-architecture.png
@@ -116,7 +116,7 @@
     source: /assets/learning-paths/icons/sre.png
 - name: Observability
   ref: observability
-  status: in-progress
+  status: coming-soon
   desc: |
     Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
   summary: |

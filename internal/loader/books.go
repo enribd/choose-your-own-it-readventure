@@ -96,7 +96,7 @@ func purgeEmtpyLearningPathRefsFromBooks() {
 		for i, lpRef := range book.LearningPathsRefs {
 			if _, ok := LearningPaths[string(lpRef)]; !ok {
 				book.LearningPathsRefs = append(book.LearningPathsRefs[:i], book.LearningPathsRefs[i+1:]...)
-				// log.Printf("'%s' is an empty or a coming soon learning path, remove learning path reference from '%s' book", lpRef, book.Title)
+				// log.Printf("'%s' is an empty or a coming soon learning path, removed learning path reference from '%s' book", lpRef, book.Title)
 
 				// Remove the book from the authors
 				for _, name := range book.Authors {
