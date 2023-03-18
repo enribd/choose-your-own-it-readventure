@@ -14,7 +14,6 @@
     - serverless
     - golang
     - docker
-    - observability
   tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
     source: /assets/learning-paths/icons/microservices.png
@@ -93,7 +92,6 @@
     - system-design
     - golang
     - cloud-native-apps
-    - observability
   tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
   logo:
     source: /assets/learning-paths/icons/software-architecture.png
@@ -105,7 +103,6 @@
   summary: |
     SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
   related:
-    - observability
     - devops
     - software-development
   suggested:
