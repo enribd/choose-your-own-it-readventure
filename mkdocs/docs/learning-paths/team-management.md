@@ -18,12 +18,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Site Reliability Engineering (SRE) :new:](/mkdocs/docs/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#efficiency #software-delivery #team-design #organization-structure</sub>
-
-</p>
-</details>
+    <sub>#efficiency #software-delivery #team-design #organization-structure</sub>
 
 [**⬆ back to top**](#team-management-learning-path-2)

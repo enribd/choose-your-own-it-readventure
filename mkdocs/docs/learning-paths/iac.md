@@ -12,12 +12,8 @@ The following paths are opened to you now, choose wisely:
 
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#cloud-engineering #automation #state-management #fault-recovery #terraform #pulumi #crossplane #ansible</sub>
-
-</p>
-</details>
+    <sub>#cloud-engineering #automation #state-management #fault-recovery #terraform #pulumi #crossplane #ansible</sub>
 
 [**⬆ back to top**](#infrastructure-as-code-(iac)-learning-path-1)

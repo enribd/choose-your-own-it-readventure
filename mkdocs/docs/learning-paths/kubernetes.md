@@ -27,12 +27,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Site Reliability Engineering (SRE) :new:](/mkdocs/docs/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#container-runtime #ingress #controller #crd #operator #csi-driver #admission-controller #service-mesh #platform-engineering</sub>
-
-</p>
-</details>
+    <sub>#container-runtime #ingress #controller #crd #operator #csi-driver #admission-controller #service-mesh #platform-engineering</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path-8)

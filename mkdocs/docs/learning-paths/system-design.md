@@ -30,12 +30,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Kubernetes :ballot_box_with_check:](/mkdocs/docs/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#scalability #manageability #resilience #observability #reliability #mantainability #extensibility #high-availability #databases #algorithms</sub>
-
-</p>
-</details>
+    <sub>#scalability #manageability #resilience #observability #reliability #mantainability #extensibility #high-availability #databases #algorithms</sub>
 
 [**⬆ back to top**](#system-design-learning-path-11)

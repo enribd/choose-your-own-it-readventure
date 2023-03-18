@@ -26,12 +26,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Golang :ballot_box_with_check:](/mkdocs/docs/learning-paths/golang): A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#extensibility #scalability #clean-code #domain-driven-design #heaxagonal-architecture</sub>
-
-</p>
-</details>
+    <sub>#extensibility #scalability #clean-code #domain-driven-design #heaxagonal-architecture</sub>
 
 [**⬆ back to top**](#software-architecture-learning-path-7)

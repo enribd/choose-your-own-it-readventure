@@ -23,12 +23,8 @@ Want to change the subject? Here are some suggestions about other paths you can 
 - [Microservices :construction:](/mkdocs/docs/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
-<p>
+??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-<sub>#goroutines #concurrency #channels #context #waitgroup #command-line</sub>
-
-</p>
-</details>
+    <sub>#goroutines #concurrency #channels #context #waitgroup #command-line</sub>
 
 [**⬆ back to top**](#golang-learning-path-4)
