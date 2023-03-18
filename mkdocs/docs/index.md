@@ -30,6 +30,6 @@ Starting your adventure is as easy as picking the set of skills that you want to
     * **2** ![img](/assets/learning-paths/icons/team-management.png){: style="height:20px"} [*Team Management*](learning-paths/team-management) books :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
 - **34** books :books: , discover them all in the [:scroll: book index](./mkdocs/docs/references/book-index).
-- **44** authors :black_nib: , discover them all in the [:scroll: author index](./mkdocs/docs/references/author-index).
+- **45** authors :black_nib: , discover them all in the [:scroll: author index](./mkdocs/docs/references/author-index).
 
 [**⬆ back to top**](#choose-your-own-it-readventure)

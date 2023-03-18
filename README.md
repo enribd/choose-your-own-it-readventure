@@ -28,7 +28,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
   - **2** <img height="20" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management) books :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
 - **34** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
-- **44** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+- **45** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 

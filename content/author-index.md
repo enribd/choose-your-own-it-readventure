@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (44 :black_nib:)
+# :clipboard: Author Index (45 :black_nib:)
 
 | Name | Books |
 | :---: | :--- |
@@ -42,12 +42,13 @@
 | Nicole Forsgren | <ul><li>[*Accelerate: Building and Scaling High Performing Technology Organizations*](https://www.goodreads.com/book/show/35747076-accelerate)</li></ul> |
 | Paul Blankship | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Piotr Lewandowski | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
-| Pramod Sadalage and Zhamak Dehghani | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
+| Pramod Sadalage | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 | Rich Lander | <ul><li>[*Production Kubernetes: Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
 | Roland Huss | <ul><li>[*Kubernetes Patterns: Kubernetes Patterns*](https://learning.oreilly.com/library/view/-/9781098131678/)</li></ul> |
 | Sam Newman | <ul><li>[*Building Microservices: Designing Fine-Grained Systems*](https://learning.oreilly.com/library/view/-/9781492034018/)</li> <li>[*Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith*](https://learning.oreilly.com/library/view/-/9781492047834/)</li></ul> |
 | Sriskandarajah Suhothayan | <ul><li>[*Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams*](https://learning.oreilly.com/library/view/-/9781492090700/)</li></ul> |
 | Stephen Thorne | <ul><li>[*The Site Reliability Workbook: The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/)</li></ul> |
+| Zhamak Dehghani | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 
 
 ---

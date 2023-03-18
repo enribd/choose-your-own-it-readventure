@@ -2,15 +2,15 @@
 
 # :clipboard: Author Index ({{ .Stats.TotalAuthors }} :black_nib:)
 
-| Name | Books |
-| :---: | :--- |
+| Author | Books |
+| :--- | :--- |
 {{ $authorsData := .AuthorsData -}}
 {{- range $author, $booksData := $authorsData -}}
 {{- $books := list -}}
 {{- range $booksData -}}
-{{- $books = append $books (printf "<li>[*%s: %s*](%s)</li>" .Title .Subtitle .Url) -}}
+{{- $books = append $books (printf ":octicons-book-24: [*%s: %s*](%s)" .Title .Subtitle .Url) -}}
 {{- end -}}
-| {{ $author }} | <ul>{{ $books | join " " }}</ul> |
+| :fontawesome-solid-user-pen:  {{ $author }} | {{ $books | sortAlpha | join "<br>" }} |
 {{ end }}
 
 
