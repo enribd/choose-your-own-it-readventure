@@ -31,6 +31,8 @@ func Load(booksPath, lpsPath, badgesPath string) error {
 		return err
 	}
 
+	loadAuthors()
+
 	// Always load learning paths after books because learning paths without books are skipped.
 	err = loadLearningPaths(lpsPath)
 	if err != nil {

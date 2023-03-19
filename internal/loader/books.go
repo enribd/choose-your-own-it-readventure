@@ -35,12 +35,6 @@ func loadBooks(basepath string) error {
 				Books[book.Title] = book
 				stats.SetTotalBooks(len(Books))
 
-				// Extract authors data
-				for _, name := range book.Authors {
-					Authors[name] = append(Authors[name], book)
-					stats.SetTotalAuthors(len(Authors))
-				}
-
 				// Insert book in learning path
 				for _, lpRef := range book.LearningPathsRefs {
 					LearningPathBooks[lpRef] = append(LearningPathBooks[lpRef], book)
@@ -52,6 +46,16 @@ func loadBooks(basepath string) error {
 	sortAndCountLearningPathBooks()
 
 	return nil
+}
+
+func loadAuthors() {
+	// Extract authors data
+	for _, book := range Books {
+		for _, name := range book.Authors {
+			Authors[name] = append(Authors[name], book)
+			stats.SetTotalAuthors(len(Authors))
+		}
+	}
 }
 
 func loadBooksFile(path string) ([]models.Book, error) {
@@ -93,27 +97,17 @@ func sortAndCountLearningPathBooks() {
 // Remove empty learning paths from books
 func purgeEmtpyLearningPathRefsFromBooks() {
 	for _, book := range Books {
-		for i, lpRef := range book.LearningPathsRefs {
-			if _, ok := LearningPaths[string(lpRef)]; !ok {
-				book.LearningPathsRefs = append(book.LearningPathsRefs[:i], book.LearningPathsRefs[i+1:]...)
-				// log.Printf("'%s' is an empty or a coming soon learning path, removed learning path reference from '%s' book", lpRef, book.Title)
+		// Build a new list without empty lp refs
+		var notEmtpyLPRefs []models.LearningPathRef
 
-				// Remove the book from the authors
-				for _, name := range book.Authors {
-					for h, b := range Authors[name] {
-						if b.Title == book.Title {
-							Authors[name] = append(Authors[name][:h], Authors[name][h+1:]...)
-							// log.Printf("'%s' book is removed, delete it from author '%s' too", b.Title, name)
-						}
-					}
-					// If an author has 0 books then remove it
-					if len(Authors[name]) == 0 {
-						delete(Authors, name)
-						stats.SetTotalAuthors(len(Authors))
-					}
-				}
-			}
+		for _, lpRef := range book.LearningPathsRefs {
+			if _, ok := LearningPaths[string(lpRef)]; ok {
+				notEmtpyLPRefs = append(notEmtpyLPRefs, lpRef)
+			} /* else {
+					// log.Printf("'%s' is an empty or a coming soon learning path, removed learning path reference from '%s' book", lpRef, book.Title)
+			  } */
 		}
+		book.LearningPathsRefs = notEmtpyLPRefs
 
 		// if the book doesn't have any learning path remove it
 		if len(book.LearningPathsRefs) == 0 {
