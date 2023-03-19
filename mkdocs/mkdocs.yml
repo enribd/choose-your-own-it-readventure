@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: "Choose your own IT readventure!"
 site_author: enribd
-# site_url: https://
+site_url: https://itreadventure.madravings.wtf
 repo_url: https://github.com/enribd/choose-your-own-it-readventure
 # nav: setup with awesome-pages plugin
 theme:

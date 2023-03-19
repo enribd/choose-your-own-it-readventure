@@ -1,3 +1,4 @@
+site_url: https://itreadventure.madravings.wtf
 sources:
   books_covers: ./assets/books/covers
   books_data: ./assets/books/data

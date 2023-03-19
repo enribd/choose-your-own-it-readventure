@@ -82,6 +82,7 @@ func main() {
 		// Prepare template rendering data
 		var data = struct {
 			Format              string
+			SiteUrl             string
 			LpData              map[string]interface{}
 			BooksData           map[string]models.Book
 			AuthorsData         map[string][]models.Book
@@ -96,6 +97,7 @@ func main() {
 			CurrentLearningPath models.LearningPath
 		}{
 			Format:              p.String(),
+			SiteUrl:             config.Cfg.SiteUrl,
 			LpData:              loader.LearningPathsTmpl,
 			BooksData:           loader.Books,
 			AuthorsData:         loader.Authors,
