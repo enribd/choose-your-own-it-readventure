@@ -29,7 +29,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
     * **11** ![img](/assets/learning-paths/icons/system-design.png){: style="height:20px"} [*System Design*](learning-paths/system-design) books :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
     * **2** ![img](/assets/learning-paths/icons/team-management.png){: style="height:20px"} [*Team Management*](learning-paths/team-management) books :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
-- **34** books :books: , discover them all in the [:scroll: book index](./mkdocs/docs/references/book-index).
-- **69** authors :black_nib: , discover them all in the [:scroll: author index](./mkdocs/docs/references/author-index).
+- **34** books :books: , discover them all in the [:scroll: book index](/references/book-index).
+- **69** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
 
 [**⬆ back to top**](#choose-your-own-it-readventure)

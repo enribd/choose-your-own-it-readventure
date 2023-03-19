@@ -15,6 +15,8 @@ theme:
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
+      primary: orange
+      accent: deep orange
       scheme: default
       toggle:
         icon: material/lightbulb
@@ -22,6 +24,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: orange
+      accent: deep orange
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
