@@ -4,7 +4,7 @@
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/learning-go.jpeg) | [**Learning Go**](https://learning.oreilly.com/library/view/-/9781492077206/) <br> *Jon Bodner* <br> *Published in 2021* <br> *375 pages* <br> :hatched_chick: :orange_book: | Golang from the ground up, learn the basics and all the language tools at your disposal to create applications in a modern programming language. |
 | **2** | ![img](/assets/books/covers/lets-go.jpeg) | [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2: :green_book: :top: | Once you are familiarized with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!. |
@@ -13,14 +13,14 @@ This path starts with some books to grasp the basics of the language but buildin
 
 The following paths are opened to you now, choose wisely:
 
-- [Software Architecture :construction:](/content/learning-paths/software-architecture.md): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+- [Software Architecture :construction:](/content/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
-- [Microservices :construction:](/content/learning-paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -32,6 +32,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-12</sub>
+<sub>Last modified 2023-03-19</sub>
 
 [**⬆ back to top**](#golang-learning-path)

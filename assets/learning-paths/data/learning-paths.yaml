@@ -14,7 +14,6 @@
     - serverless
     - golang
     - docker
-    - observability
   tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
     source: /assets/learning-paths/icons/microservices.png
@@ -92,7 +91,6 @@
   suggested:
     - system-design
     - golang
-    - observability
     - cloud-native-apps
   tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
   logo:
@@ -105,7 +103,6 @@
   summary: |
     SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
   related:
-    - observability
     - devops
     - software-development
   suggested:
@@ -116,7 +113,7 @@
     source: /assets/learning-paths/icons/sre.png
 - name: Observability
   ref: observability
-  status: in-progress
+  status: coming-soon
   desc: |
     Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
   summary: |

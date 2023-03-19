@@ -4,7 +4,7 @@
 
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 
-| Reading Order | Cover | Info | Description |
+| Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 | **1** | ![img](/assets/books/covers/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :top: :bookmark: | One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures. |
 | **1** | ![img](/assets/books/covers/system-design-interview.jpeg) | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br>  | TODO |
@@ -20,14 +20,14 @@ You want to create systems that resolve complicated technical problems, to find 
 
 The following paths are opened to you now, choose wisely:
 
-- [Microservices :construction:](/content/learning-paths/microservices.md): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Software Architecture :construction:](/content/learning-paths/software-architecture.md): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+- [Software Architecture :construction:](/content/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
 
-- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes.md): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 <details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -39,6 +39,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-12</sub>
+<sub>Last modified 2023-03-19</sub>
 
 [**⬆ back to top**](#system-design-learning-path)

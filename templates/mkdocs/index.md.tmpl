@@ -1,0 +1,33 @@
+
+[//]: # (Auto generated file from templates)
+
+{{ template "overview" }}
+
+!!! warning "Warning!"
+
+    *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
+
+
+## :checkered_flag: Start your adventure, choose your learning path wisely
+
+{{/* Build learning path index with the coming soon paths at the end*/}}
+{{ $badgesData := .BadgesData -}}
+{{ $lpData := .LpData -}}
+- **{{ .Stats.TotalLearningPaths }}** learning paths :mortar_board:
+{{- $notReady := list -}}
+{{- range $ref, $num := .Stats.TotalLearningPathBooks -}}
+{{- with $lp := get $lpData ($ref | toString) -}}
+{{- $icon := get $badgesData $lp.Status -}}
+{{- if or (eq $num 0) (eq $lp.Status "coming-soon") }}
+{{- $pathRow := printf "    * *%s* :%s: *%s*" $lp.Name $icon ($lp.Summary | trim) -}}
+{{- $notReady = append $notReady $pathRow -}}
+{{- else }}
+    * **{{ $num }}** {{ with $lp.Logo.Source }}{{- template "small-logo" $lp -}}{{ end }} [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | base }}/{{ $ref }}) books :{{ $icon }}:: *{{ $lp.Summary | trim }}*
+{{- end -}}
+{{- end -}}
+{{- end }}
+{{ $notReady | join "\n" }}
+- **{{ .Stats.TotalBooks }}** books :books: , discover them all in the [:scroll: book index]({{ .BookIndex | trimSuffix ".md" }}).
+- **{{ .Stats.TotalAuthors }}** authors :black_nib: , discover them all in the [:scroll: author index]({{ .AuthorIndex | trimSuffix ".md" }}).
+
+[**⬆ back to top**](#choose-your-own-it-readventure)

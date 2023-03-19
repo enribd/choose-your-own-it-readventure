@@ -1,0 +1,17 @@
+[//]: # (Auto generated file from templates)
+
+# :clipboard: Author Index ({{ .Stats.TotalAuthors }} :black_nib:)
+
+| Author | Books |
+| :--- | :--- |
+{{ $authorsData := .AuthorsData -}}
+{{- range $author, $booksData := $authorsData -}}
+{{- $books := list -}}
+{{- range $booksData -}}
+{{- $books = append $books (printf ":octicons-book-24: [*%s: %s*](%s)" .Title .Subtitle .Url) -}}
+{{- end -}}
+| :fontawesome-solid-user-pen:  {{ $author }} | {{ $books | sortAlpha | join "<br>" }} |
+{{ end }}
+
+
+[**⬆ back to top**](#author-index-{{ .Stats.TotalAuthors }})

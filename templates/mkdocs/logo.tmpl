@@ -1,0 +1,11 @@
+{{define "logo"}}
+{{- if empty .Logo.Source | not -}}
+![img]({{ .Logo.Source }}){: style="height:{{ default "35" .Logo.Height }}px"}
+{{- end -}}
+{{end}}
+
+{{define "small-logo"}}
+{{- if empty .Logo.Source | not -}}
+![img]({{ .Logo.Source }}){: style="height:{{ default "20" .Logo.Height }}px"}
+{{- end -}}
+{{end}}

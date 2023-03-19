@@ -17,7 +17,7 @@
 {{- range .LearningPathsRefs -}}
 {{- $lp := get $lpData (. | toString) -}}
 {{- if (empty $lp | not) -}}
-{{- $name := printf "<li>[%s](%s/%s.md)</li>" $lp.Name $lpFolders . | trim -}}
+{{- $name := printf "<li>[%s](%s/%s)</li>" $lp.Name $lpFolders . | trim -}}
 {{- $paths = append $paths $name -}}
 {{- end -}}
 {{- end -}}
