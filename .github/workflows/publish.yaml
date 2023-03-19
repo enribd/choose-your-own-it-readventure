@@ -19,6 +19,6 @@ jobs:
           CONFIG_FILE: mkdocs/mkdocs.yml
           EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: enribd.github.io
-          CUSTOM_DOMAIN: itr.madravings.wtf
+          CUSTOM_DOMAIN: itreadventure.madravings.wtf
           GITHUB_REPOSITORY: enribd/choose-your-own-it-readventure
           REQUIREMENTS: mkdocs/requirements.txt
