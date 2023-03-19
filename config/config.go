@@ -9,6 +9,7 @@ import (
 )
 
 type Config struct {
+	SiteUrl string                      `yaml:"site_url"`
 	Sources Sources                     `yaml:"sources"`
 	Content map[content.Provider]Format `yaml:"content"`
 }

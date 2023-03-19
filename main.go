@@ -20,13 +20,13 @@ import (
 )
 
 var debug bool
-var formats, contents, mkdocsRoot string
+var formats, contents, mkdocsStripPrefix string
 
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.StringVar(&formats, "formats", "github,mkdocs", "generate content with format for different hosting providers, accepts comma-separated values")
 	flag.StringVar(&contents, "contents", "index,book-index,author-index,learning-paths,badges,about,mentions", "list of content to generate, accepts comma-separated values")
-	flag.StringVar(&mkdocsRoot, "mkdocs-root-dir", "/", "build document links from this path")
+	flag.StringVar(&mkdocsStripPrefix, "mkdocs-strip-path-prefix", "./mkdocs/docs", "remove prefix from path to set browsing routes")
 	flag.Parse()
 	contents := strings.Split(contents, ",")
 	formats := strings.Split(formats, ",")
@@ -56,6 +56,16 @@ func main() {
 			return
 		}
 
+    // Arrange content folders
+    lpFolder := config.Cfg.Content[p].LearningPaths
+    bookIndexFolder := config.Cfg.Content[p].BookIndex
+    authorIndexFolder := config.Cfg.Content[p].AuthorIndex
+    if p == content.Mkdocs && mkdocsStripPrefix != "" {
+      lpFolder = strings.TrimPrefix(lpFolder, mkdocsStripPrefix)
+      bookIndexFolder = strings.TrimPrefix(bookIndexFolder, mkdocsStripPrefix)
+      authorIndexFolder = strings.TrimPrefix(authorIndexFolder, mkdocsStripPrefix)
+    }
+
 		// Create content dirs
 		if err = os.MkdirAll(config.Cfg.Content[p].LearningPaths, os.ModePerm); err != nil {
 			log.Println(err)
@@ -82,6 +92,7 @@ func main() {
 		// Prepare template rendering data
 		var data = struct {
 			Format              string
+			SiteUrl             string
 			LpData              map[string]interface{}
 			BooksData           map[string]models.Book
 			AuthorsData         map[string][]models.Book
@@ -96,14 +107,15 @@ func main() {
 			CurrentLearningPath models.LearningPath
 		}{
 			Format:              p.String(),
+			SiteUrl:             config.Cfg.SiteUrl,
 			LpData:              loader.LearningPathsTmpl,
 			BooksData:           loader.Books,
 			AuthorsData:         loader.Authors,
 			BadgesData:          loader.Badges,
 			BookCovers:          config.Cfg.Sources.BookCovers,
-			LearningPathsFolder: config.Cfg.Content[p].LearningPaths,
-			BookIndex:           config.Cfg.Content[p].BookIndex,
-			AuthorIndex:         config.Cfg.Content[p].AuthorIndex,
+			LearningPathsFolder: lpFolder,
+			BookIndex:           bookIndexFolder,
+			AuthorIndex:         authorIndexFolder,
 			Stats:               stats.Data,
 		}
 
