@@ -20,6 +20,11 @@ jobs:
           mkdir -p ./mkdocs/docs/assets/learning-paths
           cp -r ./assets/learning-paths/icons ./mkdocs/docs/assets/learning-paths
 
+      - name: Set custom domain
+        env:
+          CUSTOM_DOMAIN: itreadventure.madravings.wtf
+        run: echo "${CUSTOM_DOMAIN}" > ./mkdocs/docs/CNAME
+
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
