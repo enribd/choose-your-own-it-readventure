@@ -12,6 +12,13 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v2
 
+      - name: Prepare assets
+        run: |
+          mkdir -p "${GITHUB_WORKSPACE}/mkdocs/docs/assets/books/covers"
+          cp -r ./assets/books/covers "${GITHUB_WORKSPACE}/mkdocs/docs/assets/book/covers"
+          mkdir -p "${GITHUB_WORKSPACE}/mkdocs/docs/assets/learning-path/icons"
+          cp -r ./assets/learning-paths/icons "${GITHUB_WORKSPACE}/mkdocs/docs/assets/learning-path/icons"
+
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
