@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> Software Architecture Learning Path (7 :books:)
 
-TODO
+To build effective services and applications a set of rules have to define what are the goals of the system, what it can or cannot do, and how things are structured to accomplish all that. Software needs to be designed and structured to achieve reasonable maintainability, aceptable performance and good extensibility. Explore beyond the code and discover how systems work, how they were designed to scale and adapt in this huge and ever changing world.
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |

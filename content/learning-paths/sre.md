@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/sre.png" alt="sre" title="Site Reliability Engineering (SRE)"/> Site Reliability Engineering (SRE) Learning Path (4 :books:)
 
-TODO
+Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are just a few concepts involved in an SRE engineer's daily life. The focus of this path is to acquire the necessary skills to keep systems alive and optimize their performance. To do that you need automation, observable systems, monitoring, service lifecycle management skills, and more. Major companies in the field apply interesting techniques to debug, fix and prevent outages in hundreds of services consumed by millons of users simoultaneously, learn how they achieve such performances!
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
