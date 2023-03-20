@@ -17,7 +17,7 @@ jobs:
           mkdir -p "./mkdocs/docs/assets/books"
           cp -r ./assets/books/covers "./mkdocs/docs/assets/books"
           mkdir -p "./mkdocs/docs/assets/learning-paths"
-          cp -r ./assets/learning-paths "./mkdocs/docs/assets/learning-paths"
+          cp -r ./assets/learning-paths/icons "./mkdocs/docs/assets/learning-paths"
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
