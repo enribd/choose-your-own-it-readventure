@@ -2,7 +2,7 @@
 
 # <img height="35" src="/assets/learning-paths/icons/iac.png" alt="iac" title="Infrastructure as Code (IaC)"/> Infrastructure as Code (IaC) Learning Path (1 :books:)
 
-TODO
+IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge name of servers or services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage cloud services.
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |

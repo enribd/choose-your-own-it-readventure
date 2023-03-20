@@ -15,7 +15,7 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
+- [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
 
 
 ??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
