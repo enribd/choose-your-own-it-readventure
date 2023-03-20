@@ -78,7 +78,7 @@
   ref: software-architecture
   status: in-progress
   desc: |
-    TODO
+    To build effective services and applications a set of rules have to define what are the goals of the system, what it can or cannot do, and how things are structured to accomplish all that. Software needs to be designed and structured to achieve reasonable maintainability, aceptable performance and good extensibility. Explore beyond the code and discover how systems work, how they were designed to scale and adapt in this huge and ever changing world.
   summary: |
     Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
   related:
@@ -99,9 +99,9 @@
   ref: sre
   status: new
   desc: |
-    TODO
+    Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are just a few concepts involved in an SRE engineer's daily life. The focus of this path is to acquire the necessary skills to keep systems alive and optimize their performance. To do that you need automation, observable systems, monitoring, service lifecycle management skills, and more. Major companies in the field apply interesting techniques to debug, fix and prevent outages in hundreds of services consumed by millons of users simoultaneously, learn how they achieve such performances!
   summary: |
-    SRE is about making productive system to stay up, to make update easier, to identify and resolve problems and, of course, automating things to make the team life easier.
+    SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
   related:
     - devops
     - software-development
@@ -132,7 +132,7 @@
   ref: iac
   status: new
   desc: |
-    TODO
+    IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge name of servers or services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage cloud services.
   summary: |
     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
   related:
