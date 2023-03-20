@@ -63,7 +63,7 @@ mkdocs-build-site: ## Build site
 
 mkdocs-run: ## Run site in localhost
 	$(info: Run site in localhost)
-	@xdg-open http://localhost:8000
+	# @xdg-open http://localhost:8000
 	@docker container run --rm -t --name mkdocs \
 	  --publish 8000:8000 \
 		--user $(shell id -u):$(shell id -g) \

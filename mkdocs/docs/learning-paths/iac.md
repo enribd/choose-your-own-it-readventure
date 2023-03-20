@@ -6,7 +6,7 @@ TODO
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** |![img](/assets/books/covers/terraform-up-and-running.jpeg){: style="height:166px;width:122px"}̣| [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | TODO |
+| **1** |![img](/assets/books/covers/terraform-up-and-running.jpeg)| [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | TODO |
 
 The following paths are opened to you now, choose wisely:
 

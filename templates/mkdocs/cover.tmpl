@@ -4,9 +4,9 @@
 {{- $withSize := index . 2 -}}
 {{- if empty $cover | not -}}
 {{- if ($cover | hasPrefix "http") -}}
-![img]({{ $cover }}){{- if $withSize -}}{: style="height:166px;width:122px"}̣{{- end -}}
+![img]({{ $cover }}){{- if (eq $withSize "true") -}}{: style="height:166px;width:122px"}̣{{- end -}}
 {{- else -}}
-![img]({{ $coversPath | trimPrefix "." }}/{{ $cover }}){{- if $withSize -}}{: style="height:166px;width:122px"}̣{{- end -}}
+![img]({{ $coversPath | trimPrefix "." }}/{{ $cover }}){{- if (eq $withSize "true") -}}{: style="height:166px;width:122px"}̣{{- end -}}
 {{- end -}}
 {{- end -}}
 {{end}}

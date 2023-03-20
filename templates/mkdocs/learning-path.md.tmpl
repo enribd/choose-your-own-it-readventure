@@ -24,7 +24,7 @@
 {{- end -}}
 {{- /* end Build book badges section */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ .Order }}** | {{- template "cover" (args .Cover $covers true) -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+| **{{ .Order }}** | {{- template "cover" (args .Cover $covers "false") -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
 {{- end }}
 {{- end }}
 
