@@ -57,6 +57,7 @@ mkdocs-build-site: ## Build site
 		--volume ${PWD}:/src \
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
 		${image} build
 .PHONY: build
 
@@ -70,6 +71,7 @@ mkdocs-run: ## Run site in localhost
 		--volume ${PWD}:/src \
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
 		${image}
 .PHONY: run
 

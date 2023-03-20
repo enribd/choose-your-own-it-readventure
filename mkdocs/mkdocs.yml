@@ -6,6 +6,7 @@ repo_url: https://github.com/enribd/choose-your-own-it-readventure
 # nav: setup with awesome-pages plugin
 theme:
   name: material
+  favicon: assets/favicon.png
   icon:
     logo: material/bookshelf
     repo: fontawesome/brands/github
