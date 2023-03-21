@@ -24,7 +24,7 @@ pre-commit: run format clean #lint-gh-actions
 lint-gh-actions: ### Lint Github Actions files with actionlint
 	$(info Ling Github Actions)
 	@docker run --rm \
-		-v $(shell pwd):/workflows \
+		-v ${PWD}:/workflows \
 		-w /workflows \
 		rhysd/actionlint:latest -color
 .PHONY: lint-gh-actions
@@ -59,6 +59,7 @@ mkdocs-build-site: ## Build site
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
 		${image} build
 .PHONY: build
 
@@ -73,6 +74,7 @@ mkdocs-run: ## Run site in localhost
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
 		${image}
 .PHONY: run
 
