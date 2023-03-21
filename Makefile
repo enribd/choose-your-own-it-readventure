@@ -34,7 +34,7 @@ format: ### Run go fmt
 	@go fmt ./...
 .PHONY: format
 
-run: clean ### Run go binary (vars: contents)
+run: ### Run go binary (vars: contents)
 	$(info Build and run code)
 	@mkdir -p ./mkdocs/docs/{more,references,stylesheets}
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --contents=${contents}
