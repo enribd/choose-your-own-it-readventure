@@ -19,6 +19,7 @@ jobs:
           mkdir -p ./mkdocs/docs/assets/learning-paths
           cp -r ./assets/learning-paths/icons ./mkdocs/docs/assets/learning-paths
           cp ./assets/favicon.png ./mkdocs/docs/assets/favicon.png
+          cp ./assets/logo.png ./mkdocs/docs/assets/logo.png
 
       - name: Set custom domain
         env:
