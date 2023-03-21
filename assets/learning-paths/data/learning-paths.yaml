@@ -132,12 +132,13 @@
   ref: iac
   status: new
   desc: |
-    IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge name of servers or services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage cloud services.
+    IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge amount of servers and services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage their cloud infrastructures.
   summary: |
     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
   related:
+    # TODO: fix bug here, the devops lp is still in the related lps list even though its status is coming-soon
+    # - devops
     - cloud
-    - devops
   suggested:
     - cicd
   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]

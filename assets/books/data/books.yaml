@@ -810,7 +810,7 @@
   release: 2022
   pages: 457
   desc: |-
-    TODO
+    Terraform is the leading product in the IaC section, used widely for its simplicity, declarative nature, extensibility and compatibility con almost every cloud provider. Many companies in the industry use it to declare infrastructure as code and operate with Terraform every day. It is considered an essential tool in the cloud engineer or DevOps toolbelt. Terraform Up and Running will help you to understand and apply the IaC principles, to organize your code to follow the best practices, and also how testing is performed in this paradigm.
   learning_paths:
     - iac
     - devops
