@@ -13,7 +13,6 @@
     One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
   learning_paths:
     - microservices
-    - system-design
   badges:
     - intermediate
     - read
@@ -34,7 +33,6 @@
     Intended as a companion of [Building Microservices](https://learning.oreilly.com/library/view/-/9781492034018/), this book focus in the things to take in mind to adopt a microservice architecture parting form a monolith. For those considering taking the leap, Sam Newman, offers the vision of where to start, how to split the monolith beast and what to do along the way to avoid being crushed by the microservice chaos. Definitely a nice guide to avoid stumbling over well know problems and apply best practices and patterns from the start of a difficult journey.
   learning_paths:
     - microservices
-    - system-design
   badges:
     - intermediate
     - scheduled
@@ -54,7 +52,6 @@
     One of the bibles of the microservice architectures, it teaches design, service communication patterns, testing, state management, deployment patterns, and more. Basically a "from zero to hero" approach that will make you an expert if you read it carefully. Despite the fact that the book has some years, the content is still valid today, would be nice to have an update though.
   learning_paths:
     - microservices
-    - system-design
   badges:
     - intermediate
     - not_scheduled
