@@ -21,7 +21,7 @@
   ref: kubernetes
   status: stable
   desc: |
-    After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a very good option to run microservice platforms at scale.
+    After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
   summary: |
     Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
   related:
