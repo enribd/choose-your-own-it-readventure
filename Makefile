@@ -15,7 +15,7 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: run format clean #lint-gh-actions
+pre-commit: run format lint-gh-actions
 	@git add README.md
 	@git add ./content
 	@git add ./mkdocs

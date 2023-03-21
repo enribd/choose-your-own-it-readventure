@@ -75,10 +75,10 @@ func purgeEmtpyRelatedLearningPaths() {
 			if len(LearningPathBooks[relatedRef]) > 0 {
 				notEmtpyLPs = append(notEmtpyLPs, relatedRef)
 			} /* else {
-				log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' related paths", relatedRef, lp.Ref)
-      } */
+							log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' related paths", relatedRef, lp.Ref)
+			      } */
 		}
-    lp.Related = notEmtpyLPs
+		lp.Related = notEmtpyLPs
 		LearningPaths[string(lp.Ref)] = lp
 	}
 }

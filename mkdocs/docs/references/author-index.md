@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (69 :black_nib:)
+# :clipboard: Author Index (68 :black_nib:)
 
 | Author | Books |
 | :--- | :--- |
@@ -11,7 +11,6 @@
 | :fontawesome-solid-user-pen:  Alex Xu | :octicons-book-24: [*System Design Interview volume 2: An insider's guide*](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide)<br>:octicons-book-24: [*System Design Interview: An insider's guide*](https://www.goodreads.com/book/show/54617137-system-design-interview) |
 | :fontawesome-solid-user-pen:  Ana Opera | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
 | :fontawesome-solid-user-pen:  Benjamin Muschko | :octicons-book-24: [*Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781098107215/)<br>:octicons-book-24: [*Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781492083726/) |
-| :fontawesome-solid-user-pen:  Bernd Ruecker | :octicons-book-24: [*Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures*](https://learning.oreilly.com/library/view/-/9781492061441/) |
 | :fontawesome-solid-user-pen:  Betsy Beyer | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)<br>:octicons-book-24: [*Site Reliability Engineering: Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)<br>:octicons-book-24: [*The Site Reliability Workbook: The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Bilgin Ibryam | :octicons-book-24: [*Kubernetes Patterns: Kubernetes Patterns*](https://learning.oreilly.com/library/view/-/9781098131678/) |
 | :fontawesome-solid-user-pen:  Brendan Burns | :octicons-book-24: [*Designing Distributed Systems: Designing Distributed Systems*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)<br>:octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)<br>:octicons-book-24: [*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/) |
@@ -76,4 +75,4 @@
 
 
 
-[**⬆ back to top**](#author-index-69)
+[**⬆ back to top**](#author-index-68)
