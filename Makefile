@@ -15,7 +15,7 @@ enable-pre-commit-hook: ### Create git pre-commit hook
 	@chmod +x .git/hooks/pre-commit
 .PHONY: enable-pre-commit-hook
 
-pre-commit: run format clean #lint-gh-actions
+pre-commit: run format lint-gh-actions
 	@git add README.md
 	@git add ./content
 	@git add ./mkdocs
@@ -24,7 +24,7 @@ pre-commit: run format clean #lint-gh-actions
 lint-gh-actions: ### Lint Github Actions files with actionlint
 	$(info Ling Github Actions)
 	@docker run --rm \
-		-v $(shell pwd):/workflows \
+		-v ${PWD}:/workflows \
 		-w /workflows \
 		rhysd/actionlint:latest -color
 .PHONY: lint-gh-actions
@@ -34,7 +34,7 @@ format: ### Run go fmt
 	@go fmt ./...
 .PHONY: format
 
-run: clean ### Run go binary (vars: contents)
+run: ### Run go binary (vars: contents)
 	$(info Build and run code)
 	@mkdir -p ./mkdocs/docs/{more,references,stylesheets}
 	@go mod tidy && go mod download && CGO_ENABLED=0 go run main.go --contents=${contents}
@@ -59,6 +59,7 @@ mkdocs-build-site: ## Build site
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
 		${image} build
 .PHONY: build
 
@@ -73,6 +74,7 @@ mkdocs-run: ## Run site in localhost
 		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
 		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
 		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
 		${image}
 .PHONY: run
 

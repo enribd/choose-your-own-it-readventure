@@ -56,15 +56,15 @@ func main() {
 			return
 		}
 
-    // Arrange content folders
-    lpFolder := config.Cfg.Content[p].LearningPaths
-    bookIndexFolder := config.Cfg.Content[p].BookIndex
-    authorIndexFolder := config.Cfg.Content[p].AuthorIndex
-    if p == content.Mkdocs && mkdocsStripPrefix != "" {
-      lpFolder = strings.TrimPrefix(lpFolder, mkdocsStripPrefix)
-      bookIndexFolder = strings.TrimPrefix(bookIndexFolder, mkdocsStripPrefix)
-      authorIndexFolder = strings.TrimPrefix(authorIndexFolder, mkdocsStripPrefix)
-    }
+		// Arrange content folders
+		lpFolder := config.Cfg.Content[p].LearningPaths
+		bookIndexFolder := config.Cfg.Content[p].BookIndex
+		authorIndexFolder := config.Cfg.Content[p].AuthorIndex
+		if p == content.Mkdocs && mkdocsStripPrefix != "" {
+			lpFolder = strings.TrimPrefix(lpFolder, mkdocsStripPrefix)
+			bookIndexFolder = strings.TrimPrefix(bookIndexFolder, mkdocsStripPrefix)
+			authorIndexFolder = strings.TrimPrefix(authorIndexFolder, mkdocsStripPrefix)
+		}
 
 		// Create content dirs
 		if err = os.MkdirAll(config.Cfg.Content[p].LearningPaths, os.ModePerm); err != nil {

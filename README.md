@@ -22,14 +22,14 @@ You can keep browsing this repo or use the [web version :rocket:](https://itread
   - **4** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang) books :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
   - **1** <img height="20" src="/assets/learning-paths/icons/iac.png" alt="iac" title="Infrastructure as Code (IaC)"/> [*Infrastructure as Code (IaC)*](/content/learning-paths/iac) books :new:: *Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.*
   - **8** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/learning-paths/kubernetes) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
-  - **4** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+  - **3** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) books :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
   - **7** <img height="20" src="/assets/learning-paths/icons/software-architecture.png" alt="software-architecture" title="Software Architecture"/> [*Software Architecture*](/content/learning-paths/software-architecture) books :construction:: *Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.*
   - **4** <img height="20" src="/assets/learning-paths/icons/sre.png" alt="sre" title="Site Reliability Engineering (SRE)"/> [*Site Reliability Engineering (SRE)*](/content/learning-paths/sre) books :new:: *SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.*
-  - **11** <img height="20" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design) books :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
+  - **7** <img height="20" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design) books :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
   - **2** <img height="20" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management) books :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
-- **34** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
-- **69** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+- **33** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **68** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 
@@ -108,6 +108,6 @@ Thanks for stopping by, enjoy! :open_hands:
 
 
 ---
-<sub>Last modified 2023-03-20</sub>
+<sub>Last modified 2023-03-21</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

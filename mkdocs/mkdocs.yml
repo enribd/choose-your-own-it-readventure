@@ -1,14 +1,15 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: "Choose your own IT readventure!"
 site_author: enribd
+dev_addr: "127.0.0.1:8000"
 site_url: https://itreadventure.madravings.wtf
 repo_url: https://github.com/enribd/choose-your-own-it-readventure
 # nav: setup with awesome-pages plugin
 theme:
   name: material
   favicon: assets/favicon.png
+  logo: assets/logo.png
   icon:
-    logo: material/bookshelf
     repo: fontawesome/brands/github
   font:
     text: Montserrat
@@ -59,6 +60,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:

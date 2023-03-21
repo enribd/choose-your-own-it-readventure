@@ -70,13 +70,16 @@ func loadLearningPathsFile(path string) ([]models.LearningPath, error) {
 func purgeEmtpyRelatedLearningPaths() {
 	for _, lp := range LearningPaths {
 		// Remove empty related paths
-		for i, relatedRef := range lp.Related {
-			if len(LearningPathBooks[relatedRef]) == 0 {
-				lp.Related = append(lp.Related[:i], lp.Related[i+1:]...)
-				// log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' related paths", relatedRef, lp.Ref)
-				LearningPaths[string(lp.Ref)] = lp
-			}
+		var notEmtpyLPs []models.LearningPathRef
+		for _, relatedRef := range lp.Related {
+			if len(LearningPathBooks[relatedRef]) > 0 {
+				notEmtpyLPs = append(notEmtpyLPs, relatedRef)
+			} /* else {
+							log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' related paths", relatedRef, lp.Ref)
+			      } */
 		}
+		lp.Related = notEmtpyLPs
+		LearningPaths[string(lp.Ref)] = lp
 	}
 }
 
@@ -90,7 +93,7 @@ func purgeEmtpySuggestedLearningPaths() {
 				notEmtpyLPs = append(notEmtpyLPs, suggestedRef)
 			} /* else {
 							log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' suggested paths", suggestedRef, lp.Ref)
-			      } */
+			} */
 		}
 		lp.Suggested = notEmtpyLPs
 		LearningPaths[string(lp.Ref)] = lp
