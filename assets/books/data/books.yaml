@@ -397,7 +397,7 @@
   badges:
     - TODO
 - title: Designing Data-Intensive Applications
-  subtitle: Designing Data-Intensive Applications
+  subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
   cover: designing-data-intensive-applications.jpeg
   order: 1
   weight: 1
@@ -678,7 +678,7 @@
   order: 1
   weight: 1
   draft: false
-  url: https://www.goodreads.com/book/show/54617137-system-design-interview
+  url: https://www.oreilly.com/library/view/observability-engineering/9781492076438/
   authors:
     - Charity Majors
     - Liz Fong-Jones
