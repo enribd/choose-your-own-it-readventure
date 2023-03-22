@@ -87,7 +87,7 @@
   release: 2020
   pages: 309
   desc: |-
-    Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that ilustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
+    Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that illustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
   learning_paths:
     - system-design
   badges:
@@ -131,7 +131,7 @@
   badges:
     - TODO
 - title: Designing Distributed Systems
-  subtitle: Designing Distributed Systems
+  subtitle: Patterns and Paradigms for Scalable, Reliable Services
   cover: designing-distributed-systems.jpeg
   order: 1
   weight: 1
@@ -142,11 +142,13 @@
   release: 2018
   pages: 162
   desc: |-
-    TODO
+    Designing distributed systems is not easy, after years of experience patterns emerged and this book bring some of those patterns together to convey ways to split, replicate, communicate and reuse components. Work queues, batch processing, adapters, ambassadors, event-driven processing or deployment patterns are some of the topics covered along with hands on examples for illustration. 
   learning_paths:
     - system-design
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
+    - old
 - title: Foundations of Scalable Systems
   subtitle: Designing Distributed Architectures
   cover: foundations-of-scalable-systems.jpeg
@@ -159,12 +161,13 @@
   release: 2022
   pages: 320
   desc: |-
-    TODO
+    A fair amount of information about distributed systems and scalability is contained in this book: databases, event processing, caching, asynchronous messaging... When designing systems it's necessary to think about how incresing load will affect aspects like performance and reliability, that's the reason why scalability is a big subject and one of the most important properties of a system since the cloud flourished and extended.
   learning_paths:
     - system-design
     - software-architecture
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Mastering API Architecture
   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
   cover: mastering-api-architecture.jpeg
@@ -312,7 +315,7 @@
   cover: flow-architectures.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/9781492075882/
   authors:
     - James Urquhart
@@ -412,12 +415,14 @@
   release: 2017
   pages: 616
   desc: |-
-    TODO
+    Learn the fundamental properties of data driven applications and how to treat data in terms of storage, replication, indexing, querying, processing and consistency. A new edition of this jewel is in order because the publication was some years ago, but don't be fooled, the content is still valid so go ahead and dive in.
   learning_paths:
     - software-architecture
     - system-design
   badges:
-    - TODO
+    - hard
+    - not_scheduled
+    - old
 - title: Learning Go
   subtitle: 
   cover: learning-go.jpeg
