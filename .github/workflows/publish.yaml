@@ -21,10 +21,10 @@ jobs:
           cp ./assets/favicon.png ./mkdocs/docs/assets/favicon.png
           cp ./assets/logo.png ./mkdocs/docs/assets/logo.png
 
-      - name: Set custom domain
-        env:
-          CUSTOM_DOMAIN: itreadventure.madravings.wtf
-        run: echo "${CUSTOM_DOMAIN}" > ./mkdocs/docs/CNAME
+      # - name: Set custom domain
+      #   env:
+      #     CUSTOM_DOMAIN: itreadventure.madravings.wtf
+      #   run: echo "${CUSTOM_DOMAIN}" > ./mkdocs/docs/CNAME
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
@@ -33,6 +33,6 @@ jobs:
           CONFIG_FILE: mkdocs/mkdocs.yml
           EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: enribd.github.io
-          CUSTOM_DOMAIN: itreadventure.madravings.wtf
+          CUSTOM_DOMAIN: itreadventure.com
           GITHUB_REPOSITORY: enribd/choose-your-own-it-readventure
           REQUIREMENTS: mkdocs/requirements.txt
