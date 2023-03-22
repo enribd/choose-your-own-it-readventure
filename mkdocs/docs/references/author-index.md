@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (68 :black_nib:)
+# :clipboard: Author Index (67 :black_nib:)
 
 | Author | Books |
 | :--- | :--- |
@@ -13,7 +13,7 @@
 | :fontawesome-solid-user-pen:  Benjamin Muschko | :octicons-book-24: [*Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781098107215/)<br>:octicons-book-24: [*Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781492083726/) |
 | :fontawesome-solid-user-pen:  Betsy Beyer | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)<br>:octicons-book-24: [*Site Reliability Engineering: Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/)<br>:octicons-book-24: [*The Site Reliability Workbook: The Site Reliability Workbook*](https://sre.google/workbook/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Bilgin Ibryam | :octicons-book-24: [*Kubernetes Patterns: Kubernetes Patterns*](https://learning.oreilly.com/library/view/-/9781098131678/) |
-| :fontawesome-solid-user-pen:  Brendan Burns | :octicons-book-24: [*Designing Distributed Systems: Designing Distributed Systems*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)<br>:octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)<br>:octicons-book-24: [*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/) |
+| :fontawesome-solid-user-pen:  Brendan Burns | :octicons-book-24: [*Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)<br>:octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)<br>:octicons-book-24: [*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/) |
 | :fontawesome-solid-user-pen:  Chanaka Fernando | :octicons-book-24: [*Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging*](https://learning.oreilly.com/library/view/-/9781801072212/) |
 | :fontawesome-solid-user-pen:  Charity Majors | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
 | :fontawesome-solid-user-pen:  Chris Jones | :octicons-book-24: [*Site Reliability Engineering: Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/) |
@@ -32,7 +32,6 @@
 | :fontawesome-solid-user-pen:  Ian Gorton | :octicons-book-24: [*Foundations of Scalable Systems: Designing Distributed Architectures*](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) |
 | :fontawesome-solid-user-pen:  Jacques Chester | :octicons-book-24: [*Knative in Action: *](https://learning.oreilly.com/library/view/-/9781617296642/) |
 | :fontawesome-solid-user-pen:  James Gough | :octicons-book-24: [*Mastering API Architecture: Defining, Connecting, and Securing Distributed Systems and Microservices*](https://learning.oreilly.com/library/view/-/9781492090625/) |
-| :fontawesome-solid-user-pen:  James Urquhart | :octicons-book-24: [*Flow Architectures: The Future of Streaming and Event-Driven Integration*](https://learning.oreilly.com/library/view/-/9781492075882/) |
 | :fontawesome-solid-user-pen:  Jason Dobies | :octicons-book-24: [*Kubernetes Operators: Automating the Container Orchestration Platform*](https://learning.oreilly.com/library/view/-/9781492048039/) |
 | :fontawesome-solid-user-pen:  Jennifer Petoff | :octicons-book-24: [*Site Reliability Engineering: Site Reliability Engineering*](https://sre.google/sre-book/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Jez Humble | :octicons-book-24: [*The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*](https://learning.oreilly.com/library/view/-/9781457191381/) |
@@ -75,4 +74,4 @@
 
 
 
-[**⬆ back to top**](#author-index-68)
+[**⬆ back to top**](#author-index-67)
