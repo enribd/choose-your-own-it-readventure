@@ -87,11 +87,13 @@
   release: 2020
   pages: 309
   desc: |-
-    TODO
+    Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that ilustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
   learning_paths:
     - system-design
   badges:
-    - TODO
+    - hard
+    - read
+    - top
 - title: System Design Interview volume 2
   subtitle: An insider's guide
   cover: system-design-interview-2.jpeg
@@ -104,11 +106,13 @@
   release: 2022
   pages: 424
   desc: |-
-    TODO
+    An extension of the first part, the structure follow the same pattern but adding new cases. The author is well versed in many topics, from networking and databases to software development and algorithms, and it shows along the pages. Learn to design location based services, stock exchanges, game leaderborads and more. If you like the first one you will like this.
   learning_paths:
     - system-design
   badges:
-    - TODO
+    - hard
+    - read
+    - top
 - title: Building an Event-Driven Data Mesh
   subtitle: Patterns for Designing & Building Event-Driven Architectures
   cover: building-an-event-driven-data-mesh.jpeg
