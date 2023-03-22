@@ -6,8 +6,8 @@ You want to create systems that resolve complicated technical problems, to find 
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
-| **1** | ![img](/assets/books/covers/system-design-interview.jpeg) | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br>  | TODO |
-| **1** | ![img](/assets/books/covers/system-design-interview-2.jpeg) | [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br>  | TODO |
+| **1** | ![img](/assets/books/covers/system-design-interview.jpeg) | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2: :green_book: | Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that ilustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter. |
+| **1** | ![img](/assets/books/covers/system-design-interview-2.jpeg) | [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br> :tiger2: :green_book: | An extension of the first part, the structure follow the same pattern but adding new cases. The author is well versed in many topics, from networking and databases to software development and algorithms, and it shows along the pages. Learn to design location based services, stock exchanges, game leaderborads and more. If you like the first one you will like this. |
 | **1** | ![img](/assets/books/covers/designing-distributed-systems.jpeg) | [**Designing Distributed Systems: Designing Distributed Systems**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* <br>  | TODO |
 | **1** | ![img](/assets/books/covers/foundations-of-scalable-systems.jpeg) | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br>  | TODO |
 | **1** | ![img](/assets/books/covers/flow-architectures.jpeg) | [**Flow Architectures: The Future of Streaming and Event-Driven Integration**](https://learning.oreilly.com/library/view/-/9781492075882/) <br> *James Urquhart* <br> *Published in 2021* <br> *252 pages* <br>  | TODO |
@@ -35,6 +35,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-21</sub>
+<sub>Last modified 2023-03-22</sub>
 
 [**⬆ back to top**](#system-design-learning-path)

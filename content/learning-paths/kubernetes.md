@@ -2,7 +2,7 @@
 
 # <img height="35" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> Kubernetes Learning Path (8 :books:)
 
-After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a very good option to run microservice platforms at scale.
+After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
@@ -36,6 +36,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2023-03-21</sub>
+<sub>Last modified 2023-03-22</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path)
