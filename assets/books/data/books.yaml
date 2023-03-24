@@ -584,7 +584,7 @@
     - read
     - very_good
 - title: Kubernetes Patterns
-  subtitle: Kubernetes Patterns
+  subtitle: Reusable Elements for Designing Cloud Native Applications
   cover: kubernetes-patterns.jpeg
   order: 2
   weight: 1
