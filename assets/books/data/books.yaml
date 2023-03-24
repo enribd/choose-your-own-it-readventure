@@ -97,8 +97,8 @@
 - title: System Design Interview volume 2
   subtitle: An insider's guide
   cover: system-design-interview-2.jpeg
-  order: 1
-  weight: 1
+  order: 2
+  weight: 4
   draft: false
   url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
   authors:
@@ -152,7 +152,7 @@
 - title: Foundations of Scalable Systems
   subtitle: Designing Distributed Architectures
   cover: foundations-of-scalable-systems.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/
@@ -331,7 +331,7 @@
 - title: Fundamentals of Software Architecture
   subtitle: An Engineering Approach
   cover: fundamentals-of-software-architecture.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
@@ -341,15 +341,16 @@
   release: 2020
   pages: 419
   desc: |-
-    TODO
+    Beyond code there is an amazing set of things to learn in the software world: new concepts, patterns, architectures and ways of doing things to design and build systems in a modern era where adaptability, reliability and scalability are essential for bussiness success. Adding to all that you will learn skills like risk assesment, decision making based on trade-offs, or how to manage and assemble teams.
   learning_paths:
     - software-architecture
   badges:
-    - TODO
+    - intermediate
+    - scheduled
 - title: Software Architecture
   subtitle: The Hard Parts
   cover: software-architecture-the-hard-parts.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492086888/
@@ -361,11 +362,12 @@
   release: 2021
   pages: 459
   desc: |-
-    TODO
+    Keep diving in the software architecture topic with this book. Some of the advanced topics treated are: decompossition patterns, service granularity, data management or distributed transactions. When facing problems at scale that knowledge is not only useful but necessary to success in the process of designing systems or adapting existing ones to new requirements.
   learning_paths:
     - software-architecture
   badges:
-    - TODO
+    - hard
+    - scheduled
 - title: Design Patterns for Cloud Native Applications
   subtitle: Patterns in Practice Using APIs, Data, Events and Streams
   cover: design-patterns-for-cloud-native-applications.jpeg
@@ -379,16 +381,18 @@
   release: 2021
   pages: 311
   desc: |-
-    TODO
+    Despite of being oriented mainly to developers, this book could help you to understand how cloud native applications are built and the way they interact. Some predominating patterns for communication, composition, data and api management or scalability are explained in these pages, it could be really useful to know them if you are developing or designing systems based on the cloud.
   learning_paths:
     - software-architecture
     - system-design
   badges:
-    - TODO
+    - intermediate
+    - read
+    - excellent
 - title: Learning Domain-Driven Design
   subtitle: Aligning Software Architecture and Business Strategy
   cover: learning-domain-driven-design.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098100124/
@@ -397,16 +401,17 @@
   release: 2021
   pages: 340
   desc: |-
-    TODO
+    Learn to apply bussiness concepts to model software, decouple components and set boundaries to define responsibilities and stable interfaces. With Domain-Driven Design techniques software get closer to bussiness while improving the whole structure not only of projects but also the organizations that adopt this architecture.
   learning_paths:
     - domain-driven-design
     - software-architecture
   badges:
-    - TODO
+    - hard
+    - scheduled
 - title: Designing Data-Intensive Applications
   subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
   cover: designing-data-intensive-applications.jpeg
-  order: 1
+  order: 4
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781491903063/
@@ -540,7 +545,7 @@
 - title: Clean Architecture
   subtitle: A Craftsman's Guide to Software Structure and Design
   cover: clean-architecture.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9780134494272/
@@ -549,13 +554,14 @@
   release: 2017
   pages: 432
   desc: |-
-    TODO
+    One of the most famous architectures in software is the Clean Architecture, applicable to different programming paradigms and clearly defined with design principles. Learn how to wield it in your projects to provide them with the necessary properties to create extensible, flexible, manageable and scalable software.
   learning_paths:
     - software-architecture
     - software-development
   badges:
     - intermediate
     - not_scheduled
+    - old
 - title: Kubernetes
   subtitle: Up & Running
   cover: kubernetes-up-and-running.jpeg
@@ -684,7 +690,7 @@
 - title: Observability Engineering
   subtitle: Achieving Production Excellence Engineering
   cover: observability-engineering.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://www.oreilly.com/library/view/observability-engineering/9781492076438/
@@ -695,7 +701,7 @@
   release: 2022
   pages: 318
   desc: |-
-    TODO
+    Every running system is bound to suffer an outage sooner or later, once you are in the critical zone you need to asses the state your system is in as quick as you can to repair it and minimize the down time. The authors show deep knowledge about how to make a system obserbable by exposing metrics and traces, the way you need to store them, and of course how to exploit them to reflect the system state every moment. Aside of outages, observability is also useful to leverage insights of the services regarding the manner you may want to improve them or adapt to new coming necessities. 
   learning_paths:
     - sre
   badges:
@@ -828,7 +834,7 @@
   badges:
     - TODO
 - title: Site Reliability Engineering
-  subtitle: Site Reliability Engineering
+  subtitle: How Google Runs Production Systems
   cover: site-reliability-engineering.jpeg
   order: 1
   weight: 1
@@ -840,17 +846,19 @@
     - Jennifer Petoff
     - Niall Myrphy
   release: 2017
-  pages:
+  pages: 552
   desc: |-
-    TODO
+    Born in the core of Google, Site Reliability Engineering, has spread as a set of practices to run production systems, automate them and what to do when they fail. In this book the authors tell how those practices came to be, and how the comany had to invent a new way to manage hundreds of services at the same time while keeping the pace of feature releases in a buzzing market. Automation, team organization, and developing new systems to make possible managing services at scale are some of the things you will find in this book.
   learning_paths:
     - sre
   badges:
-    - TODO
+    - intermediate
+    - read
+    - good
 - title: The Site Reliability Workbook
-  subtitle: The Site Reliability Workbook
+  subtitle: Practical Ways to Implement SRE
   cover: sre-workbook.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://sre.google/workbook/table-of-contents/
@@ -861,17 +869,18 @@
     - Kent Kawahara
     - Stephen Thorne
   release: 2018
-  pages:
+  pages: 512
   desc: |-
-    TODO
+    Site Reliability Engineering is being adopted the last few years by many organizations to improve the operational aspects of running production services. This book intends to be a guide to help such organizations and its engineers to understand and integrate the different practices in their workflow. 
   learning_paths:
     - sre
   badges:
-    - TODO
+    - intermediate
+    - not_scheduled
 - title: Building Secure & Reliable Systems
   subtitle: Best Practices for Designing, Implementing and Maintaining Systems
   cover: building-secure-reliable-systems.jpeg
-  order: 1
+  order: 3
   weight: 1
   draft: false
   url: https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf
@@ -885,11 +894,12 @@
   release: 2020
   pages: 555
   desc: |-
-    TODO
+    Once familiar with SRE basics and principles this book will teach you how to build systems aiming for reliability and security. Inside you will find the priciples to apply, the best practices to follow, and the patterns to implement when designing systems to make them stable, scalable, reliable and secure.
   learning_paths:
     - sre
   badges:
-    - TODO
+    - hard
+    - not_scheduled
 - title: Accelerate
   subtitle: Building and Scaling High Performing Technology Organizations
   cover: accelerate.jpeg
