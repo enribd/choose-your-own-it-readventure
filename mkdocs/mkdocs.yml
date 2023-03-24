@@ -58,9 +58,11 @@ markdown_extensions:
   - def_list
   - tables
   - attr_list
+  - abbr
   - md_in_html
   - smarty
   - admonition
+  - pymdownx.snippets
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:

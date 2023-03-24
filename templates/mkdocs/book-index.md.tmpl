@@ -27,7 +27,7 @@
 {{- range .BadgesRefs -}}
 {{- $b := get $badgesData (. | toString) -}}
 {{- if (empty $b | not) -}}
-{{- $badges = append $badges (printf ":%s:" $b) -}}
+{{- $badges = append $badges (printf ":%s:{ title=\"%s\" }" $b (. | toString | replace "_" " " | title)) -}}
 {{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
