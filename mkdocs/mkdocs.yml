@@ -43,6 +43,9 @@ theme:
     - search.suggest
     - search.highlight
 extra:
+  analytics:
+    provider: google
+    property: G-R2CDSTQBVL
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/enribd/choose-your-own-it-readventure
