@@ -38,6 +38,6 @@
 | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: The Site Reliability Workbook**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> * pages* <br>  | <ul><li>[Site Reliability Engineering (SRE)](/content/learning-paths/sre.md)</li></ul> |
 
 ---
-<sub>Last modified 2023-03-22</sub>
+<sub>Last modified 2023-03-24</sub>
 
 [**⬆ back to top**](#book-index)
