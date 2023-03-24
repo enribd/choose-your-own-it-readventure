@@ -1,0 +1,6 @@
+{{define "book-order"}}
+{{- $order := index . 0 -}}
+{{- range ($order | toString | list) -}}
+:{{ IntToStringRepresentation (. | atoi) }}:{ title="Reading Order", align=left }
+{{- end -}}
+{{end}}

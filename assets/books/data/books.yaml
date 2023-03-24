@@ -13,6 +13,11 @@
     One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
   learning_paths:
     - microservices
+    # microservices:
+    # - tab: foundational
+    #   order: 1
+    # - tab: certification
+    #   order: 3
   badges:
     - intermediate
     - read

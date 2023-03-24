@@ -75,7 +75,8 @@ func main() {
 		// Load templates and functions
 		providerTmpls := filepath.Join("templates", p.String(), "*")
 		funcMap := template.FuncMap{
-			"args": content.Args,
+			"args":                      content.Args,
+			"IntToStringRepresentation": content.IntToStringRepresentation,
 		}
 		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).Funcs(funcMap).ParseGlob(providerTmpls)
 		if err != nil {

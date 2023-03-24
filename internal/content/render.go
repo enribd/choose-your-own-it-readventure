@@ -10,6 +10,34 @@ func Args(args ...interface{}) []interface{} {
 	return args
 }
 
+func IntToStringRepresentation(i int) string {
+	var s string
+	switch {
+	case i == 0:
+		s = "zero"
+	case i == 1:
+		s = "one"
+	case i == 2:
+		s = "two"
+	case i == 3:
+		s = "three"
+	case i == 4:
+		s = "four"
+	case i == 5:
+		s = "five"
+	case i == 6:
+		s = "six"
+	case i == 7:
+		s = "seven"
+	case i == 8:
+		s = "eight"
+	case i == 9:
+		s = "nine"
+	}
+
+	return s
+}
+
 /*
 * Render templates with a given data and export them to files or stdout
 * Params:

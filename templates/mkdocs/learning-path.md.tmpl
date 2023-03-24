@@ -10,8 +10,10 @@
 # {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path ({{ $lpBooksData | len }} :books:)
 
 {{ $lp.Desc }}
-| Order | Cover | Info | Description |
-| :---: | :---: | :--- | :--- |
+=== "Foundational"
+
+{{ printf "    " }}||
+{{ printf "    " }}|:---|
 {{- range $lpBooksData }}
 {{- if .Draft | not }}
 {{/* Build book badges section */}}
@@ -24,7 +26,7 @@
 {{- end -}}
 {{- /* end Build book badges section */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ .Order }}** | {{- template "cover" (args .Cover $covers "false") -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+{{- printf "    " -}}| {{- template "book-order" (args .Order) -}} {{- template "cover" (args .Cover $covers "false") -}}{ align=left } [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} <br><br> {{ .Desc }} <br><br>|
 {{- end }}
 {{- end }}
 
