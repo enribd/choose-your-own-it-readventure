@@ -36,14 +36,16 @@ func loadBooks(basepath string) error {
 				stats.SetTotalBooks(len(Books))
 
 				// Insert book in learning path
-				for _, lpRef := range book.LearningPathsRefs {
-					LearningPathBooks[lpRef] = append(LearningPathBooks[lpRef], book)
+				for _, blp := range book.BookLearningPaths {
+					LearningPathBooks[blp.LearningPathRef][blp.TabRef] = append(LearningPathBooks[blp.LearningPathRef][blp.TabRef], book)
 				}
 			}
 		}
 	}
 
-	sortAndCountLearningPathBooks()
+	for lpRef, tabRef := range LearningPathBooks {
+	  sortAndCountLearningPathBooks()
+  }
 
 	return nil
 }
@@ -77,12 +79,12 @@ func loadBooksFile(path string) ([]models.Book, error) {
 }
 
 // Sort and count books in each learning path by order ascendant and heavier weight
-func sortAndCountLearningPathBooks() {
-	for lpRef, books := range LearningPathBooks {
+func sortAndCountLearningPathBooks(lpRef, tabBooks map[models.TabRef][]models.Book) {
+	for tabRef, books := range tabBooks {
 		// Sort
 		sort.SliceStable(books, func(i, j int) bool {
-			if books[i].Order != books[j].Order {
-				return books[i].Order < books[j].Order
+			if books[i].BookLearningPaths[lpRef].Order != books[j].BookLearningPaths[lpRef].Order {
+				return books[i].BookLearningPaths[lpRef].Order < books[j].BookLearningPaths[lpRef].Order
 			}
 
 			// If orders are equal then sort by weight
@@ -90,7 +92,7 @@ func sortAndCountLearningPathBooks() {
 		})
 
 		// Count
-		stats.SetTotalLearningPathBooks(string(lpRef), len(LearningPathBooks[lpRef]))
+		stats.SetTotalLearningPathBooks(string(tabRef), len(LearningPathBooks[tabRef]))
 	}
 }
 

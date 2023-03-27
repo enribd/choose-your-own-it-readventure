@@ -1,6 +1,7 @@
 package models
 
 type LearningPathRef string
+type TabRef string
 
 type Tag string
 

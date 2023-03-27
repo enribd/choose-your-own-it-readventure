@@ -19,8 +19,8 @@ var Books map[string]models.Book = make(map[string]models.Book)
 // Authors["name"] = []Book{}
 var Authors map[string][]models.Book = make(map[string][]models.Book)
 
-// LearningPathBooks["ref"] = []Book{}
-var LearningPathBooks map[models.LearningPathRef][]models.Book = make(map[models.LearningPathRef][]models.Book)
+// LearningPathBooks["ref"]["tabref"] = []Book{}
+var LearningPathBooks map[models.LearningPathRef]map[models.TabRef][]models.Book = make(map[models.LearningPathRef]map[models.TabRef][]models.Book)
 
 // Badges["excellent"] = top
 var Badges map[string]interface{} = make(map[string]interface{})
