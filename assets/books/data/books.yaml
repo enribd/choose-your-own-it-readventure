@@ -35,7 +35,7 @@
     - microservices
   badges:
     - intermediate
-    - scheduled
+    - read
     # - very_good
 - title: Microservices Patterns
   subtitle: Microservices Patterns
@@ -167,7 +167,8 @@
     - software-architecture
   badges:
     - intermediate
-    - not_scheduled
+    - read
+    - nice
 - title: Mastering API Architecture
   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
   cover: mastering-api-architecture.jpeg
@@ -186,7 +187,9 @@
   learning_paths:
     - apis
   badges:
-    - TODO
+    - intermediate
+    - read
+    - nice
 - title: Advanced API Security
   subtitle: OAuth 2.0 and Beyond
   cover: advanced-api-security.jpeg
@@ -584,7 +587,7 @@
     - read
     - very_good
 - title: Kubernetes Patterns
-  subtitle: Kubernetes Patterns
+  subtitle: Reusable Elements for Designing Cloud Native Applications
   cover: kubernetes-patterns.jpeg
   order: 2
   weight: 1
@@ -593,7 +596,7 @@
   authors:
     - Bilgin Ibryam
     - Roland Huss
-  release: 2023
+  release: 2023 (2nd edition)
   pages: 300
   desc: |-
     After a few years of using Kubernetes teams started to detect recognizable patterns that are commonly replicated. From the famous sidecar pattern and init containers to the necessary configuration patterns and beyond. This book will teach you how to solve common challenges in cloud native environments. 
@@ -603,7 +606,6 @@
     - easy
     - read
     - very_good
-    - old
     - coming-soon
 - title: Production Kubernetes
   subtitle: Production Kubernetes
