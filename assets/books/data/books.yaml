@@ -976,3 +976,22 @@
     - devops
   badges:
     - TODO
+- title: Learning GitHub Actions
+  subtitle: Automation and Integration of CI/CD with GitHub
+  cover: learning-github-actions.jpeg
+  order: 1
+  weight: 1
+  draft: false
+  url: https://www.oreilly.com/library/view/learning-github-actions/9781098131067/
+  authors:
+    - Brent Laster
+  release: 2023
+  pages: 375
+  desc: |-
+    GitHub has turn into the most used platform around the world to share, build and even deploy code. Things like simplicity, great cli and web interfaces and a ever growing set of features make of GitHub a very nice tool to have in your belt. In this book the author focuses on Actions, the CI/CD framework of the platform. He starts explaining from the very basic concepts such as what are jobs or workflows, but you soon will be able to build your own automations. Also the security has its place in the book to let you know about risks and usual mistakes to help you avoid them.
+  learning_paths:
+    - cicd
+  badges:
+    - easy
+    - read
+    - very_good

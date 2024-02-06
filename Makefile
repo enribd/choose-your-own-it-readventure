@@ -53,28 +53,27 @@ mkdocs-build-docker: ## Build Mkdocs docker image
 mkdocs-build-site: ## Build site
 	$(info: Build site)
 	@docker container run --rm -t --name mkdocs \
-		--user $(shell id -u):$(shell id -g) \
-		--workdir /src/mkdocs \
-		--volume ${PWD}:/src \
-		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
-		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
-		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
-		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
+		--workdir /docs/mkdocs \
+		--volume ${PWD}:/docs \
+		--volume ${PWD}/assets/books/covers:/docs/mkdocs/docs/assets/books/covers \
+		--volume ${PWD}/assets/learning-paths/icons:/docs/mkdocs/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/favicon.png:/docs/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/docs/mkdocs/docs/assets/logo.png \
 		${image} build
 .PHONY: build
 
 mkdocs-run: ## Run site in localhost
 	$(info: Run site in localhost)
 	# @xdg-open http://localhost:8000
+	@open http://localhost:8000
 	@docker container run --rm -t --name mkdocs \
 	  --publish 8000:8000 \
-		--user $(shell id -u):$(shell id -g) \
-		--workdir /src/mkdocs \
-		--volume ${PWD}:/src \
-		--volume ${PWD}/assets/books/covers:/src/mkdocs/docs/assets/books/covers \
-		--volume ${PWD}/assets/learning-paths/icons:/src/mkdocs/docs/assets/learning-paths/icons \
-		--volume ${PWD}/assets/favicon.png:/src/mkdocs/docs/assets/favicon.png \
-		--volume ${PWD}/assets/logo.png:/src/mkdocs/docs/assets/logo.png \
+		--workdir /docs/mkdocs \
+		--volume ${PWD}:/docs \
+		--volume ${PWD}/assets/books/covers:/docs/mkdocs/docs/assets/books/covers \
+		--volume ${PWD}/assets/learning-paths/icons:/docs/mkdocs/docs/assets/learning-paths/icons \
+		--volume ${PWD}/assets/favicon.png:/docs/mkdocs/docs/assets/favicon.png \
+		--volume ${PWD}/assets/logo.png:/docs/mkdocs/docs/assets/logo.png \
 		${image}
 .PHONY: run
 

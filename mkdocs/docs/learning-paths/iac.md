@@ -8,6 +8,15 @@ IaC is an evolutionary pattern born in the early stages of the cloud era. It all
 | :---: | :---: | :--- | :--- |
 | **1** |![img](/assets/books/covers/terraform-up-and-running.jpeg)| [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | Terraform is the leading product in the IaC section, used widely for its simplicity, declarative nature, extensibility and compatibility con almost every cloud provider. Many companies in the industry use it to declare infrastructure as code and operate with Terraform every day. It is considered an essential tool in the cloud engineer or DevOps toolbelt. Terraform Up and Running will help you to understand and apply the IaC principles, to organize your code to follow the best practices, and also how testing is performed in this paradigm. |
 
+The following paths are opened to you now, choose wisely:
+
+
+
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [CI/CD :construction:](/learning-paths/cicd): Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
+
+
 ??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>#cloud-engineering #automation #state-management #fault-recovery #terraform #pulumi #crossplane #ansible</sub>

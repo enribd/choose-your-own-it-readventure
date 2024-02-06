@@ -47,6 +47,7 @@
     - software-architecture
     - cloud-native-apps
   suggested:
+    - cicd
     - apis
     - serverless
     - docker
@@ -84,6 +85,7 @@
   related:
     - software-development
     - domain-driven-design
+    - cicd
     - microservices
     - apis
     - event-driven-architecture
@@ -136,8 +138,7 @@
   summary: |
     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
   related:
-    # TODO: fix bug here, the devops lp is still in the related lps list even though its status is coming-soon
-    # - devops
+    - devops
     - cloud
   suggested:
     - cicd
@@ -183,6 +184,7 @@
     - team-management
   suggested:
     - TODO
+    - cicd
 - name: APIs
   ref: apis
   status: coming-soon
@@ -273,17 +275,18 @@
     - TODO
 - name: CI/CD
   ref: cicd
-  status: coming-soon
+  status: in-progress
   desc: |
-    TODO
+    It's all about automation. Accelerating release rate while increasing quality has been one of the main goals in the software industry for decades, now thanks to CI/CD tools like Github, Gitlab, Jenkins, Flux or ArgoCD organizations such as Netflix, Amazon or Google have reach that goal providing new software updates in a matter of hours or even minutes. Nowadays continuous integration and delivery principles are considered essential for any engineer worth its name, so now that you are here try to pick a nice book to improve your skills.
   summary: |
-    TODO
+    Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
   related:
-    - sre
     - devops
-    - microservices
+    - software-architecture
   suggested:
-    - TODO
+    - microservices
+    - sre
+  tags: ["automation", "integration", "delivery", "quality", "testing", "fast-releases", "lead-time"]
   logo:
     source: https://user-images.githubusercontent.com/25181517/183868728-b2e11072-00a5-47e2-8a4e-4ebbb2b8c554.png
 - name: Cloud
