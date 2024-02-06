@@ -24,6 +24,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2023-03-24</sub>
+<sub>Last modified 2024-02-06</sub>
 
 [**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)
