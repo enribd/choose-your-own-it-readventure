@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (32 :books:)
+# :clipboard: Book Index (33 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -22,6 +22,7 @@
 | ![img](/assets/books/covers/kubernetes-operators.jpeg) | [**Kubernetes Operators: Automating the Container Orchestration Platform**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> :tiger2: :orange_book: :arrows_counterclockwise: | <ul><li>[Kubernetes](/content/learning-paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/kubernetes-patterns.jpeg) | [**Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023 (2nd edition)* <br> *300 pages* <br> :hatched_chick: :green_book: :cool: :soon: | <ul><li>[Kubernetes](/content/learning-paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/learning-domain-driven-design.jpeg) | [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* <br> :tiger2: :blue_book: | <ul><li>[Software Architecture](/content/learning-paths/software-architecture.md)</li></ul> |
+| ![img](/assets/books/covers/learning-github-actions.jpeg) | [**Learning GitHub Actions: Automation and Integration of CI/CD with GitHub**](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) <br> *Brent Laster* <br> *Published in 2023* <br> *375 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[CI/CD](/content/learning-paths/cicd.md)</li></ul> |
 | ![img](/assets/books/covers/learning-go.jpeg) | [**Learning Go**](https://learning.oreilly.com/library/view/-/9781492077206/) <br> *Jon Bodner* <br> *Published in 2021* <br> *375 pages* <br> :hatched_chick: :orange_book: | <ul><li>[Golang](/content/learning-paths/golang.md)</li></ul> |
 | ![img](/assets/books/covers/lets-go.jpeg) | [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2: :green_book: :top: | <ul><li>[Golang](/content/learning-paths/golang.md)</li></ul> |
 | ![img](/assets/books/covers/lets-go-further.jpeg) | [**Let's Go Further!: Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* <br> :tiger2: :green_book: :top: | <ul><li>[Golang](/content/learning-paths/golang.md)</li></ul> |

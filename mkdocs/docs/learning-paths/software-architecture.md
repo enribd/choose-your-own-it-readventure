@@ -16,6 +16,7 @@ To build effective services and applications a set of rules have to define what 
 
 The following paths are opened to you now, choose wisely:
 
+- [CI/CD :construction:](/learning-paths/cicd): Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
 - [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 

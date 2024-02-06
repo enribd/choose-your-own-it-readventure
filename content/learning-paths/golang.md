@@ -18,6 +18,8 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [CI/CD :construction:](/content/learning-paths/cicd): Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
+
 - [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 - [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.

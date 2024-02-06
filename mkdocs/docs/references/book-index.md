@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (32 :books:)
+# :clipboard: Book Index (33 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -22,6 +22,7 @@
 |![img](/assets/books/covers/kubernetes-operators.jpeg){: style="height:166px;width:122px"}̣| [**Kubernetes Operators: Automating the Container Orchestration Platform**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> :tiger2:{ title="Hard" } :orange_book:{ title="Not Scheduled" } :arrows_counterclockwise:{ title="Old" } | <ul><li>[Kubernetes](/learning-paths/kubernetes)</li></ul> |
 |![img](/assets/books/covers/kubernetes-patterns.jpeg){: style="height:166px;width:122px"}̣| [**Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023 (2nd edition)* <br> *300 pages* <br> :hatched_chick:{ title="Easy" } :green_book:{ title="Read" } :cool:{ title="Very Good" } :soon:{ title="Coming-Soon" } | <ul><li>[Kubernetes](/learning-paths/kubernetes)</li></ul> |
 |![img](/assets/books/covers/learning-domain-driven-design.jpeg){: style="height:166px;width:122px"}̣| [**Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy**](https://learning.oreilly.com/library/view/-/9781098100124/) <br> *Vladik Khononov* <br> *Published in 2021* <br> *340 pages* <br> :tiger2:{ title="Hard" } :blue_book:{ title="Scheduled" } | <ul><li>[Software Architecture](/learning-paths/software-architecture)</li></ul> |
+|![img](/assets/books/covers/learning-github-actions.jpeg){: style="height:166px;width:122px"}̣| [**Learning GitHub Actions: Automation and Integration of CI/CD with GitHub**](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) <br> *Brent Laster* <br> *Published in 2023* <br> *375 pages* <br> :hatched_chick:{ title="Easy" } :green_book:{ title="Read" } :cool:{ title="Very Good" } | <ul><li>[CI/CD](/learning-paths/cicd)</li></ul> |
 |![img](/assets/books/covers/learning-go.jpeg){: style="height:166px;width:122px"}̣| [**Learning Go**](https://learning.oreilly.com/library/view/-/9781492077206/) <br> *Jon Bodner* <br> *Published in 2021* <br> *375 pages* <br> :hatched_chick:{ title="Easy" } :orange_book:{ title="Not Scheduled" } | <ul><li>[Golang](/learning-paths/golang)</li></ul> |
 |![img](/assets/books/covers/lets-go.jpeg){: style="height:166px;width:122px"}̣| [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2:{ title="Intermediate" } :green_book:{ title="Read" } :top:{ title="Excellent" } | <ul><li>[Golang](/learning-paths/golang)</li></ul> |
 |![img](/assets/books/covers/lets-go-further.jpeg){: style="height:166px;width:122px"}̣| [**Let's Go Further!: Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* <br> :tiger2:{ title="Hard" } :green_book:{ title="Read" } :top:{ title="Excellent" } | <ul><li>[Golang](/learning-paths/golang)</li></ul> |
@@ -37,4 +38,4 @@
 |![img](/assets/books/covers/terraform-up-and-running.jpeg){: style="height:166px;width:122px"}̣| [**Terraform Up & Running: Terraform Up & Running**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br>  | <ul><li>[Infrastructure as Code (IaC)](/learning-paths/iac)</li></ul> |
 |![img](/assets/books/covers/sre-workbook.jpeg){: style="height:166px;width:122px"}̣| [**The Site Reliability Workbook: Practical Ways to Implement SRE**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> *512 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } | <ul><li>[Site Reliability Engineering (SRE)](/learning-paths/sre)</li></ul> |
 
-[**⬆ back to top**](#book-index-32)
+[**⬆ back to top**](#book-index-33)

@@ -19,7 +19,8 @@ Starting your adventure is as easy as picking the set of skills that you want to
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
 
-- **8** learning paths :mortar_board:
+- **9** learning paths :mortar_board:
+    * **1** ![img](https://user-images.githubusercontent.com/25181517/183868728-b2e11072-00a5-47e2-8a4e-4ebbb2b8c554.png){: style="height:20px"} [*CI/CD*](learning-paths/cicd) books :construction:: *Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.*
     * **4** ![img](https://skillicons.dev/icons?i=go){: style="height:20px"} [*Golang*](learning-paths/golang) books :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
     * **1** ![img](/assets/learning-paths/icons/iac.png){: style="height:20px"} [*Infrastructure as Code (IaC)*](learning-paths/iac) books :new:: *Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.*
     * **8** ![img](https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png){: style="height:20px"} [*Kubernetes*](learning-paths/kubernetes) books :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
@@ -29,7 +30,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
     * **6** ![img](/assets/learning-paths/icons/system-design.png){: style="height:20px"} [*System Design*](learning-paths/system-design) books :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
     * **2** ![img](/assets/learning-paths/icons/team-management.png){: style="height:20px"} [*Team Management*](learning-paths/team-management) books :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
-- **32** books :books: , discover them all in the [:scroll: book index](/references/book-index).
-- **67** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
+- **33** books :books: , discover them all in the [:scroll: book index](/references/book-index).
+- **68** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
 
 [**⬆ back to top**](#choose-your-own-it-readventure)
