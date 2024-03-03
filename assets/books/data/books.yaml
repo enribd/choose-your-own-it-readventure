@@ -113,6 +113,24 @@
     - hard
     - read
     - top
+- title: Building Event-Driven Microservices
+  subtitle: Building Event-Driven Microservices
+  cover: building-event-driven-microservices.jpeg
+  order: 1
+  weight: 1
+  draft: false
+  url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
+  authors:
+    - Adam Bellemare
+  release: 2020
+  pages: 321
+  desc: |-
+    TODO
+  learning_paths:
+    - event-driven-architecture
+  badges:
+    - intermediate
+    - scheduled
 - title: Building an Event-Driven Data Mesh
   subtitle: Patterns for Designing & Building Event-Driven Architectures
   cover: building-an-event-driven-data-mesh.jpeg
@@ -125,11 +143,13 @@
   release: 2023
   pages: 275
   desc: |-
-    TODO
+    The process of building an Event-driven architecture is no easy feat, the first step to doing it well is communicate with the stakeholders of the different bussiness domains involved, hear their needs, and identify the different communication patterns, entities and events in an event storming session. There are also crucials thing like ensuring the quality of the information served from the sources, the cataloging system of the information served, and stablishing an easy and secure way for interested clients to access those sources. All this and more is explained in detail in what could be seen as a complement of the [Building Event-Driven Microservices](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) book content.
   learning_paths:
     - event-driven-architecture
   badges:
-    - TODO
+    - hard
+    - read
+    - nice
 - title: Designing Distributed Systems
   subtitle: Patterns and Paradigms for Scalable, Reliable Services
   cover: designing-distributed-systems.jpeg
@@ -254,23 +274,6 @@
     - Gwen Shapira
   release: 2021
   pages: 488
-  desc: |-
-    TODO
-  learning_paths:
-    - event-driven-architecture
-  badges:
-    - TODO
-- title: Building Event-Driven Microservices
-  subtitle: Building Event-Driven Microservices
-  cover: building-event-driven-microservices.jpeg
-  order: 1
-  weight: 1
-  draft: false
-  url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
-  authors:
-    - Adam Bellemare
-  release: 2020
-  pages: 321
   desc: |-
     TODO
   learning_paths:
