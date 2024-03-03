@@ -1,12 +1,13 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (33 :books:)
+# :clipboard: Book Index (34 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
 | ![img](/assets/books/covers/accelerate.jpeg) | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br> :dog2: :green_book: :cool: | <ul><li>[Team Management](/content/learning-paths/team-management.md)</li></ul> |
 | ![img](/assets/books/covers/building-microservices.jpeg) | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :top: :bookmark: | <ul><li>[Microservices](/content/learning-paths/microservices.md)</li></ul> |
 | ![img](/assets/books/covers/building-secure-reliable-systems.jpeg) | [**Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems**](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) <br> *Heather Adkins, Betsy Beyer, Paul Blankship, Piotr Lewandowski, Ana Opera, Adam Stubblefield* <br> *Published in 2020* <br> *555 pages* <br> :tiger2: :orange_book: | <ul><li>[Site Reliability Engineering (SRE)](/content/learning-paths/sre.md)</li></ul> |
+| ![img](/assets/books/covers/building-an-event-driven-data-mesh.jpeg) | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Event Driven Architecture (EDA)](/content/learning-paths/event-driven-architecture.md)</li></ul> |
 | ![img](/assets/books/covers/cka.jpeg) | [**Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098107215/) <br> *Benjamin Muschko* <br> *Published in 2022* <br> *201 pages* <br> :dog2: :orange_book: | <ul><li>[Kubernetes](/content/learning-paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/ckad.jpeg) | [**Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781492083726/) <br> *Benjamin Muschko* <br> *Published in 2021* <br> *188 pages* <br> :dog2: :orange_book: | <ul><li>[Kubernetes](/content/learning-paths/kubernetes.md)</li></ul> |
 | ![img](/assets/books/covers/clean-architecture.jpeg) | [**Clean Architecture: A Craftsman's Guide to Software Structure and Design**](https://learning.oreilly.com/library/view/-/9780134494272/) <br> *Robert C. Martin* <br> *Published in 2017* <br> *432 pages* <br> :dog2: :orange_book: :arrows_counterclockwise: | <ul><li>[Software Architecture](/content/learning-paths/software-architecture.md)</li></ul> |
@@ -39,6 +40,6 @@
 | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: Practical Ways to Implement SRE**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> *512 pages* <br> :dog2: :orange_book: | <ul><li>[Site Reliability Engineering (SRE)](/content/learning-paths/sre.md)</li></ul> |
 
 ---
-<sub>Last modified 2024-02-06</sub>
+<sub>Last modified 2024-03-03</sub>
 
 [**⬆ back to top**](#book-index)

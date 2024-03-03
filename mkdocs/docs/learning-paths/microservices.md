@@ -14,6 +14,7 @@ The following paths are opened to you now, choose wisely:
 
 - [System Design :ballot_box_with_check:](/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
 - [Kubernetes :ballot_box_with_check:](/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+- [Event Driven Architecture (EDA) :construction:](/learning-paths/event-driven-architecture): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

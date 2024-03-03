@@ -27,6 +27,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-02-06</sub>
+<sub>Last modified 2024-03-03</sub>
 
 [**⬆ back to top**](#team-management-learning-path)

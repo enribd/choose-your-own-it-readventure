@@ -22,7 +22,7 @@
 {{- $pathRow := printf "    * *%s* :%s: *%s*" $lp.Name $icon ($lp.Summary | trim) -}}
 {{- $notReady = append $notReady $pathRow -}}
 {{- else }}
-    * **{{ $num }}** {{ with $lp.Logo.Source }}{{- template "small-logo" $lp -}}{{ end }} [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | base }}/{{ $ref }}) books :{{ $icon }}:: *{{ $lp.Summary | trim }}*
+    * **{{ $num }}** {{ with $lp.Logo.Source }}{{- template "small-logo" $lp -}}{{ end }} [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | base }}/{{ $ref }}) :{{ $icon }}:: *{{ $lp.Summary | trim }}*
 {{- end -}}
 {{- end -}}
 {{- end }}

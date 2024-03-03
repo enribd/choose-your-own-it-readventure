@@ -18,6 +18,7 @@ The following paths are opened to you now, choose wisely:
 
 - [CI/CD :construction:](/learning-paths/cicd): Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
 - [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Event Driven Architecture (EDA) :construction:](/learning-paths/event-driven-architecture): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:

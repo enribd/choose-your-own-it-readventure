@@ -1,10 +1,10 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (68 :black_nib:)
+# :clipboard: Author Index (64 :black_nib:)
 
 | Author | Books |
 | :--- | :--- |
-| :fontawesome-solid-user-pen:  Adam Bellemare | :octicons-book-24: [*Building Event-Driven Microservices: Building Event-Driven Microservices*](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)<br>:octicons-book-24: [*Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures*](https://learning.oreilly.com/library/view/-/9781098127596/) |
+| :fontawesome-solid-user-pen:  Adam Bellemare | :octicons-book-24: [*Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures*](https://learning.oreilly.com/library/view/-/9781098127596/) |
 | :fontawesome-solid-user-pen:  Adam Stubblefield | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
 | :fontawesome-solid-user-pen:  Alex Brand | :octicons-book-24: [*Production Kubernetes: Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/) |
 | :fontawesome-solid-user-pen:  Alex Edwards | :octicons-book-24: [*Let's Go Further!: Let's Go Further!*](https://lets-go-further.alexedwards.net/)<br>:octicons-book-24: [*Let's Go: Let's Go*](https://lets-go.alexedwards.net/) |
@@ -15,7 +15,6 @@
 | :fontawesome-solid-user-pen:  Bilgin Ibryam | :octicons-book-24: [*Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications*](https://learning.oreilly.com/library/view/-/9781098131678/) |
 | :fontawesome-solid-user-pen:  Brendan Burns | :octicons-book-24: [*Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)<br>:octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)<br>:octicons-book-24: [*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/) |
 | :fontawesome-solid-user-pen:  Brent Laster | :octicons-book-24: [*Learning GitHub Actions: Automation and Integration of CI/CD with GitHub*](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) |
-| :fontawesome-solid-user-pen:  Chanaka Fernando | :octicons-book-24: [*Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging*](https://learning.oreilly.com/library/view/-/9781801072212/) |
 | :fontawesome-solid-user-pen:  Charity Majors | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
 | :fontawesome-solid-user-pen:  Chris Jones | :octicons-book-24: [*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Chris Richardson | :octicons-book-24: [*Microservices Patterns: Microservices Patterns*](https://learning.oreilly.com/library/view/-/9781617294549/) |
@@ -27,9 +26,7 @@
 | :fontawesome-solid-user-pen:  Gene Kim | :octicons-book-24: [*The DevOPS Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations*](https://learning.oreilly.com/library/view/-/9781457191381/)<br>:octicons-book-24: [*The Phoenix Project: The Phoenix Project*](https://learning.oreilly.com/library/view/-/9781457191350/)<br>:octicons-book-24: [*The Unicorn Project: The Unicorn Project*](https://learning.oreilly.com/library/view/-/9781098124175/) |
 | :fontawesome-solid-user-pen:  George Miranda | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
 | :fontawesome-solid-user-pen:  George Spafford | :octicons-book-24: [*The Phoenix Project: The Phoenix Project*](https://learning.oreilly.com/library/view/-/9781457191350/) |
-| :fontawesome-solid-user-pen:  Gwen Shapira | :octicons-book-24: [*Kafka - The Definitive Guide: Real-Time Data and Stream Processing at Scale*](https://learning.oreilly.com/library/view/-/9781492043072/) |
 | :fontawesome-solid-user-pen:  Heather Adkins | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
-| :fontawesome-solid-user-pen:  Hohpe Gregor | :octicons-book-24: [*Enterprise Integration Patterns - Vol 2: Conversation Patterns*]()<br>:octicons-book-24: [*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/) |
 | :fontawesome-solid-user-pen:  Ian Gorton | :octicons-book-24: [*Foundations of Scalable Systems: Designing Distributed Architectures*](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) |
 | :fontawesome-solid-user-pen:  Jacques Chester | :octicons-book-24: [*Knative in Action: *](https://learning.oreilly.com/library/view/-/9781617296642/) |
 | :fontawesome-solid-user-pen:  James Gough | :octicons-book-24: [*Mastering API Architecture: Defining, Connecting, and Securing Distributed Systems and Microservices*](https://learning.oreilly.com/library/view/-/9781492090625/) |
@@ -69,10 +66,9 @@
 | :fontawesome-solid-user-pen:  Sriskandarajah Suhothayan | :octicons-book-24: [*Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams*](https://learning.oreilly.com/library/view/-/9781492090700/) |
 | :fontawesome-solid-user-pen:  Stephen Thorne | :octicons-book-24: [*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Vladik Khononov | :octicons-book-24: [*Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy*](https://learning.oreilly.com/library/view/-/9781098100124/) |
-| :fontawesome-solid-user-pen:  Woolf Bobby | :octicons-book-24: [*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/) |
 | :fontawesome-solid-user-pen:  Yevgenly Brikman | :octicons-book-24: [*Terraform Up & Running: Terraform Up & Running*](https://learning.oreilly.com/library/view/-/9781098116736/) |
 | :fontawesome-solid-user-pen:  Zhamak Dehghani | :octicons-book-24: [*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/) |
 
 
 
-[**⬆ back to top**](#author-index-68)
+[**⬆ back to top**](#author-index-64)

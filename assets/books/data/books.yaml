@@ -118,7 +118,7 @@
   cover: building-event-driven-microservices.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
   authors:
     - Adam Bellemare
@@ -251,7 +251,7 @@
   cover: designing-microservice-platforms-with-nats.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/9781801072212/
   authors:
     - Chanaka Fernando
@@ -262,13 +262,15 @@
   learning_paths:
     - event-driven-architecture
   badges:
-    - TODO
+    - intermediate
+    - read
+    - nice
 - title: Kafka - The Definitive Guide
   subtitle: Real-Time Data and Stream Processing at Scale
   cover: kafka-the-definitive-guide.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/9781492043072/
   authors:
     - Gwen Shapira
@@ -285,7 +287,7 @@
   cover: enterprise-integration-patterns.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url: https://learning.oreilly.com/library/view/-/0321200683/
   authors:
     - Hohpe Gregor
@@ -304,7 +306,7 @@
   cover: enterprise-integration-patterns.jpeg
   order: 1
   weight: 1
-  draft: false
+  draft: true
   url:
   authors:
     - Hohpe Gregor
