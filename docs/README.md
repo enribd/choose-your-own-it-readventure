@@ -19,3 +19,25 @@ Components:
 <p align="center">
     <img src="./arch.png" />
 </p>
+
+## Publish new content
+
+Add content to the develop branch.
+
+```bash
+# Generate the content
+make run
+
+# Check the content
+make mkdocs-run
+
+# Build the site
+make mkdocs-build-site
+
+# Load the GitHub token, create a PR to main and merge it
+gh pr create --fill-verbose
+gh pr merge --merge
+
+# The GitHub action will run and publish the content at
+open https://itreadventure.com
+```

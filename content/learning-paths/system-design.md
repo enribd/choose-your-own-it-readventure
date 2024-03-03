@@ -16,6 +16,7 @@ You want to create systems that resolve complicated technical problems, to find 
 The following paths are opened to you now, choose wisely:
 
 - [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Event Driven Architecture (EDA) :construction:](/content/learning-paths/event-driven-architecture): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -34,6 +35,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-02-06</sub>
+<sub>Last modified 2024-03-03</sub>
 
 [**⬆ back to top**](#system-design-learning-path)

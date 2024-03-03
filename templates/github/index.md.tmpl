@@ -21,7 +21,7 @@ You can keep browsing this repo or use the [web version :rocket:]({{ .SiteUrl }}
 {{- $pathRow := printf "  - *%s* :%s: *%s*" $lp.Name $icon ($lp.Summary | trim) -}}
 {{- $notReady = append $notReady $pathRow -}}
 {{- else }}
-  - **{{ $num }}** {{ with $lp.Logo.Source}}{{- template "small-logo" $lp -}}{{ end }} [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | trimPrefix "." }}/{{ $ref }}) books :{{ $icon }}:: *{{ $lp.Summary | trim }}*
+  - **{{ $num }}** {{ with $lp.Logo.Source}}{{- template "small-logo" $lp -}}{{ end }} [*{{ $lp.Name }}*]({{ $.LearningPathsFolder | trimPrefix "." }}/{{ $ref }}) :{{ $icon }}:: *{{ $lp.Summary | trim }}*
 {{- end -}}
 {{- end -}}
 {{- end }}
