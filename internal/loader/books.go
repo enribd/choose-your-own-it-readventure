@@ -3,6 +3,7 @@ package loader
 import (
 	"io/ioutil"
 	"log"
+	"slices"
 	"sort"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
@@ -34,6 +35,9 @@ func loadBooks(basepath string) error {
 				// Add book to content
 				Books[book.Title] = book
 				stats.SetTotalBooks(len(Books))
+        if slices.Contains(book.BadgesRefs, "read") {
+          stats.SetTotalBooksRead(stats.Data.TotalBooksRead + 1)
+        }
 
 				// Insert book in learning path
 				for _, lpRef := range book.LearningPathsRefs {

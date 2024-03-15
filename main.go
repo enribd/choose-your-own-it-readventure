@@ -25,7 +25,7 @@ var formats, contents, mkdocsStripPrefix string
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.StringVar(&formats, "formats", "github,mkdocs", "generate content with format for different hosting providers, accepts comma-separated values")
-	flag.StringVar(&contents, "contents", "index,book-index,author-index,learning-paths,badges,about,mentions", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&contents, "contents", "index,book-index,author-index,learning-paths,badges,about,books-read,mentions", "list of content to generate, accepts comma-separated values")
 	flag.StringVar(&mkdocsStripPrefix, "mkdocs-strip-path-prefix", "./mkdocs/docs", "remove prefix from path to set browsing routes")
 	flag.Parse()
 	contents := strings.Split(contents, ",")
@@ -247,6 +247,25 @@ func main() {
 			}
 		}
 
+		if slices.Contains(contents, "books-read") && config.Cfg.Content[p].BooksRead != "" {
+			log.Printf("[%s] rendering books read in %s", p, config.Cfg.Content[p].BooksRead)
+			if !debug {
+				file = config.Cfg.Content[p].BooksRead
+			}
+
+			if err = content.Render(templates, "books-read.md.tmpl", file, data); err != nil {
+				log.Fatalln(err)
+			}
+
+			if p == content.Mkdocs {
+				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].BooksRead), ".pages")
+				log.Printf("[%s] rendering .pages in %s", p, file)
+				if err = content.Render(templates, "pages_more.tmpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
+			}
+		}
+
 		if slices.Contains(contents, "mentions") && config.Cfg.Content[p].Mentions != "" {
 			log.Printf("[%s] rendering mentions in %s", p, config.Cfg.Content[p].Mentions)
 			if !debug {
@@ -264,5 +283,6 @@ func main() {
 	log.Printf("books found %d", stats.Data.TotalBooks)
 	log.Printf("books skipped %d", stats.Data.TotalSkippedBooks)
 	log.Printf("authors found %d", stats.Data.TotalAuthors)
+	log.Printf("books read %d", stats.Data.TotalBooksRead)
 	log.Printf("done.\n")
 }

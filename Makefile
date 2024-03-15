@@ -3,7 +3,7 @@ version = latest
 registry = ghcr.io/enribd
 repository = ${registry}/${app}
 image = ${repository}:${version}
-contents := "index,book-index,author-index,learning-paths,badges,about,mentions"
+contents := "index,book-index,author-index,learning-paths,badges,about,books-read,mentions"
 
 
 help: ## Prints help for targets with comments
