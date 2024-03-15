@@ -30,6 +30,7 @@ type Format struct {
 	LearningPaths string `yaml:"learning_paths"`
 	Badges        string `yaml:"badges"`
 	About         string `yaml:"about"`
+	BooksRead     string `yaml:"books_read"`
 	Mentions      string `yaml:"mentions"`
 }
 

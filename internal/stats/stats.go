@@ -7,6 +7,7 @@ type Stats struct {
 	TotalLearningPaths        int            // Learning paths shown in content
 	TotalSkippedLearningPaths int            // Learning paths marked as coming soon
 	TotalLearningPathBooks    map[string]int // Number of books in learning path
+	TotalBooksRead            int            // Number of books read
 }
 
 // Global stats data
@@ -39,4 +40,8 @@ func IncSkippedLearningPath() {
 
 func SetTotalLearningPathBooks(lpRef string, total int) {
 	Data.TotalLearningPathBooks[lpRef] = total
+}
+
+func SetTotalBooksRead(total int) {
+	Data.TotalBooksRead = total
 }

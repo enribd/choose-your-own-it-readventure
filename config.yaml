@@ -17,4 +17,5 @@ content:
     author_index: ./mkdocs/docs/references/author-index.md
     badges: ./mkdocs/docs/badges.md
     about: ./mkdocs/docs/more/about.md
+    books_read: ./mkdocs/docs/more/books-read.md
     mentions: ./mkdocs/docs/more/mentions.md

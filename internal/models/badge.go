@@ -2,6 +2,7 @@ package models
 
 // Icons by category
 type Badge struct {
+	Name   BadgeCategory `yaml:"name"`
 	Category   BadgeCategory `yaml:"category"`
 	BadgeIcons []BadgeIcon   `yaml:"icons"`
 }
