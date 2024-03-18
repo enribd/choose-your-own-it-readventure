@@ -15,6 +15,7 @@
 {{ printf "    " }}||
 {{ printf "    " }}|:---|
 {{- range $lpBooksData }}
+// TODO filter books by tab
 {{- if .Draft | not }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}

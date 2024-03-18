@@ -44,8 +44,8 @@ func loadBooks(basepath string) error {
 	}
 
 	for lpRef, tabRef := range LearningPathBooks {
-	  sortAndCountLearningPathBooks()
-  }
+		sortAndCountLearningPathBooks()
+	}
 
 	return nil
 }

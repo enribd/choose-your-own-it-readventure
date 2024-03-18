@@ -9,6 +9,9 @@
     - ref: foundational
       name: Foundational
       order: 1
+    - ref: intermediate
+      name: Intermediate
+      order: 2
     - ref: advanced
       name: Advanced
       order: 3

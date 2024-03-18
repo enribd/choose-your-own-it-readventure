@@ -80,5 +80,6 @@ plugins:
   - search
   - git-revision-date-localized:
       type: timeago
+      fallback_to_build_date: true
   - glightbox
   - awesome-pages
