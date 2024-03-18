@@ -1,7 +1,5 @@
 package models
 
-type BadgeRef string
-
 type Book struct {
 	Cover             string                               `yaml:"cover"`
 	Title             string                               `yaml:"title"`
@@ -12,12 +10,13 @@ type Book struct {
 	Release           string                               `yaml:"release"`
 	Pages             string                               `yaml:"pages"`
 	Desc              string                               `yaml:"desc"`
-	BookLearningPaths map[LearningPathRef]BookLearningPath `yaml:"learning_paths"`
+	LearningPaths     []BookLearningPath                   `yaml:"learning_paths"`
 	BadgesRefs        []BadgeRef                           `yaml:"badges"`
+	Tags              []TagRef                             `yaml:"tags,omitempty"`
 }
 
 type BookLearningPath struct {
-	LPRef  TabRef `yaml:"lp_ref"`
+	LearningPathRef  LearningPathRef `yaml:"lp_ref"`
 	TabRef TabRef `yaml:"tab_ref"`
 	Order  int    `yaml:"order"`
 	Weight int    `yaml:"weight"`

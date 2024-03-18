@@ -1,0 +1,29 @@
+- ref: foundational
+  data:
+    name: Foundational
+    # showed when hover?
+    icon: ""
+    desc: ""
+    order: 1
+- ref: intermediate
+  data:
+    name: Intermediate
+    icon: ""
+    desc: ""
+    order: 2
+- ref: advanced
+  data:
+    name: Advanced
+    icon: ""
+    desc: ""
+    order: 3
+- ref: certification
+  data:
+    name: Certification
+    icon: ""
+    desc: ""
+- ref: kafka
+  data:
+    name: Kafka
+    icon: ""
+    desc: "Specific learning path oriented to learn Kafka, learning the EDA basics first"

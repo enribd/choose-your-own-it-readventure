@@ -6,14 +6,16 @@
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
   tabs:
+    # TODO merge with tabs.yaml data (this takes priority)
+    # TODO sort by order when loaded
+    # TODO check no orders are equal
     - ref: foundational
-      name: Foundational
-      order: 1
+      data:
+        # override order
+        order: 1
     - ref: intermediate
-      name: Intermediate
       order: 2
     - ref: advanced
-      name: Advanced
       order: 3
   related:
     - system-design
@@ -24,7 +26,7 @@
     - serverless
     - golang
     - docker
-  tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
+  tags:
   logo:
     source: /assets/learning-paths/icons/microservices.png
 - name: Kubernetes
