@@ -1,7 +1,7 @@
 package loader
 
 import (
-	"io/ioutil"
+	"os"
 	"log"
 	"slices"
 	"sort"
@@ -11,6 +11,18 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+// Books["title"] = Book{}
+var Books map[string]models.Book = make(map[string]models.Book)
+
+// Authors["name"] = []Book{}
+var Authors map[string][]models.Book = make(map[string][]models.Book)
+
+// LearningPathBooks["ref"] = []Book{}
+var LearningPathBooks map[models.LearningPathRef][]models.Book = make(map[models.LearningPathRef][]models.Book)
+
+// LearningPathTabBooks["lp_ref"]["tab_ref"] = []Book{}
+var LearningPathTabBooks map[models.LearningPathRef]map[models.LearningPathTabRef][]models.Book = make(map[models.LearningPathRef]map[models.LearningPathTabRef][]models.Book)
+
 func loadBooks(basepath string) error {
 	log.Printf("load books from %s\n", basepath)
 	files, err := getFiles(basepath)
@@ -18,7 +30,7 @@ func loadBooks(basepath string) error {
 		return err
 	}
 
-	// Load the content of the files and populate the Books var
+	// Load the content of the files and populate the var
 	var content []models.Book
 	for _, f := range files {
 		log.Printf("book files %s\n", files)
@@ -35,19 +47,29 @@ func loadBooks(basepath string) error {
 				// Add book to content
 				Books[book.Title] = book
 				stats.SetTotalBooks(len(Books))
-        if slices.Contains(book.BadgesRefs, "read") {
-          stats.SetTotalBooksRead(stats.Data.TotalBooksRead + 1)
-        }
+				if slices.Contains(book.BadgesRefs, "read") {
+					stats.SetTotalBooksRead(stats.Data.TotalBooksRead + 1)
+				}
 
-				// Insert book in learning path
-				for _, lpRef := range book.LearningPathsRefs {
-					LearningPathBooks[lpRef] = append(LearningPathBooks[lpRef], book)
+				// Insert book in learning path tab
+				for _, lp := range book.LearningPaths {
+					// Warning: if the learning path doesn't have a tab with TabRef, the tab and the books it contains won't be shown
+          // Create a temporal copy of the book to remove all other learning paths and simplify later the sorting operations
+          bookCopy := book
+          bookCopy.LearningPaths = []models.BookLearningPath{lp}
+          // Initialize nested tab map if it doesn't exist
+          tabMap, ok := LearningPathTabBooks[lp.LearningPathRef]
+          if !ok {
+            tabMap = make(map[models.LearningPathTabRef][]models.Book)
+            LearningPathTabBooks[lp.LearningPathRef] = tabMap
+          }
+					LearningPathTabBooks[lp.LearningPathRef][lp.TabRef] = append(LearningPathTabBooks[lp.LearningPathRef][lp.TabRef], bookCopy)
 				}
 			}
 		}
 	}
 
-	sortAndCountLearningPathBooks()
+	sortAndCountLearningPathTabBooks()
 
 	return nil
 }
@@ -66,7 +88,7 @@ func loadBooksFile(path string) ([]models.Book, error) {
 	var content []models.Book
 
 	// Read the file
-	raw, err := ioutil.ReadFile(path)
+	raw, err := os.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
@@ -80,21 +102,24 @@ func loadBooksFile(path string) ([]models.Book, error) {
 	return content, nil
 }
 
-// Sort and count books in each learning path by order ascendant and heavier weight
-func sortAndCountLearningPathBooks() {
-	for lpRef, books := range LearningPathBooks {
-		// Sort
-		sort.SliceStable(books, func(i, j int) bool {
-			if books[i].Order != books[j].Order {
-				return books[i].Order < books[j].Order
-			}
+// Count and sort books by order ascendant and heavier weight in each learning path tab
+func sortAndCountLearningPathTabBooks() {
+	for lpRef, tabs := range LearningPathTabBooks {
+		for tabRef, books := range tabs {
+      // the list of books in the tab only have one learning path (the rest was purged when loading), so we can use the first element to get the learning path order
+			sort.SliceStable(books, func(i, j int) bool {
+				if books[i].LearningPaths[0].Order != books[j].LearningPaths[0].Order {
+					return books[i].LearningPaths[0].Order < books[j].LearningPaths[0].Order
+				}
 
-			// If orders are equal then sort by weight
-			return books[i].Weight > books[j].Weight
-		})
+				// If orders are equal then sort by weight
+				return books[i].LearningPaths[0].Weight > books[j].LearningPaths[0].Weight
+			})
 
-		// Count
-		stats.SetTotalLearningPathBooks(string(lpRef), len(LearningPathBooks[lpRef]))
+			// Count (previous learning path total plus the current tab books)
+      newTotal := stats.Data.TotalLearningPathBooks[string(lpRef)] + len(LearningPathTabBooks[lpRef][tabRef])
+			stats.SetTotalLearningPathBooks(string(lpRef), newTotal)
+		}
 	}
 }
 
@@ -102,19 +127,20 @@ func sortAndCountLearningPathBooks() {
 func purgeEmtpyLearningPathRefsFromBooks() {
 	for _, book := range Books {
 		// Build a new list without empty lp refs
-		var notEmtpyLPRefs []models.LearningPathRef
+		var newBookLearningPaths []models.BookLearningPath
 
-		for _, lpRef := range book.LearningPathsRefs {
-			if _, ok := LearningPaths[string(lpRef)]; ok {
-				notEmtpyLPRefs = append(notEmtpyLPRefs, lpRef)
+		for _, lp := range book.LearningPaths {
+			if _, ok := LearningPaths[string(lp.LearningPathRef)]; ok {
+				newBookLearningPaths = append(newBookLearningPaths, lp)
 			} /* else {
 					// log.Printf("'%s' is an empty or a coming soon learning path, removed learning path reference from '%s' book", lpRef, book.Title)
 			  } */
 		}
-		book.LearningPathsRefs = notEmtpyLPRefs
 
-		// if the book doesn't have any learning path remove it
-		if len(book.LearningPathsRefs) == 0 {
+		book.LearningPaths = newBookLearningPaths
+
+		// if the book doesn't have any learning paths remove it
+		if len(book.LearningPaths) == 0 {
 			delete(Books, book.Title)
 			stats.SetTotalBooks(len(Books))
 		}

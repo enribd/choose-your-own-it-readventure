@@ -3,7 +3,9 @@ sources:
   books_covers: ./assets/books/covers
   books_data: ./assets/books/data
   learning_paths_data: ./assets/learning-paths/data
+  learning_paths_tabs: ./assets/learning-paths/tabs
   badges_data: ./assets/badges/data
+  tags_data: ./assets/tags/data
 content:
   github:
     index: ./README.md

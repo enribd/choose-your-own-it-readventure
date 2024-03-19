@@ -1,7 +1,7 @@
 package config
 
 import (
-	"io/ioutil"
+	"os"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/content"
 
@@ -19,7 +19,9 @@ type Sources struct {
 	BookCovers    string `yaml:"books_covers"`
 	BookData      string `yaml:"books_data"`
 	LearningPaths string `yaml:"learning_paths_data"`
+	LearningPathsTabs string `yaml:"learning_paths_tabs"`
 	BadgesData    string `yaml:"badges_data"`
+	TagsData      string `yaml:"tags_data"`
 }
 
 // Destination for generated content
@@ -27,6 +29,7 @@ type Format struct {
 	Index         string `yaml:"index"`
 	BookIndex     string `yaml:"book_index"`
 	AuthorIndex   string `yaml:"author_index"`
+	TagIndex      string `yaml:"tag_index"`
 	LearningPaths string `yaml:"learning_paths"`
 	Badges        string `yaml:"badges"`
 	About         string `yaml:"about"`
@@ -38,7 +41,7 @@ var Cfg Config
 
 func Load() error {
 	// Read the file
-	raw, err := ioutil.ReadFile("config.yaml")
+	raw, err := os.ReadFile("config.yaml")
 	if err != nil {
 		return err
 	}

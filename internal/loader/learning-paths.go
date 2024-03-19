@@ -1,13 +1,20 @@
 package loader
 
 import (
-	"io/ioutil"
+	"os"
 	"log"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
 	"gopkg.in/yaml.v3"
 )
+
+// LearningPaths["ref"] = LearningPath{}
+var LearningPaths map[string]models.LearningPath = make(map[string]models.LearningPath)
+
+// This structure is the same as LearningPaths but type agnostic, used in
+// template data because it only allows map[string]any types
+var LearningPathsTmpl map[string]any = make(map[string]any)
 
 func loadLearningPaths(basepath string) error {
 	log.Printf("load learning paths from %s\n", basepath)
@@ -27,7 +34,7 @@ func loadLearningPaths(basepath string) error {
 
 		for _, lp := range content {
 			// skip if lp has no books or if status is coming soon
-			if lp.Status == "coming-soon" || len(LearningPathBooks[lp.Ref]) == 0 {
+			if lp.Status == "coming-soon" || stats.Data.TotalLearningPathBooks[string(lp.Ref)] == 0 {
 				stats.IncSkippedLearningPath()
 			} else {
 				LearningPaths[string(lp.Ref)] = lp
@@ -52,7 +59,7 @@ func loadLearningPathsFile(path string) ([]models.LearningPath, error) {
 	var content []models.LearningPath
 
 	// Read the file
-	raw, err := ioutil.ReadFile(path)
+	raw, err := os.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
@@ -72,7 +79,7 @@ func purgeEmtpyRelatedLearningPaths() {
 		// Remove empty related paths
 		var notEmtpyLPs []models.LearningPathRef
 		for _, relatedRef := range lp.Related {
-			if len(LearningPathBooks[relatedRef]) > 0 {
+			if stats.Data.TotalLearningPathBooks[string(relatedRef)] > 0 {
 				notEmtpyLPs = append(notEmtpyLPs, relatedRef)
 			} /* else {
 							log.Printf("'%s' is an empty or a coming soon learning path, removed from '%s' related paths", relatedRef, lp.Ref)

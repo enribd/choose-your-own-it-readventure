@@ -14,8 +14,8 @@
 {{- if .Draft | not -}}
 {{/* Build book learning paths section */}}
 {{- $paths := list -}}
-{{- range .LearningPathsRefs -}}
-{{- $lp := get $lpData (. | toString) -}}
+{{- range .LearningPaths -}}
+{{- $lp := get $lpData (.LearningPathRef | toString) -}}
 {{- if (empty $lp | not) -}}
 {{- $name := printf "<li>[%s](%s/%s)</li>" $lp.Name $lpFolders . | trim -}}
 {{- $paths = append $paths $name -}}

@@ -5,6 +5,18 @@
     Distributed systems are not new but the way they are built nowadays is. Monolithic architectures need to evolve to leverage the cloud and the many advantages that microservices offer (scalability, fast releases, high-availability, resilience, and more). As usually happen in life, nothing is just benefits, and microservices architectures are not different, they bring many challenges with them like a more complicated management or debugging, economic costs and the necessary knowledge to build and run them. However, if this kind of architecture fit your needs or if you are interested in finding out what all the fuss about microservices is about don't hesitate and dive in!.
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+  tabs:
+    # TODO merge with tabs.yaml data (this takes priority)
+    # TODO sort by order when loaded
+    # TODO check no orders are equal
+    - ref: foundational
+      data:
+        # override order
+        order: 1
+    - ref: intermediate
+      order: 2
+    - ref: advanced
+      order: 3
   related:
     - system-design
     - kubernetes
@@ -17,292 +29,292 @@
   tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
     source: /assets/learning-paths/icons/microservices.png
-- name: Kubernetes
-  ref: kubernetes
-  status: stable
-  desc: |
-    After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
-  summary: |
-    Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
-  related:
-    - microservices
-    - docker
-  suggested:
-    - devops
-    - system-design
-    - serverless
-    - sre
-  tags: ["container-runtime", "ingress", "controller", "crd", "operator", "csi-driver", "admission-controller", "service-mesh", "platform-engineering"]
-  logo:
-    source: https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png
-- name: Golang
-  ref: golang
-  status: stable
-  desc: |
-    This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
-  summary: |
-    A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
-  related:
-    - software-development 
-    - software-architecture
-    - cloud-native-apps
-  suggested:
-    - cicd
-    - apis
-    - serverless
-    - docker
-    - kubernetes
-    - microservices
-  tags: ["goroutines", "concurrency", "channels", "context", "waitgroup", "command-line"]
-  logo:
-    source: https://skillicons.dev/icons?i=go
-- name: System Design
-  ref: system-design
-  status: stable
-  desc: |
-    You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
-  summary: |
-    Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
-  related:
-    - microservices
-    - apis
-    - event-driven-architecture
-    - serverless
-  suggested:
-    - cloud
-    - software-architecture
-    - kubernetes
-  tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
-  logo:
-    source: /assets/learning-paths/icons/system-design.png
-- name: Software Architecture
-  ref: software-architecture
-  status: in-progress
-  desc: |
-    To build effective services and applications a set of rules have to define what are the goals of the system, what it can or cannot do, and how things are structured to accomplish all that. Software needs to be designed and structured to achieve reasonable maintainability, aceptable performance and good extensibility. Explore beyond the code and discover how systems work, how they were designed to scale and adapt in this huge and ever changing world.
-  summary: |
-    Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
-  related:
-    - software-development
-    - domain-driven-design
-    - cicd
-    - microservices
-    - apis
-    - event-driven-architecture
-    - serverless
-  suggested:
-    - system-design
-    - golang
-    - cloud-native-apps
-  tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
-  logo:
-    source: /assets/learning-paths/icons/software-architecture.png
-- name: Event Driven Architecture (EDA)
-  ref: event-driven-architecture
-  status: in-progress
-  desc: |
-    Different from typical inter-service communication patterns like REST APIs or gRPC, event driven architectures allow to increase flexibility, agility, and speed in development processes by decoupling services. Synchronous calls are replaced by publishing events into a broker, from which the interested clients can receive the information. But there are many challenges when building this kind of architecture: re-adjusting the way teams think about communications, ensuring the information integrity and quality produced by the sources, stablishing secure and painless ways for consumers to integrate with the data sources, and more. Luckily the industry has evolved and experience in EDA is being documented in book and articles to let anyone learn good practices and how to overcome the many challenges ahead!.
-  summary: |
-    Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
-  related:
-    - system-design
-    - microservices
-    - apis
-  suggested:
-    - software-architecture
-    - serverless
-  tags: ["lously-coupled", "flexibility", "nats", "kafka", "pulsar", "json-schema", "avro", "event-storming", "event-sourcing", "schema-registry"]
-  logo:
-    source: /assets/learning-paths/icons/eda.png
-- name: Serverless
-  ref: serverless
-  status: coming-soon
-  desc: |
-    Coming soon
-  summary: |
-    Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
-  suggested:
-    - system-design
-    - microservices
-    - apis
-    - event-driven-architecture
-- name: Site Reliability Engineering (SRE)
-  ref: sre
-  status: new
-  desc: |
-    Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are just a few concepts involved in an SRE engineer's daily life. The focus of this path is to acquire the necessary skills to keep systems alive and optimize their performance. To do that you need automation, observable systems, monitoring, service lifecycle management skills, and more. Major companies in the field apply interesting techniques to debug, fix and prevent outages in hundreds of services consumed by millons of users simoultaneously, learn how they achieve such performances!
-  summary: |
-    SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
-  related:
-    - devops
-    - software-development
-  suggested:
-    - docker
-    - cloud
-  tags: ["risk-management", "sla", "sli", "slo", "error-budget", "toil", "post-mortems", "cascading-failures"]
-  logo:
-    source: /assets/learning-paths/icons/sre.png
-- name: Observability
-  ref: observability
-  status: coming-soon
-  desc: |
-    Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
-  summary: |
-    The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
-  related:
-    - sre
-    - devops
-    - microservices
-  suggested:
-    - sre
-    - software-development
-  tags: ["open-telemetry", "troubleshooting", "debugging", "structured-logs", "tracing", "metrics-aggregation", "logs-aggregation", "data-retention", "alarm", "events"]
-  logo:
-    source: /assets/learning-paths/icons/observability.png
-- name: Infrastructure as Code (IaC)
-  ref: iac
-  status: new
-  desc: |
-    IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge amount of servers and services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage their cloud infrastructures.
-  summary: |
-    Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
-  related:
-    - devops
-    - cloud
-  suggested:
-    - cicd
-  tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
-  logo:
-    source: /assets/learning-paths/icons/iac.png
-- name: Team Management
-  ref: team-management
-  status: new
-  desc: |
-    With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
-  summary: |
-    Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.
-  related:
-    - devops
-    - management
-  suggested:
-    - sre
-  tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
-  logo:
-    source: /assets/learning-paths/icons/team-management.png
-- name: Cloud Native Applications
-  ref: cloud-native-apps
-  status: coming-soon
-  desc: |
-    From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
-  summary: |
-    discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
-  related:
-    - golang
-  suggested:
-    - software-architecture
-    - apis
-    - serverless
-- name: DevOps
-  ref: devops
-  status: coming-soon
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  related:
-    - team-management
-  suggested:
-    - TODO
-    - cicd
-- name: APIs
-  ref: apis
-  status: coming-soon
-  desc: |
-    TODO
-  summary: |
-    APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
-  related:
-    - serverless
-  suggested:
-    - system-design
-    - microservices
-    - event-driven-architecture
-  tags: ["grpc", "http", "graphql", "websocket", "api-gateway", "rate-limit", "quotas", "openapi", "contract-testing"]
-- name: Software Development
-  ref: software-development
-  status: coming-soon
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  related:
-    - golang
-  suggested:
-    - software-architecture
-- name: Domain Driven Design (DDD)
-  ref: domain-driven-design
-  status: coming-soon
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  related:
-    - software-architecture
-  suggested:
-    - golang
-    - apis
-    - serverless
-- name: Docker
-  ref: docker
-  status: new
-  desc: |
-    Applications are not easy to develop, build and deploy, Docker containers help to ease that pain and also to deliver faster, more reliably and make apps amazingly portable. Linux containers are a technological revolution that transformed the industry forever, Docker was the catalyst, it drew near containers to developers and operators, nowadays is used world wide do develop and deploy applications in many ways. 
-  summary: |
-    What is a container? How is that useful? Why use it?, you will find all that and more if you follow this path. Discover what is behind the container revolution and start taking advantage of it!.
-  related:
-    - kubernetes
-    - software-development
-  suggested:
-    - devops
-  logo:
-    source: https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png
-- name: Management
-  ref: management
-  status: new
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - team-management
-    - devops
-  suggested:
-    - TODO
-- name: CI/CD
-  ref: cicd
-  status: in-progress
-  desc: |
-    It's all about automation. Accelerating release rate while increasing quality has been one of the main goals in the software industry for decades, now thanks to CI/CD tools like Github, Gitlab, Jenkins, Flux or ArgoCD organizations such as Netflix, Amazon or Google have reach that goal providing new software updates in a matter of hours or even minutes. Nowadays continuous integration and delivery principles are considered essential for any engineer worth its name, so now that you are here try to pick a nice book to improve your skills.
-  summary: |
-    Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
-  related:
-    - devops
-    - software-architecture
-  suggested:
-    - microservices
-    - sre
-  tags: ["automation", "integration", "delivery", "quality", "testing", "fast-releases", "lead-time"]
-  logo:
-    source: https://user-images.githubusercontent.com/25181517/183868728-b2e11072-00a5-47e2-8a4e-4ebbb2b8c554.png
-- name: Cloud
-  ref: cloud
-  status: coming-soon
-  desc: |
-    TODO
-  summary: |
-    TODO
-  related:
-    - system-design
-    - microservices
-  suggested:
-    - TODO
+# - name: Kubernetes
+#   ref: kubernetes
+#   status: stable
+#   desc: |
+#     After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
+#   summary: |
+#     Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+#   related:
+#     - microservices
+#     - docker
+#   suggested:
+#     - devops
+#     - system-design
+#     - serverless
+#     - sre
+#   tags: ["container-runtime", "ingress", "controller", "crd", "operator", "csi-driver", "admission-controller", "service-mesh", "platform-engineering"]
+#   logo:
+#     source: https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png
+# - name: Golang
+#   ref: golang
+#   status: stable
+#   desc: |
+#     This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
+#   summary: |
+#     A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.
+#   related:
+#     - software-development 
+#     - software-architecture
+#     - cloud-native-apps
+#   suggested:
+#     - cicd
+#     - apis
+#     - serverless
+#     - docker
+#     - kubernetes
+#     - microservices
+#   tags: ["goroutines", "concurrency", "channels", "context", "waitgroup", "command-line"]
+#   logo:
+#     source: https://skillicons.dev/icons?i=go
+# - name: System Design
+#   ref: system-design
+#   status: stable
+#   desc: |
+#     You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
+#   summary: |
+#     Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
+#   related:
+#     - microservices
+#     - apis
+#     - event-driven-architecture
+#     - serverless
+#   suggested:
+#     - cloud
+#     - software-architecture
+#     - kubernetes
+#   tags: ["scalability", "manageability", "resilience", "observability", "reliability", "mantainability", "extensibility", "high-availability", "databases", "algorithms"]
+#   logo:
+#     source: /assets/learning-paths/icons/system-design.png
+# - name: Software Architecture
+#   ref: software-architecture
+#   status: in-progress
+#   desc: |
+#     To build effective services and applications a set of rules have to define what are the goals of the system, what it can or cannot do, and how things are structured to accomplish all that. Software needs to be designed and structured to achieve reasonable maintainability, aceptable performance and good extensibility. Explore beyond the code and discover how systems work, how they were designed to scale and adapt in this huge and ever changing world.
+#   summary: |
+#     Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+#   related:
+#     - software-development
+#     - domain-driven-design
+#     - cicd
+#     - microservices
+#     - apis
+#     - event-driven-architecture
+#     - serverless
+#   suggested:
+#     - system-design
+#     - golang
+#     - cloud-native-apps
+#   tags: ["extensibility", "scalability", "clean-code", "domain-driven-design", "heaxagonal-architecture"]
+#   logo:
+#     source: /assets/learning-paths/icons/software-architecture.png
+# - name: Event Driven Architecture (EDA)
+#   ref: event-driven-architecture
+#   status: in-progress
+#   desc: |
+#     Different from typical inter-service communication patterns like REST APIs or gRPC, event driven architectures allow to increase flexibility, agility, and speed in development processes by decoupling services. Synchronous calls are replaced by publishing events into a broker, from which the interested clients can receive the information. But there are many challenges when building this kind of architecture: re-adjusting the way teams think about communications, ensuring the information integrity and quality produced by the sources, stablishing secure and painless ways for consumers to integrate with the data sources, and more. Luckily the industry has evolved and experience in EDA is being documented in book and articles to let anyone learn good practices and how to overcome the many challenges ahead!.
+#   summary: |
+#     Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
+#   related:
+#     - system-design
+#     - microservices
+#     - apis
+#   suggested:
+#     - software-architecture
+#     - serverless
+#   tags: ["lously-coupled", "flexibility", "nats", "kafka", "pulsar", "json-schema", "avro", "event-storming", "event-sourcing", "schema-registry"]
+#   logo:
+#     source: /assets/learning-paths/icons/eda.png
+# - name: Serverless
+#   ref: serverless
+#   status: coming-soon
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
+#   suggested:
+#     - system-design
+#     - microservices
+#     - apis
+#     - event-driven-architecture
+# - name: Site Reliability Engineering (SRE)
+#   ref: sre
+#   status: new
+#   desc: |
+#     Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are just a few concepts involved in an SRE engineer's daily life. The focus of this path is to acquire the necessary skills to keep systems alive and optimize their performance. To do that you need automation, observable systems, monitoring, service lifecycle management skills, and more. Major companies in the field apply interesting techniques to debug, fix and prevent outages in hundreds of services consumed by millons of users simoultaneously, learn how they achieve such performances!
+#   summary: |
+#     SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
+#   related:
+#     - devops
+#     - software-development
+#   suggested:
+#     - docker
+#     - cloud
+#   tags: ["risk-management", "sla", "sli", "slo", "error-budget", "toil", "post-mortems", "cascading-failures"]
+#   logo:
+#     source: /assets/learning-paths/icons/sre.png
+# - name: Observability
+#   ref: observability
+#   status: coming-soon
+#   desc: |
+#     Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
+#   summary: |
+#     The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
+#   related:
+#     - sre
+#     - devops
+#     - microservices
+#   suggested:
+#     - sre
+#     - software-development
+#   tags: ["open-telemetry", "troubleshooting", "debugging", "structured-logs", "tracing", "metrics-aggregation", "logs-aggregation", "data-retention", "alarm", "events"]
+#   logo:
+#     source: /assets/learning-paths/icons/observability.png
+# - name: Infrastructure as Code (IaC)
+#   ref: iac
+#   status: new
+#   desc: |
+#     IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge amount of servers and services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage their cloud infrastructures.
+#   summary: |
+#     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
+#   related:
+#     - devops
+#     - cloud
+#   suggested:
+#     - cicd
+#   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
+#   logo:
+#     source: /assets/learning-paths/icons/iac.png
+# - name: Team Management
+#   ref: team-management
+#   status: new
+#   desc: |
+#     With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
+#   summary: |
+#     Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.
+#   related:
+#     - devops
+#     - management
+#   suggested:
+#     - sre
+#   tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
+#   logo:
+#     source: /assets/learning-paths/icons/team-management.png
+# - name: Cloud Native Applications
+#   ref: cloud-native-apps
+#   status: coming-soon
+#   desc: |
+#     From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
+#   summary: |
+#     discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
+#   related:
+#     - golang
+#   suggested:
+#     - software-architecture
+#     - apis
+#     - serverless
+# - name: DevOps
+#   ref: devops
+#   status: coming-soon
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Coming soon
+#   related:
+#     - team-management
+#   suggested:
+#     - TODO
+#     - cicd
+# - name: APIs
+#   ref: apis
+#   status: coming-soon
+#   desc: |
+#     TODO
+#   summary: |
+#     APIs are one way services use to talk to each other, there are a lot of aspects involved: communication protocols (REST, gRPC, WebSocket, GraphQL, etc), interface definition, version management, testing, security, rate limiting, api gateways, and more.
+#   related:
+#     - serverless
+#   suggested:
+#     - system-design
+#     - microservices
+#     - event-driven-architecture
+#   tags: ["grpc", "http", "graphql", "websocket", "api-gateway", "rate-limit", "quotas", "openapi", "contract-testing"]
+# - name: Software Development
+#   ref: software-development
+#   status: coming-soon
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Coming soon
+#   related:
+#     - golang
+#   suggested:
+#     - software-architecture
+# - name: Domain Driven Design (DDD)
+#   ref: domain-driven-design
+#   status: coming-soon
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Coming soon
+#   related:
+#     - software-architecture
+#   suggested:
+#     - golang
+#     - apis
+#     - serverless
+# - name: Docker
+#   ref: docker
+#   status: new
+#   desc: |
+#     Applications are not easy to develop, build and deploy, Docker containers help to ease that pain and also to deliver faster, more reliably and make apps amazingly portable. Linux containers are a technological revolution that transformed the industry forever, Docker was the catalyst, it drew near containers to developers and operators, nowadays is used world wide do develop and deploy applications in many ways. 
+#   summary: |
+#     What is a container? How is that useful? Why use it?, you will find all that and more if you follow this path. Discover what is behind the container revolution and start taking advantage of it!.
+#   related:
+#     - kubernetes
+#     - software-development
+#   suggested:
+#     - devops
+#   logo:
+#     source: https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png
+# - name: Management
+#   ref: management
+#   status: new
+#   desc: |
+#     TODO
+#   summary: |
+#     TODO
+#   related:
+#     - team-management
+#     - devops
+#   suggested:
+#     - TODO
+# - name: CI/CD
+#   ref: cicd
+#   status: in-progress
+#   desc: |
+#     It's all about automation. Accelerating release rate while increasing quality has been one of the main goals in the software industry for decades, now thanks to CI/CD tools like Github, Gitlab, Jenkins, Flux or ArgoCD organizations such as Netflix, Amazon or Google have reach that goal providing new software updates in a matter of hours or even minutes. Nowadays continuous integration and delivery principles are considered essential for any engineer worth its name, so now that you are here try to pick a nice book to improve your skills.
+#   summary: |
+#     Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.
+#   related:
+#     - devops
+#     - software-architecture
+#   suggested:
+#     - microservices
+#     - sre
+#   tags: ["automation", "integration", "delivery", "quality", "testing", "fast-releases", "lead-time"]
+#   logo:
+#     source: https://user-images.githubusercontent.com/25181517/183868728-b2e11072-00a5-47e2-8a4e-4ebbb2b8c554.png
+# - name: Cloud
+#   ref: cloud
+#   status: coming-soon
+#   desc: |
+#     TODO
+#   summary: |
+#     TODO
+#   related:
+#     - system-design
+#     - microservices
+#   suggested:
+#     - TODO

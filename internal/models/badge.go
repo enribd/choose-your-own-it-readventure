@@ -1,16 +1,20 @@
 package models
 
-// Icons by category
+// List of badges by category
+type BadgeCategory struct {
+	Name   BadgeCategoryRef `yaml:"category"`
+	Badges []Badge          `yaml:"badges"`
+}
+
+// Badge data
 type Badge struct {
-	Name   BadgeCategory `yaml:"name"`
-	Category   BadgeCategory `yaml:"category"`
-	BadgeIcons []BadgeIcon   `yaml:"icons"`
+	Ref  BadgeRef `yaml:"ref"`
+	Icon string   `yaml:"icon"`
+	Desc string   `yaml:"desc,omitempty"`
 }
 
-type BadgeCategory string
+// Badge category reference code
+type BadgeCategoryRef string
 
-type BadgeIcon struct {
-	Name string `yaml:"name"`
-	Code string `yaml:"code"`
-	Desc string `yaml:"desc"`
-}
+// Badge reference code
+type BadgeRef string

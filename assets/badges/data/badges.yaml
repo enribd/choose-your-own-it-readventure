@@ -1,51 +1,51 @@
 - category: difficulty
-  icons:
-  - name: beginner
-    code: ant
+  badges:
+  - ref: beginner
+    icon: ant
     desc: "Petty ant"
-  - name: easy
-    code: hatched_chick
+  - ref: easy
+    icon: hatched_chick
     desc: "Naive chicken"
-  - name: intermediate
-    code: dog2
+  - ref: intermediate
+    icon: dog2
     desc: "Brave Dog"
-  - name: hard
-    code: tiger2
+  - ref: hard
+    icon: tiger2
     desc: "Fierce tiger"
-  - name: expert
-    code: dragon
+  - ref: expert
+    icon: dragon
     desc: "Mighty dragon"
 - category: progress
-  icons:
-  - name: read
-    code: green_book
-  - name: scheduled
-    code: blue_book
-  - name: not_scheduled
-    code: orange_book
+  badges:
+  - ref: read
+    icon: green_book
+  - ref: scheduled
+    icon: blue_book
+  - ref: not_scheduled
+    icon: orange_book
 - category: rating
-  icons:
-  - name: nice
-    code: ok
-  - name: good
-    code: up
-  - name: very_good
-    code: cool
-  - name: excellent
-    code: top
+  badges:
+  - ref: nice
+    icon: ok
+  - ref: good
+    icon: up
+  - ref: very_good
+    icon: cool
+  - ref: excellent
+    icon: top
 - category: misc
-  icons:
-  - name: must-read
-    code: bookmark
-  - name: old
-    code: arrows_counterclockwise
+  badges:
+  - ref: must-read
+    icon: bookmark
+  - ref: old
+    icon: arrows_counterclockwise
 - category: status
-  icons:
-  - name: stable
-    code: ballot_box_with_check
-  - name: new
-    code: new
-  - name: coming-soon
-    code: soon
-  - name: in-progress
-    code: construction
+  badges:
+  - ref: stable
+    icon: ballot_box_with_check
+  - ref: new
+    icon: new
+  - ref: coming-soon
+    icon: soon
+  - ref: in-progress
+    icon: construction

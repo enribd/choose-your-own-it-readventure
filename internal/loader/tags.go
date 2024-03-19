@@ -9,38 +9,37 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-// Badges["excellent"] = top
-var Badges map[string]any = make(map[string]any)
+// Tags["kubernetes"] = []Tag{}
+var Tags map[string]any = make(map[string]any)
 
-func loadBadges(basepath string) error {
-	log.Printf("load badges from %s\n", basepath)
+func loadTags(basepath string) error {
+	log.Printf("load tags from %s\n", basepath)
 	files, err := getFiles(basepath)
 	if err != nil {
 		return err
 	}
-	log.Printf("badges files %s\n", files)
+	log.Printf("tags files %s\n", files)
 
 	// Load the content of the files and populate the var
-	var content []models.BadgeCategory
+	var content []models.Tag
 	for _, f := range files {
-		content, err = loadBadgesFile(f)
+		content, err = loadTagsFile(f)
 		if err != nil {
 			return err
 		}
 
-		for _, badge := range content {
-			for _, b := range badge.Badges {
-				Badges[string(b.Ref)] = b.Icon
-				stats.SetTotalBadges(len(Badges))
-			}
+		// Create auxiliar map to store tags
+		for _, tag := range content {
+			Tags[string(tag.Ref)] = tag
+			stats.SetTotalTags(len(Tags))
 		}
 	}
 
 	return nil
 }
 
-func loadBadgesFile(path string) ([]models.BadgeCategory, error) {
-	var content []models.BadgeCategory
+func loadTagsFile(path string) ([]models.Tag, error) {
+	var content []models.Tag
 
 	// Read the file
 	raw, err := os.ReadFile(path)

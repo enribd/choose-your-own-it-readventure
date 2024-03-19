@@ -6,7 +6,7 @@ import (
 	"text/template"
 )
 
-func Args(args ...interface{}) []interface{} {
+func Args(args ...any) []any {
 	return args
 }
 
@@ -18,7 +18,7 @@ func Args(args ...interface{}) []interface{} {
 *   templateName: template name to render
 *   dest: destination file
  */
-func Render(t *template.Template, templateName, dest string, data interface{}) error {
+func Render(t *template.Template, templateName, dest string, data any) error {
 	var file *os.File
 	var err error
 

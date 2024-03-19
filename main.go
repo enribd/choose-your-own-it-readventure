@@ -25,7 +25,7 @@ var formats, contents, mkdocsStripPrefix string
 func main() {
 	flag.BoolVar(&debug, "debug", false, "Enable debug mode (default: false).")
 	flag.StringVar(&formats, "formats", "github,mkdocs", "generate content with format for different hosting providers, accepts comma-separated values")
-	flag.StringVar(&contents, "contents", "index,book-index,author-index,learning-paths,badges,about,books-read,mentions", "list of content to generate, accepts comma-separated values")
+	flag.StringVar(&contents, "contents", "index,book-index,author-index,tag-index,learning-paths,badges,about,books-read,mentions", "list of content to generate, accepts comma-separated values")
 	flag.StringVar(&mkdocsStripPrefix, "mkdocs-strip-path-prefix", "./mkdocs/docs", "remove prefix from path to set browsing routes")
 	flag.Parse()
 	contents := strings.Split(contents, ",")
@@ -41,8 +41,8 @@ func main() {
 	// Initialize stats
 	stats.New()
 
-	// Load books and learning paths raw content from yaml files
-	err = loader.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths, config.Cfg.Sources.BadgesData)
+	// Load raw content from yaml files
+	err = loader.Load(config.Cfg.Sources.BookData, config.Cfg.Sources.LearningPaths, config.Cfg.Sources.LearningPathsTabs, config.Cfg.Sources.BadgesData, config.Cfg.Sources.TagsData)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -60,10 +60,12 @@ func main() {
 		lpFolder := config.Cfg.Content[p].LearningPaths
 		bookIndexFolder := config.Cfg.Content[p].BookIndex
 		authorIndexFolder := config.Cfg.Content[p].AuthorIndex
+		tagIndexFolder := config.Cfg.Content[p].TagIndex
 		if p == content.Mkdocs && mkdocsStripPrefix != "" {
 			lpFolder = strings.TrimPrefix(lpFolder, mkdocsStripPrefix)
 			bookIndexFolder = strings.TrimPrefix(bookIndexFolder, mkdocsStripPrefix)
 			authorIndexFolder = strings.TrimPrefix(authorIndexFolder, mkdocsStripPrefix)
+			tagIndexFolder = strings.TrimPrefix(tagIndexFolder, mkdocsStripPrefix)
 		}
 
 		// Create content dirs
@@ -76,6 +78,7 @@ func main() {
 		providerTmpls := filepath.Join("templates", p.String(), "*")
 		funcMap := template.FuncMap{
 			"args": content.Args,
+			"dedup_book_learningpaths": models.DeduplicateBookLearningPaths,
 		}
 		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).Funcs(funcMap).ParseGlob(providerTmpls)
 		if err != nil {
@@ -93,14 +96,16 @@ func main() {
 		var data = struct {
 			Format              string
 			SiteUrl             string
-			LpData              map[string]interface{}
+			LpData              map[string]any
 			BooksData           map[string]models.Book
 			AuthorsData         map[string][]models.Book
-			BadgesData          map[string]interface{}
+			TagsData            map[string]any
+			BadgesData          map[string]any
 			BookCovers          string
 			LearningPathsFolder string
 			BookIndex           string
 			AuthorIndex         string
+			TagIndex         string
 			Stats               stats.Stats
 			// used only when rendering the learning paths template
 			LpBooksData         []models.Book
@@ -111,11 +116,13 @@ func main() {
 			LpData:              loader.LearningPathsTmpl,
 			BooksData:           loader.Books,
 			AuthorsData:         loader.Authors,
+			TagsData:            loader.Tags,
 			BadgesData:          loader.Badges,
 			BookCovers:          config.Cfg.Sources.BookCovers,
 			LearningPathsFolder: lpFolder,
 			BookIndex:           bookIndexFolder,
 			AuthorIndex:         authorIndexFolder,
+			TagIndex:            tagIndexFolder,
 			Stats:               stats.Data,
 		}
 
@@ -125,7 +132,7 @@ func main() {
 		if slices.Contains(contents, "learning-paths") && config.Cfg.Content[p].LearningPaths != "" {
 			for _, lp := range loader.LearningPaths {
 				// Render learning paths that are only marked as either stable, new or in-progress, and have at least 1 book
-				if lp.Status != "coming-soon" && len(loader.LearningPathBooks[lp.Ref]) > 0 {
+				if lp.Status != "coming-soon" && stats.Data.TotalLearningPathBooks[string(lp.Ref)] > 0 {
 					data.CurrentLearningPath = lp
 					data.LpBooksData = loader.LearningPathBooks[lp.Ref]
 
@@ -183,6 +190,25 @@ func main() {
 
 			if p == content.Mkdocs {
 				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].AuthorIndex), ".pages")
+				log.Printf("[%s] rendering .pages in %s", p, file)
+				if err = content.Render(templates, "pages_refs.tmpl", file, data); err != nil {
+					log.Fatalln(err)
+				}
+			}
+		}
+
+		if slices.Contains(contents, "tag-index") && config.Cfg.Content[p].TagIndex != "" {
+			log.Printf("[%s] rendering tag index in %s", p, config.Cfg.Content[p].TagIndex)
+			if !debug {
+				file = config.Cfg.Content[p].TagIndex
+			}
+
+			if err = content.Render(templates, "tag-index.md.tmpl", file, data); err != nil {
+				log.Fatalln(err)
+			}
+
+			if p == content.Mkdocs {
+				file = filepath.Join(filepath.Dir(config.Cfg.Content[p].TagIndex), ".pages")
 				log.Printf("[%s] rendering .pages in %s", p, file)
 				if err = content.Render(templates, "pages_refs.tmpl", file, data); err != nil {
 					log.Fatalln(err)
@@ -283,6 +309,8 @@ func main() {
 	log.Printf("books found %d", stats.Data.TotalBooks)
 	log.Printf("books skipped %d", stats.Data.TotalSkippedBooks)
 	log.Printf("authors found %d", stats.Data.TotalAuthors)
+	log.Printf("tags found %d", stats.Data.TotalTags)
+	log.Printf("badges found %d", stats.Data.TotalBadges)
 	log.Printf("books read %d", stats.Data.TotalBooksRead)
 	log.Printf("done.\n")
 }
