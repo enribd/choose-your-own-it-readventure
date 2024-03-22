@@ -24,4 +24,4 @@
 | ![img](/assets/books/covers/team-topologies.jpeg){: style="height:166px;width:122px"}̣ | [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br> :hatched_chick:{ title="Easy" } :green_book:{ title="Read" } :up:{ title="Good" } | <ul><li>[Team Management](/learning-paths/team-management)</li></ul> |
 
 
-[**⬆ back to top**](#book-index-19)
+[**⬆ back to top**](#books-read-19)
