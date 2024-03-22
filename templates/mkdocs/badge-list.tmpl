@@ -1,0 +1,14 @@
+{{define "badge-list"}}
+{{- $badgesRefs := index . 0 -}}
+{{- $badgesData := index . 1 -}}
+{{/* Build book badges section */}}
+{{- $badges := list -}}
+{{- range $badgesRefs -}}
+{{- $b := get $badgesData (. | toString) -}}
+{{- if (empty $b | not) -}}
+{{- /* the title field allows to show the badget meaning when hover */ -}}
+{{- $badges = append $badges (printf ":%s:{ title=\"%s\" }" $b (. | toString | replace "_" " " | title)) -}}
+{{- end -}}
+{{- end -}}
+{{- $badges | join " " -}}
+{{end}}

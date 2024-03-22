@@ -91,16 +91,10 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 Thanks for stopping by, enjoy! :open_hands:
 
-## :pushpin: Worthy metions
 
-- Icons:
+[//]: # (Auto generated file from templates)
 
-    * [Skill icons](https://github.com/tandpfun/skill-icons)
-    * [Tech icons](https://github.com/marwin1991/profile-technology-icons)
-    * [Emoji icons](https://gist.github.com/kajal1106/b0bf3b9f93b4f484dc3703c8c64bbe1c)
+# :green_book: Books Read (1 :books:)
 
-
----
-<sub>Last modified 2024-03-21</sub>
-
-[**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)
+| Cover | Info | Learning Paths |
+| :---: | :--- | :--- |

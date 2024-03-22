@@ -16,6 +16,6 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 </details>
 
 ---
-<sub>Last modified 2024-03-21</sub>
+<sub>Last modified 2024-03-22</sub>
 
 [**⬆ back to top**](#microservices-learning-path)
