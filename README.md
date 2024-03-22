@@ -100,6 +100,33 @@ Of course, there will be books broadly considered a must-read that I have not li
 
 Thanks for stopping by, enjoy! :open_hands:
 
+
+[//]: # (Auto generated file from templates)
+
+# :green_book: Books Read (19 :books:)
+
+| Cover | Info | Learning Paths |
+| :---: | :--- | :--- |
+| <img src="/assets/books/covers/accelerate.jpeg" alt="cover" style="width:60%"/> | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br> :dog2: :green_book: :cool: | <ul><li>[Team Management](./content/learning-paths/team-management)</li></ul> |
+| <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :top: :bookmark: | <ul><li>[Microservices](./content/learning-paths/microservices)</li></ul> |
+| <img src="/assets/books/covers/building-an-event-driven-data-mesh.jpeg" alt="cover" style="width:60%"/> | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Event Driven Architecture (EDA)](./content/learning-paths/event-driven-architecture)</li></ul> |
+| <img src="/assets/books/covers/cloud-native-go.jpeg" alt="cover" style="width:60%"/> | [**Cloud Native Go: Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* <br> :dragon: :green_book: :top: | <ul><li>[Golang](./content/learning-paths/golang)</li></ul> |
+| <img src="/assets/books/covers/design-patterns-for-cloud-native-applications.jpeg" alt="cover" style="width:60%"/> | [**Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams**](https://learning.oreilly.com/library/view/-/9781492090700/) <br> *Kasun Indrasiri, Sriskandarajah Suhothayan* <br> *Published in 2021* <br> *311 pages* <br> :dog2: :green_book: :top: | <ul><li>[Software Architecture](./content/learning-paths/software-architecture)</li><li>[System Design](./content/learning-paths/system-design)</li></ul> |
+| <img src="/assets/books/covers/foundations-of-scalable-systems.jpeg" alt="cover" style="width:60%"/> | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br> :dog2: :green_book: :ok: | <ul><li>[System Design](./content/learning-paths/system-design)</li><li>[Software Architecture](./content/learning-paths/software-architecture)</li></ul> |
+| <img src="/assets/books/covers/knative-in-action.jpeg" alt="cover" style="width:60%"/> | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
+| <img src="/assets/books/covers/kubernetes-up-and-running.jpeg" alt="cover" style="width:60%"/> | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
+| <img src="/assets/books/covers/kubernetes-patterns.jpeg" alt="cover" style="width:60%"/> | [**Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications**](https://learning.oreilly.com/library/view/-/9781098131678/) <br> *Bilgin Ibryam, Roland Huss* <br> *Published in 2023 (2nd edition)* <br> *300 pages* <br> :hatched_chick: :green_book: :cool: :soon: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
+| <img src="/assets/books/covers/learning-github-actions.jpeg" alt="cover" style="width:60%"/> | [**Learning GitHub Actions: Automation and Integration of CI/CD with GitHub**](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) <br> *Brent Laster* <br> *Published in 2023* <br> *375 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[CI/CD](./content/learning-paths/cicd)</li></ul> |
+| <img src="/assets/books/covers/lets-go.jpeg" alt="cover" style="width:60%"/> | [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2: :green_book: :top: | <ul><li>[Golang](./content/learning-paths/golang)</li></ul> |
+| <img src="/assets/books/covers/lets-go-further.jpeg" alt="cover" style="width:60%"/> | [**Let's Go Further!: Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* <br> :tiger2: :green_book: :top: | <ul><li>[Golang](./content/learning-paths/golang)</li></ul> |
+| <img src="/assets/books/covers/monolith-to-microservices.jpeg" alt="cover" style="width:60%"/> | [**Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith**](https://learning.oreilly.com/library/view/-/9781492047834/) <br> *Sam Newman* <br> *Published in 2019* <br> *270 pages* <br> :dog2: :green_book: | <ul><li>[Microservices](./content/learning-paths/microservices)</li></ul> |
+| <img src="/assets/books/covers/production-kubernetes.jpeg" alt="cover" style="width:60%"/> | [**Production Kubernetes: Production Kubernetes**](https://learning.oreilly.com/library/view/-/9781492092292/) <br> *Josh Rosso, Rich Lander, Alex Brand, John Harris* <br> *Published in 2021* <br> *506 pages* <br> :tiger2: :green_book: :top: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
+| <img src="/assets/books/covers/site-reliability-engineering.jpeg" alt="cover" style="width:60%"/> | [**Site Reliability Engineering: How Google Runs Production Systems**](https://sre.google/sre-book/table-of-contents/) <br> *Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Myrphy* <br> *Published in 2017* <br> *552 pages* <br> :dog2: :green_book: :up: | <ul><li>[Site Reliability Engineering (SRE)](./content/learning-paths/sre)</li></ul> |
+| <img src="/assets/books/covers/system-design-interview.jpeg" alt="cover" style="width:60%"/> | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2: :green_book: | <ul><li>[System Design](./content/learning-paths/system-design)</li></ul> |
+| <img src="/assets/books/covers/system-design-interview-2.jpeg" alt="cover" style="width:60%"/> | [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br> :tiger2: :green_book: | <ul><li>[System Design](./content/learning-paths/system-design)</li></ul> |
+| <img src="/assets/books/covers/team-topologies.jpeg" alt="cover" style="width:60%"/> | [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br> :hatched_chick: :green_book: :up: | <ul><li>[Team Management](./content/learning-paths/team-management)</li></ul> |
+
+
 ## :pushpin: Worthy metions
 
 - Icons:
@@ -110,6 +137,6 @@ Thanks for stopping by, enjoy! :open_hands:
 
 
 ---
-<sub>Last modified 2024-03-15</sub>
+<sub>Last modified 2024-03-22</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)
