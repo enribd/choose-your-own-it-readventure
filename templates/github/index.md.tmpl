@@ -31,6 +31,9 @@ You can keep browsing this repo or use the [web version :rocket:]({{ .SiteUrl }}
 
 {{ template "badges" }}
 {{ template "about" }}
+
+{{ template "books-read" (args .LpData .BooksData .BookCovers .BadgesData .LearningPathsFolder .Stats.TotalBooksRead) }}
+
 {{ template "mentions" }}
 
 ---

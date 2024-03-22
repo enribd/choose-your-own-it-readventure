@@ -1,0 +1,16 @@
+{{define "cover"}}
+{{- $cover := index . 0 -}}
+{{- $coversPath := index . 1 -}}
+{{- $withSize := index . 2 -}}
+{{- if empty $cover | not -}}
+{{- if ($cover | hasPrefix "http") -}}
+![img]({{ $cover }})
+{{- else -}}
+{{- if (eq $withSize "true") -}}
+<img src="{{ $coversPath | trimPrefix "." }}/{{ $cover }}" alt="cover" style="width:60%"/>
+{{- else -}}
+![img]({{ $coversPath | trimPrefix "." }}/{{ $cover }})
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{end}}

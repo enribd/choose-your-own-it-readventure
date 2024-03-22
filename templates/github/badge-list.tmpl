@@ -1,0 +1,13 @@
+{{define "badge-list"}}
+{{- $badgesRefs := index . 0 -}}
+{{- $badgesData := index . 1 -}}
+{{/* Build book badges section */}}
+{{- $badges := list -}}
+{{- range $badgesRefs -}}
+{{- $b := get $badgesData (. | toString) -}}
+{{- if (empty $b | not) -}}
+{{- $badges = append $badges (printf ":%s:" $b) -}}
+{{- end -}}
+{{- end -}}
+{{- $badges | join " " -}}
+{{end}}
