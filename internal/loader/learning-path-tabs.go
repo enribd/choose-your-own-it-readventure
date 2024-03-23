@@ -1,8 +1,8 @@
 package loader
 
 import (
-	"os"
 	"log"
+	"os"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"gopkg.in/yaml.v3"

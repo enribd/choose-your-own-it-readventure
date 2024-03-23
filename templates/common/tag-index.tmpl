@@ -1,0 +1,6 @@
+{{ define "tag-index" }}
+{{- $tags := index . 0 -}}
+{{- range $tags -}}
+- [**{{ .Name }}**]({{ .Url }})
+{{ end }}
+{{ end }}

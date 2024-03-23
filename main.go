@@ -77,8 +77,10 @@ func main() {
 		// Load templates and functions
 		providerTmpls := filepath.Join("templates", p.String(), "*")
 		funcMap := template.FuncMap{
-			"args": content.Args,
+			"args":                     content.Args,
 			"dedup_book_learningpaths": models.DeduplicateBookLearningPaths,
+			"toBook":                   models.ToBook,
+			"toBookList":               models.ToBookList,
 		}
 		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).Funcs(funcMap).ParseGlob(providerTmpls)
 		if err != nil {
@@ -97,6 +99,7 @@ func main() {
 			Format              string
 			SiteUrl             string
 			LpData              map[string]any
+			LpTabData           map[models.LearningPathTabRef]models.LearningPathTabData
 			BooksData           map[string]models.Book
 			AuthorsData         map[string][]models.Book
 			TagsData            map[string]any
@@ -105,15 +108,18 @@ func main() {
 			LearningPathsFolder string
 			BookIndex           string
 			AuthorIndex         string
-			TagIndex         string
+			TagIndex            string
 			Stats               stats.Stats
 			// used only when rendering the learning paths template
 			LpBooksData         []models.Book
+			LpBooksTabData      map[string]any
 			CurrentLearningPath models.LearningPath
+			LpTotalBooks        int
 		}{
 			Format:              p.String(),
 			SiteUrl:             config.Cfg.SiteUrl,
 			LpData:              loader.LearningPathsTmpl,
+			LpTabData:           loader.LearningPathsTabs,
 			BooksData:           loader.Books,
 			AuthorsData:         loader.Authors,
 			TagsData:            loader.Tags,
@@ -133,13 +139,17 @@ func main() {
 			for _, lp := range loader.LearningPaths {
 				// Render learning paths that are only marked as either stable, new or in-progress, and have at least 1 book
 				if lp.Status != "coming-soon" && stats.Data.TotalLearningPathBooks[string(lp.Ref)] > 0 {
+					// Add extra info needed for learning path rendering
 					data.CurrentLearningPath = lp
 					data.LpBooksData = loader.LearningPathBooks[lp.Ref]
+					data.LpBooksTabData = loader.LearningPathTabBooksTmpl[string(lp.Ref)].(map[string]any)
+					data.LpTotalBooks = stats.Data.TotalLearningPathBooks[string(lp.Ref)]
+					// log.Printf("--- %v", data.LpBooksTabData)
 
 					if !debug {
 						file = filepath.Join(config.Cfg.Content[p].LearningPaths, fmt.Sprintf("%s.md", lp.Ref))
 					}
-					log.Printf("[%s] rendering '%s' learning path in %s (%d books)", p, lp.Ref, file, len(loader.LearningPathBooks[lp.Ref]))
+					log.Printf("[%s] rendering '%s' learning path in %s (%d books)", p, lp.Ref, file, stats.Data.TotalLearningPathBooks[string(lp.Ref)])
 
 					if err = content.Render(templates, "learning-path.md.tmpl", file, data); err != nil {
 						log.Fatalln(err)

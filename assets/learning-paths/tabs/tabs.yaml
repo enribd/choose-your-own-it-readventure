@@ -1,29 +1,28 @@
 - ref: foundational
   data:
     name: Foundational
-    # showed when hover?
-    icon: ""
-    desc: ""
+    icon: material-dots-vertical
+    desc: "Basic concepts required"
     order: 1
 - ref: intermediate
   data:
     name: Intermediate
-    icon: ""
-    desc: ""
+    icon: material-dots-square
+    desc: "Intermediate concepts"
     order: 2
 - ref: advanced
   data:
     name: Advanced
-    icon: ""
-    desc: ""
+    icon: material-dots-grid
+    desc: "Avanced concepts"
     order: 3
 - ref: certification
   data:
     name: Certification
-    icon: ""
+    icon: material-certificate-outline
     desc: ""
 - ref: kafka
   data:
     name: Kafka
-    icon: ""
+    icon: octicons-git-merge-queue-16
     desc: "Specific learning path oriented to learn Kafka, learning the EDA basics first"

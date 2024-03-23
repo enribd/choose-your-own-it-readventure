@@ -11,12 +11,14 @@ content:
     index: ./README.md
     book_index: ./content/book-index.md
     author_index: ./content/author-index.md
+    tag_index: ./content/tag-index.md
     learning_paths: ./content/learning-paths
   mkdocs:
     index: ./mkdocs/docs/index.md
     learning_paths: ./mkdocs/docs/learning-paths
     book_index: ./mkdocs/docs/references/book-index.md
     author_index: ./mkdocs/docs/references/author-index.md
+    tag_index: ./mkdocs/docs/references/tag-index.md
     badges: ./mkdocs/docs/badges.md
     about: ./mkdocs/docs/more/about.md
     books_read: ./mkdocs/docs/more/books-read.md

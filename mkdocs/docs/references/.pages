@@ -1,1 +1,4 @@
-order: desc
+nav:
+- Book index: book-index.md
+- Author index: author-index.md
+- Tag index: tag-index.md

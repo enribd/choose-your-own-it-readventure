@@ -1,8 +1,9 @@
 package loader
 
 import (
-	"os"
 	"log"
+	"os"
+	"sort"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
@@ -37,6 +38,44 @@ func loadLearningPaths(basepath string) error {
 			if lp.Status == "coming-soon" || stats.Data.TotalLearningPathBooks[string(lp.Ref)] == 0 {
 				stats.IncSkippedLearningPath()
 			} else {
+				// check for duplicates
+				seenTabs := make(map[models.LearningPathTabRef]bool)
+				seenTags := make(map[models.TagRef]bool)
+
+				for _, t := range lp.Tags {
+					if _, ok := seenTags[t]; ok {
+						log.Fatalf("loader: %s learning path has duplicated tags: %s", lp.Ref, t)
+					}
+					seenTags[t] = true
+				}
+
+				// If not populated, use the default data from the tabs file
+				for i, t := range lp.Tabs {
+					if _, ok := seenTabs[t.Ref]; ok {
+						log.Fatalf("loader: %s learning path has duplicated tabs: %s", lp.Ref, t.Ref)
+					}
+					seenTabs[t.Ref] = true
+
+					if t.Data.Name == "" {
+						t.Data.Name = LearningPathsTabs[t.Ref].Name
+					}
+					if t.Data.Icon == "" {
+						t.Data.Icon = LearningPathsTabs[t.Ref].Icon
+					}
+					if t.Data.Desc == "" {
+						t.Data.Desc = LearningPathsTabs[t.Ref].Desc
+					}
+					// if no description wanted set to "empty"
+					if t.Data.Desc == "empty" {
+						t.Data.Desc = ""
+					}
+					if t.Data.Order == 0 {
+						t.Data.Order = LearningPathsTabs[t.Ref].Order
+					}
+
+					lp.Tabs[i] = t
+				}
+
 				LearningPaths[string(lp.Ref)] = lp
 				stats.SetTotalLearningPaths(len(LearningPaths))
 			}
@@ -46,6 +85,9 @@ func loadLearningPaths(basepath string) error {
 	// Avoid learning paths having empty related or suggested learning paths
 	purgeEmtpyRelatedLearningPaths()
 	purgeEmtpySuggestedLearningPaths()
+
+	// Sort tabs in learning path
+	sortLearningPathTabs()
 
 	// Build auxiliar template structure
 	for lpRef, lp := range LearningPaths {
@@ -104,5 +146,18 @@ func purgeEmtpySuggestedLearningPaths() {
 		}
 		lp.Suggested = notEmtpyLPs
 		LearningPaths[string(lp.Ref)] = lp
+	}
+}
+
+// Sort tabs by order ascendant
+func sortLearningPathTabs() {
+	for _, lp := range LearningPaths {
+		tabs := lp.Tabs
+		sort.SliceStable(tabs, func(i, j int) bool {
+			if tabs[i].Data.Order == tabs[j].Data.Order {
+				log.Fatalf("loader: %s learning path tabs %s and %s can't have the same order %d", lp.Ref, tabs[i].Ref, tabs[j].Ref, tabs[i].Data.Order)
+			}
+			return tabs[i].Data.Order < tabs[j].Data.Order
+		})
 	}
 }

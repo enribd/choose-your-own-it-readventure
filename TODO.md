@@ -1,20 +1,30 @@
 # TODO
 
-- [-] Load tags
-- [ ] Finish load tags tests
-- [-] Load badges with the new structure
-- [-] Load tabs (they are integrated in the data directory of the lps, must differentiate them)
-- [?] Create a filters package to filter and sort models
-- [ ] Define and create auxiliar data structures
+- [ ] Fix case when there are lp tabs that are not declared in lps
+- [ ] Get better order icons (function to parse from 12 to ":material-numeric-1-box::material-numeric-2-box:)
+- [ ] update data yamls
+  - [ ] lps
+  - [ ] books
+  - [ ] tabs
+  - [ ] tags urls
+- [ ] Fix github learning paths
+- [ ] Use generics to replace loadEntity() funcs
 - [-] Sort books when loaded in aux data structures
-- [ ] Check that books or lps don't have duplicated tags
-- [ ] Sort lp tabs when loading learning-paths.yaml
-- [ ] Override mechanisms for lp tabs (merge with tabs.yaml)
-- [ ] Check that lps don't have duplicated tabs
-- [ ] make templates
-    - [ ] tabs: show icon in tab name
-    - [ ] tabs: show in tab name the number of books between parenthesis len(LearningPathTabBooks[b.lpRef][b.tabRef])
-- [ ] tags index
+- [?] Create a filters package to filter and sort models
+- [x] Load tags
+- [x] Include tabs in lp templates
+- [x] Load badges with the new structure
+- [x] Load tabs (they are integrated in the data directory of the lps, must differentiate them)
+- [x] Define and create auxiliar data structures
+- [x] Sort lp tabs when loading learning-paths.yaml
+- [x] Override mechanisms for lp tabs (merge with tabs.yaml)
+- [x] Check that lps don't have duplicated tabs
+- [x] Check that books and lps don't have duplicated tags
+- [x] Check that a book does not appears twice in the same lp tab
+- [x] tabs
+    - [x] tabs: show icon in tab name
+    - [x] tabs: show in tab name the number of books between parenthesis len(LearningPathTabBooks[b.lpRef][b.tabRef])
+- [x] tags index
 
 ## Book declaration example
 

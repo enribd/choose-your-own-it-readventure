@@ -16,7 +16,7 @@ type LearningPath struct {
 
 // Learning path tab spec
 type LearningPathTab struct {
-	Ref     LearningPathTabRef  `yaml:"ref"`
+	Ref  LearningPathTabRef  `yaml:"ref"`
 	Data LearningPathTabData `yaml:"data"`
 }
 

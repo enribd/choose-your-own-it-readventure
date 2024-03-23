@@ -32,7 +32,7 @@
   - ref: very_good
     icon: cool
   - ref: excellent
-    icon: top
+    icon: star
 - category: misc
   badges:
   - ref: must-read

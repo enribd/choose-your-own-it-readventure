@@ -1,18 +1,30 @@
 {{- $lpBooksData := .LpBooksData -}}
+{{- $lpBooksTabData := .LpBooksTabData -}}
 {{- $lpData := .LpData -}}
+{{- $tagsData := .TagsData -}}
+{{- $lpTabData := .LpTabData -}}
 {{- $covers := .BookCovers -}}
 {{- $badgesData := .BadgesData -}}
 {{- $lpFolders := .LearningPathsFolder | trimPrefix "." -}}
 {{- $lp := .CurrentLearningPath -}}
+{{- $lpTotalBooks := .LpTotalBooks -}}
+{{ $space := "&nbsp;" }}
 
 [//]: # (Auto generated file from templates)
 
-# {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path ({{ $lpBooksData | len }} :books:)
+# {{ with $lp.Logo.Source }}{{- template "logo" $lp -}}{{ end }} {{ $lp.Name }} Learning Path ({{ $lpTotalBooks }} :books:)
 
 {{ $lp.Desc }}
-| Order | Cover | Info | Description |
-| :---: | :---: | :--- | :--- |
-{{- range $lpBooksData }}
+
+{{- range $lp.Tabs }}
+{{ $tabRef := (.Ref | toString) -}}
+{{ $books := get $lpBooksTabData $tabRef -}}
+{{ printf "=== \":%s: %s %s %d:material-bookshelf:\"" .Data.Icon .Data.Name $space (len $books) }}
+{{ printf "    %s" .Data.Desc }}
+
+    | Order | Cover | Info | Description |
+    | :---: | :---: | :--- | :--- |
+{{- range $books }}
 {{- if .Draft | not }}
 {{/* Build book badges section */}}
 {{- $badges := list -}}
@@ -24,9 +36,11 @@
 {{- end -}}
 {{- /* end Build book badges section */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ .Order }}** | {{- template "cover" (args .Cover $covers "false") -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+{{- $order := (first .LearningPaths).Order -}}
+{{ printf "    " }}| **{{ $order }}** | {{- template "cover" (args .Cover $covers "false") -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }}<br><br><br>{{ template "tag-list" (args $tagsData .Tags) -}} |
 {{- end }}
-{{- end }}
+{{- end -}}
+{{ end }}
 
 {{- with $lp.Related }}
 
@@ -66,13 +80,9 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{- end }}
 
 {{ with $lp.Tags -}}
-{{- $tags := list -}}
-{{ range $lp.Tags -}}
-{{- $tags = append $tags (. | toString | lower | replace " " "-" | printf "#%s") -}}
-{{- end -}}
 ??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
 
-    <sub>{{ $tags | join " " }}</sub>
+    <sub>{{ template "tag-list" (args $tagsData $lp.Tags) }}</sub>
 {{- end }}
 
-[**⬆ back to top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path-{{ $lpBooksData | len }})
+[**⬆ back to top**](#{{ $lp.Name | lower | replace " " "-" }}-learning-path-{{ $lpTotalBooks }})

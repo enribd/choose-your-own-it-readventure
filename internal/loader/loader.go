@@ -12,6 +12,7 @@ func Load(booksPath, lpsPath, lpsTabsPath, badgesPath, tagsPath string) error {
 
 	loadAuthors()
 
+	// Load before learning paths because tabs are used in learning paths
 	err = loadLearningPathsTabs(lpsTabsPath)
 	if err != nil {
 		return err

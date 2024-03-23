@@ -16,12 +16,12 @@ type Config struct {
 
 // Location of data used to generate content
 type Sources struct {
-	BookCovers    string `yaml:"books_covers"`
-	BookData      string `yaml:"books_data"`
-	LearningPaths string `yaml:"learning_paths_data"`
+	BookCovers        string `yaml:"books_covers"`
+	BookData          string `yaml:"books_data"`
+	LearningPaths     string `yaml:"learning_paths_data"`
 	LearningPathsTabs string `yaml:"learning_paths_tabs"`
-	BadgesData    string `yaml:"badges_data"`
-	TagsData      string `yaml:"tags_data"`
+	BadgesData        string `yaml:"badges_data"`
+	TagsData          string `yaml:"tags_data"`
 }
 
 // Destination for generated content

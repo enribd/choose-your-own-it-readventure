@@ -20,6 +20,12 @@ Components:
     <img src="./arch.png" />
 </p>
 
+## Entities model
+
+<p align="center">
+    <img src="./entities.png" />
+</p>
+
 ## Publish new content
 
 Add content to the develop branch.

@@ -1,6 +1,6 @@
 - ref: distributed-systems
   name: "#distributed-systems"
-  url: ""
+  url: "https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture"
 - ref: architecture
   name: "#architecture"
   url: ""

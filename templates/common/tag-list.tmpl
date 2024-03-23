@@ -1,0 +1,9 @@
+{{- define "tag-list" -}}
+{{ $space := "&nbsp;" }}
+{{- $tags := index . 0 -}}
+{{- $tagRefs := index . 1 -}}
+{{- range $tagRefs -}}
+{{- $t := get $tags (. | toString) -}}
+{{ printf "[**%s**](%s)%s%s" $t.Name $t.Url $space $space }}
+{{- end -}}
+{{end}}

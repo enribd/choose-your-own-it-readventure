@@ -46,3 +46,11 @@ func DeduplicateBookLearningPaths(lps []BookLearningPath) []BookLearningPath {
 	return deduplicated
 }
 
+// Util to convert any to Book
+func ToBook(b any) Book {
+	return b.(Book)
+}
+
+func ToBookList(bl any) []Book {
+	return bl.([]Book)
+}
