@@ -1,3 +1,17 @@
 .md-grid {
-  max-width: initial; 
+  max-width: initial;
+}
+/* Make order icons bigger */
+.order-icon > svg {
+  width: 1.5em !important;
+}
+.order-icon {
+  color: #FFA724;
+  height: auto !important;
+}
+/* Responsive aligning */
+@media (min-width: 1024px) {
+  .md-typeset__table td {
+    vertical-align: middle !important;
+  }
 }

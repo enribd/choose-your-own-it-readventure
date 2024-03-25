@@ -1,16 +1,16 @@
 # TODO
 
 - [ ] Fix case when there are lp tabs that are not declared in lps
-- [ ] Get better order icons (function to parse from 12 to ":material-numeric-1-box::material-numeric-2-box:)
 - [ ] update data yamls
   - [ ] lps
   - [ ] books
   - [ ] tabs
   - [ ] tags urls
-- [ ] Fix github learning paths
-- [-] Sort books when loaded in aux data structures
-- [x] Use generics to replace loadEntity() funcs
 - [?] Create a filters package to filter and sort models
+- [-] Sort books when loaded in aux data structures
+- [x] Get better order icons (function to parse from 12 to ":material-numeric-1-box::material-numeric-2-box:)
+- [x] Fix github learning paths
+- [x] Use generics to replace loadEntity() funcs
 - [x] Load tags
 - [x] Include tabs in lp templates
 - [x] Load badges with the new structure

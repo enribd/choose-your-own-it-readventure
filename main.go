@@ -78,7 +78,8 @@ func main() {
 		providerTmpls := filepath.Join("templates", p.String(), "*")
 		funcMap := template.FuncMap{
 			"args":                     content.Args,
-			"dedup_book_learningpaths": models.DeduplicateBookLearningPaths,
+			"intToIcons":               content.IntToIcons,
+			"dedupBookLearningPaths":   models.DeduplicateBookLearningPaths,
 			"toBook":                   models.ToBook,
 			"toBookList":               models.ToBookList,
 		}

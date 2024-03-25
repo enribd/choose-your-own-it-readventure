@@ -16,7 +16,7 @@
 {{- if (and (.Draft | not) (.BadgesRefs | toStrings | has "read")) -}}
 {{/* Build book learning paths section */}}
 {{- $paths := list -}}
-{{- range (dedup_book_learningpaths .LearningPaths) -}}
+{{- range (dedupBookLearningPaths .LearningPaths) -}}
 {{- $lp := get $lpData (.LearningPathRef | toString) -}}
 {{- if (empty $lp | not) -}}
 {{- $name := printf "<li>[%s](%s/%s)</li>" $lp.Name $lpFolders . | trim -}}

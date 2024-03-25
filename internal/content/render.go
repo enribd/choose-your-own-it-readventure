@@ -1,13 +1,48 @@
 package content
 
 import (
+	"fmt"
 	"log"
 	"os"
+	"strconv"
+	"strings"
 	"text/template"
 )
 
 func Args(args ...any) []any {
 	return args
+}
+
+func IntToIcons(order int) any {
+	icons := ""
+	for _, c := range strings.Split(strconv.Itoa(order), "") {
+		switch c {
+		case "0":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-0-box:{.order-icon}")
+		case "1":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-1-box:{.order-icon}")
+		case "2":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-2-box:{.order-icon}")
+		case "3":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-3-box:{.order-icon}")
+		case "4":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-4-box:{.order-icon}")
+		case "5":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-5-box:{.order-icon}")
+		case "6":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-6-box:{.order-icon}")
+		case "7":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-7-box:{.order-icon}")
+		case "8":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-8-box:{.order-icon}")
+		case "9":
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-9-box:{.order-icon}")
+		default:
+			return ""
+		}
+	}
+
+	return icons
 }
 
 /*

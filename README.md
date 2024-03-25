@@ -98,7 +98,7 @@ Thanks for stopping by, enjoy! :open_hands:
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
-| <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :star: :bookmark: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :star: :bookmark: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=123) %!s(int=1)})</li></ul> |
 
 
 ## :pushpin: Worthy metions
