@@ -1,10 +1,10 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (64 :black_nib:)
+# :clipboard: Author Index (65 :black_nib:)
 
 | Author | Books |
 | :--- | :--- |
-| :fontawesome-solid-user-pen:  Adam Bellemare | :octicons-book-24: [*Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures*](https://learning.oreilly.com/library/view/-/9781098127596/) |
+| :fontawesome-solid-user-pen:  Adam Bellemare | :octicons-book-24: [*Building Event-Driven Microservices: Building Event-Driven Microservices*](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)<br>:octicons-book-24: [*Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures*](https://learning.oreilly.com/library/view/-/9781098127596/) |
 | :fontawesome-solid-user-pen:  Adam Stubblefield | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
 | :fontawesome-solid-user-pen:  Alex Brand | :octicons-book-24: [*Production Kubernetes: Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/) |
 | :fontawesome-solid-user-pen:  Alex Edwards | :octicons-book-24: [*Let's Go Further!: Let's Go Further!*](https://lets-go-further.alexedwards.net/)<br>:octicons-book-24: [*Let's Go: Let's Go*](https://lets-go.alexedwards.net/) |
@@ -15,6 +15,7 @@
 | :fontawesome-solid-user-pen:  Bilgin Ibryam | :octicons-book-24: [*Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications*](https://learning.oreilly.com/library/view/-/9781098131678/) |
 | :fontawesome-solid-user-pen:  Brendan Burns | :octicons-book-24: [*Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)<br>:octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)<br>:octicons-book-24: [*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/) |
 | :fontawesome-solid-user-pen:  Brent Laster | :octicons-book-24: [*Learning GitHub Actions: Automation and Integration of CI/CD with GitHub*](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) |
+| :fontawesome-solid-user-pen:  Chanaka Fernando | :octicons-book-24: [*Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging*](https://learning.oreilly.com/library/view/-/9781801072212/) |
 | :fontawesome-solid-user-pen:  Charity Majors | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
 | :fontawesome-solid-user-pen:  Chris Jones | :octicons-book-24: [*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Chris Richardson | :octicons-book-24: [*Microservices Patterns: Microservices Patterns*](https://learning.oreilly.com/library/view/-/9781617294549/) |
@@ -71,4 +72,4 @@
 
 
 
-[**⬆ back to top**](#author-index-64)
+[**⬆ back to top**](#author-index-65)

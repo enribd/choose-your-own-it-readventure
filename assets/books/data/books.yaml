@@ -113,28 +113,48 @@
     - hard
     - read
     - top
+- title: Designing Microservices Platforms with NATS
+  subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
+  cover: designing-microservice-platforms-with-nats.jpeg
+  order: 1
+  weight: 2
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781801072212/
+  authors:
+    - Chanaka Fernando
+  release: 2021
+  pages: 356
+  desc: |-
+    NATS is a cloud native multi-purpose messaging system that allows implementing request-reply, queues and event streams communication patterns. Through the book the author guides the reader from the protocol concepts to building communications between services using some of the features that this technology offers. It's a good start if you want to get acquainted with event-driven architectures or if you are interested in NATS in particular.
+  learning_paths:
+    - event-driven-architecture
+  badges:
+    - intermediate
+    - read
+    - nice
 - title: Building Event-Driven Microservices
   subtitle: Building Event-Driven Microservices
   cover: building-event-driven-microservices.jpeg
   order: 1
   weight: 1
-  draft: true
+  draft: false
   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
   authors:
     - Adam Bellemare
   release: 2020
   pages: 321
   desc: |-
-    TODO
+    Get to know the basic principles that guide event-driven architectures, the mechanisms and perils you will have to face when building a brand new architecture or integrating it with legacy systems. The author also offers his experience in the field exposing the different migration mechanisms and their trade-offs. Also you will read about tools needed in the process of creating a new architecture and hear about some of the specific technologies involved in the event streaming industry.
   learning_paths:
     - event-driven-architecture
   badges:
     - intermediate
-    - scheduled
+    - read
+    - good
 - title: Building an Event-Driven Data Mesh
   subtitle: Patterns for Designing & Building Event-Driven Architectures
   cover: building-an-event-driven-data-mesh.jpeg
-  order: 1
+  order: 2
   weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781098127596/
@@ -244,25 +264,6 @@
     - kubernetes
   badges:
     - hard
-    - read
-    - nice
-- title: Designing Microservices Platforms with NATS
-  subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
-  cover: designing-microservice-platforms-with-nats.jpeg
-  order: 1
-  weight: 1
-  draft: true
-  url: https://learning.oreilly.com/library/view/-/9781801072212/
-  authors:
-    - Chanaka Fernando
-  release: 2021
-  pages: 356
-  desc: |-
-    TODO
-  learning_paths:
-    - event-driven-architecture
-  badges:
-    - intermediate
     - read
     - nice
 - title: Kafka - The Definitive Guide
