@@ -27,8 +27,7 @@
   badges:
     - intermediate
     - read
-    # - excellent
-    - very_good
+    - excellent
     - must-read
   tags:
     - distributed-systems

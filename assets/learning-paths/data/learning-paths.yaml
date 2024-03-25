@@ -6,12 +6,8 @@
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
   tabs:
-    # TODO check no orders are equal
     - ref: foundational
       data:
-        # if no description wanted set to "empty"
-        # desc: "test override"
-        # override order
         order: 1
     - ref: intermediate
       data:

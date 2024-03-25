@@ -8,8 +8,8 @@
   - [ ] tabs
   - [ ] tags urls
 - [ ] Fix github learning paths
-- [ ] Use generics to replace loadEntity() funcs
 - [-] Sort books when loaded in aux data structures
+- [x] Use generics to replace loadEntity() funcs
 - [?] Create a filters package to filter and sort models
 - [x] Load tags
 - [x] Include tabs in lp templates
@@ -32,6 +32,8 @@
 - title: Building Microservices
   subtitle: Designing Fine-Grained Systems
   cover: building-microservices.jpeg
+  order: 1
+  weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492034018/
   authors:
@@ -46,14 +48,22 @@
       order: 1
       weight: 1
     - lp_ref: microservices
-      tab_ref: certification
+      tab_ref: intermediate
+      order: 2
+      weight: 1
+    - lp_ref: microservices
+      tab_ref: advanced
       order: 3
-      weight: 2
+      weight: 1
   badges:
     - intermediate
     - read
-    - excellent
+    # - excellent
+    - very_good
     - must-read
+  tags:
+    - distributed-systems
+    - architecture
 ```
 
 ## LP declaration example
@@ -67,17 +77,15 @@
   summary: |
     Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
   tabs:
-    # TODO merge with tabs.yaml data (this takes priority)
-    # TODO sort by order when loaded
-    # TODO check no orders are equal
     - ref: foundational
       data:
-        # override order
         order: 1
     - ref: intermediate
-      order: 2
+      data:
+        order: 2
     - ref: advanced
-      order: 3
+      data:
+        order: 3
   related:
     - system-design
     - kubernetes
@@ -87,7 +95,7 @@
     - serverless
     - golang
     - docker
-  tags:
+  tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
   logo:
     source: /assets/learning-paths/icons/microservices.png
 ```
