@@ -70,7 +70,7 @@ Want to change the subject? Here are some suggestions about other paths you can 
 {{ range $lp.Tags -}}
 {{- $tags = append $tags (. | toString | lower | replace " " "-" | printf "[#%s]()") -}}
 {{- end -}}
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<details><summary><i><b>Bonus quest</b>: Learn more related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
 
 <sub>{{ $tags | join " " }}</sub>

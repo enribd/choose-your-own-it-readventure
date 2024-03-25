@@ -7,7 +7,7 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
 
-<details><summary><i><b>Bonus quest</b>: learn about these related concepts! :round_pushpin: :beginner: :gem: </i></summary>
+<details><summary><i><b>Bonus quest</b>: Learn more related concepts! :round_pushpin: :beginner: :gem: </i></summary>
 <p>
 
 <sub>[#distributed-systems]() [#architecture]() [#scalability]() [#resilience]() [#observability]() [#kubernetes]() [#lambda]() [#faas]()</sub>

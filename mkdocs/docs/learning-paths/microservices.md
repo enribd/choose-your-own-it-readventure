@@ -25,7 +25,7 @@ Distributed systems are not new but the way they are built nowadays is. Monolith
     | :---: | :---: | :--- | :--- |
     | **3** |![img](/assets/books/covers/building-microservices.jpeg)| [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2:{ title="Intermediate" } :green_book:{ title="Read" } :cool:{ title="Very Good" } :bookmark:{ title="Must-Read" } | One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.<br><br><br>[**#distributed-systems**](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture)&nbsp;&nbsp;[**#architecture**]()&nbsp;&nbsp;|
 
-??? tip "learn about these related concepts! :round_pushpin: :beginner: :gem:"
+??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>[**#distributed-systems**](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture)&nbsp;&nbsp;[**#architecture**]()&nbsp;&nbsp;[**#scalability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#kubernetes**]()&nbsp;&nbsp;[**#lambda**]()&nbsp;&nbsp;[**#faas**]()&nbsp;&nbsp;</sub>
 
