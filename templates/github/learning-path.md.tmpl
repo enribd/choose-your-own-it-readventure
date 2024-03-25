@@ -23,8 +23,17 @@
 {{- end -}}
 {{- end -}}
 {{- /* end Build book badges section */ -}}
+{{- /* Get order from the first appearance of the lp in the book lps list */ -}}
+{{- $order := 0 -}}
+{{- range .LearningPaths }}
+{{- if eq .LearningPathRef $lp.Ref -}}
+{{- $order = .Order -}}
+{{- break -}}
+{{- end -}}
+{{- end -}}
+{{- /* end Get order from the first appearance of the lp in the book lps list */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ .Order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+| **{{ $order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
 {{- end }}
 {{- end }}
 

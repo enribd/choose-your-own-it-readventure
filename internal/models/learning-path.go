@@ -1,5 +1,9 @@
 package models
 
+const (
+  LearningpathStatusComingSoon string = "coming-soon"
+)
+
 // Learning path data
 type LearningPath struct {
 	Name      string            `yaml:"name"`

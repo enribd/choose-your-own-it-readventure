@@ -15,12 +15,15 @@ var Books map[string]models.Book = make(map[string]models.Book)
 // Authors["name"] = []Book{}
 var Authors map[string][]models.Book = make(map[string][]models.Book)
 
+// only used when provider = github
 // LearningPathBooks["ref"] = []Book{}
 var LearningPathBooks map[models.LearningPathRef][]models.Book = make(map[models.LearningPathRef][]models.Book)
 
+// only used when provider = mkdocs
 // LearningPathTabBooks["lp_ref"]["tab_ref"] = []Book{}
 var LearningPathTabBooks map[models.LearningPathRef]map[models.LearningPathTabRef][]models.Book = make(map[models.LearningPathRef]map[models.LearningPathTabRef][]models.Book)
 
+// only used when provider = mkdocs
 // This structure is the same as LearningPaths but type agnostic, used in
 // template data because it only allows map[string]any types
 var LearningPathTabBooksTmpl map[string]any = make(map[string]any)
@@ -58,9 +61,12 @@ func loadBooks(basepath string) error {
 				// Add book to content
 				Books[book.Title] = book
 				stats.SetTotalBooks(len(Books))
-				if slices.Contains(book.BadgesRefs, "read") {
+				if slices.Contains(book.BadgesRefs, models.BadgeProgressRead) {
 					stats.SetTotalBooksRead(stats.Data.TotalBooksRead + 1)
 				}
+
+        // support for github provider
+        insertedInLearningPathBooks := false
 
 				// Insert book in learning path tab
 				for _, lp := range book.LearningPaths {
@@ -75,6 +81,13 @@ func loadBooks(basepath string) error {
 						LearningPathTabBooks[lp.LearningPathRef] = tabsMap
 					}
 					LearningPathTabBooks[lp.LearningPathRef][lp.TabRef] = append(LearningPathTabBooks[lp.LearningPathRef][lp.TabRef], bookCopy)
+
+          // only used when provider = github
+          // Insert book in learning path, insert it only once per learning path (ignore tabs)
+          if !insertedInLearningPathBooks {
+				    LearningPathBooks[lp.LearningPathRef] = append(LearningPathBooks[lp.LearningPathRef], book)
+            insertedInLearningPathBooks = true
+				  }
 				}
 			}
 		}

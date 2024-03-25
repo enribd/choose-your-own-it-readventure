@@ -50,7 +50,7 @@
 #   badges:
 #     - intermediate
 #     - read
-#     # - very_good
+#     - very_good
 # - title: Microservices Patterns
 #   subtitle: Microservices Patterns
 #   cover: microservices-patterns.jpeg

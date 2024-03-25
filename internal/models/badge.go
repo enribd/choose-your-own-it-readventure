@@ -1,5 +1,9 @@
 package models
 
+const (
+  BadgeProgressRead BadgeRef = "read"
+)
+
 // List of badges by category
 type BadgeCategory struct {
 	Name   BadgeCategoryRef `yaml:"category"`

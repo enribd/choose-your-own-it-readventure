@@ -138,7 +138,7 @@ func main() {
 		if slices.Contains(contents, "learning-paths") && config.Cfg.Content[p].LearningPaths != "" {
 			for _, lp := range loader.LearningPaths {
 				// Render learning paths that are only marked as either stable, new or in-progress, and have at least 1 book
-				if lp.Status != "coming-soon" && stats.Data.TotalLearningPathBooks[string(lp.Ref)] > 0 {
+				if lp.Status != models.LearningpathStatusComingSoon && stats.Data.TotalLearningPathBooks[string(lp.Ref)] > 0 {
 					// Add extra info needed for learning path rendering
 					data.CurrentLearningPath = lp
 					data.LpBooksData = loader.LearningPathBooks[lp.Ref]
