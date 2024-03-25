@@ -2,11 +2,9 @@ package loader
 
 import (
 	"log"
-	"os"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
-	"gopkg.in/yaml.v3"
 )
 
 // Badges["excellent"] = top
@@ -23,7 +21,7 @@ func loadBadges(basepath string) error {
 	// Load the content of the files and populate the var
 	var content []models.BadgeCategory
 	for _, f := range files {
-		content, err = loadBadgesFile(f)
+		content, err = loadFile[models.BadgeCategory](f)
 		if err != nil {
 			return err
 		}
@@ -37,22 +35,4 @@ func loadBadges(basepath string) error {
 	}
 
 	return nil
-}
-
-func loadBadgesFile(path string) ([]models.BadgeCategory, error) {
-	var content []models.BadgeCategory
-
-	// Read the file
-	raw, err := os.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
-
-	// Unmarshal the YAML raw content into the struct
-	err = yaml.Unmarshal(raw, &content)
-	if err != nil {
-		return nil, err
-	}
-
-	return content, nil
 }

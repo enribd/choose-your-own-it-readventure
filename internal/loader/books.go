@@ -2,13 +2,11 @@ package loader
 
 import (
 	"log"
-	"os"
 	"slices"
 	"sort"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
-	"gopkg.in/yaml.v3"
 )
 
 // Books["title"] = Book{}
@@ -38,7 +36,7 @@ func loadBooks(basepath string) error {
 	var content []models.Book
 	for _, f := range files {
 		log.Printf("book files %s\n", files)
-		content, err = loadBooksFile(f)
+		content, err = loadFile[models.Book](f)
 		if err != nil {
 			return err
 		}
@@ -110,24 +108,6 @@ func loadAuthors() {
 			stats.SetTotalAuthors(len(Authors))
 		}
 	}
-}
-
-func loadBooksFile(path string) ([]models.Book, error) {
-	var content []models.Book
-
-	// Read the file
-	raw, err := os.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
-
-	// Unmarshal the YAML raw content into the struct
-	err = yaml.Unmarshal(raw, &content)
-	if err != nil {
-		return nil, err
-	}
-
-	return content, nil
 }
 
 func checkDuplicatesLearningPathTabBooks() {

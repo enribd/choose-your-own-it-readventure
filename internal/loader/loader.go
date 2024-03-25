@@ -1,7 +1,10 @@
 package loader
 
 import (
+	"os"
 	"path/filepath"
+
+	"gopkg.in/yaml.v3"
 )
 
 func Load(booksPath, lpsPath, lpsTabsPath, badgesPath, tagsPath string) error {
@@ -47,4 +50,22 @@ func getFiles(basepath string) ([]string, error) {
 		return nil, err
 	}
 	return files, err
+}
+
+func loadFile[T any] (path string) ([]T, error) {
+	var content []T
+
+	// Read the file
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+
+	// Unmarshal the YAML raw content into the struct
+	err = yaml.Unmarshal(raw, &content)
+	if err != nil {
+		return nil, err
+	}
+
+	return content, nil
 }

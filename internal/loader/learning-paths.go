@@ -2,12 +2,10 @@ package loader
 
 import (
 	"log"
-	"os"
 	"sort"
 
 	"github.com/enribd/choose-your-own-it-readventure/internal/models"
 	"github.com/enribd/choose-your-own-it-readventure/internal/stats"
-	"gopkg.in/yaml.v3"
 )
 
 // LearningPaths["ref"] = LearningPath{}
@@ -28,7 +26,7 @@ func loadLearningPaths(basepath string) error {
 	// Load the content of the files and populate the Books var
 	var content []models.LearningPath
 	for _, f := range files {
-		content, err = loadLearningPathsFile(f)
+		content, err = loadFile[models.LearningPath](f)
 		if err != nil {
 			return err
 		}
@@ -95,24 +93,6 @@ func loadLearningPaths(basepath string) error {
 	}
 
 	return nil
-}
-
-func loadLearningPathsFile(path string) ([]models.LearningPath, error) {
-	var content []models.LearningPath
-
-	// Read the file
-	raw, err := os.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
-
-	// Unmarshal the YAML raw content into the struct
-	err = yaml.Unmarshal(raw, &content)
-	if err != nil {
-		return nil, err
-	}
-
-	return content, nil
 }
 
 // Avoid learning paths having empty related learning paths
