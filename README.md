@@ -20,7 +20,7 @@ You can keep browsing this repo or use the [web version :rocket:](https://itread
 
 - **10** learning paths :mortar_board:
   - **1** <img height="20" src="https://user-images.githubusercontent.com/25181517/183868728-b2e11072-00a5-47e2-8a4e-4ebbb2b8c554.png" alt="cicd" title="CI/CD"/> [*CI/CD*](/content/learning-paths/cicd) :construction:: *Automation is key to improve quality and shorten software releases. Read all about continuous integration and delivery principles, master the tools and learn the bases that will make you be more effective and efficient.*
-  - **1** <img height="20" src="/assets/learning-paths/icons/eda.png" alt="event-driven-architecture" title="Event Driven Architecture (EDA)"/> [*Event Driven Architecture (EDA)*](/content/learning-paths/event-driven-architecture) :construction:: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.*
+  - **3** <img height="20" src="/assets/learning-paths/icons/eda.png" alt="event-driven-architecture" title="Event Driven Architecture (EDA)"/> [*Event Driven Architecture (EDA)*](/content/learning-paths/event-driven-architecture) :construction:: *Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.*
   - **4** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang) :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
   - **1** <img height="20" src="/assets/learning-paths/icons/iac.png" alt="iac" title="Infrastructure as Code (IaC)"/> [*Infrastructure as Code (IaC)*](/content/learning-paths/iac) :new:: *Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.*
   - **8** <img height="20" src="https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png" alt="kubernetes" title="Kubernetes"/> [*Kubernetes*](/content/learning-paths/kubernetes) :ballot_box_with_check:: *Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.*
@@ -30,8 +30,8 @@ You can keep browsing this repo or use the [web version :rocket:](https://itread
   - **6** <img height="20" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> [*System Design*](/content/learning-paths/system-design) :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
   - **2** <img height="20" src="/assets/learning-paths/icons/team-management.png" alt="team-management" title="Team Management"/> [*Team Management*](/content/learning-paths/team-management) :new:: *Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.*
 
-- **34** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
-- **64** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+- **36** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **65** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 
@@ -103,15 +103,17 @@ Thanks for stopping by, enjoy! :open_hands:
 
 [//]: # (Auto generated file from templates)
 
-# :green_book: Books Read (19 :books:)
+# :green_book: Books Read (21 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
 | <img src="/assets/books/covers/accelerate.jpeg" alt="cover" style="width:60%"/> | [**Accelerate: Building and Scaling High Performing Technology Organizations**](https://www.goodreads.com/book/show/35747076-accelerate) <br> *Nicole Forsgren* <br> *Published in 2018* <br> *288 pages* <br> :dog2: :green_book: :cool: | <ul><li>[Team Management](./content/learning-paths/team-management)</li></ul> |
+| <img src="/assets/books/covers/building-event-driven-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Event-Driven Microservices: Building Event-Driven Microservices**](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) <br> *Adam Bellemare* <br> *Published in 2020* <br> *321 pages* <br> :dog2: :green_book: :up: | <ul><li>[Event Driven Architecture (EDA)](./content/learning-paths/event-driven-architecture)</li></ul> |
 | <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :top: :bookmark: | <ul><li>[Microservices](./content/learning-paths/microservices)</li></ul> |
 | <img src="/assets/books/covers/building-an-event-driven-data-mesh.jpeg" alt="cover" style="width:60%"/> | [**Building an Event-Driven Data Mesh: Patterns for Designing & Building Event-Driven Architectures**](https://learning.oreilly.com/library/view/-/9781098127596/) <br> *Adam Bellemare* <br> *Published in 2023* <br> *275 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Event Driven Architecture (EDA)](./content/learning-paths/event-driven-architecture)</li></ul> |
 | <img src="/assets/books/covers/cloud-native-go.jpeg" alt="cover" style="width:60%"/> | [**Cloud Native Go: Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* <br> :dragon: :green_book: :top: | <ul><li>[Golang](./content/learning-paths/golang)</li></ul> |
 | <img src="/assets/books/covers/design-patterns-for-cloud-native-applications.jpeg" alt="cover" style="width:60%"/> | [**Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams**](https://learning.oreilly.com/library/view/-/9781492090700/) <br> *Kasun Indrasiri, Sriskandarajah Suhothayan* <br> *Published in 2021* <br> *311 pages* <br> :dog2: :green_book: :top: | <ul><li>[Software Architecture](./content/learning-paths/software-architecture)</li><li>[System Design](./content/learning-paths/system-design)</li></ul> |
+| <img src="/assets/books/covers/designing-microservice-platforms-with-nats.jpeg" alt="cover" style="width:60%"/> | [**Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging**](https://learning.oreilly.com/library/view/-/9781801072212/) <br> *Chanaka Fernando* <br> *Published in 2021* <br> *356 pages* <br> :dog2: :green_book: :ok: | <ul><li>[Event Driven Architecture (EDA)](./content/learning-paths/event-driven-architecture)</li></ul> |
 | <img src="/assets/books/covers/foundations-of-scalable-systems.jpeg" alt="cover" style="width:60%"/> | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br> :dog2: :green_book: :ok: | <ul><li>[System Design](./content/learning-paths/system-design)</li><li>[Software Architecture](./content/learning-paths/software-architecture)</li></ul> |
 | <img src="/assets/books/covers/knative-in-action.jpeg" alt="cover" style="width:60%"/> | [**Knative in Action**](https://learning.oreilly.com/library/view/-/9781617296642/) <br> *Jacques Chester* <br> *Published in 2021* <br> *272 pages* <br> :tiger2: :green_book: :ok: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
 | <img src="/assets/books/covers/kubernetes-up-and-running.jpeg" alt="cover" style="width:60%"/> | [**Kubernetes: Up & Running**](https://learning.oreilly.com/library/view/-/9781098110192/) <br> *Brendan Burns, Joe Beda, Kelsey Hightower* <br> *Published in 2022* <br> *326 pages* <br> :hatched_chick: :green_book: :cool: | <ul><li>[Kubernetes](./content/learning-paths/kubernetes)</li></ul> |
@@ -137,6 +139,6 @@ Thanks for stopping by, enjoy! :open_hands:
 
 
 ---
-<sub>Last modified 2024-03-22</sub>
+<sub>Last modified 2024-03-25</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)
