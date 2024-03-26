@@ -20,9 +20,9 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 
 - **1** learning paths :mortar_board:
-    * **1** ![img](/assets/learning-paths/icons/microservices.png){: style="height:20px"} [*Microservices*](learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+    * **4** ![img](/assets/learning-paths/icons/microservices.png){: style="height:20px"} [*Microservices*](learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
 
-- **1** books :books: , discover them all in the [:scroll: book index](/references/book-index).
+- **2** books :books: , discover them all in the [:scroll: book index](/references/book-index).
 - **1** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
 
 [**⬆ back to top**](#choose-your-own-it-readventure)

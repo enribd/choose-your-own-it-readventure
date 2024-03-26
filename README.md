@@ -19,9 +19,9 @@ You can keep browsing this repo or use the [web version :rocket:](https://itread
 
 
 - **1** learning paths :mortar_board:
-  - **1** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+  - **4** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
 
-- **1** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **2** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
 - **1** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
@@ -94,11 +94,12 @@ Thanks for stopping by, enjoy! :open_hands:
 
 [//]: # (Auto generated file from templates)
 
-# :green_book: Books Read (1 :books:)
+# :green_book: Books Read (2 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
-| <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :star: :bookmark: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=123) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :star: :bookmark: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/monolith-to-microservices.jpeg" alt="cover" style="width:60%"/> | [**Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith**](https://learning.oreilly.com/library/view/-/9781492047834/) <br> *Sam Newman* <br> *Published in 2019* <br> *270 pages* <br> :dog2: :green_book: :cool: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=2) %!s(int=1)})</li></ul> |
 
 
 ## :pushpin: Worthy metions
@@ -111,6 +112,6 @@ Thanks for stopping by, enjoy! :open_hands:
 
 
 ---
-<sub>Last modified 2024-03-25</sub>
+<sub>Last modified 2024-03-26</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

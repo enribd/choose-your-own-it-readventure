@@ -32,25 +32,39 @@
   tags:
     - distributed-systems
     - architecture
-# - title: Monolith to Microservices
-#   subtitle: Evolutionary Patterns to Transform Your Monolith
-#   cover: monolith-to-microservices.jpeg
-#   order: 2
-#   weight: 2
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492047834/
-#   authors:
-#     - Sam Newman
-#   release: 2019
-#   pages: 270
-#   desc: |-
-#     Intended as a companion of [Building Microservices](https://learning.oreilly.com/library/view/-/9781492034018/), this book focus in the things to take in mind to adopt a microservice architecture parting form a monolith. For those considering taking the leap, Sam Newman, offers the vision of where to start, how to split the monolith beast and what to do along the way to avoid being crushed by the microservice chaos. Definitely a nice guide to avoid stumbling over well know problems and apply best practices and patterns from the start of a difficult journey.
-#   learning_paths:
-#     - microservices
-#   badges:
-#     - intermediate
-#     - read
-#     - very_good
+- title: Monolith to Microservices
+  subtitle: Evolutionary Patterns to Transform Your Monolith
+  cover: monolith-to-microservices.jpeg
+  order: 2
+  weight: 2
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492047834/
+  authors:
+    - Sam Newman
+  release: 2019
+  pages: 270
+  desc: |-
+    Intended as a companion of [Building Microservices](https://learning.oreilly.com/library/view/-/9781492034018/), this book focus in the things to take in mind to adopt a microservice architecture parting form a monolith. For those considering taking the leap, Sam Newman, offers the vision of where to start, how to split the monolith beast and what to do along the way to avoid being crushed by the microservice chaos. Definitely a nice guide to avoid stumbling over well know problems and apply best practices and patterns from the start of a difficult journey.
+  learning_paths:
+    - lp_ref: microservices
+      tab_ref: foundational
+      order: 2
+      weight: 1
+    - lp_ref: microservices
+      tab_ref: intermediate
+      order: 2
+      weight: 1
+    - lp_ref: microservices
+      tab_ref: advanced
+      order: 2
+      weight: 1
+  badges:
+    - intermediate
+    - read
+    - very_good
+  tags:
+    - distributed-systems
+    - architecture
 # - title: Microservices Patterns
 #   subtitle: Microservices Patterns
 #   cover: microservices-patterns.jpeg

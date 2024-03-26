@@ -2,6 +2,7 @@
 {{- $lpData := .LpData -}}
 {{- $covers := .BookCovers -}}
 {{- $badgesData := .BadgesData -}}
+{{- $tagsData := .TagsData -}}
 {{- $lpFolders := .LearningPathsFolder | trimPrefix "." -}}
 {{- $lp := .CurrentLearningPath -}}
 
@@ -33,7 +34,7 @@
 {{- end -}}
 {{- /* end Get order from the first appearance of the lp in the book lps list */ -}}
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
-| **{{ $order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }} |
+| **{{ $order }}** | ![img]({{ if (.Cover | hasPrefix "http") }}{{ .Cover }}{{ else }}{{ $covers | trimPrefix "." }}/{{ .Cover }}{{end}}) | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }}<br><br>{{ template "tag-list" (args $tagsData .Tags) }} |
 {{- end }}
 {{- end }}
 
