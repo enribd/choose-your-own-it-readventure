@@ -1,10 +1,27 @@
+{{- $lpData := .LpData -}}
 nav:
+{{ if hasKey $lpData "system-design" -}}
 - system-design.md
+{{- end -}}
+{{ if hasKey $lpData "microservices" -}}
 - microservices.md
+{{- end -}}
+{{ if hasKey $lpData "event-driven-architecture" -}}
 - EDA (Event-Driven Architectures): event-driven-architecture.md
+{{- end -}}
+{{ if hasKey $lpData "kubernetes" -}}
 - kubernetes.md
+{{- end -}}
+{{ if hasKey $lpData "golang" -}}
 - Go: golang.md
-- IaC: iac.md
+{{- end -}}
+{{ if hasKey $lpData "iac" -}}
+ iaC: iac.md
+{{- end -}}
+{{ if hasKey $lpData "cicd" -}}
 - CI/CD: cicd.md
+{{- end -}}
+{{ if hasKey $lpData "sre" -}}
 - SRE: sre.md
+{{- end }}
 - ...
