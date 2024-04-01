@@ -18,25 +18,25 @@ func IntToIcons(order int) any {
 	for _, c := range strings.Split(strconv.Itoa(order), "") {
 		switch c {
 		case "0":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-0-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-0:{.order-icon}")
 		case "1":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-1-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-1:{.order-icon}")
 		case "2":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-2-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-2:{.order-icon}")
 		case "3":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-3-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-3:{.order-icon}")
 		case "4":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-4-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-4:{.order-icon}")
 		case "5":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-5-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-5:{.order-icon}")
 		case "6":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-6-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-6:{.order-icon}")
 		case "7":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-7-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-7:{.order-icon}")
 		case "8":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-8-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-8:{.order-icon}")
 		case "9":
-			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-9-box:{.order-icon}")
+			icons = fmt.Sprintf("%s%s", icons, ":material-numeric-9:{.order-icon}")
 		default:
 			return ""
 		}
