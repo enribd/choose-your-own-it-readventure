@@ -18,6 +18,7 @@
 {{- range $lp.Tabs }}
 {{ $tabRef := (.Ref | toString) -}}
 {{ $books := get $lpBooksTabData $tabRef -}}
+{{- if gt ($books | len) 0 -}}
 {{ printf "=== \":%s: %s %s %d:material-bookshelf:\"" .Data.Icon .Data.Name $space (len $books) }}
 {{ printf "    %s" .Data.Desc }}
 
@@ -37,6 +38,7 @@
 {{- $sub := empty .Subtitle | ternary "" (printf ": %s" .Subtitle) -}}
 {{- $order := (first .LearningPaths).Order | intToIcons -}}
 {{ printf "    " }}| **{{ $order }}** | {{- template "cover" (args .Cover $covers "false") -}} | [**{{ .Title }}{{ $sub }}**]({{ .Url }}) <br> *{{ .Authors | join ", " }}* <br> *Published in {{ .Release }}* <br> *{{ .Pages }} pages* <br> {{ $badges | join " " }} | {{ .Desc }}<br><br><br>{{ template "tag-list" (args $tagsData .Tags) -}} |
+{{- end }}
 {{- end }}
 {{- end }}
 {{ end }}

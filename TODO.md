@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] fix books loaded counter in main.go logs
 - [ ] update data yamls
   - [ ] lps
   - [ ] books
