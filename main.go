@@ -77,11 +77,11 @@ func main() {
 		// Load templates and functions
 		providerTmpls := filepath.Join("templates", p.String(), "*")
 		funcMap := template.FuncMap{
-			"args":                     content.Args,
-			"intToIcons":               content.IntToIcons,
-			"dedupBookLearningPaths":   models.DeduplicateBookLearningPaths,
-			"toBook":                   models.ToBook,
-			"toBookList":               models.ToBookList,
+			"args":                   content.Args,
+			"intToIcons":             content.IntToIcons,
+			"dedupBookLearningPaths": models.DeduplicateBookLearningPaths,
+			"toBook":                 models.ToBook,
+			"toBookList":             models.ToBookList,
 		}
 		templates, err := template.New("base").Funcs(sprig.TxtFuncMap()).Funcs(funcMap).ParseGlob(providerTmpls)
 		if err != nil {

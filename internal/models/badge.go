@@ -1,7 +1,7 @@
 package models
 
 const (
-  BadgeProgressRead BadgeRef = "read"
+	BadgeProgressRead BadgeRef = "read"
 )
 
 // List of badges by category

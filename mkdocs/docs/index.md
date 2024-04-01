@@ -19,10 +19,12 @@ Starting your adventure is as easy as picking the set of skills that you want to
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
 
-- **1** learning paths :mortar_board:
-    * **4** ![img](/assets/learning-paths/icons/microservices.png){: style="height:20px"} [*Microservices*](learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+- **3** learning paths :mortar_board:
+    * **9** ![img](https://skillicons.dev/icons?i=go){: style="height:20px"} [*Golang*](learning-paths/golang) :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
+    * **9** ![img](/assets/learning-paths/icons/microservices.png){: style="height:20px"} [*Microservices*](learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+    * **13**  [*System Design*](learning-paths/system-design) :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
 
-- **2** books :books: , discover them all in the [:scroll: book index](/references/book-index).
-- **1** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
+- **13** books :books: , discover them all in the [:scroll: book index](/references/book-index).
+- **11** authors :black_nib: , discover them all in the [:scroll: author index](/references/author-index).
 
 [**⬆ back to top**](#choose-your-own-it-readventure)

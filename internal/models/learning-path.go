@@ -1,7 +1,7 @@
 package models
 
 const (
-  LearningpathStatusComingSoon string = "coming-soon"
+	LearningpathStatusComingSoon string = "coming-soon"
 )
 
 // Learning path data

@@ -3,7 +3,7 @@
 }
 /* Make order icons bigger */
 .order-icon > svg {
-  width: 1.5em !important;
+  width: 3em !important;
 }
 .order-icon {
   color: #FFA724;

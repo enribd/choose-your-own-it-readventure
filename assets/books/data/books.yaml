@@ -1,8 +1,6 @@
 - title: Building Microservices
   subtitle: Designing Fine-Grained Systems
   cover: building-microservices.jpeg
-  order: 1
-  weight: 1
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492034018/
   authors:
@@ -35,8 +33,6 @@
 - title: Monolith to Microservices
   subtitle: Evolutionary Patterns to Transform Your Monolith
   cover: monolith-to-microservices.jpeg
-  order: 2
-  weight: 2
   draft: false
   url: https://learning.oreilly.com/library/view/-/9781492047834/
   authors:
@@ -65,30 +61,32 @@
   tags:
     - distributed-systems
     - architecture
-# - title: Microservices Patterns
-#   subtitle: Microservices Patterns
-#   cover: microservices-patterns.jpeg
-#   order: 3
-#   weight: 1
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781617294549/
-#   authors:
-#     - Chris Richardson
-#   release: 2018
-#   pages: 520
-#   desc: |-
-#     One of the bibles of the microservice architectures, it teaches design, service communication patterns, testing, state management, deployment patterns, and more. Basically a "from zero to hero" approach that will make you an expert if you read it carefully. Despite the fact that the book has some years, the content is still valid today, would be nice to have an update though.
-#   learning_paths:
-#     - microservices
-#   badges:
-#     - intermediate
-#     - not_scheduled
-#     - old
+- title: Microservices Patterns
+  subtitle: Microservices Patterns
+  cover: microservices-patterns.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781617294549/
+  authors:
+    - Chris Richardson
+  release: 2018
+  pages: 520
+  desc: |-
+    One of the bibles of the microservice architectures, it teaches design, service communication patterns, testing, state management, deployment patterns, and more. Basically a "from zero to hero" approach that will make you an expert if you read it carefully. Despite the fact that the book has some years, the content is still valid today, would be nice to have an update though.
+  learning_paths:
+    - lp_ref: microservices
+      tab_ref: foundational
+      order: 2
+      weight: 1
+  badges:
+    - intermediate
+    - not_scheduled
+    - old
+  tags:
+    - distributed-systems
+    - architecture
 # - title: Practical Process Automation
 #   subtitle: Orchestration and Integration in Microservices and Cloud Native Architectures
 #   cover: practical-process-automation.jpeg
-#   order: 2
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/9781492061441/
 #   authors:
@@ -103,49 +101,253 @@
 #   badges:
 #     - intermediate
 #     - not_scheduled
-# - title: System Design Interview
-#   subtitle: An insider's guide
-#   cover: system-design-interview.jpeg
-#   order: 1
-#   weight: 1
-#   draft: false
-#   url: https://www.goodreads.com/book/show/54617137-system-design-interview
-#   authors:
-#     - Alex Xu
-#   release: 2020
-#   pages: 309
-#   desc: |-
-#     Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that illustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
-#   learning_paths:
-#     - system-design
-#   badges:
-#     - hard
-#     - read
-#     - top
-# - title: System Design Interview volume 2
-#   subtitle: An insider's guide
-#   cover: system-design-interview-2.jpeg
-#   order: 2
-#   weight: 4
-#   draft: false
-#   url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
-#   authors:
-#     - Alex Xu
-#   release: 2022
-#   pages: 424
-#   desc: |-
-#     An extension of the first part, the structure follow the same pattern but adding new cases. The author is well versed in many topics, from networking and databases to software development and algorithms, and it shows along the pages. Learn to design location based services, stock exchanges, game leaderborads and more. If you like the first one you will like this.
-#   learning_paths:
-#     - system-design
-#   badges:
-#     - hard
-#     - read
-#     - top
+- title: Designing Distributed Systems
+  subtitle: Patterns and Paradigms for Scalable, Reliable Services
+  cover: designing-distributed-systems.jpeg
+  draft: false
+  url: https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/
+  authors:
+    - Brendan Burns
+  release: 2018
+  pages: 162
+  desc: |-
+    Designing distributed systems is not easy, after years of experience patterns emerged and this book bring some of those patterns together to convey ways to split, replicate, communicate and reuse components. Work queues, batch processing, adapters, ambassadors, event-driven processing or deployment patterns are some of the topics covered along with hands on examples for illustration. 
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: foundational
+      order: 2
+      weight: 1
+  badges:
+    - intermediate
+    - not_scheduled
+    - old
+  tags:
+    - reliability
+    - scalability
+    - mantainability
+    - resilience
+    - extensibility
+- title: Foundations of Scalable Systems
+  subtitle: Designing Distributed Architectures
+  cover: foundations-of-scalable-systems.jpeg
+  draft: false
+  url: https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/
+  authors:
+    - Ian Gorton
+  release: 2022
+  pages: 320
+  desc: |-
+    A fair amount of information about distributed systems and scalability is contained in this book: databases, event processing, caching, asynchronous messaging... When designing systems it's necessary to think about how incresing load will affect aspects like performance and reliability, that's the reason why scalability is a big subject and one of the most important properties of a system since the cloud flourished and extended.
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: foundational
+      order: 1
+      weight: 1
+    - lp_ref: software-architecture
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - intermediate
+    - read
+    - nice
+  tags:
+    - performance
+    - latency
+    - response-time
+    - horizontal-scaling
+    - vertical-scaling
+    - scale-out
+    - scale-in
+    - scale-up
+    - scale-down
+- title: System Design Interview
+  subtitle: An insider's guide
+  cover: system-design-interview.jpeg
+  draft: false
+  url: https://www.goodreads.com/book/show/54617137-system-design-interview
+  authors:
+    - Alex Xu
+  release: 2020
+  pages: 309
+  desc: |-
+    Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that illustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: intermediate
+      order: 1
+      weight: 1
+  badges:
+    - hard
+    - read
+    - excellent
+  tags:
+    - byte-byte-go
+- title: System Design Interview volume 2
+  subtitle: An insider's guide
+  cover: system-design-interview-2.jpeg
+  draft: false
+  url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
+  authors:
+    - Alex Xu
+  release: 2022
+  pages: 424
+  desc: |-
+    An extension of the first part, the structure follow the same pattern but adding new cases. The author is well versed in many topics, from networking and databases to software development and algorithms, and it shows along the pages. Learn to design location based services, stock exchanges, game leaderborads and more. If you like the first one you will like this.
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: intermediate
+      order: 2
+      weight: 1
+  badges:
+    - hard
+    - read
+    - excellent
+  tags:
+    - byte-byte-go
+- title: Learning Go
+  subtitle: 
+  cover: learning-go.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492077206/
+  authors:
+    - Jon Bodner
+  release: 2021
+  pages: 375
+  desc: |-
+    Golang from the ground up, learn the basics and all the language tools at your disposal to create applications in a modern programming language.
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - easy
+    - not_scheduled
+  tags:
+    - software-development
+- title: Let's Go
+  subtitle: Let's Go
+  cover: lets-go.jpeg
+  draft: false
+  url: https://lets-go.alexedwards.net/
+  authors:
+    - Alex Edwards
+  release: 2019
+  pages: 305
+  desc: |-
+    Once you are familiarized with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!.
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: foundational
+      order: 2
+      weight: 1
+  badges:
+    - intermediate
+    - read
+    - excellent
+  tags:
+    - software-development
+- title: Let's Go Further!
+  subtitle: Let's Go Further!
+  cover: lets-go-further.jpeg
+  draft: false
+  url: https://lets-go-further.alexedwards.net/
+  authors:
+    - Alex Edwards
+  release: 2021
+  pages: 582
+  desc: |-
+    Following Let's Go comes this book, where the author teachs you how to build an API and some common techniques to manage thinks like encoding/decoding JSON messages, rate limiting, CORS, pagination techniques, user data management, etc. Definitely a wothy read if you want to increase your knowledge in Go and how modern applications are built.
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: foundational
+      order: 3
+      weight: 1
+    - lp_ref: golang
+      tab_ref: intermediate
+      order: 1
+      weight: 1
+  badges:
+    - hard
+    - read
+    - excellent
+  tags:
+    - software-development
+- title: Domain-Driven Design with Golang
+  cover: domain-driven-design-with-golang.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781804613450/
+  authors:
+    - Matthew Boyle
+  release: 2022
+  pages: 204
+  desc: |-
+    Learn software design techniques using Golang. Structure your applications providing them with extensibility, lously coupled elements and well defined patterns.
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: ddd
+      order: 2
+      weight: 1
+    - lp_ref: software-desing
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - intermediate
+    - scheduled
+  tags:
+    - software-development
+- title: Cloud Native Go
+  subtitle: Cloud Native Go
+  cover: cloud-native-go.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492076322/
+  authors:
+    - Matthew A. Titmus
+  release: 2021
+  pages: 433
+  desc: |-
+    In this book you will discover what properties an application should have to be considered cloud native by reviewing and extending in detail the classic [12 factors](https://12factor.net/). It will show you some useful patterns used to achieve things like: scalability, resilience, observability, and more. Along the way the author drops some insightful best practice pills about essential things like logging, caching, configuration management, etc.
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: advanced
+      order: 1
+      weight: 1
+  badges:
+    - expert
+    - read
+    - excellent
+  tags:
+    - software-development
+    - cloud-native
+- title: Event-Driven Architecture in Golang
+  subtitle: Building complex systems with asynchronicity and eventual consistency
+  cover: event-driven-architecture-in-golang.jpeg
+  draft: true
+  url: https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012
+  authors:
+    - Michael Stack
+  release: 2022
+  pages: 384
+  desc: |-
+    TODO
+  learning_paths:
+    - lp_ref: golang
+      tab_ref: eda
+      order: 1
+      weight: 1
+  badges:
+    - expert
+    - scheduled
+  tags:
+    - event-storming
+    - event-sourcing
+    - software-development
+    - cloud-native
 # - title: Designing Microservices Platforms with NATS
 #   subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
 #   cover: designing-microservice-platforms-with-nats.jpeg
-#   order: 1
-#   weight: 2
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781801072212/
 #   authors:
@@ -163,8 +365,6 @@
 # - title: Building Event-Driven Microservices
 #   subtitle: Building Event-Driven Microservices
 #   cover: building-event-driven-microservices.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
 #   authors:
@@ -182,8 +382,6 @@
 # - title: Building an Event-Driven Data Mesh
 #   subtitle: Patterns for Designing & Building Event-Driven Architectures
 #   cover: building-an-event-driven-data-mesh.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098127596/
 #   authors:
@@ -198,50 +396,9 @@
 #     - hard
 #     - read
 #     - nice
-# - title: Designing Distributed Systems
-#   subtitle: Patterns and Paradigms for Scalable, Reliable Services
-#   cover: designing-distributed-systems.jpeg
-#   order: 1
-#   weight: 1
-#   draft: false
-#   url: https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/
-#   authors:
-#     - Brendan Burns
-#   release: 2018
-#   pages: 162
-#   desc: |-
-#     Designing distributed systems is not easy, after years of experience patterns emerged and this book bring some of those patterns together to convey ways to split, replicate, communicate and reuse components. Work queues, batch processing, adapters, ambassadors, event-driven processing or deployment patterns are some of the topics covered along with hands on examples for illustration. 
-#   learning_paths:
-#     - system-design
-#   badges:
-#     - intermediate
-#     - not_scheduled
-#     - old
-# - title: Foundations of Scalable Systems
-#   subtitle: Designing Distributed Architectures
-#   cover: foundations-of-scalable-systems.jpeg
-#   order: 2
-#   weight: 1
-#   draft: false
-#   url: https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/
-#   authors:
-#     - Ian Gorton
-#   release: 2022
-#   pages: 320
-#   desc: |-
-#     A fair amount of information about distributed systems and scalability is contained in this book: databases, event processing, caching, asynchronous messaging... When designing systems it's necessary to think about how incresing load will affect aspects like performance and reliability, that's the reason why scalability is a big subject and one of the most important properties of a system since the cloud flourished and extended.
-#   learning_paths:
-#     - system-design
-#     - software-architecture
-#   badges:
-#     - intermediate
-#     - read
-#     - nice
 # - title: Mastering API Architecture
 #   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
 #   cover: mastering-api-architecture.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492090625/
 #   authors:
@@ -261,8 +418,6 @@
 # - title: Advanced API Security
 #   subtitle: OAuth 2.0 and Beyond
 #   cover: advanced-api-security.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781484220504/
 #   authors:
@@ -277,8 +432,6 @@
 #     - TODO
 # - title: Knative in Action
 #   cover: knative-in-action.jpeg
-#   order: 5
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781617296642/
 #   authors:
@@ -297,8 +450,6 @@
 # - title: Kafka - The Definitive Guide
 #   subtitle: Real-Time Data and Stream Processing at Scale
 #   cover: kafka-the-definitive-guide.jpeg
-#   order: 1
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/9781492043072/
 #   authors:
@@ -314,8 +465,6 @@
 # - title: Enterprise Integration Patterns
 #   subtitle: Designing, Building, and Deploying Messaging Solutions
 #   cover: enterprise-integration-patterns.jpeg
-#   order: 1
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/0321200683/
 #   authors:
@@ -333,8 +482,6 @@
 #     - Vol 2
 #   subtitle: Conversation Patterns
 #   cover: enterprise-integration-patterns.jpeg
-#   order: 1
-#   weight: 1
 #   draft: true
 #   url:
 #   authors:
@@ -350,8 +497,6 @@
 # - title: Flow Architectures
 #   subtitle: The Future of Streaming and Event-Driven Integration
 #   cover: flow-architectures.jpeg
-#   order: 1
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/9781492075882/
 #   authors:
@@ -368,8 +513,6 @@
 # - title: Fundamentals of Software Architecture
 #   subtitle: An Engineering Approach
 #   cover: fundamentals-of-software-architecture.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
 #   authors:
@@ -387,8 +530,6 @@
 # - title: Software Architecture
 #   subtitle: The Hard Parts
 #   cover: software-architecture-the-hard-parts.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492086888/
 #   authors:
@@ -405,32 +546,47 @@
 #   badges:
 #     - hard
 #     - scheduled
-# - title: Design Patterns for Cloud Native Applications
-#   subtitle: Patterns in Practice Using APIs, Data, Events and Streams
-#   cover: design-patterns-for-cloud-native-applications.jpeg
-#   order: 1
-#   weight: 1
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492090700/
-#   authors:
-#     - Kasun Indrasiri
-#     - Sriskandarajah Suhothayan
-#   release: 2021
-#   pages: 311
-#   desc: |-
-#     Despite of being oriented mainly to developers, this book could help you to understand how cloud native applications are built and the way they interact. Some predominating patterns for communication, composition, data and api management or scalability are explained in these pages, it could be really useful to know them if you are developing or designing systems based on the cloud.
-#   learning_paths:
-#     - software-architecture
-#     - system-design
-#   badges:
-#     - intermediate
-#     - read
-#     - excellent
+- title: Design Patterns for Cloud Native Applications
+  subtitle: Patterns in Practice Using APIs, Data, Events and Streams
+  cover: design-patterns-for-cloud-native-applications.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492090700/
+  authors:
+    - Kasun Indrasiri
+    - Sriskandarajah Suhothayan
+  release: 2021
+  pages: 311
+  desc: |-
+    Despite of being oriented mainly to developers, this book could help you to understand how cloud native applications are built and the way they interact. Some predominating patterns for communication, composition, data and api management or scalability are explained in these pages, it could be really useful to know them if you are developing or designing systems based on the cloud.
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: foundational
+      order: 2
+      weight: 1
+    - lp_ref: software-design
+      tab_ref: foundational
+      order: 1
+      weight: 1
+    - lp_ref: software-architecture
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - intermediate
+    - read
+    - excellent
+  tags:
+    - grpc
+    - websocket
+    - rest-api
+    - api
+    - sagas
+    - orchestration
+    - choreography
+    - cloud-native
 # - title: Learning Domain-Driven Design
 #   subtitle: Aligning Software Architecture and Business Strategy
 #   cover: learning-domain-driven-design.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098100124/
 #   authors:
@@ -448,8 +604,6 @@
 # - title: Designing Data-Intensive Applications
 #   subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
 #   cover: designing-data-intensive-applications.jpeg
-#   order: 4
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781491903063/
 #   authors:
@@ -465,108 +619,9 @@
 #     - hard
 #     - not_scheduled
 #     - old
-# - title: Learning Go
-#   subtitle: 
-#   cover: learning-go.jpeg
-#   order: 1
-#   weight: 1
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492077206/
-#   authors:
-#     - Jon Bodner
-#   release: 2021
-#   pages: 375
-#   desc: |-
-#     Golang from the ground up, learn the basics and all the language tools at your disposal to create applications in a modern programming language.
-#   learning_paths:
-#     - software-development
-#     - golang
-#   badges:
-#     - easy
-#     - not_scheduled
-# - title: Let's Go
-#   subtitle: Let's Go
-#   cover: lets-go.jpeg
-#   order: 2
-#   weight: 1
-#   draft: false
-#   url: https://lets-go.alexedwards.net/
-#   authors:
-#     - Alex Edwards
-#   release: 2019
-#   pages: 305
-#   desc: |-
-#     Once you are familiarized with the foundations of the language, this book will help you to wire things up and learn how to use the tools Go offers to build a real application. You will follow the author while he builds a snippets mangament webapp, along the way you will use the Go to create a web with html templates, to process html requests, to store content in a database, manage user sessions, some security practices, and more. I found this one of the best books about Golang out there, don't let it pass and grab it!.
-#   learning_paths:
-#     - software-development
-#     - golang
-#   badges:
-#     - intermediate
-#     - read
-#     - excellent
-# - title: Let's Go Further!
-#   subtitle: Let's Go Further!
-#   cover: lets-go-further.jpeg
-#   order: 3
-#   weight: 1
-#   draft: false
-#   url: https://lets-go-further.alexedwards.net/
-#   authors:
-#     - Alex Edwards
-#   release: 2021
-#   pages: 582
-#   desc: |-
-#     Following Let's Go comes this book, where the author teachs you how to build an API and some common techniques to manage thinks like encoding/decoding JSON messages, rate limiting, CORS, pagination techniques, user data management, etc. Definitely a wothy read if you want to increase your knowledge in Go and how modern applications are built.
-#   learning_paths:
-#     - software-development
-#     - golang
-#   badges:
-#     - hard
-#     - read
-#     - excellent
-# - title: Domain-Driven Design with Golang
-#   cover: domain-driven-design-with-golang.jpeg
-#   order: 4
-#   weight: 1
-#   draft: true
-#   url: https://learning.oreilly.com/library/view/-/9781804613450/
-#   authors:
-#     - Matthew Boyle
-#   release: 2022
-#   pages: 204
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - software-development
-#     - golang
-#   badges:
-#     - intermediate
-#     - not_scheduled
-# - title: Cloud Native Go
-#   subtitle: Cloud Native Go
-#   cover: cloud-native-go.jpeg
-#   order: 4
-#   weight: 2
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492076322/
-#   authors:
-#     - Matthew A. Titmus
-#   release: 2021
-#   pages: 433
-#   desc: |-
-#     In this book you will discover what properties an application should have to be considered cloud native by reviewing and extending in detail the classic [12 factors](https://12factor.net/). It will show you some useful patterns used to achieve things like: scalability, resilience, observability, and more. Along the way the author drops some insightful best practice pills about essential things like logging, caching, configuration management, etc. 
-#   learning_paths:
-#     - software-development
-#     - golang
-#   badges:
-#     - expert
-#     - read
-#     - excellent
 # - title: Clean Code
 #   subtitle: A Handbook of Agile Software Craftsmanship
 #   cover: clean-code.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9780136083238/
 #   authors:
@@ -582,8 +637,6 @@
 # - title: Clean Architecture
 #   subtitle: A Craftsman's Guide to Software Structure and Design
 #   cover: clean-architecture.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9780134494272/
 #   authors:
@@ -602,8 +655,6 @@
 # - title: Kubernetes
 #   subtitle: Up & Running
 #   cover: kubernetes-up-and-running.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098110192/
 #   authors:
@@ -623,8 +674,6 @@
 # - title: Kubernetes Patterns
 #   subtitle: Reusable Elements for Designing Cloud Native Applications
 #   cover: kubernetes-patterns.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098131678/
 #   authors:
@@ -644,8 +693,6 @@
 # - title: Production Kubernetes
 #   subtitle: Production Kubernetes
 #   cover: production-kubernetes.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492092292/
 #   authors:
@@ -666,8 +713,6 @@
 # - title: Kubernetes Best Practices
 #   subtitle: Kubernetes Best Practices
 #   cover: kubernetes-best-practices.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492056461/
 #   authors:
@@ -687,8 +732,6 @@
 # - title: Kubernetes Operators
 #   subtitle: Automating the Container Orchestration Platform
 #   cover: kubernetes-operators.jpeg
-#   order: 5
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492048039/
 #   authors:
@@ -707,8 +750,6 @@
 # - title: Service Mesh Patterns
 #   subtitle: Service Mesh Patterns
 #   cover: service-mesh-patterns.jpeg
-#   order: 6
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/9781492086444/
 #   authors:
@@ -726,8 +767,6 @@
 # - title: Observability Engineering
 #   subtitle: Achieving Production Excellence Engineering
 #   cover: observability-engineering.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://www.oreilly.com/library/view/observability-engineering/9781492076438/
 #   authors:
@@ -746,8 +785,6 @@
 # - title: Certified Kubernetes Administrator (CKA) Study Guide
 #   subtitle: In Depth Guidance and Practice
 #   cover: cka.jpeg
-#   order: 4
-#   weight: 2
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098107215/
 #   authors:
@@ -764,8 +801,6 @@
 # - title: Certified Kubernetes Application Developer (CKAD) Study Guide
 #   subtitle: In Depth Guidance and Practice
 #   cover: ckad.jpeg
-#   order: 4
-#   weight: 3
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781492083726/
 #   authors:
@@ -782,8 +817,6 @@
 # - title: Certified Kubernetes Security Specialist (CKS) Study Guide
 #   subtitle: In Depth Guidance and Practice
 #   cover: cks.jpeg
-#   order: 4
-#   weight: 1
 #   draft: true
 #   url: https://learning.oreilly.com/library/view/-/9781098132965/
 #   authors:
@@ -799,8 +832,6 @@
 # - title: The DevOPS Handbook
 #   subtitle: How to Create World-Class Agility, Reliability, and Security in Technology Organizations
 #   cover: the-devops-handbook.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781457191381/
 #   authors:
@@ -818,8 +849,6 @@
 # - title: The Phoenix Project
 #   subtitle: The Phoenix Project
 #   cover: the-phoenix-project.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781457191350/
 #   authors:
@@ -837,8 +866,6 @@
 # - title: The Unicorn Project
 #   subtitle: The Unicorn Project
 #   cover: the-unicorn-project.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098124175/
 #   authors:
@@ -854,8 +881,6 @@
 # - title: Terraform Up & Running
 #   subtitle: Terraform Up & Running
 #   cover: terraform-up-and-running.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9781098116736/
 #   authors:
@@ -872,8 +897,6 @@
 # - title: Site Reliability Engineering
 #   subtitle: How Google Runs Production Systems
 #   cover: site-reliability-engineering.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://sre.google/sre-book/table-of-contents/
 #   authors:
@@ -894,8 +917,6 @@
 # - title: The Site Reliability Workbook
 #   subtitle: Practical Ways to Implement SRE
 #   cover: sre-workbook.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://sre.google/workbook/table-of-contents/
 #   authors:
@@ -916,8 +937,6 @@
 # - title: Building Secure & Reliable Systems
 #   subtitle: Best Practices for Designing, Implementing and Maintaining Systems
 #   cover: building-secure-reliable-systems.jpeg
-#   order: 3
-#   weight: 1
 #   draft: false
 #   url: https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf
 #   authors:
@@ -939,8 +958,6 @@
 # - title: Accelerate
 #   subtitle: Building and Scaling High Performing Technology Organizations
 #   cover: accelerate.jpeg
-#   order: 2
-#   weight: 1
 #   draft: false
 #   url: https://www.goodreads.com/book/show/35747076-accelerate
 #   authors:
@@ -958,8 +975,6 @@
 # - title: Team Topologies
 #   subtitle: Team Topologies
 #   cover: team-topologies.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://teamtopologies.com/book
 #   authors:
@@ -978,8 +993,6 @@
 # - title: Remote Teams Interactions Workbook
 #   subtitle: Using Team Topologies Patterns for Remote Working
 #   cover: remote-teams-interactions-workbook.jpeg
-#   order: 1
-#   weight: 1
 #   draft: true
 #   url: https://teamtopologies.com/workbook
 #   authors:
@@ -996,8 +1009,6 @@
 # - title: Continuous Delivery
 #   subtitle: Reliable Software Releases through Build, Test, and Deployment Automation
 #   cover: continuous-delivery.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://learning.oreilly.com/library/view/-/9780321670250/
 #   authors:
@@ -1013,8 +1024,6 @@
 # - title: Learning GitHub Actions
 #   subtitle: Automation and Integration of CI/CD with GitHub
 #   cover: learning-github-actions.jpeg
-#   order: 1
-#   weight: 1
 #   draft: false
 #   url: https://www.oreilly.com/library/view/learning-github-actions/9781098131067/
 #   authors:

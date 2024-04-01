@@ -18,11 +18,13 @@ You can keep browsing this repo or use the [web version :rocket:](https://itread
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
 
-- **1** learning paths :mortar_board:
-  - **4** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+- **3** learning paths :mortar_board:
+  - **9** <img height="20" src="https://skillicons.dev/icons?i=go" alt="golang" title="Golang"/> [*Golang*](/content/learning-paths/golang) :ballot_box_with_check:: *A modern general purpose programming language born to make easier developing things like APIs, command line applications, cloud native applications, and concurrency patterns.*
+  - **9** <img height="20" src="/assets/learning-paths/icons/microservices.png" alt="microservices" title="Microservices"/> [*Microservices*](/content/learning-paths/microservices) :construction:: *Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.*
+  - **13**  [*System Design*](/content/learning-paths/system-design) :ballot_box_with_check:: *Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.*
 
-- **2** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
-- **1** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
+- **13** books :books: , discover them all in the [:scroll: book index](./content/book-index.md).
+- **11** authors :black_nib: , discover them all in the [:scroll: author index](./content/author-index.md).
 
 ## :name_badge: Badges
 
@@ -94,12 +96,19 @@ Thanks for stopping by, enjoy! :open_hands:
 
 [//]: # (Auto generated file from templates)
 
-# :green_book: Books Read (2 :books:)
+# :green_book: Books Read (9 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
 | <img src="/assets/books/covers/building-microservices.jpeg" alt="cover" style="width:60%"/> | [**Building Microservices: Designing Fine-Grained Systems**](https://learning.oreilly.com/library/view/-/9781492034018/) <br> *Sam Newman* <br> *Published in 2022* <br> *616 pages* <br> :dog2: :green_book: :star: :bookmark: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/cloud-native-go.jpeg" alt="cover" style="width:60%"/> | [**Cloud Native Go: Cloud Native Go**](https://learning.oreilly.com/library/view/-/9781492076322/) <br> *Matthew A. Titmus* <br> *Published in 2021* <br> *433 pages* <br> :dragon: :green_book: :star: | <ul><li>[Golang](./content/learning-paths/{golang advanced %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/design-patterns-for-cloud-native-applications.jpeg" alt="cover" style="width:60%"/> | [**Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams**](https://learning.oreilly.com/library/view/-/9781492090700/) <br> *Kasun Indrasiri, Sriskandarajah Suhothayan* <br> *Published in 2021* <br> *311 pages* <br> :dog2: :green_book: :star: | <ul><li>[System Design](./content/learning-paths/{system-design foundational %!s(int=2) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/foundations-of-scalable-systems.jpeg" alt="cover" style="width:60%"/> | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br> :dog2: :green_book: :ok: | <ul><li>[System Design](./content/learning-paths/{system-design foundational %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/lets-go.jpeg" alt="cover" style="width:60%"/> | [**Let's Go: Let's Go**](https://lets-go.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2019* <br> *305 pages* <br> :dog2: :green_book: :star: | <ul><li>[Golang](./content/learning-paths/{golang foundational %!s(int=2) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/lets-go-further.jpeg" alt="cover" style="width:60%"/> | [**Let's Go Further!: Let's Go Further!**](https://lets-go-further.alexedwards.net/) <br> *Alex Edwards* <br> *Published in 2021* <br> *582 pages* <br> :tiger2: :green_book: :star: | <ul><li>[Golang](./content/learning-paths/{golang foundational %!s(int=3) %!s(int=1)})</li></ul> |
 | <img src="/assets/books/covers/monolith-to-microservices.jpeg" alt="cover" style="width:60%"/> | [**Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith**](https://learning.oreilly.com/library/view/-/9781492047834/) <br> *Sam Newman* <br> *Published in 2019* <br> *270 pages* <br> :dog2: :green_book: :cool: | <ul><li>[Microservices](./content/learning-paths/{microservices foundational %!s(int=2) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/system-design-interview.jpeg" alt="cover" style="width:60%"/> | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2: :green_book: :star: | <ul><li>[System Design](./content/learning-paths/{system-design intermediate %!s(int=1) %!s(int=1)})</li></ul> |
+| <img src="/assets/books/covers/system-design-interview-2.jpeg" alt="cover" style="width:60%"/> | [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br> :tiger2: :green_book: :star: | <ul><li>[System Design](./content/learning-paths/{system-design intermediate %!s(int=2) %!s(int=1)})</li></ul> |
 
 
 ## :pushpin: Worthy metions
@@ -112,6 +121,6 @@ Thanks for stopping by, enjoy! :open_hands:
 
 
 ---
-<sub>Last modified 2024-03-26</sub>
+<sub>Last modified 2024-04-01</sub>
 
 [**⬆ back to top**](#choose-your-own-it-readventure-books-sunrise_over_mountains-computer)

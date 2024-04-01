@@ -49,7 +49,7 @@ func loadBooks(basepath string) error {
 			if book.Draft {
 				stats.IncSkippedBook()
 			} else {
-				// check badges and tags existence
+				// Check badges and tags existence
 				for _, badge := range book.BadgesRefs {
 					if _, ok := Badges[string(badge)]; !ok {
 						log.Fatalf("loader: %s book has unknown badge: %s", book.Title, badge)
@@ -61,7 +61,7 @@ func loadBooks(basepath string) error {
 					}
 				}
 
-				// check for duplicated tags
+				// Check for duplicated tags
 				seenTags := make(map[models.TagRef]bool)
 				for _, t := range book.Tags {
 					if _, ok := seenTags[t]; ok {
@@ -77,7 +77,7 @@ func loadBooks(basepath string) error {
 					stats.SetTotalBooksRead(stats.Data.TotalBooksRead + 1)
 				}
 
-				// support for github provider
+				// Support for github provider
 				insertedInLearningPathBooks := false
 
 				// Insert book in learning path tab
@@ -94,7 +94,7 @@ func loadBooks(basepath string) error {
 					}
 					LearningPathTabBooks[lp.LearningPathRef][lp.TabRef] = append(LearningPathTabBooks[lp.LearningPathRef][lp.TabRef], bookCopy)
 
-					// only used when provider = github
+					// Only used when provider = github
 					// Insert book in learning path, insert it only once per learning path (ignore tabs)
 					if !insertedInLearningPathBooks {
 						LearningPathBooks[lp.LearningPathRef] = append(LearningPathBooks[lp.LearningPathRef], book)

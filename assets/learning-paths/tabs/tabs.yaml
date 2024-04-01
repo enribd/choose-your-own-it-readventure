@@ -2,7 +2,7 @@
   data:
     name: Foundational
     icon: material-dots-vertical
-    desc: "Basic concepts required"
+    desc: "Basic concepts required to continue the journey of this learning path :material-ray-start-arrow:."
     order: 1
 - ref: intermediate
   data:
@@ -26,3 +26,13 @@
     name: Kafka
     icon: octicons-git-merge-queue-16
     desc: "Specific learning path oriented to learn Kafka, learning the EDA basics first"
+- ref: ddd
+  data:
+    name: Domain Driven Design
+    icon: fontawesome-brands-creative-commons-sampling-plus
+    desc: "Learn Domain Driven Design"
+- ref: eda
+  data:
+    name: Event Driven Architecture
+    icon: fontawesome-brands-creative-commons-sampling-plus
+    desc: "Learn event-driven architectures"
