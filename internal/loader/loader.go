@@ -8,7 +8,19 @@ import (
 )
 
 func Load(booksPath, lpsPath, lpsTabsPath, badgesPath, tagsPath string) error {
-	err := loadBooks(booksPath)
+	// Load before books because books badges are checked on book load
+	err := loadBadges(badgesPath)
+	if err != nil {
+		return err
+	}
+
+	// Load before books because books tags are checked on book load
+	err = loadTags(tagsPath)
+	if err != nil {
+		return err
+	}
+
+	err = loadBooks(booksPath)
 	if err != nil {
 		return err
 	}
@@ -30,16 +42,6 @@ func Load(booksPath, lpsPath, lpsTabsPath, badgesPath, tagsPath string) error {
 	// Remove empty learning paths from books
 	purgeEmtpyLearningPathRefsFromBooks()
 
-	err = loadBadges(badgesPath)
-	if err != nil {
-		return err
-	}
-
-	err = loadTags(tagsPath)
-	if err != nil {
-		return err
-	}
-
 	return nil
 }
 
@@ -52,7 +54,7 @@ func getFiles(basepath string) ([]string, error) {
 	return files, err
 }
 
-func loadFile[T any] (path string) ([]T, error) {
+func loadFile[T any](path string) ([]T, error) {
 	var content []T
 
 	// Read the file

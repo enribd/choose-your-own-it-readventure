@@ -36,6 +36,12 @@ func loadLearningPaths(basepath string) error {
 			if lp.Status == "coming-soon" || stats.Data.TotalLearningPathBooks[string(lp.Ref)] == 0 {
 				stats.IncSkippedLearningPath()
 			} else {
+				// check tags existence
+				for _, tag := range lp.Tags {
+					if _, ok := Tags[string(tag)]; !ok {
+						log.Fatalf("loader: %s learning path has unknown tag: %s", lp.Ref, tag)
+					}
+				}
 				// check for duplicates
 				seenTabs := make(map[models.LearningPathTabRef]bool)
 				seenTags := make(map[models.TagRef]bool)
