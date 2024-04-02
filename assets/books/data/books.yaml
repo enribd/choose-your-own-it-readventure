@@ -14,14 +14,6 @@
       tab_ref: foundational
       order: 1
       weight: 1
-    - lp_ref: microservices
-      tab_ref: intermediate
-      order: 1
-      weight: 1
-    - lp_ref: microservices
-      tab_ref: advanced
-      order: 1
-      weight: 1
   badges:
     - intermediate
     - read
@@ -44,14 +36,6 @@
   learning_paths:
     - lp_ref: microservices
       tab_ref: foundational
-      order: 2
-      weight: 1
-    - lp_ref: microservices
-      tab_ref: intermediate
-      order: 2
-      weight: 1
-    - lp_ref: microservices
-      tab_ref: advanced
       order: 2
       weight: 1
   badges:
@@ -84,23 +68,29 @@
   tags:
     - distributed-systems
     - architecture
-# - title: Practical Process Automation
-#   subtitle: Orchestration and Integration in Microservices and Cloud Native Architectures
-#   cover: practical-process-automation.jpeg
-#   draft: true
-#   url: https://learning.oreilly.com/library/view/-/9781492061441/
-#   authors:
-#     - Bernd Ruecker
-#   release: 2021
-#   pages: 520
-#   desc: |-
-#     Design and automate complex and decoupled processes, understand the differences between orchestration and choreography and apply communication patterns to decouple flow and make them less dependent on each other.
-#   learning_paths:
-#     - microservices
-#     - system-design
-#   badges:
-#     - intermediate
-#     - not_scheduled
+- title: Practical Process Automation
+  subtitle: Orchestration and Integration in Microservices and Cloud Native Architectures
+  cover: practical-process-automation.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492061441/
+  authors:
+    - Bernd Ruecker
+  release: 2021
+  pages: 520
+  desc: |-
+    Design and automate complex and decoupled processes, understand the differences between orchestration and choreography and apply communication patterns to decouple flow and make them less dependent on each other.
+  learning_paths:
+    - lp_ref: system-design
+      tab_ref: intermediate
+      order: 1
+      weight: 1
+    - lp_ref: microservices
+      tab_ref: advanced
+      order: 1
+      weight: 1
+  badges:
+    - intermediate
+    - not_scheduled
 - title: Designing Distributed Systems
   subtitle: Patterns and Paradigms for Scalable, Reliable Services
   cover: designing-distributed-systems.jpeg
@@ -174,7 +164,7 @@
     Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that illustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.
   learning_paths:
     - lp_ref: system-design
-      tab_ref: intermediate
+      tab_ref: advanced
       order: 1
       weight: 1
   badges:
@@ -196,7 +186,7 @@
     An extension of the first part, the structure follow the same pattern but adding new cases. The author is well versed in many topics, from networking and databases to software development and algorithms, and it shows along the pages. Learn to design location based services, stock exchanges, game leaderborads and more. If you like the first one you will like this.
   learning_paths:
     - lp_ref: system-design
-      tab_ref: intermediate
+      tab_ref: advanced
       order: 2
       weight: 1
   badges:
@@ -321,147 +311,112 @@
   tags:
     - software-development
     - cloud-native
-- title: Event-Driven Architecture in Golang
-  subtitle: Building complex systems with asynchronicity and eventual consistency
-  cover: event-driven-architecture-in-golang.jpeg
-  draft: true
-  url: https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012
+# - title: Event-Driven Architecture in Golang
+#   subtitle: Building complex systems with asynchronicity and eventual consistency
+#   cover: event-driven-architecture-in-golang.jpeg
+#   draft: true
+#   url: https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012
+#   authors:
+#     - Michael Stack
+#   release: 2022
+#   pages: 384
+#   desc: |-
+#     TODO
+#   learning_paths:
+#     - lp_ref: golang
+#       tab_ref: eda
+#       order: 1
+#       weight: 1
+#   badges:
+#     - expert
+#     - scheduled
+#   tags:
+#     - event-storming
+#     - event-sourcing
+#     - software-development
+#     - cloud-native
+- title: Designing Microservices Platforms with NATS
+  subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
+  cover: designing-microservice-platforms-with-nats.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781801072212/
   authors:
-    - Michael Stack
-  release: 2022
-  pages: 384
+    - Chanaka Fernando
+  release: 2021
+  pages: 356
   desc: |-
-    TODO
+    NATS is a cloud native multi-purpose messaging system that allows implementing request-reply, queues and event streams communication patterns. Through the book the author guides the reader from the protocol concepts to building communications between services using some of the features that this technology offers. It's a good start if you want to get acquainted with event-driven architectures or if you are interested in NATS in particular.
   learning_paths:
-    - lp_ref: golang
-      tab_ref: eda
+    - lp_ref: event-driven-architecture
+      tab_ref: tools
       order: 1
       weight: 1
   badges:
-    - expert
-    - scheduled
-  tags:
-    - event-storming
-    - event-sourcing
-    - software-development
-    - cloud-native
-# - title: Designing Microservices Platforms with NATS
-#   subtitle: A modern approach to designing and implementing scalable microservices platforms with NATS messaging
-#   cover: designing-microservice-platforms-with-nats.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781801072212/
-#   authors:
-#     - Chanaka Fernando
-#   release: 2021
-#   pages: 356
-#   desc: |-
-#     NATS is a cloud native multi-purpose messaging system that allows implementing request-reply, queues and event streams communication patterns. Through the book the author guides the reader from the protocol concepts to building communications between services using some of the features that this technology offers. It's a good start if you want to get acquainted with event-driven architectures or if you are interested in NATS in particular.
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - intermediate
-#     - read
-#     - nice
-# - title: Building Event-Driven Microservices
-#   subtitle: Building Event-Driven Microservices
-#   cover: building-event-driven-microservices.jpeg
-#   draft: false
-#   url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
-#   authors:
-#     - Adam Bellemare
-#   release: 2020
-#   pages: 321
-#   desc: |-
-#     Get to know the basic principles that guide event-driven architectures, the mechanisms and perils you will have to face when building a brand new architecture or integrating it with legacy systems. The author also offers his experience in the field exposing the different migration mechanisms and their trade-offs. Also you will read about tools needed in the process of creating a new architecture and hear about some of the specific technologies involved in the event streaming industry.
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - intermediate
-#     - read
-#     - good
-# - title: Building an Event-Driven Data Mesh
-#   subtitle: Patterns for Designing & Building Event-Driven Architectures
-#   cover: building-an-event-driven-data-mesh.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781098127596/
-#   authors:
-#     - Adam Bellemare
-#   release: 2023
-#   pages: 275
-#   desc: |-
-#     The process of building an Event-driven architecture is no easy feat, the first step to doing it well is communicate with the stakeholders of the different bussiness domains involved, hear their needs, and identify the different communication patterns, entities and events in an event storming session. There are also crucials thing like ensuring the quality of the information served from the sources, the cataloging system of the information served, and stablishing an easy and secure way for interested clients to access those sources. All this and more is explained in detail in what could be seen as a complement of the [Building Event-Driven Microservices](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) book content.
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - hard
-#     - read
-#     - nice
-# - title: Mastering API Architecture
-#   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
-#   cover: mastering-api-architecture.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492090625/
-#   authors:
-#     - James Gough
-#     - Daniel Bryant
-#     - Matthew Auburn
-#   release: 2022
-#   pages: 286
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - apis
-#   badges:
-#     - intermediate
-#     - read
-#     - nice
-# - title: Advanced API Security
-#   subtitle: OAuth 2.0 and Beyond
-#   cover: advanced-api-security.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781484220504/
-#   authors:
-#     - Prabath Siriwardena
-#   release: 2019
-#   pages: 455
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - apis
-#   badges:
-#     - TODO
-# - title: Knative in Action
-#   cover: knative-in-action.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781617296642/
-#   authors:
-#     - Jacques Chester
-#   release: 2021
-#   pages: 272
-#   desc: |-
-#     Knative is, along [OpenFaaS](https://www.openfaas.com), one of the most popular ways to build a serverless platform over Kubernetes. The author starts from zero explaining the motivation to adopt a serverless paradigm, then presents Knative in a technical demonstration of all its basic and some of the more advanced features like traffic management and application delivery. There are not many books on the topic yet as Knative is still a relatively young project.
-#   learning_paths:
-#     - serverless
-#     - kubernetes
-#   badges:
-#     - hard
-#     - read
-#     - nice
-# - title: Kafka - The Definitive Guide
-#   subtitle: Real-Time Data and Stream Processing at Scale
-#   cover: kafka-the-definitive-guide.jpeg
-#   draft: true
-#   url: https://learning.oreilly.com/library/view/-/9781492043072/
-#   authors:
-#     - Gwen Shapira
-#   release: 2021
-#   pages: 488
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - TODO
+    - intermediate
+    - read
+    - nice
+  tags: ["events", "queues", "jetstream"]
+- title: Building Event-Driven Microservices
+  subtitle: Building Event-Driven Microservices
+  cover: building-event-driven-microservices.jpeg
+  draft: false
+  url: https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/
+  authors:
+    - Adam Bellemare
+  release: 2020
+  pages: 321
+  desc: |-
+    Get to know the basic principles that guide event-driven architectures, the mechanisms and perils you will have to face when building a brand new architecture or integrating it with legacy systems. The author also offers his experience in the field exposing the different migration mechanisms and their trade-offs. Also you will read about tools needed in the process of creating a new architecture and hear about some of the specific technologies involved in the event streaming industry.
+  learning_paths:
+    - lp_ref: event-driven-architecture
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - intermediate
+    - read
+    - good
+  tags: ["event-sourcing", "event-storming", "lambda-architecture", "kappa-architecture", "json", "avro", "grpc", "schema-registry"]
+- title: Building an Event-Driven Data Mesh
+  subtitle: Patterns for Designing & Building Event-Driven Architectures
+  cover: building-an-event-driven-data-mesh.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781098127596/
+  authors:
+    - Adam Bellemare
+  release: 2023
+  pages: 275
+  desc: |-
+    The process of building an Event-driven architecture is no easy feat, the first step to doing it well is communicate with the stakeholders of the different bussiness domains involved, hear their needs, and identify the different communication patterns, entities and events in an event storming session. There are also crucials thing like ensuring the quality of the information served from the sources, the cataloging system of the information served, and stablishing an easy and secure way for interested clients to access those sources. All this and more is explained in detail in what could be seen as a complement of the [Building Event-Driven Microservices](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) book content.
+  learning_paths:
+    - lp_ref: event-driven-architecture
+      tab_ref: intermediate
+      order: 1
+      weight: 1
+  badges:
+    - hard
+    - read
+    - nice
+  tags: ["event-storming"]
+- title: Kafka - The Definitive Guide
+  subtitle: Real-Time Data and Stream Processing at Scale
+  cover: kafka-the-definitive-guide.jpeg
+  draft: true
+  url: https://learning.oreilly.com/library/view/-/9781492043072/
+  authors:
+    - Gwen Shapira
+  release: 2021
+  pages: 488
+  desc: |-
+    TODO
+  learning_paths:
+    - lp_ref: event-driven-architecture
+      tab_ref: tools
+      order: 1
+      weight: 2
+  badges:
+    - TODO
+  tags: ["", ""]
 # - title: Enterprise Integration Patterns
 #   subtitle: Designing, Building, and Deploying Messaging Solutions
 #   cover: enterprise-integration-patterns.jpeg
@@ -508,6 +463,179 @@
 #   learning_paths:
 #     - event-driven-architecture
 #     - system-design
+#   badges:
+#     - TODO
+- title: Kubernetes
+  subtitle: Up & Running
+  cover: kubernetes-up-and-running.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781098110192/
+  authors:
+    - Brendan Burns
+    - Joe Beda
+    - Kelsey Hightower
+  release: 2022
+  pages: 326
+  desc: |-
+    Start your Kubernetes journey from the very basics. Learn the building blocks to get a solid knowledge base that will allow you advance in the fascinating world of container orchestration and microservice platforms. Recommended to every developer, software architect, infrastructure engineer or platform engineer due to the Kubernetes relevance nowadays.
+  learning_paths:
+  - lp_ref: kubernetes
+    tab_ref: foundational
+    order: 1
+    weight: 1
+  badges:
+    - easy
+    - read
+    - very_good
+  tags: ["pod", "deployment", "statefulset", "confimap", "secret"]
+- title: Kubernetes Best Practices
+  subtitle: Kubernetes Best Practices
+  cover: kubernetes-best-practices.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492056461/
+  authors:
+    - Brendan Burns
+    - Eddie Villalba
+    - Dave Strebel
+    - Lachlan Evenson
+  release: 2019
+  pages: 268
+  desc: |-
+    Usually, after being familiar with the basics of any technology, learning the best practices is a nice step, it will help you to avoid common mistakes and open new ways of thinking and doing things. This book will do exaclty that, from basic to more advanced topics.
+  learning_paths:
+    - lp_ref: kubernetes
+      tab_ref: foundational
+      order: 2
+      weight: 2
+  badges:
+    - easy
+    - not_scheduled
+  tags: ["probes", "init-container", "service-account", "rbac"]
+- title: Kubernetes Patterns
+  subtitle: Reusable Elements for Designing Cloud Native Applications
+  cover: kubernetes-patterns.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781098131678/
+  authors:
+    - Bilgin Ibryam
+    - Roland Huss
+  release: 2023 (2nd edition)
+  pages: 300
+  desc: |-
+    After a few years of using Kubernetes teams started to detect recognizable patterns that are commonly replicated. From the famous sidecar pattern and init containers to the necessary configuration patterns and beyond. This book will teach you how to solve common challenges in cloud native environments. 
+  learning_paths:
+  - lp_ref: kubernetes
+    tab_ref: foundational
+    order: 3
+    weight: 1
+  badges:
+    - easy
+    - read
+    - very_good
+    - coming-soon
+  tags: ["adapter-pattern", "ambassador-pattern", "init-container", "sidecar-container"]
+- title: Production Kubernetes
+  subtitle: Production Kubernetes
+  cover: production-kubernetes.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492092292/
+  authors:
+    - Josh Rosso
+    - Rich Lander
+    - Alex Brand
+    - John Harris
+  release: 2021
+  pages: 506
+  desc: |-
+    Production Kubernetes will guide you from the view of an amateur to the vision of all you need to know and implement in order to build a professional and productive microservice platform. It also demonstrates the Kubernetes API extensibility through drivers for networking, storage and more. Other interesting topis are admission controllers, operators, service meshes and security. Definitely this is a book I really enjoyed, I recommend to read it at the same time with [Design Patterns for Cloud Native Applications](https://www.oreilly.com/library/view/design-patterns-for/9781492090700/), it will broaden your vision as a developer as well as your perspective as platform engineer.
+  learning_paths:
+    - lp_ref: kubernetes
+      tab_ref: advanced
+      order: 1
+      weight: 1
+  badges:
+    - hard
+    - read
+    - excellent
+  tags: ["platform-engineering", "admission-controller", "spiffe", "csi-driver", "cni-driver"]
+- title: Kubernetes Operators
+  subtitle: Automating the Container Orchestration Platform
+  cover: kubernetes-operators.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781492048039/
+  authors:
+    - Jason Dobies
+    - Joshua Wood
+  release: 2020
+  pages: 154
+  desc: |-
+    Operators are another way of leveraging Kubernetes itself, they offer you the possibility to customize and automate your workloads management. Its a very popular pattern, in this book you will find what you need to get started to develop your own operator and all the tooling around the process. This book is a little bit 'old', many things have changed in this topic since 2020, it needs a second edition to adapt its contents to more updated practices.
+  learning_paths:
+    - lp_ref: kubernetes
+      tab_ref: advanced
+      order: 2
+      weight: 1
+  badges:
+    - hard
+    - not_scheduled
+    - old
+  tags: ["controller", "feedback-loop"]
+- title: Knative in Action
+  cover: knative-in-action.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/9781617296642/
+  authors:
+    - Jacques Chester
+  release: 2021
+  pages: 272
+  desc: |-
+    Knative is, along [OpenFaaS](https://www.openfaas.com), one of the most popular ways to build a serverless platform over Kubernetes. The author starts from zero explaining the motivation to adopt a serverless paradigm, then presents Knative in a technical demonstration of all its basic and some of the more advanced features like traffic management and application delivery. There are not many books on the topic yet as Knative is still a relatively young project.
+  learning_paths:
+    - lp_ref: kubernetes
+      tab_ref: faas
+      order: 1
+      weight: 1
+    # - lp_ref: serverless
+    #   tab_ref: kubernetes
+    #   order: 1
+    #   weight: 1
+  badges:
+    - hard
+    - read
+    - nice
+  tags: ["cold-start", "scale-to-zero", "faas"]
+# - title: Mastering API Architecture
+#   subtitle: Defining, Connecting, and Securing Distributed Systems and Microservices
+#   cover: mastering-api-architecture.jpeg
+#   draft: false
+#   url: https://learning.oreilly.com/library/view/-/9781492090625/
+#   authors:
+#     - James Gough
+#     - Daniel Bryant
+#     - Matthew Auburn
+#   release: 2022
+#   pages: 286
+#   desc: |-
+#     TODO
+#   learning_paths:
+#     - apis
+#   badges:
+#     - intermediate
+#     - read
+#     - nice
+# - title: Advanced API Security
+#   subtitle: OAuth 2.0 and Beyond
+#   cover: advanced-api-security.jpeg
+#   draft: false
+#   url: https://learning.oreilly.com/library/view/-/9781484220504/
+#   authors:
+#     - Prabath Siriwardena
+#   release: 2019
+#   pages: 455
+#   desc: |-
+#     TODO
+#   learning_paths:
+#     - apis
 #   badges:
 #     - TODO
 # - title: Fundamentals of Software Architecture
@@ -650,101 +778,6 @@
 #     - software-development
 #   badges:
 #     - intermediate
-#     - not_scheduled
-#     - old
-# - title: Kubernetes
-#   subtitle: Up & Running
-#   cover: kubernetes-up-and-running.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781098110192/
-#   authors:
-#     - Brendan Burns
-#     - Joe Beda
-#     - Kelsey Hightower
-#   release: 2022
-#   pages: 326
-#   desc: |-
-#     Start your Kubernetes journey from the very basics. Learn the building blocks to get a solid knowledge base that will allow you advance in the fascinating world of container orchestration and microservice platforms. Recommended to every developer, software architect, infrastructure engineer or platform engineer due to the Kubernetes relevance nowadays.
-#   learning_paths:
-#     - kubernetes
-#   badges:
-#     - easy
-#     - read
-#     - very_good
-# - title: Kubernetes Patterns
-#   subtitle: Reusable Elements for Designing Cloud Native Applications
-#   cover: kubernetes-patterns.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781098131678/
-#   authors:
-#     - Bilgin Ibryam
-#     - Roland Huss
-#   release: 2023 (2nd edition)
-#   pages: 300
-#   desc: |-
-#     After a few years of using Kubernetes teams started to detect recognizable patterns that are commonly replicated. From the famous sidecar pattern and init containers to the necessary configuration patterns and beyond. This book will teach you how to solve common challenges in cloud native environments. 
-#   learning_paths:
-#     - kubernetes
-#   badges:
-#     - easy
-#     - read
-#     - very_good
-#     - coming-soon
-# - title: Production Kubernetes
-#   subtitle: Production Kubernetes
-#   cover: production-kubernetes.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492092292/
-#   authors:
-#     - Josh Rosso
-#     - Rich Lander
-#     - Alex Brand
-#     - John Harris
-#   release: 2021
-#   pages: 506
-#   desc: |-
-#     Production Kubernetes will guide you from the view of an amateur to the vision of all you need to know and implement in order to build a professional and productive microservice platform. It also demonstrates the Kubernetes API extensibility through drivers for networking, storage and more. Other interesting topis are admission controllers, operators, service meshes and security. Definitely this is a book I really enjoyed, I recommend to read it at the same time with [Design Patterns for Cloud Native Applications](https://www.oreilly.com/library/view/design-patterns-for/9781492090700/), it will broaden your vision as a developer as well as your perspective as platform engineer.
-#   learning_paths:
-#     - kubernetes
-#   badges:
-#     - hard
-#     - read
-#     - excellent
-# - title: Kubernetes Best Practices
-#   subtitle: Kubernetes Best Practices
-#   cover: kubernetes-best-practices.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492056461/
-#   authors:
-#     - Brendan Burns
-#     - Eddie Villalba
-#     - Dave Strebel
-#     - Lachlan Evenson
-#   release: 2019
-#   pages: 268
-#   desc: |-
-#     Usually, after being familiar with the basics of any technology, learning the best practices is a nice step, it will help you to avoid common mistakes and open new ways of thinking and doing things. This book will do exaclty that, from basic to more advanced topics.
-#   learning_paths:
-#     - kubernetes
-#   badges:
-#     - easy
-#     - not_scheduled
-# - title: Kubernetes Operators
-#   subtitle: Automating the Container Orchestration Platform
-#   cover: kubernetes-operators.jpeg
-#   draft: false
-#   url: https://learning.oreilly.com/library/view/-/9781492048039/
-#   authors:
-#     - Jason Dobies
-#     - Joshua Wood
-#   release: 2020
-#   pages: 154
-#   desc: |-
-#     Operators are another way of leveraging Kubernetes itself, they offer you the possibility to customize and automate your workloads management. Its a very popular pattern, in this book you will find what you need to get started to develop your own operator and all the tooling around the process. This book is a little bit 'old', many things have changed in this topic since 2020, it needs a second edition to adapt its contents to more updated practices.
-#   learning_paths:
-#     - kubernetes
-#   badges:
-#     - hard
 #     - not_scheduled
 #     - old
 # - title: Service Mesh Patterns

@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path (9 :books:)
+# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path (11 :books:)
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
 
@@ -45,6 +45,8 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Kubernetes :ballot_box_with_check:](/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+
 - [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
@@ -52,4 +54,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#goroutines**]()&nbsp;&nbsp;[**#concurrency**]()&nbsp;&nbsp;[**#channels**]()&nbsp;&nbsp;[**#context**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#golang-learning-path-9)
+[**⬆ back to top**](#golang-learning-path-11)

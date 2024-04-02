@@ -36,3 +36,13 @@
     name: Event Driven Architecture
     icon: fontawesome-brands-creative-commons-sampling-plus
     desc: "Learn event-driven architectures"
+- ref: tools
+  data:
+    name: Tools
+    icon: material-toolbox-outline
+    desc: "Technologies related with this learning path"
+- ref: faas
+  data:
+    name: FaaS
+    icon: material-function-variant
+    desc: "Function as a Service or serverless"

@@ -1,5 +1,7 @@
 nav:
 - system-design.md
 - microservices.md
-- Go: golang.md
+- EDA (Event-Driven Architectures): event-driven-architecture.md
+- kubernetes.md
+- Golang: golang.md
 - ...

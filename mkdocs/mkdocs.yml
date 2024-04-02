@@ -47,12 +47,12 @@ extra:
     provider: google
     property: G-R2CDSTQBVL
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/enribd/choose-your-own-it-readventure
       name: github
-    - icon: fontawesome/brands/golang 
+    - icon: fontawesome/brands/golang
       name: golang
-    - icon: fontawesome/brands/docker 
+    - icon: fontawesome/brands/docker
       name: docker
 markdown_extensions:
   - def_list
@@ -66,7 +66,10 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:

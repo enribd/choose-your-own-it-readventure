@@ -7,12 +7,6 @@
 - ref: scalability
   name: "#scalability"
   url: ""
-- ref: resilience
-  name: "#resilience"
-  url: ""
-- ref: observability
-  name: "#observability"
-  url: ""
 - ref: kubernetes
   name: "#kubernetes"
   url: ""
@@ -43,10 +37,6 @@
 - ref: byte-byte-go
   name: "#byte-byte-go"
   url: "https://blog.bytebytego.com/"
-
-- ref: scalability
-  name: "#scalability"
-  url: ""
 - ref: manageability
   name: "#manageability"
   url: ""
@@ -130,4 +120,118 @@
   url: ""
 - ref: event-sourcing
   name: "#event-sourcing"
+  url: ""
+- ref: queues
+  name: "#queues"
+  url: ""
+- ref: jetstream
+  name: "#jetstream"
+  url: ""
+- ref: lously-coupled
+  name: "#lously-coupled"
+  url: ""
+- ref: nats
+  name: "#nats"
+  url: ""
+- ref: kafka
+  name: "#kafka"
+  url: ""
+- ref: pulsar
+  name: "#pulsar"
+  url: ""
+- ref: json
+  name: "#json"
+  url: ""
+- ref: json-schema
+  name: "#json-schema"
+  url: ""
+- ref: avro
+  name: "#avro"
+  url: ""
+- ref: schema-registry
+  name: "#schema-registry"
+  url: ""
+- ref: lambda-architecture
+  name: "#lambda-architecture"
+  url: ""
+- ref: kappa-architecture
+  name: "#kappa-architecture"
+  url: ""
+- ref: container-runtime
+  name: "#container-runtime"
+  url: ""
+- ref: ingress
+  name: "#ingress"
+  url: ""
+- ref: controller
+  name: "#controller"
+  url: ""
+- ref: crd
+  name: "#crd"
+  url: ""
+- ref: operator
+  name: "#operator"
+  url: ""
+- ref: csi-driver
+  name: "#csi-driver"
+  url: ""
+- ref: cni-driver
+  name: "#cni-driver"
+  url: ""
+- ref: admission-controller
+  name: "#admission-controller"
+  url: ""
+- ref: service-mesh
+  name: "#service-mesh"
+  url: ""
+- ref: cold-start
+  name: "#cold-start"
+  url: ""
+- ref: scale-to-zero
+  name: "#scale-to-zero"
+  url: ""
+- ref: pod
+  name: "#pod"
+  url: ""
+- ref: deployment
+  name: "#deployment"
+  url: ""
+- ref: statefulset
+  name: "#statefulset"
+  url: ""
+- ref: confimap
+  name: "#confimap"
+  url: ""
+- ref: secret
+  name: "#secret"
+  url: ""
+- ref: adapter-pattern
+  name: "#adapter-pattern"
+  url: ""
+- ref: ambassador-pattern
+  name: "#ambassador-pattern"
+  url: ""
+- ref: init-container
+  name: "#init-container"
+  url: ""
+- ref: sidecar-container
+  name: "#sidecar-container"
+  url: ""
+- ref: platform-engineering
+  name: "#platform-engineering"
+  url: ""
+- ref: spiffe
+  name: "#spiffe"
+  url: ""
+- ref: probes
+  name: "#probes"
+  url: ""
+- ref: service-account
+  name: "#service-account"
+  url: ""
+- ref: rbac
+  name: "#rbac"
+  url: ""
+- ref: feedback-loop
+  name: "#feedback-loop"
   url: ""

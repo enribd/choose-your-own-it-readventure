@@ -18,6 +18,8 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
+
 - [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
@@ -30,6 +32,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-04-01</sub>
+<sub>Last modified 2024-04-02</sub>
 
 [**⬆ back to top**](#golang-learning-path)

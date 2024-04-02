@@ -1,11 +1,12 @@
 [//]: # (Auto generated file from templates)
 
-#  System Design Learning Path (5 :books:)
+# <img height="35" src="/assets/learning-paths/icons/system-design.png" alt="system-design" title="System Design"/> System Design Learning Path (6 :books:)
 
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 
 | Order | Cover | Info | Description |
 | :---: | :---: | :--- | :--- |
+| **1** | ![img](/assets/books/covers/practical-process-automation.jpeg) | [**Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures**](https://learning.oreilly.com/library/view/-/9781492061441/) <br> *Bernd Ruecker* <br> *Published in 2021* <br> *520 pages* <br> :dog2: :orange_book: | Design and automate complex and decoupled processes, understand the differences between orchestration and choreography and apply communication patterns to decouple flow and make them less dependent on each other.<br><br> |
 | **2** | ![img](/assets/books/covers/designing-distributed-systems.jpeg) | [**Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* <br> :dog2: :orange_book: :arrows_counterclockwise: | Designing distributed systems is not easy, after years of experience patterns emerged and this book bring some of those patterns together to convey ways to split, replicate, communicate and reuse components. Work queues, batch processing, adapters, ambassadors, event-driven processing or deployment patterns are some of the topics covered along with hands on examples for illustration. <br><br>[**#reliability**]()&nbsp;&nbsp;[**#scalability**]()&nbsp;&nbsp;[**#mantainability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#extensibility**]()&nbsp;&nbsp; |
 | **1** | ![img](/assets/books/covers/foundations-of-scalable-systems.jpeg) | [**Foundations of Scalable Systems: Designing Distributed Architectures**](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) <br> *Ian Gorton* <br> *Published in 2022* <br> *320 pages* <br> :dog2: :green_book: :ok: | A fair amount of information about distributed systems and scalability is contained in this book: databases, event processing, caching, asynchronous messaging... When designing systems it's necessary to think about how incresing load will affect aspects like performance and reliability, that's the reason why scalability is a big subject and one of the most important properties of a system since the cloud flourished and extended.<br><br>[**#performance**]()&nbsp;&nbsp;[**#latency**]()&nbsp;&nbsp;[**#response-time**]()&nbsp;&nbsp;[**#horizontal-scaling**]()&nbsp;&nbsp;[**#vertical-scaling**]()&nbsp;&nbsp;[**#scale-out**]()&nbsp;&nbsp;[**#scale-in**]()&nbsp;&nbsp;[**#scale-up**]()&nbsp;&nbsp;[**#scale-down**]()&nbsp;&nbsp; |
 | **1** | ![img](/assets/books/covers/system-design-interview.jpeg) | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2: :green_book: :star: | Even though the author focus in system design interview this book is also very useful if you are interested in learning how to build systems from the ground up. Each chapter is a different interview that illustrates a different use case where technical decisions are made, balancing trade-offs to come up with an acceptable solution. The variety of problems resolved is great and the content is expanded by a list of books and articles referenced at the end of each chapter.<br><br>[**#byte-byte-go**](https://blog.bytebytego.com/)&nbsp;&nbsp; |
@@ -15,6 +16,12 @@ You want to create systems that resolve complicated technical problems, to find 
 The following paths are opened to you now, choose wisely:
 
 - [Microservices :construction:](/content/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
+- [Event Driven Architecture (EDA) :construction:](/content/learning-paths/event-driven-architecture): Asynchronous communication between services is possible using events. There is a lot to learn here, the main challenge is changing the way you think about communication patterns.
+
+
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
 <details><summary><i><b>Bonus quest</b>: Learn more related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -26,6 +33,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2024-04-01</sub>
+<sub>Last modified 2024-04-02</sub>
 
 [**⬆ back to top**](#system-design-learning-path)
