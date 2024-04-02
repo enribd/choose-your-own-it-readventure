@@ -26,6 +26,11 @@ func loadLearningPathsTabs(basepath string) error {
 		}
 
 		for _, lpt := range content {
+			// Check for duplicated tabs
+			if _, ok := LearningPathsTabs[lpt.Ref]; ok {
+				log.Fatalf("loader: duplicated tab definition detected: %s", lpt.Ref)
+			}
+
 			LearningPathsTabs[lpt.Ref] = lpt.Data
 		}
 	}

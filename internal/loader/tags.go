@@ -28,6 +28,11 @@ func loadTags(basepath string) error {
 
 		// Create auxiliar map to store tags
 		for _, tag := range content {
+			// Check for duplicated tags
+			if _, ok := Tags[string(tag.Ref)]; ok {
+				log.Fatalf("loader: duplicated tag definition detected: %s", tag.Ref)
+			}
+
 			Tags[string(tag.Ref)] = tag
 			stats.SetTotalTags(len(Tags))
 		}
