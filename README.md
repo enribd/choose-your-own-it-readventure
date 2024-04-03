@@ -13,7 +13,7 @@ Starting your adventure is as easy as picking the set of skills that you want to
 
 :warning: *A minimum previous knowledge is required to start some of these adventures. Various of them have been assembled to enlarge or acquire expertise in topics considered, until certain point, advanced. If you are new to the IT world or if you want to follow a learning path of high difficulty my recommendation is that, before adventuring, you read first about the basics and foundational concepts of that particular topic.*
 
-You can keep browsing this repo or use the [web version :rocket:](https://itreadventure.madravings.wtf).
+You can keep browsing this repo or use the [web version :rocket:](https://itreadventure.com).
 
 ## :checkered_flag: Start your adventure, choose your learning path wisely
 
