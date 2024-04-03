@@ -38,7 +38,7 @@ func loadLearningPaths(basepath string) error {
 			} else {
 				// check tags existence
 				for _, tag := range lp.Tags {
-					if _, ok := Tags[string(tag)]; !ok {
+					if _, ok := Tags[string(tag)]; !ok && tag != "" {
 						log.Fatalf("loader: %s learning path has unknown tag: %s", lp.Ref, tag)
 					}
 				}

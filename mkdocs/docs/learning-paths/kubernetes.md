@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png){: style="height:35px"} Kubernetes Learning Path (14 :books:)
+# ![img](https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png){: style="height:35px"} Kubernetes Learning Path (23 :books:)
 
 After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
 
@@ -25,7 +25,14 @@ After mastering building and running containers at small scale, orchestration is
     | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/production-kubernetes.jpeg)| [**Production Kubernetes: Production Kubernetes**](https://learning.oreilly.com/library/view/-/9781492092292/) <br> *Josh Rosso, Rich Lander, Alex Brand, John Harris* <br> *Published in 2021* <br> *506 pages* <br> :tiger2:{ title="Hard" } :green_book:{ title="Read" } :star:{ title="Excellent" } | Production Kubernetes will guide you from the view of an amateur to the vision of all you need to know and implement in order to build a professional and productive microservice platform. It also demonstrates the Kubernetes API extensibility through drivers for networking, storage and more. Other interesting topis are admission controllers, operators, service meshes and security. Definitely this is a book I really enjoyed, I recommend to read it at the same time with [Design Patterns for Cloud Native Applications](https://www.oreilly.com/library/view/design-patterns-for/9781492090700/), it will broaden your vision as a developer as well as your perspective as platform engineer.<br><br><br>[**#platform-engineering**]()&nbsp;&nbsp;[**#admission-controller**]()&nbsp;&nbsp;[**#spiffe**]()&nbsp;&nbsp;[**#csi-driver**]()&nbsp;&nbsp;[**#cni-driver**]()&nbsp;&nbsp;|
     | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/kubernetes-operators.jpeg)| [**Kubernetes Operators: Automating the Container Orchestration Platform**](https://learning.oreilly.com/library/view/-/9781492048039/) <br> *Jason Dobies, Joshua Wood* <br> *Published in 2020* <br> *154 pages* <br> :tiger2:{ title="Hard" } :orange_book:{ title="Not Scheduled" } :arrows_counterclockwise:{ title="Old" } | Operators are another way of leveraging Kubernetes itself, they offer you the possibility to customize and automate your workloads management. Its a very popular pattern, in this book you will find what you need to get started to develop your own operator and all the tooling around the process. This book is a little bit 'old', many things have changed in this topic since 2020, it needs a second edition to adapt its contents to more updated practices.<br><br><br>[**#controller**]()&nbsp;&nbsp;[**#feedback-loop**]()&nbsp;&nbsp;|
 
+=== ":material-certificate-outline: Certification &nbsp; 3:material-bookshelf:"
+    
 
+    | Order | Cover | Info | Description |
+    | :---: | :---: | :--- | :--- |
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/ckad.jpeg)| [**Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781492083726/) <br> *Benjamin Muschko* <br> *Published in 2021* <br> *188 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } | If you are interested in getting certified as Kubernetes application developer this book offers you a guide to do just that.<br><br><br>|
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/cka.jpeg)| [**Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098107215/) <br> *Benjamin Muschko* <br> *Published in 2022* <br> *201 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } | If you are interested in getting certified as Kubernetes administrator this book offers you a guide to do just that.<br><br><br>|
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/cks.jpeg)| [**Certified Kubernetes Security Specialist (CKS) Study Guide: In Depth Guidance and Practice**](https://learning.oreilly.com/library/view/-/9781098132965/) <br> *Benjamin Muschko* <br> *Published in 2023* <br> *200 pages* <br> :tiger2:{ title="Hard" } :orange_book:{ title="Not Scheduled" } | If you are interested in getting certified as Kubernetes security specialist this book offers you a guide to do just that.<br><br><br>|
 
 === ":material-function-variant: FaaS &nbsp; 1:material-bookshelf:"
     Function as a Service or serverless
@@ -42,11 +49,15 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [DevOps :new:](/learning-paths/devops): Coming soon
+
 - [System Design :ballot_box_with_check:](/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
+
+- [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
 
 
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>[**#container-runtime**]()&nbsp;&nbsp;[**#ingress**]()&nbsp;&nbsp;[**#controller**]()&nbsp;&nbsp;[**#crd**]()&nbsp;&nbsp;[**#operator**]()&nbsp;&nbsp;[**#csi-driver**]()&nbsp;&nbsp;[**#admission-controller**]()&nbsp;&nbsp;[**#service-mesh**]()&nbsp;&nbsp;[**#platform-engineering**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#kubernetes-learning-path-14)
+[**⬆ back to top**](#kubernetes-learning-path-23)

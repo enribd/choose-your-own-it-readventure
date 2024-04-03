@@ -21,6 +21,8 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Software Architecture :construction:](/content/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+
 - [Kubernetes :ballot_box_with_check:](/content/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
@@ -33,6 +35,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-04-02</sub>
+<sub>Last modified 2024-04-03</sub>
 
 [**⬆ back to top**](#system-design-learning-path)

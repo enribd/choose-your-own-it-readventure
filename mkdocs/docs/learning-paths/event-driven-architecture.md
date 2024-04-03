@@ -36,6 +36,11 @@ The following paths are opened to you now, choose wisely:
 - [Microservices :construction:](/learning-paths/microservices): Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
 
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [Software Architecture :construction:](/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+
+
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>[**#lously-coupled**]()&nbsp;&nbsp;[**#nats**]()&nbsp;&nbsp;[**#kafka**]()&nbsp;&nbsp;[**#pulsar**]()&nbsp;&nbsp;[**#json-schema**]()&nbsp;&nbsp;[**#avro**]()&nbsp;&nbsp;[**#event-storming**]()&nbsp;&nbsp;[**#event-sourcing**]()&nbsp;&nbsp;[**#schema-registry**]()&nbsp;&nbsp;</sub>

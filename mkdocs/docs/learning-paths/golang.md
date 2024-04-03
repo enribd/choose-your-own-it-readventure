@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path (11 :books:)
+# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path (12 :books:)
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
 
@@ -34,13 +34,19 @@ This path starts with some books to grasp the basics of the language but buildin
 
     | Order | Cover | Info | Description |
     | :---: | :---: | :--- | :--- |
-    | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/domain-driven-design-with-golang.jpeg)| [**Domain-Driven Design with Golang**](https://learning.oreilly.com/library/view/-/9781804613450/) <br> *Matthew Boyle* <br> *Published in 2022* <br> *204 pages* <br> :dog2:{ title="Intermediate" } :blue_book:{ title="Scheduled" } | Learn software design techniques using Golang. Structure your applications providing them with extensibility, lously coupled elements and well defined patterns.<br><br><br>[**#software-development**]()&nbsp;&nbsp;|
+    | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/domain-driven-design-with-golang.jpeg)| [**Domain-Driven Design with Golang**](https://learning.oreilly.com/library/view/-/9781804613450/) <br> *Matthew Boyle* <br> *Published in 2022* <br> *204 pages* <br> :dragon:{ title="Expert" } :blue_book:{ title="Scheduled" } | Learn software design techniques using Golang. Structure your applications providing them with extensibility, lously coupled elements and well defined patterns.<br><br><br>[**#software-development**]()&nbsp;&nbsp;|
 
+=== ":fontawesome-brands-creative-commons-sampling-plus: Event Driven Architecture &nbsp; 1:material-bookshelf:"
+    Learn event-driven architectures
 
+    | Order | Cover | Info | Description |
+    | :---: | :---: | :--- | :--- |
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/event-driven-architecture-in-golang.jpeg)| [**Event-Driven Architecture in Golang: Building complex systems with asynchronicity and eventual consistency**](https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012) <br> *Michael Stack* <br> *Published in 2022* <br> *384 pages* <br> :dragon:{ title="Expert" } :blue_book:{ title="Scheduled" } | TODO<br><br><br>[**#event-storming**]()&nbsp;&nbsp;[**#event-sourcing**]()&nbsp;&nbsp;[**#software-development**]()&nbsp;&nbsp;[**#cloud-native**]()&nbsp;&nbsp;|
 
 
 The following paths are opened to you now, choose wisely:
 
+- [Software Architecture :construction:](/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -54,4 +60,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#goroutines**]()&nbsp;&nbsp;[**#concurrency**]()&nbsp;&nbsp;[**#channels**]()&nbsp;&nbsp;[**#context**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#golang-learning-path-11)
+[**⬆ back to top**](#golang-learning-path-12)

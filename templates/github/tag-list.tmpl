@@ -4,6 +4,8 @@
 {{- $tagRefs := index . 1 -}}
 {{- range $tagRefs -}}
 {{- $t := get $tags (. | toString) -}}
+{{- if $t -}}
 {{ printf "[**%s**](%s)%s%s" $t.Name $t.Url $space $space }}
+{{- end -}}
 {{- end -}}
 {{end}}

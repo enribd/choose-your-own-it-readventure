@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/system-design.png){: style="height:35px"} System Design Learning Path (14 :books:)
+# ![img](/assets/learning-paths/icons/system-design.png){: style="height:35px"} System Design Learning Path (17 :books:)
 
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 
@@ -15,11 +15,12 @@ You want to create systems that resolve complicated technical problems, to find 
     | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/designing-distributed-systems.jpeg)| [**Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services**](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/) <br> *Brendan Burns* <br> *Published in 2018* <br> *162 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } :arrows_counterclockwise:{ title="Old" } | Designing distributed systems is not easy, after years of experience patterns emerged and this book bring some of those patterns together to convey ways to split, replicate, communicate and reuse components. Work queues, batch processing, adapters, ambassadors, event-driven processing or deployment patterns are some of the topics covered along with hands on examples for illustration. <br><br><br>[**#reliability**]()&nbsp;&nbsp;[**#scalability**]()&nbsp;&nbsp;[**#mantainability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#extensibility**]()&nbsp;&nbsp;|
     | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/design-patterns-for-cloud-native-applications.jpeg)| [**Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams**](https://learning.oreilly.com/library/view/-/9781492090700/) <br> *Kasun Indrasiri, Sriskandarajah Suhothayan* <br> *Published in 2021* <br> *311 pages* <br> :dog2:{ title="Intermediate" } :green_book:{ title="Read" } :star:{ title="Excellent" } | Despite of being oriented mainly to developers, this book could help you to understand how cloud native applications are built and the way they interact. Some predominating patterns for communication, composition, data and api management or scalability are explained in these pages, it could be really useful to know them if you are developing or designing systems based on the cloud.<br><br><br>[**#grpc**]()&nbsp;&nbsp;[**#websocket**]()&nbsp;&nbsp;[**#rest-api**]()&nbsp;&nbsp;[**#api**]()&nbsp;&nbsp;[**#sagas**]()&nbsp;&nbsp;[**#orchestration**]()&nbsp;&nbsp;[**#choreography**]()&nbsp;&nbsp;[**#cloud-native**]()&nbsp;&nbsp;|
 
-=== ":material-dots-square: Intermediate &nbsp; 1:material-bookshelf:"
+=== ":material-dots-square: Intermediate &nbsp; 2:material-bookshelf:"
     Intermediate concepts
 
     | Order | Cover | Info | Description |
     | :---: | :---: | :--- | :--- |
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/designing-data-intensive-applications.jpeg)| [**Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems**](https://learning.oreilly.com/library/view/-/9781491903063/) <br> *Martin Kleppmann* <br> *Published in 2017* <br> *616 pages* <br> :tiger2:{ title="Hard" } :orange_book:{ title="Not Scheduled" } :arrows_counterclockwise:{ title="Old" } | Learn the fundamental properties of data driven applications and how to treat data in terms of storage, replication, indexing, querying, processing and consistency. A new edition of this jewel is in order because the publication was some years ago, but don't be fooled, the content is still valid so go ahead and dive in.<br><br><br>|
     | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/practical-process-automation.jpeg)| [**Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures**](https://learning.oreilly.com/library/view/-/9781492061441/) <br> *Bernd Ruecker* <br> *Published in 2021* <br> *520 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } | Design and automate complex and decoupled processes, understand the differences between orchestration and choreography and apply communication patterns to decouple flow and make them less dependent on each other.<br><br><br>|
 
 === ":material-dots-grid: Advanced &nbsp; 2:material-bookshelf:"
@@ -39,6 +40,8 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
+- [Software Architecture :construction:](/learning-paths/software-architecture): Building software is not only about writing code, to design great platforms you should learn to think about extensibility, efficiency, easy integration, resilience, flexibility, and much more.
+
 - [Kubernetes :ballot_box_with_check:](/learning-paths/kubernetes): Run containers at scale and unlock the power of building microservice platforms thanks to the Kubernetes orchestrator.
 
 
@@ -46,4 +49,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#scalability**]()&nbsp;&nbsp;[**#manageability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#reliability**]()&nbsp;&nbsp;[**#mantainability**]()&nbsp;&nbsp;[**#extensibility**]()&nbsp;&nbsp;[**#high-availability**]()&nbsp;&nbsp;[**#databases**]()&nbsp;&nbsp;[**#algorithms**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#system-design-learning-path-14)
+[**⬆ back to top**](#system-design-learning-path-17)

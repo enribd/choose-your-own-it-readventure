@@ -56,7 +56,7 @@ func loadBooks(basepath string) error {
 					}
 				}
 				for _, tag := range book.Tags {
-					if _, ok := Tags[string(tag)]; !ok {
+					if _, ok := Tags[string(tag)]; !ok && tag != "" {
 						log.Fatalf("loader: %s book has unknown tag: %s", book.Title, tag)
 					}
 				}

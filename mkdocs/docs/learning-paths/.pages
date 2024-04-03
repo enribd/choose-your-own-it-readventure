@@ -4,4 +4,5 @@ nav:
 - EDA (Event-Driven Architectures): event-driven-architecture.md
 - kubernetes.md
 - Golang: golang.md
+- SRE: sre.md
 - ...
