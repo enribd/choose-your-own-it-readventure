@@ -1,0 +1,10 @@
+nav:
+- system-design.md
+- microservices.md
+- EDA (Event-Driven Architectures): event-driven-architecture.md
+- kubernetes.md
+- Go: golang.md
+- IaC: iac.md
+- CI/CD: cicd.md
+- SRE: sre.md
+- ...
