@@ -1,42 +1,42 @@
 - ref: distributed-systems
   name: "#distributed-systems"
   url: "https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture"
-- ref: architecture
-  name: "#architecture"
-  url: ""
 - ref: scalability
   name: "#scalability"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Scalability"
 - ref: kubernetes
   name: "#kubernetes"
-  url: ""
-- ref: lambda
-  name: "#lambda"
-  url: ""
+  url: "https://kubernetes.io/"
 - ref: faas
   name: "#faas"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Function_as_a_service"
 - ref: software-development
   name: "#software-development"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Software_development"
 - ref: concurrency
   name: "#concurrency"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Concurrency_(computer_science)"
 - ref: goroutines
   name: "#goroutines"
-  url: ""
+  url: "https://www.educative.io/answers/what-is-a-goroutine"
 - ref: channels
   name: "#channels"
-  url: ""
+  url: "https://go101.org/article/channel.html"
 - ref: context
   name: "#context"
-  url: ""
+  url: "https://medium.com/@jamal.kaksouri/the-complete-guide-to-context-in-golang-efficient-concurrency-management-43d722f6eaea"
 - ref: cloud-native
   name: "#cloud-native"
-  url: ""
+  url: "https://aws.amazon.com/what-is/cloud-native/"
 - ref: byte-byte-go
   name: "#byte-byte-go"
   url: "https://blog.bytebytego.com/"
+- ref: lambda
+  name: "#lambda"
+  url: ""
+- ref: architecture
+  name: "#architecture"
+  url: ""
 - ref: manageability
   name: "#manageability"
   url: ""
@@ -291,4 +291,16 @@
   url: ""
 - ref: "ansible"
   name: "#ansible"
+  url: ""
+- ref: "efficiency"
+  name: "#efficiency"
+  url: ""
+- ref: "software-delivery"
+  name: "#software-delivery"
+  url: ""
+- ref: "team-design"
+  name: "#team-design"
+  url: ""
+- ref: "organization-structure"
+  name: "#organization-structure"
   url: ""

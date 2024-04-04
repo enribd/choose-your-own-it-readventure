@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (53 :black_nib:)
+# :clipboard: Author Index (58 :black_nib:)
 
 | Author | Books |
 | :--- | :--- |
@@ -24,6 +24,7 @@
 | :fontawesome-solid-user-pen:  Eddie Villalba | :octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/) |
 | :fontawesome-solid-user-pen:  George Miranda | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
 | :fontawesome-solid-user-pen:  Heather Adkins | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
+| :fontawesome-solid-user-pen:  Hohpe Gregor | :octicons-book-24: [*Enterprise Integration Patterns - Vol 2: Conversation Patterns*](https://www.amazon.co.uk/Enterprise-Integration-Patterns-Vol-Conversation/dp/0134699939)<br>:octicons-book-24: [*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/) |
 | :fontawesome-solid-user-pen:  Ian Gorton | :octicons-book-24: [*Foundations of Scalable Systems: Designing Distributed Architectures*](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/) |
 | :fontawesome-solid-user-pen:  Jacques Chester | :octicons-book-24: [*Knative in Action: *](https://learning.oreilly.com/library/view/-/9781617296642/) |
 | :fontawesome-solid-user-pen:  Jason Dobies | :octicons-book-24: [*Kubernetes Operators: Automating the Container Orchestration Platform*](https://learning.oreilly.com/library/view/-/9781492048039/) |
@@ -38,13 +39,16 @@
 | :fontawesome-solid-user-pen:  Kent Kawahara | :octicons-book-24: [*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Lachlan Evenson | :octicons-book-24: [*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/) |
 | :fontawesome-solid-user-pen:  Liz Fong-Jones | :octicons-book-24: [*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) |
+| :fontawesome-solid-user-pen:  Manuel Pais | :octicons-book-24: [*Remote Teams Interactions Workbook: Using Team Topologies Patterns for Remote Working*](https://teamtopologies.com/workbook)<br>:octicons-book-24: [*Team Topologies: Team Topologies*](https://teamtopologies.com/book) |
 | :fontawesome-solid-user-pen:  Mark Richards | :octicons-book-24: [*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)<br>:octicons-book-24: [*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/) |
 | :fontawesome-solid-user-pen:  Martin Kleppmann | :octicons-book-24: [*Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems*](https://learning.oreilly.com/library/view/-/9781491903063/) |
 | :fontawesome-solid-user-pen:  Matthew A. Titmus | :octicons-book-24: [*Cloud Native Go: Cloud Native Go*](https://learning.oreilly.com/library/view/-/9781492076322/) |
 | :fontawesome-solid-user-pen:  Matthew Boyle | :octicons-book-24: [*Domain-Driven Design with Golang: *](https://learning.oreilly.com/library/view/-/9781804613450/) |
+| :fontawesome-solid-user-pen:  Matthew Skelton | :octicons-book-24: [*Remote Teams Interactions Workbook: Using Team Topologies Patterns for Remote Working*](https://teamtopologies.com/workbook)<br>:octicons-book-24: [*Team Topologies: Team Topologies*](https://teamtopologies.com/book) |
 | :fontawesome-solid-user-pen:  Michael Stack | :octicons-book-24: [*Event-Driven Architecture in Golang: Building complex systems with asynchronicity and eventual consistency*](https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012) |
 | :fontawesome-solid-user-pen:  Neal Ford | :octicons-book-24: [*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)<br>:octicons-book-24: [*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/) |
 | :fontawesome-solid-user-pen:  Niall Myrphy | :octicons-book-24: [*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)<br>:octicons-book-24: [*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/) |
+| :fontawesome-solid-user-pen:  Nicole Forsgren | :octicons-book-24: [*Accelerate: Building and Scaling High Performing Technology Organizations*](https://www.goodreads.com/book/show/35747076-accelerate) |
 | :fontawesome-solid-user-pen:  Paul Blankship | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
 | :fontawesome-solid-user-pen:  Piotr Lewandowski | :octicons-book-24: [*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf) |
 | :fontawesome-solid-user-pen:  Pramod Sadalage | :octicons-book-24: [*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/) |
@@ -55,9 +59,10 @@
 | :fontawesome-solid-user-pen:  Sriskandarajah Suhothayan | :octicons-book-24: [*Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams*](https://learning.oreilly.com/library/view/-/9781492090700/) |
 | :fontawesome-solid-user-pen:  Stephen Thorne | :octicons-book-24: [*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/) |
 | :fontawesome-solid-user-pen:  Vladik Khononov | :octicons-book-24: [*Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy*](https://learning.oreilly.com/library/view/-/9781098100124/) |
+| :fontawesome-solid-user-pen:  Woolf Bobby | :octicons-book-24: [*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/) |
 | :fontawesome-solid-user-pen:  Yevgenly Brikman | :octicons-book-24: [*Terraform Up & Running: Writing Infrastructure as Code*](https://learning.oreilly.com/library/view/-/9781098116736/) |
 | :fontawesome-solid-user-pen:  Zhamak Dehghani | :octicons-book-24: [*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/) |
 
 
 
-[**⬆ back to top**](#author-index-53)
+[**⬆ back to top**](#author-index-58)

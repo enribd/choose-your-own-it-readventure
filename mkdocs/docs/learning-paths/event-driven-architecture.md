@@ -2,16 +2,18 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/eda.png){: style="height:35px"} Event Driven Architecture (EDA) Learning Path (3 :books:)
+# ![img](/assets/learning-paths/icons/eda.png){: style="height:35px"} Event Driven Architecture (EDA) Learning Path (11 :books:)
 
 Different from typical inter-service communication patterns like REST APIs or gRPC, event driven architectures allow to increase flexibility, agility, and speed in development processes by decoupling services. Synchronous calls are replaced by publishing events into a broker, from which the interested clients can receive the information. But there are many challenges when building this kind of architecture: re-adjusting the way teams think about communications, ensuring the information integrity and quality produced by the sources, stablishing secure and painless ways for consumers to integrate with the data sources, and more. Luckily the industry has evolved and experience in EDA is being documented in book and articles to let anyone learn good practices and how to overcome the many challenges ahead!.
 
-=== ":material-dots-vertical: Foundational &nbsp; 1:material-bookshelf:"
+=== ":material-dots-vertical: Foundational &nbsp; 3:material-bookshelf:"
     Basic concepts required to continue the journey of this learning path :material-ray-start-arrow:.
 
     | Order | Cover | Info | Description |
     | :---: | :---: | :--- | :--- |
     | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/building-event-driven-microservices.jpeg)| [**Building Event-Driven Microservices: Building Event-Driven Microservices**](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/) <br> *Adam Bellemare* <br> *Published in 2020* <br> *321 pages* <br> :dog2:{ title="Intermediate" } :green_book:{ title="Read" } :up:{ title="Good" } | Get to know the basic principles that guide event-driven architectures, the mechanisms and perils you will have to face when building a brand new architecture or integrating it with legacy systems. The author also offers his experience in the field exposing the different migration mechanisms and their trade-offs. Also you will read about tools needed in the process of creating a new architecture and hear about some of the specific technologies involved in the event streaming industry.<br><br><br>[**#event-sourcing**]()&nbsp;&nbsp;[**#event-storming**]()&nbsp;&nbsp;[**#lambda-architecture**]()&nbsp;&nbsp;[**#kappa-architecture**]()&nbsp;&nbsp;[**#json**]()&nbsp;&nbsp;[**#avro**]()&nbsp;&nbsp;[**#grpc**]()&nbsp;&nbsp;[**#schema-registry**]()&nbsp;&nbsp;|
+    | **:material-numeric-1:{.order-icon}** |![img](/assets/books/covers/enterprise-integration-patterns.jpeg)| [**Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions**](https://learning.oreilly.com/library/view/-/0321200683/) <br> *Hohpe Gregor, Woolf Bobby* <br> *Published in 2003* <br> *736 pages* <br> :up:{ title="Good" } :orange_book:{ title="Not Scheduled" } | TODO<br><br><br>|
+    | **:material-numeric-2:{.order-icon}** |![img](/assets/books/covers/enterprise-integration-patterns.jpeg)| [**Enterprise Integration Patterns - Vol 2: Conversation Patterns**](https://www.amazon.co.uk/Enterprise-Integration-Patterns-Vol-Conversation/dp/0134699939) <br> *Hohpe Gregor* <br> *Published in 2018* <br> *500 pages* <br> :up:{ title="Good" } :orange_book:{ title="Not Scheduled" } | TODO<br><br><br>|
 
 === ":material-dots-square: Intermediate &nbsp; 1:material-bookshelf:"
     Intermediate concepts
@@ -45,4 +47,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#lously-coupled**]()&nbsp;&nbsp;[**#nats**]()&nbsp;&nbsp;[**#kafka**]()&nbsp;&nbsp;[**#pulsar**]()&nbsp;&nbsp;[**#json-schema**]()&nbsp;&nbsp;[**#avro**]()&nbsp;&nbsp;[**#event-storming**]()&nbsp;&nbsp;[**#event-sourcing**]()&nbsp;&nbsp;[**#schema-registry**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#event-driven-architecture-(eda)-learning-path-3)
+[**⬆ back to top**](#event-driven-architecture-(eda)-learning-path-11)

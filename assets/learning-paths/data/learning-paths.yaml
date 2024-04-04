@@ -254,21 +254,24 @@
 #   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
 #   logo:
 #     source: /assets/learning-paths/icons/iac.png
-# - name: Team Management
-#   ref: team-management
-#   status: new
-#   desc: |
-#     With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
-#   summary: |
-#     Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.
-#   related:
-#     - devops
-#     - management
-#   suggested:
-#     - sre
-#   tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
-#   logo:
-#     source: /assets/learning-paths/icons/team-management.png
+- name: Team Management
+  ref: team-management
+  status: new
+  desc: |
+    With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
+  summary: |
+    Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.
+  tabs:
+    - ref: foundational
+      data:
+        order: 1
+  related:
+    - devops
+  suggested:
+    - sre
+  tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
+  logo:
+    source: /assets/learning-paths/icons/team-management.png
 # - name: Cloud Native Applications
 #   ref: cloud-native-apps
 #   status: coming-soon

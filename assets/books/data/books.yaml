@@ -421,38 +421,46 @@
   badges:
     - TODO
   tags: ["", ""]
-# - title: Enterprise Integration Patterns
-#   subtitle: Designing, Building, and Deploying Messaging Solutions
-#   cover: enterprise-integration-patterns.jpeg
-#   draft: true
-#   url: https://learning.oreilly.com/library/view/-/0321200683/
-#   authors:
-#     - Hohpe Gregor
-#     - Woolf Bobby
-#   release: 2003
-#   pages: 736
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - TODO
-# - title: Enterprise Integration Patterns
-#     - Vol 2
-#   subtitle: Conversation Patterns
-#   cover: enterprise-integration-patterns.jpeg
-#   draft: true
-#   url:
-#   authors:
-#     - Hohpe Gregor
-#   release: 2018
-#   pages: 500
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - event-driven-architecture
-#   badges:
-#     - TODO
+- title: Enterprise Integration Patterns
+  subtitle: Designing, Building, and Deploying Messaging Solutions
+  cover: enterprise-integration-patterns.jpeg
+  draft: false
+  url: https://learning.oreilly.com/library/view/-/0321200683/
+  authors:
+    - Hohpe Gregor
+    - Woolf Bobby
+  release: 2003
+  pages: 736
+  desc: |-
+    TODO
+  learning_paths:
+    - lp_ref: event-driven-architecture
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - good
+    - not_scheduled
+  tags: [""]
+- title: Enterprise Integration Patterns - Vol 2
+  subtitle: Conversation Patterns
+  cover: enterprise-integration-patterns.jpeg
+  draft: false
+  url: https://www.amazon.co.uk/Enterprise-Integration-Patterns-Vol-Conversation/dp/0134699939
+  authors:
+    - Hohpe Gregor
+  release: 2018
+  pages: 500
+  desc: |-
+    TODO
+  learning_paths:
+    - lp_ref: event-driven-architecture
+      tab_ref: foundational
+      order: 2
+      weight: 1
+  badges:
+    - good
+    - not_scheduled
 # - title: Flow Architectures
 #   subtitle: The Future of Streaming and Event-Driven Integration
 #   cover: flow-architectures.jpeg
@@ -465,10 +473,17 @@
 #   desc: |-
 #     TODO
 #   learning_paths:
-#     - event-driven-architecture
-#     - system-design
+#     - lp_ref: event-driven-architecture
+#       tab_ref: intermediate
+#       order: 2
+#       weight: 1
+#     - lp_ref: event-driven-architecture
+#       tab_ref: intermediate
+#       order: 2
+#       weight: 1
 #   badges:
-#     - TODO
+#     - good
+#     - not_scheduled
 - title: Kubernetes
   subtitle: Up & Running
   cover: kubernetes-up-and-running.jpeg
@@ -1031,57 +1046,70 @@
     - hard
     - not_scheduled
   tags: [""]
-# - title: Accelerate
-#   subtitle: Building and Scaling High Performing Technology Organizations
-#   cover: accelerate.jpeg
-#   draft: false
-#   url: https://www.goodreads.com/book/show/35747076-accelerate
-#   authors:
-#     - Nicole Forsgren
-#   release: 2018
-#   pages: 288
-#   desc: |-
-#     This books is born from a task of data collected by the authors during their career participating in software projets. The experience was converted to book format with added conclusions and it has been a reference since the publication. Common problems of communication and team misfunction are exposed as well as some remedies to avoid them when building teams or organizations.
-#   learning_paths:
-#     - team-management
-#   badges:
-#     - intermediate
-#     - read
-#     - very_good
-# - title: Team Topologies
-#   subtitle: Team Topologies
-#   cover: team-topologies.jpeg
-#   draft: false
-#   url: https://teamtopologies.com/book
-#   authors:
-#     - Matthew Skelton
-#     - Manuel Pais
-#   release: 2019
-#   pages: 240
-#   desc: |-
-#     Team Topologies offers a modern vision about how teams should be created and managed to optimize a company's internal functioning as well as the output it produces. It uses ideas from other management books, like *Accelerate* (Nicole Forsgren), and takes them a step further to create a framework that will teach you form, combine and coordinate teams. The authors present four different kinds of teams, the role they play for a business domain and how they should communicate between them to achieve the organization goals as efficiently as possible. Also, you will discover things to avoid when managing teams, and what affect negatively to their performance.
-#   learning_paths:
-#     - team-management
-#   badges:
-#     - easy
-#     - read
-#     - good
-# - title: Remote Teams Interactions Workbook
-#   subtitle: Using Team Topologies Patterns for Remote Working
-#   cover: remote-teams-interactions-workbook.jpeg
-#   draft: true
-#   url: https://teamtopologies.com/workbook
-#   authors:
-#     - Matthew Skelton
-#     - Manuel Pais
-#   release: 2022
-#   pages:
-#   desc: |-
-#     TODO
-#   learning_paths:
-#     - team-management
-#   badges:
-#     - TODO
+- title: Accelerate
+  subtitle: Building and Scaling High Performing Technology Organizations
+  cover: accelerate.jpeg
+  draft: false
+  url: https://www.goodreads.com/book/show/35747076-accelerate
+  authors:
+    - Nicole Forsgren
+  release: 2018
+  pages: 288
+  desc: |-
+    This books is born from a task of data collected by the authors during their career participating in software projets. The experience was converted to book format with added conclusions and it has been a reference since the publication. Common problems of communication and team misfunction are exposed as well as some remedies to avoid them when building teams or organizations.
+  learning_paths:
+    - lp_ref: team-management
+      tab_ref: foundational
+      order: 1
+      weight: 2
+  badges:
+    - intermediate
+    - read
+    - very_good
+  tags: [""]
+- title: Team Topologies
+  subtitle: Team Topologies
+  cover: team-topologies.jpeg
+  draft: false
+  url: https://teamtopologies.com/book
+  authors:
+    - Matthew Skelton
+    - Manuel Pais
+  release: 2019
+  pages: 240
+  desc: |-
+    Team Topologies offers a modern vision about how teams should be created and managed to optimize a company's internal functioning as well as the output it produces. It uses ideas from other management books, like *Accelerate* (Nicole Forsgren), and takes them a step further to create a framework that will teach you form, combine and coordinate teams. The authors present four different kinds of teams, the role they play for a business domain and how they should communicate between them to achieve the organization goals as efficiently as possible. Also, you will discover things to avoid when managing teams, and what affect negatively to their performance.
+  learning_paths:
+    - lp_ref: team-management
+      tab_ref: foundational
+      order: 1
+      weight: 1
+  badges:
+    - easy
+    - read
+    - good
+  tags: [""]
+- title: Remote Teams Interactions Workbook
+  subtitle: Using Team Topologies Patterns for Remote Working
+  cover: remote-teams-interactions-workbook.jpeg
+  draft: false
+  url: https://teamtopologies.com/workbook
+  authors:
+    - Matthew Skelton
+    - Manuel Pais
+  release: 2022
+  pages:
+  desc: |-
+    TODO
+  learning_paths:
+    - lp_ref: team-management
+      tab_ref: foundational
+      order: 2
+      weight: 1
+  badges:
+    - easy
+    - not_scheduled
+  tags: [""]
 # - title: Continuous Delivery
 #   subtitle: Reliable Software Releases through Build, Test, and Deployment Automation
 #   cover: continuous-delivery.jpeg

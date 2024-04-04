@@ -21,6 +21,11 @@ The following paths are opened to you now, choose wisely:
 - [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
 
 
+Want to change the subject? Here are some suggestions about other paths you can explore:
+
+- [Team Management :new:](/learning-paths/team-management): Building team is no easy feat, doing it to be efficient to deliver quality products and services blazinlig fast is really hard. Roll up your sleeves and discover what makes a good team.
+
+
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>[**#cloud-engineering**]()&nbsp;&nbsp;[**#automation**]()&nbsp;&nbsp;[**#state-management**]()&nbsp;&nbsp;[**#fault-recovery**]()&nbsp;&nbsp;[**#terraform**]()&nbsp;&nbsp;[**#pulumi**]()&nbsp;&nbsp;[**#crossplane**]()&nbsp;&nbsp;[**#ansible**]()&nbsp;&nbsp;</sub>

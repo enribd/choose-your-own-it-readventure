@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Author Index (53 :black_nib:)
+# :clipboard: Author Index (58 :black_nib:)
 
 | Name | Books |
 | :---: | :--- |
@@ -12,9 +12,9 @@
 | Ana Opera | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Benjamin Muschko | <ul><li>[*Certified Kubernetes Application Developer (CKAD) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781492083726/)</li> <li>[*Certified Kubernetes Security Specialist (CKS) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781098132965/)</li> <li>[*Certified Kubernetes Administrator (CKA) Study Guide: In Depth Guidance and Practice*](https://learning.oreilly.com/library/view/-/9781098107215/)</li></ul> |
 | Bernd Ruecker | <ul><li>[*Practical Process Automation: Orchestration and Integration in Microservices and Cloud Native Architectures*](https://learning.oreilly.com/library/view/-/9781492061441/)</li></ul> |
-| Betsy Beyer | <ul><li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li> <li>[*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)</li> <li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
+| Betsy Beyer | <ul><li>[*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)</li> <li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li> <li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Bilgin Ibryam | <ul><li>[*Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications*](https://learning.oreilly.com/library/view/-/9781098131678/)</li></ul> |
-| Brendan Burns | <ul><li>[*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/)</li> <li>[*Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)</li> <li>[*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li></ul> |
+| Brendan Burns | <ul><li>[*Kubernetes: Up & Running*](https://learning.oreilly.com/library/view/-/9781098110192/)</li> <li>[*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li> <li>[*Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services*](https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638/)</li></ul> |
 | Chanaka Fernando | <ul><li>[*Designing Microservices Platforms with NATS: A modern approach to designing and implementing scalable microservices platforms with NATS messaging*](https://learning.oreilly.com/library/view/-/9781801072212/)</li></ul> |
 | Charity Majors | <ul><li>[*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/)</li></ul> |
 | Chris Jones | <ul><li>[*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)</li></ul> |
@@ -24,6 +24,7 @@
 | Eddie Villalba | <ul><li>[*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li></ul> |
 | George Miranda | <ul><li>[*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/)</li></ul> |
 | Heather Adkins | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
+| Hohpe Gregor | <ul><li>[*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/)</li> <li>[*Enterprise Integration Patterns - Vol 2: Conversation Patterns*](https://www.amazon.co.uk/Enterprise-Integration-Patterns-Vol-Conversation/dp/0134699939)</li></ul> |
 | Ian Gorton | <ul><li>[*Foundations of Scalable Systems: Designing Distributed Architectures*](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/)</li></ul> |
 | Jacques Chester | <ul><li>[*Knative in Action: *](https://learning.oreilly.com/library/view/-/9781617296642/)</li></ul> |
 | Jason Dobies | <ul><li>[*Kubernetes Operators: Automating the Container Orchestration Platform*](https://learning.oreilly.com/library/view/-/9781492048039/)</li></ul> |
@@ -38,28 +39,32 @@
 | Kent Kawahara | <ul><li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li></ul> |
 | Lachlan Evenson | <ul><li>[*Kubernetes Best Practices: Kubernetes Best Practices*](https://learning.oreilly.com/library/view/-/9781492056461/)</li></ul> |
 | Liz Fong-Jones | <ul><li>[*Observability Engineering: Achieving Production Excellence Engineering*](https://www.oreilly.com/library/view/observability-engineering/9781492076438/)</li></ul> |
-| Mark Richards | <ul><li>[*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li> <li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
+| Manuel Pais | <ul><li>[*Team Topologies: Team Topologies*](https://teamtopologies.com/book)</li> <li>[*Remote Teams Interactions Workbook: Using Team Topologies Patterns for Remote Working*](https://teamtopologies.com/workbook)</li></ul> |
+| Mark Richards | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li> <li>[*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li></ul> |
 | Martin Kleppmann | <ul><li>[*Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems*](https://learning.oreilly.com/library/view/-/9781491903063/)</li></ul> |
 | Matthew A. Titmus | <ul><li>[*Cloud Native Go: Cloud Native Go*](https://learning.oreilly.com/library/view/-/9781492076322/)</li></ul> |
 | Matthew Boyle | <ul><li>[*Domain-Driven Design with Golang: *](https://learning.oreilly.com/library/view/-/9781804613450/)</li></ul> |
+| Matthew Skelton | <ul><li>[*Team Topologies: Team Topologies*](https://teamtopologies.com/book)</li> <li>[*Remote Teams Interactions Workbook: Using Team Topologies Patterns for Remote Working*](https://teamtopologies.com/workbook)</li></ul> |
 | Michael Stack | <ul><li>[*Event-Driven Architecture in Golang: Building complex systems with asynchronicity and eventual consistency*](https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012)</li></ul> |
-| Neal Ford | <ul><li>[*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li> <li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
-| Niall Myrphy | <ul><li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li> <li>[*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)</li></ul> |
+| Neal Ford | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li> <li>[*Fundamentals of Software Architecture: An Engineering Approach*](https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/)</li></ul> |
+| Niall Myrphy | <ul><li>[*Site Reliability Engineering: How Google Runs Production Systems*](https://sre.google/sre-book/table-of-contents/)</li> <li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li></ul> |
+| Nicole Forsgren | <ul><li>[*Accelerate: Building and Scaling High Performing Technology Organizations*](https://www.goodreads.com/book/show/35747076-accelerate)</li></ul> |
 | Paul Blankship | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Piotr Lewandowski | <ul><li>[*Building Secure & Reliable Systems: Best Practices for Designing, Implementing and Maintaining Systems*](https://static.googleusercontent.com/media/sre.google/en//static/pdf/building_secure_and_reliable_systems.pdf)</li></ul> |
 | Pramod Sadalage | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 | Rich Lander | <ul><li>[*Production Kubernetes: Production Kubernetes*](https://learning.oreilly.com/library/view/-/9781492092292/)</li></ul> |
 | Robert C. Martin | <ul><li>[*Clean Architecture: A Craftsman's Guide to Software Structure and Design*](https://learning.oreilly.com/library/view/-/9780134494272/)</li></ul> |
 | Roland Huss | <ul><li>[*Kubernetes Patterns: Reusable Elements for Designing Cloud Native Applications*](https://learning.oreilly.com/library/view/-/9781098131678/)</li></ul> |
-| Sam Newman | <ul><li>[*Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith*](https://learning.oreilly.com/library/view/-/9781492047834/)</li> <li>[*Building Microservices: Designing Fine-Grained Systems*](https://learning.oreilly.com/library/view/-/9781492034018/)</li></ul> |
+| Sam Newman | <ul><li>[*Building Microservices: Designing Fine-Grained Systems*](https://learning.oreilly.com/library/view/-/9781492034018/)</li> <li>[*Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith*](https://learning.oreilly.com/library/view/-/9781492047834/)</li></ul> |
 | Sriskandarajah Suhothayan | <ul><li>[*Design Patterns for Cloud Native Applications: Patterns in Practice Using APIs, Data, Events and Streams*](https://learning.oreilly.com/library/view/-/9781492090700/)</li></ul> |
 | Stephen Thorne | <ul><li>[*The Site Reliability Workbook: Practical Ways to Implement SRE*](https://sre.google/workbook/table-of-contents/)</li></ul> |
 | Vladik Khononov | <ul><li>[*Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy*](https://learning.oreilly.com/library/view/-/9781098100124/)</li></ul> |
+| Woolf Bobby | <ul><li>[*Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*](https://learning.oreilly.com/library/view/-/0321200683/)</li></ul> |
 | Yevgenly Brikman | <ul><li>[*Terraform Up & Running: Writing Infrastructure as Code*](https://learning.oreilly.com/library/view/-/9781098116736/)</li></ul> |
 | Zhamak Dehghani | <ul><li>[*Software Architecture: The Hard Parts*](https://learning.oreilly.com/library/view/-/9781492086888/)</li></ul> |
 
 
 ---
-<sub>Last modified 2024-04-03</sub>
+<sub>Last modified 2024-04-04</sub>
 
 [**⬆ back to top**](#author-index)

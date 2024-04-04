@@ -39,6 +39,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
-    <sub>[**#distributed-systems**](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture)&nbsp;&nbsp;[**#architecture**]()&nbsp;&nbsp;[**#scalability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#kubernetes**]()&nbsp;&nbsp;[**#lambda**]()&nbsp;&nbsp;[**#faas**]()&nbsp;&nbsp;</sub>
+    <sub>[**#distributed-systems**](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture)&nbsp;&nbsp;[**#architecture**]()&nbsp;&nbsp;[**#scalability**](https://en.wikipedia.org/wiki/Scalability)&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#kubernetes**](https://kubernetes.io/)&nbsp;&nbsp;[**#lambda**]()&nbsp;&nbsp;[**#faas**](https://en.wikipedia.org/wiki/Function_as_a_service)&nbsp;&nbsp;</sub>
 
 [**⬆ back to top**](#microservices-learning-path-10)
