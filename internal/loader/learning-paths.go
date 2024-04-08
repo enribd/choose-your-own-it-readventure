@@ -32,17 +32,22 @@ func loadLearningPaths(basepath string) error {
 		}
 
 		for _, lp := range content {
-			// skip if lp has no books or if status is coming soon
-			if lp.Status == "coming-soon" || stats.Data.TotalLearningPathBooks[string(lp.Ref)] == 0 {
+			// Skip if lp has no books or if status is coming soon
+			if lp.Status == models.LearningpathStatusComingSoon || stats.Data.TotalLearningPathBooks[string(lp.Ref)] == 0 {
 				stats.IncSkippedLearningPath()
 			} else {
-				// check tags existence
+				// Check tabs existence
+				if len(lp.Tabs) == 0 {
+					log.Fatalf("loader: %s learning path has no tabs", lp.Ref)
+				}
+
+				// Check tags existence
 				for _, tag := range lp.Tags {
 					if _, ok := Tags[string(tag)]; !ok && tag != "" {
 						log.Fatalf("loader: %s learning path has unknown tag: %s", lp.Ref, tag)
 					}
 				}
-				// check for duplicates
+				// Check for duplicates
 				seenTabs := make(map[models.LearningPathTabRef]bool)
 				seenTags := make(map[models.TagRef]bool)
 

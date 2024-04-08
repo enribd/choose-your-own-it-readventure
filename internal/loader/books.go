@@ -153,7 +153,7 @@ func checkDuplicatesLearningPathTabBooks() {
 func sortAndCountLearningPathTabBooks() {
 	for lpRef, tabs := range LearningPathTabBooks {
 		seenBookInLp := make(map[string]bool)
-		for tabRef, books := range tabs {
+		for _, books := range tabs {
 			// the list of books in the tab only have one learning path (the rest was purged when loading), so we can use the first element to get the learning path order
 			sort.SliceStable(books, func(i, j int) bool {
 				if books[i].LearningPaths[0].Order != books[j].LearningPaths[0].Order {
@@ -168,8 +168,7 @@ func sortAndCountLearningPathTabBooks() {
 			for _, b := range books {
 				if _, ok := seenBookInLp[b.Title]; !ok {
 					// Count (previous learning path total plus the current tab books)
-					newTotal := stats.Data.TotalLearningPathBooks[string(lpRef)] + len(LearningPathTabBooks[lpRef][tabRef])
-					stats.SetTotalLearningPathBooks(string(lpRef), newTotal)
+					stats.SetTotalLearningPathBooks(string(lpRef), stats.Data.TotalLearningPathBooks[string(lpRef)]+1)
 					seenBookInLp[b.Title] = true
 				}
 			}

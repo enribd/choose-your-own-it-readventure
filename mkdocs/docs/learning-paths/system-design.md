@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/system-design.png){: style="height:35px"} System Design Learning Path (17 :books:)
+# ![img](/assets/learning-paths/icons/system-design.png){: style="height:35px"} System Design Learning Path [7 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 You want to create systems that resolve complicated technical problems, to find optimal solutions, to learn how evolve your systems to the next level, to rack your brains designing wonderful architectures that withstand the overwhelming onslaught of hyped user hordes. Well, as AC/CD sing: It's a long way to the top if you wanna Rock' n' Roll. But do not yield, tough efforts often bring solid results, keep calm and read hard!
 
@@ -47,6 +47,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
-    <sub>[**#scalability**](https://en.wikipedia.org/wiki/Scalability)&nbsp;&nbsp;[**#manageability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#reliability**]()&nbsp;&nbsp;[**#mantainability**]()&nbsp;&nbsp;[**#extensibility**]()&nbsp;&nbsp;[**#high-availability**]()&nbsp;&nbsp;[**#databases**]()&nbsp;&nbsp;[**#algorithms**]()&nbsp;&nbsp;</sub>
+    <sub>[**#scalability**](https://en.wikipedia.org/wiki/Scalability)&nbsp;&nbsp;[**#manageability**]()&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#reliability**]()&nbsp;&nbsp;[**#mantainability**]()&nbsp;&nbsp;[**#extensibility**]()&nbsp;&nbsp;[**#high-availability**](https://en.wikipedia.org/wiki/High_availability)&nbsp;&nbsp;[**#databases**]()&nbsp;&nbsp;[**#algorithms**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#system-design-learning-path-17)
+[**⬆ back to top**](#system-design-learning-path-7)

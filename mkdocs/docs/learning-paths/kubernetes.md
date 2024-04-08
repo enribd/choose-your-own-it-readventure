@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png){: style="height:35px"} Kubernetes Learning Path (23 :books:)
+# ![img](https://user-images.githubusercontent.com/25181517/182534006-037f08b5-8e7b-4e5f-96b6-5d2a5558fa85.png){: style="height:35px"} Kubernetes Learning Path [9 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 After mastering building and running containers at small scale, orchestration is the next step in the road. Kubernetes is the most popular orchestrator, backed by the [CNCF](https://www.cncf.io/), a variety os small and big companies, and open source projects. Thanks to its capabilities and the ecosystem of open source projects built around it, Kubernetes, is a the industry facto standard for running microservice platforms at scale.
 
@@ -49,8 +49,6 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [DevOps :new:](/learning-paths/devops): Coming soon
-
 - [System Design :ballot_box_with_check:](/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
 
 - [Site Reliability Engineering (SRE) :new:](/learning-paths/sre): SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
@@ -60,4 +58,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#container-runtime**]()&nbsp;&nbsp;[**#ingress**]()&nbsp;&nbsp;[**#controller**]()&nbsp;&nbsp;[**#crd**]()&nbsp;&nbsp;[**#operator**]()&nbsp;&nbsp;[**#csi-driver**]()&nbsp;&nbsp;[**#admission-controller**]()&nbsp;&nbsp;[**#service-mesh**]()&nbsp;&nbsp;[**#platform-engineering**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#kubernetes-learning-path-23)
+[**⬆ back to top**](#kubernetes-learning-path-9)

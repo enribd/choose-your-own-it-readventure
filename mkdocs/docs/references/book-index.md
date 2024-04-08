@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (42 :books:)
+# :clipboard: Book Index (41 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -44,7 +44,6 @@
 |![img](/assets/books/covers/system-design-interview.jpeg){: style="height:166px;width:122px"}̣| [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2:{ title="Hard" } :green_book:{ title="Read" } :star:{ title="Excellent" } | <ul><li>[System Design](/learning-paths/{system-design advanced %!s(int=1) %!s(int=1)})</li></ul> |
 |![img](/assets/books/covers/system-design-interview-2.jpeg){: style="height:166px;width:122px"}̣| [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br> :tiger2:{ title="Hard" } :green_book:{ title="Read" } :star:{ title="Excellent" } | <ul><li>[System Design](/learning-paths/{system-design advanced %!s(int=2) %!s(int=1)})</li></ul> |
 |![img](/assets/books/covers/team-topologies.jpeg){: style="height:166px;width:122px"}̣| [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br> :hatched_chick:{ title="Easy" } :green_book:{ title="Read" } :up:{ title="Good" } | <ul><li>[Team Management](/learning-paths/{team-management foundational %!s(int=1) %!s(int=1)})</li></ul> |
-|![img](/assets/books/covers/terraform-up-and-running.jpeg){: style="height:166px;width:122px"}̣| [**Terraform Up & Running: Writing Infrastructure as Code**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br> :hatched_chick:{ title="Easy" } :green_book:{ title="Read" } | <ul><li>[DevOps](/learning-paths/{devops tools %!s(int=1) %!s(int=1)})</li></ul> |
 |![img](/assets/books/covers/sre-workbook.jpeg){: style="height:166px;width:122px"}̣| [**The Site Reliability Workbook: Practical Ways to Implement SRE**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> *512 pages* <br> :dog2:{ title="Intermediate" } :orange_book:{ title="Not Scheduled" } | <ul><li>[Site Reliability Engineering (SRE)](/learning-paths/{sre foundational %!s(int=1) %!s(int=1)})</li></ul> |
 
-[**⬆ back to top**](#book-index-42)
+[**⬆ back to top**](#book-index-41)

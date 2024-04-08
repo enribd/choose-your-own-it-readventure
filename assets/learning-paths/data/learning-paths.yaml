@@ -185,18 +185,6 @@
   tags: ["extensibility", "scalability", "clean-code", "ddd", "hexagonal-architecture"]
   logo:
     source: /assets/learning-paths/icons/software-architecture.png
-# - name: Serverless
-#   ref: serverless
-#   status: coming-soon
-#   desc: |
-#     Coming soon
-#   summary: |
-#     Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
-#   suggested:
-#     - system-design
-#     - microservices
-#     - apis
-#     - event-driven-architecture
 - name: Site Reliability Engineering (SRE)
   ref: sre
   status: new
@@ -222,38 +210,6 @@
   tags: ["risk-management", "sla", "sli", "slo", "error-budget", "toil", "post-mortems", "cascading-failures"]
   logo:
     source: /assets/learning-paths/icons/sre.png
-# - name: Observability
-#   ref: observability
-#   status: coming-soon
-#   desc: |
-#     Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
-#   summary: |
-#     The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
-#   related:
-#     - sre
-#     - devops
-#     - microservices
-#   suggested:
-#     - sre
-#     - software-design
-#   tags: ["open-telemetry", "troubleshooting", "debugging", "structured-logs", "tracing", "metrics-aggregation", "logs-aggregation", "data-retention", "alarm", "events"]
-#   logo:
-#     source: /assets/learning-paths/icons/observability.png
-# - name: Infrastructure as Code (IaC)
-#   ref: iac
-#   status: new
-#   desc: |
-#     IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge amount of servers and services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage their cloud infrastructures.
-#   summary: |
-#     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
-#   related:
-#     - devops
-#     - cloud
-#   suggested:
-#     - cicd
-#   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
-#   logo:
-#     source: /assets/learning-paths/icons/iac.png
 - name: Team Management
   ref: team-management
   status: new
@@ -272,42 +228,54 @@
   tags: ["efficiency", "software-delivery", "team-design", "organization-structure"]
   logo:
     source: /assets/learning-paths/icons/team-management.png
-# - name: Cloud Native Applications
-#   ref: cloud-native-apps
-#   status: coming-soon
+# - name: DevOps
+#   ref: devops
+#   status: new
 #   desc: |
-#     From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
+#     Coming soon
 #   summary: |
-#     discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
+#     Coming soon
+#   tabs:
+#     - ref: foundational
+#       data:
+#         order: 1
+#     - ref: tools
+#       data:
+#         order: 2
 #   related:
-#     - golang
+#     - sre
+#     - cicd
+#     # - cloud
 #   suggested:
-#     - software-architecture
-#     - apis
-#     - serverless
-- name: DevOps
-  ref: devops
-  status: new
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  tabs:
-    - ref: foundational
-      data:
-        order: 1
-    - ref: tools
-      data:
-        order: 2
-  related:
-    - sre
-    - cicd
-    # - cloud
-  suggested:
-    - team-management
-  tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
-  logo:
-    source: /assets/learning-paths/icons/devops.png
+#     - team-management
+#   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
+#   logo:
+#     source: /assets/learning-paths/icons/devops.png
+# - name: Platform Engineering
+#   ref: platform-engineering
+#   status: new
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Coming soon
+#   tabs:
+#     - ref: foundational
+#       data:
+#         order: 1
+#     - ref: tools
+#       data:
+#         order: 2
+#   related:
+#     - devops
+#     - sre
+#     - cicd
+#     # - cloud
+#   suggested:
+#     - microservices
+#     - system-design
+#   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "kubernetes", "crossplane"]
+#   logo:
+#     source: /assets/learning-paths/icons/platform-engineering.png
 # - name: APIs
 #   ref: apis
 #   status: coming-soon
@@ -395,28 +363,60 @@
 #     - microservices
 #   suggested:
 #     - TODO
-- name: Platform Engineering
-  ref: platform-engineering
-  status: new
-  desc: |
-    Coming soon
-  summary: |
-    Coming soon
-  tabs:
-    - ref: foundational
-      data:
-        order: 1
-    - ref: tools
-      data:
-        order: 2
-  related:
-    - devops
-    - sre
-    - cicd
-    # - cloud
-  suggested:
-    - microservices
-    - system-design
-  tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "kubernetes", "crossplane"]
-  logo:
-    source: /assets/learning-paths/icons/platform-engineering.png
+# - name: Serverless
+#   ref: serverless
+#   status: coming-soon
+#   desc: |
+#     Coming soon
+#   summary: |
+#     Also known as Function as a Service (FaaS). It's a cloud-native development model and a computing paradigm that allows you to define your applications as functions and events and run them without provisioning or managing servers.
+#   suggested:
+#     - system-design
+#     - microservices
+#     - apis
+#     - event-driven-architecture
+# - name: Cloud Native Applications
+#   ref: cloud-native-apps
+#   status: coming-soon
+#   desc: |
+#     From now the focus will learning all the necessary concepts and techniques to produce scalable, resilient and observable applications, that are apt to run in environments like the cloud, container orchestrators or serverless environments.
+#   summary: |
+#     discover how to build applications destined to run in the cloud, Kubernetes or a serverless environment. You will learn how to make your applications scalable, resilient, observable and more.
+#   related:
+#     - golang
+#   suggested:
+#     - software-architecture
+#     - apis
+#     - serverless
+# - name: Observability
+#   ref: observability
+#   status: coming-soon
+#   desc: |
+#     Observability is the ability to measure a system's current state based on the data it generates. Learn all you need to make your services observable, to use specific tools and techniques to understand what's happening inside them and to know the state the system is in. 
+#   summary: |
+#     The art of being able to know what is happening in running systems through three pillars: logs, metrics and tracing. Discover what properties your systems need to acquire, what you need to integrate into your services and how instrumentalize to diagnose them when failure comes.
+#   related:
+#     - sre
+#     - devops
+#     - microservices
+#   suggested:
+#     - sre
+#     - software-design
+#   tags: ["open-telemetry", "troubleshooting", "debugging", "structured-logs", "tracing", "metrics-aggregation", "logs-aggregation", "data-retention", "alarm", "events"]
+#   logo:
+#     source: /assets/learning-paths/icons/observability.png
+# - name: Infrastructure as Code (IaC)
+#   ref: iac
+#   status: new
+#   desc: |
+#     IaC is an evolutionary pattern born in the early stages of the cloud era. It allows to declare the infrastructure in code and automate the deployment and configuration of huge amount of servers and services, which reduces time to market and allows bussineses to compete in a fast moving world. Another key characteristic is reproducibility, which means you can reuse your code to deploy similar resources easily. Nowadays every company have seen the advantages of IaC and uses code to manage their cloud infrastructures.
+#   summary: |
+#     Automate the cloud infrastructure deployment with code, make it reusable, deliver faster, more secure and have a backup of all the work you did, as code.
+#   related:
+#     - devops
+#     - cloud
+#   suggested:
+#     - cicd
+#   tags: ["cloud-engineering", "automation", "state-management", "fault-recovery", "terraform", "pulumi", "crossplane", "ansible"]
+#   logo:
+#     source: /assets/learning-paths/icons/iac.png

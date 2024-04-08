@@ -57,7 +57,7 @@
   url: ""
 - ref: high-availability
   name: "#high-availability"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/High_availability"
 - ref: databases
   name: "#databases"
   url: ""

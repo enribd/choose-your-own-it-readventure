@@ -13,7 +13,6 @@ Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are j
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/content/learning-paths/devops): Coming soon
 
 
 <details><summary><i><b>Bonus quest</b>: Learn more related concepts! :round_pushpin: :beginner: :gem: </i></summary>
@@ -25,6 +24,6 @@ The following paths are opened to you now, choose wisely:
 </details>
 
 ---
-<sub>Last modified 2024-04-04</sub>
+<sub>Last modified 2024-04-08</sub>
 
 [**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path)

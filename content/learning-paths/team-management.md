@@ -12,7 +12,6 @@ With new development paradigms come new ways to compose and organize teams, the 
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/content/learning-paths/devops): Coming soon
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -29,6 +28,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-04-04</sub>
+<sub>Last modified 2024-04-08</sub>
 
 [**⬆ back to top**](#team-management-learning-path)

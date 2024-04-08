@@ -1,6 +1,6 @@
 [//]: # (Auto generated file from templates)
 
-# :clipboard: Book Index (42 :books:)
+# :clipboard: Book Index (41 :books:)
 
 | Cover | Info | Learning Paths |
 | :---: | :--- | :--- |
@@ -44,10 +44,9 @@
 | ![img](/assets/books/covers/system-design-interview.jpeg) | [**System Design Interview: An insider's guide**](https://www.goodreads.com/book/show/54617137-system-design-interview) <br> *Alex Xu* <br> *Published in 2020* <br> *309 pages* <br> :tiger2: :green_book: :star: | <ul><li>[System Design](/content/learning-paths/{system-design advanced %!s(int=1) %!s(int=1)}.md)</li></ul> |
 | ![img](/assets/books/covers/system-design-interview-2.jpeg) | [**System Design Interview volume 2: An insider's guide**](https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide) <br> *Alex Xu* <br> *Published in 2022* <br> *424 pages* <br> :tiger2: :green_book: :star: | <ul><li>[System Design](/content/learning-paths/{system-design advanced %!s(int=2) %!s(int=1)}.md)</li></ul> |
 | ![img](/assets/books/covers/team-topologies.jpeg) | [**Team Topologies: Team Topologies**](https://teamtopologies.com/book) <br> *Matthew Skelton, Manuel Pais* <br> *Published in 2019* <br> *240 pages* <br> :hatched_chick: :green_book: :up: | <ul><li>[Team Management](/content/learning-paths/{team-management foundational %!s(int=1) %!s(int=1)}.md)</li></ul> |
-| ![img](/assets/books/covers/terraform-up-and-running.jpeg) | [**Terraform Up & Running: Writing Infrastructure as Code**](https://learning.oreilly.com/library/view/-/9781098116736/) <br> *Yevgenly Brikman* <br> *Published in 2022* <br> *457 pages* <br> :hatched_chick: :green_book: | <ul><li>[DevOps](/content/learning-paths/{devops tools %!s(int=1) %!s(int=1)}.md)</li></ul> |
 | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: Practical Ways to Implement SRE**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> *512 pages* <br> :dog2: :orange_book: | <ul><li>[Site Reliability Engineering (SRE)](/content/learning-paths/{sre foundational %!s(int=1) %!s(int=1)}.md)</li></ul> |
 
 ---
-<sub>Last modified 2024-04-04</sub>
+<sub>Last modified 2024-04-08</sub>
 
 [**⬆ back to top**](#book-index)

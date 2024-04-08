@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/software-architecture.png){: style="height:35px"} Software Architecture Learning Path (16 :books:)
+# ![img](/assets/learning-paths/icons/software-architecture.png){: style="height:35px"} Software Architecture Learning Path [8 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 To build effective services and applications a set of rules have to define what are the goals of the system, what it can or cannot do, and how things are structured to accomplish all that. Software needs to be designed and structured to achieve reasonable maintainability, aceptable performance and good extensibility. Explore beyond the code and discover how systems work, how they were designed to scale and adapt in this huge and ever changing world.
 
@@ -56,4 +56,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#extensibility**]()&nbsp;&nbsp;[**#scalability**](https://en.wikipedia.org/wiki/Scalability)&nbsp;&nbsp;[**#clean-code**]()&nbsp;&nbsp;[**#domain-driven-design**]()&nbsp;&nbsp;[**#hexagonal-architecture**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#software-architecture-learning-path-16)
+[**⬆ back to top**](#software-architecture-learning-path-8)

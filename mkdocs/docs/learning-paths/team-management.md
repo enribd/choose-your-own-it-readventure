@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/team-management.png){: style="height:35px"} Team Management Learning Path (9 :books:)
+# ![img](/assets/learning-paths/icons/team-management.png){: style="height:35px"} Team Management Learning Path [3 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 With new development paradigms come new ways to compose and organize teams, the need of adapting relationships and inter-team communication is necessary to pursue efficiency and achieve organization goals faster. That's what you will learn in this path, how to make teams and organizations more effective and efficient.
 
@@ -18,7 +18,6 @@ With new development paradigms come new ways to compose and organize teams, the 
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/learning-paths/devops): Coming soon
 
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
@@ -30,4 +29,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#efficiency**]()&nbsp;&nbsp;[**#software-delivery**]()&nbsp;&nbsp;[**#team-design**]()&nbsp;&nbsp;[**#organization-structure**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#team-management-learning-path-9)
+[**⬆ back to top**](#team-management-learning-path-3)

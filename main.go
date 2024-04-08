@@ -145,7 +145,6 @@ func main() {
 					data.LpBooksData = loader.LearningPathBooks[lp.Ref]
 					data.LpBooksTabData = loader.LearningPathTabBooksTmpl[string(lp.Ref)].(map[string]any)
 					data.LpTotalBooks = stats.Data.TotalLearningPathBooks[string(lp.Ref)]
-					// log.Printf("--- %v", data.LpBooksTabData)
 
 					if !debug {
 						file = filepath.Join(config.Cfg.Content[p].LearningPaths, fmt.Sprintf("%s.md", lp.Ref))

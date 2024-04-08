@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/microservices.png){: style="height:35px"} Microservices Learning Path (10 :books:)
+# ![img](/assets/learning-paths/icons/microservices.png){: style="height:35px"} Microservices Learning Path [4 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 Distributed systems are not new but the way they are built nowadays is. Monolithic architectures need to evolve to leverage the cloud and the many advantages that microservices offer (scalability, fast releases, high-availability, resilience, and more). As usually happen in life, nothing is just benefits, and microservices architectures are not different, they bring many challenges with them like a more complicated management or debugging, economic costs and the necessary knowledge to build and run them. However, if this kind of architecture fit your needs or if you are interested in finding out what all the fuss about microservices is about don't hesitate and dive in!.
 
@@ -41,4 +41,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#distributed-systems**](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture)&nbsp;&nbsp;[**#architecture**]()&nbsp;&nbsp;[**#scalability**](https://en.wikipedia.org/wiki/Scalability)&nbsp;&nbsp;[**#resilience**]()&nbsp;&nbsp;[**#observability**]()&nbsp;&nbsp;[**#kubernetes**](https://kubernetes.io/)&nbsp;&nbsp;[**#lambda**]()&nbsp;&nbsp;[**#faas**](https://en.wikipedia.org/wiki/Function_as_a_service)&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#microservices-learning-path-10)
+[**⬆ back to top**](#microservices-learning-path-4)

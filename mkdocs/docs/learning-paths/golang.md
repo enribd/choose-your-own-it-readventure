@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path (12 :books:)
+# ![img](https://skillicons.dev/icons?i=go){: style="height:35px"} Golang Learning Path [6 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 This path starts with some books to grasp the basics of the language but building applications to make you apply knowledge to near real case scenarios. After that you will have to choose the following steps depending on your needs or interests.
 
@@ -60,4 +60,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#goroutines**](https://www.educative.io/answers/what-is-a-goroutine)&nbsp;&nbsp;[**#concurrency**](https://en.wikipedia.org/wiki/Concurrency_(computer_science))&nbsp;&nbsp;[**#channels**](https://go101.org/article/channel.html)&nbsp;&nbsp;[**#context**](https://medium.com/@jamal.kaksouri/the-complete-guide-to-context-in-golang-efficient-concurrency-management-43d722f6eaea)&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#golang-learning-path-12)
+[**⬆ back to top**](#golang-learning-path-6)

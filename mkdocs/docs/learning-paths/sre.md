@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/sre.png){: style="height:35px"} Site Reliability Engineering (SRE) Learning Path (6 :books:)
+# ![img](/assets/learning-paths/icons/sre.png){: style="height:35px"} Site Reliability Engineering (SRE) Learning Path [4 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are just a few concepts involved in an SRE engineer's daily life. The focus of this path is to acquire the necessary skills to keep systems alive and optimize their performance. To do that you need automation, observable systems, monitoring, service lifecycle management skills, and more. Major companies in the field apply interesting techniques to debug, fix and prevent outages in hundreds of services consumed by millons of users simoultaneously, learn how they achieve such performances!
 
@@ -31,11 +31,10 @@ Risk management, SLAs, SLIs, SLOs, error budget, toil, outage post mortems are j
 
 The following paths are opened to you now, choose wisely:
 
-- [DevOps :new:](/learning-paths/devops): Coming soon
 
 
 ??? tip "Learn more related concepts! :round_pushpin: :beginner: :gem:"
 
     <sub>[**#risk-management**]()&nbsp;&nbsp;[**#sla**]()&nbsp;&nbsp;[**#sli**]()&nbsp;&nbsp;[**#slo**]()&nbsp;&nbsp;[**#error-budget**]()&nbsp;&nbsp;[**#toil**]()&nbsp;&nbsp;[**#post-mortems**]()&nbsp;&nbsp;[**#cascading-failures**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path-6)
+[**⬆ back to top**](#site-reliability-engineering-(sre)-learning-path-4)

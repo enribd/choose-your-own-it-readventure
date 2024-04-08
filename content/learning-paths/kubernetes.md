@@ -23,8 +23,6 @@ The following paths are opened to you now, choose wisely:
 
 Want to change the subject? Here are some suggestions about other paths you can explore:
 
-- [DevOps :new:](/content/learning-paths/devops): Coming soon
-
 - [System Design :ballot_box_with_check:](/content/learning-paths/system-design): Acquire the skill needed to design and build systems, no matter if simple or complex. Learn how to identify the elements needed to create systems, to resolve scalability problems, detect possible points of failure, when to use an API, where to place a cache, when to use a NoSql database, and more.
 
 - [Site Reliability Engineering (SRE) :new:](/content/learning-paths/sre): SRE is about making productive system to stay up, to make update cycles simpler and more frequent, to identify and resolve problems and, of course, automating things to make the life easier.
@@ -39,6 +37,6 @@ Want to change the subject? Here are some suggestions about other paths you can 
 </details>
 
 ---
-<sub>Last modified 2024-04-04</sub>
+<sub>Last modified 2024-04-08</sub>
 
 [**⬆ back to top**](#kubernetes-learning-path)

@@ -2,7 +2,7 @@
 
 [//]: # (Auto generated file from templates)
 
-# ![img](/assets/learning-paths/icons/eda.png){: style="height:35px"} Event Driven Architecture (EDA) Learning Path (11 :books:)
+# ![img](/assets/learning-paths/icons/eda.png){: style="height:35px"} Event Driven Architecture (EDA) Learning Path [5 :material-bookshelf:{: style="color:var(--md-accent-fg-color)"}]
 
 Different from typical inter-service communication patterns like REST APIs or gRPC, event driven architectures allow to increase flexibility, agility, and speed in development processes by decoupling services. Synchronous calls are replaced by publishing events into a broker, from which the interested clients can receive the information. But there are many challenges when building this kind of architecture: re-adjusting the way teams think about communications, ensuring the information integrity and quality produced by the sources, stablishing secure and painless ways for consumers to integrate with the data sources, and more. Luckily the industry has evolved and experience in EDA is being documented in book and articles to let anyone learn good practices and how to overcome the many challenges ahead!.
 
@@ -47,4 +47,4 @@ Want to change the subject? Here are some suggestions about other paths you can 
 
     <sub>[**#lously-coupled**]()&nbsp;&nbsp;[**#nats**]()&nbsp;&nbsp;[**#kafka**]()&nbsp;&nbsp;[**#pulsar**]()&nbsp;&nbsp;[**#json-schema**]()&nbsp;&nbsp;[**#avro**]()&nbsp;&nbsp;[**#event-storming**]()&nbsp;&nbsp;[**#event-sourcing**]()&nbsp;&nbsp;[**#schema-registry**]()&nbsp;&nbsp;</sub>
 
-[**⬆ back to top**](#event-driven-architecture-(eda)-learning-path-11)
+[**⬆ back to top**](#event-driven-architecture-(eda)-learning-path-5)

@@ -1,12 +1,17 @@
 # TODO
 
-- [ ] fix books loaded counter in main.go logs
+- [ ] fix image sizes
 - [ ] update data yamls
   - [ ] lps
   - [ ] books
   - [ ] tabs (improve descriptions)
   - [ ] tags urls
-- [?] Create a filters package to filter and sort models
+- [ ] MVP
+  - [ ] lps: eda, golang, k8s, microservices, software arch, sre, system design, team management 
+  - [ ] tag links
+  - [ ] tabs descriptions
+- [x] fix books loaded counter in main.go logs
+- [x] fix if the lp has no tabs declared but it has books the book list appears empty -> made tabs mandatory
 - [x] Sort books when loaded in aux data structures
 - [x] Fix case when there are lp tabs that are not declared in lps (the tabs are ignored)
 - [x] Get better order icons (function to parse from 12 to ":material-numeric-1-box::material-numeric-2-box:)
@@ -27,76 +32,8 @@
     - [x] tabs: show in tab name the number of books between parenthesis len(LearningPathTabBooks[b.lpRef][b.tabRef])
 - [x] tags index
 
-## Book declaration example
+## Roadmap
 
-```yaml
-- title: Building Microservices
-  subtitle: Designing Fine-Grained Systems
-  cover: building-microservices.jpeg
-  order: 1
-  weight: 1
-  draft: false
-  url: https://learning.oreilly.com/library/view/-/9781492034018/
-  authors:
-    - Sam Newman
-  release: 2022
-  pages: 616
-  desc: |-
-    One of the most important books in the field. Far from advocating for the monolithic architectures exile, the book offers useful insights to help you identify use cases for monoliths, or when to turn to microservices. It will teach you what microservices really are, their evolutionary origin, principles, characteristics and all the new challenges they bring to the table. Finally, the author explains how organizations should evolve to adapt their internal structure and vision in order to efficiently deliver value using microservices architectures.
-  learning_paths:
-    - lp_ref: microservices
-      tab_ref: foundational
-      order: 1
-      weight: 1
-    - lp_ref: microservices
-      tab_ref: intermediate
-      order: 2
-      weight: 1
-    - lp_ref: microservices
-      tab_ref: advanced
-      order: 3
-      weight: 1
-  badges:
-    - intermediate
-    - read
-    # - excellent
-    - very_good
-    - must-read
-  tags:
-    - distributed-systems
-    - architecture
-```
-
-## LP declaration example
-
-```yaml
-- name: Microservices
-  ref: microservices
-  status: in-progress
-  desc: |
-    Distributed systems are not new but the way they are built nowadays is. Monolithic architectures need to evolve to leverage the cloud and the many advantages that microservices offer (scalability, fast releases, high-availability, resilience, and more). As usually happen in life, nothing is just benefits, and microservices architectures are not different, they bring many challenges with them like a more complicated management or debugging, economic costs and the necessary knowledge to build and run them. However, if this kind of architecture fit your needs or if you are interested in finding out what all the fuss about microservices is about don't hesitate and dive in!.
-  summary: |
-    Study the pinnacle of distributed systems architectures, learn its tenets, and foremost, when and how to implement it.
-  tabs:
-    - ref: foundational
-      data:
-        order: 1
-    - ref: intermediate
-      data:
-        order: 2
-    - ref: advanced
-      data:
-        order: 3
-  related:
-    - system-design
-    - kubernetes
-    - apis
-    - event-driven-architecture
-  suggested:
-    - serverless
-    - golang
-    - docker
-  tags: ["distributed-systems", "architecture", "scalability", "resilience", "observability", "kubernetes", "lambda", "faas"]
-  logo:
-    source: /assets/learning-paths/icons/microservices.png
-```
+- [ ] Buy me a coffee button
+- [ ] Use mark with an icon 'new' for lps, tabs or books added (in lps, book index)
+- [?] Show book TOC when hovering the  cover o add a new element (instant preview)

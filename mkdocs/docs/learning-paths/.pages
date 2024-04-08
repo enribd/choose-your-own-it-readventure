@@ -1,8 +1,10 @@
 nav:
-- system-design.md
-- microservices.md
+- System Design: system-design.md
+- Microservices: microservices.md
 - EDA (Event-Driven Architectures): event-driven-architecture.md
-- kubernetes.md
+- Kubernetes: kubernetes.md
 - Golang: golang.md
 - SRE: sre.md
+- Software Architecture: software-architecture.md
+- Team Management: team-management.md
 - ...

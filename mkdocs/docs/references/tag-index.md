@@ -44,7 +44,7 @@
 - [**#goroutines**](https://www.educative.io/answers/what-is-a-goroutine)
 - [**#grpc**]()
 - [**#hexagonal-architecture**]()
-- [**#high-availability**]()
+- [**#high-availability**](https://en.wikipedia.org/wiki/High_availability)
 - [**#horizontal-scaling**]()
 - [**#ingress**]()
 - [**#init-container**]()
