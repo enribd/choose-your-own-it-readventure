@@ -1,17 +1,30 @@
 .md-grid {
   max-width: initial;
 }
+
 /* Make order icons bigger */
 .order-icon > svg {
   width: 3em !important;
 }
 .order-icon {
-  color: #FFA724;
+  color: var(--md-primary-fg-color);
   height: auto !important;
 }
+
 /* Responsive aligning */
 @media (min-width: 1024px) {
   .md-typeset__table td {
     vertical-align: middle !important;
   }
+}
+
+/* Learning path tab colors */
+.js .md-typeset .tabbed-labels:before {
+  background: var(--md-accent-fg-color) !important;
+}
+.md-typeset .tabbed-labels>label {
+  color: var(--md-primary-fg-color) !important;
+}
+.md-typeset .tabbed-labels>label:hover {
+  color: var(--md-accent-fg-color) !important;
 }
