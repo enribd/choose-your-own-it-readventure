@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material
+FROM squidfunk/mkdocs-material:9.5
 
 RUN pip install --upgrade pip && \
   pip install \
