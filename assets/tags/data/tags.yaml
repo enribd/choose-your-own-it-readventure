@@ -126,85 +126,85 @@
   url: ""
 - ref: jetstream
   name: "#jetstream"
-  url: ""
+  url: "https://docs.nats.io/nats-concepts/jetstream"
 - ref: lously-coupled
   name: "#lously-coupled"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Loose_coupling"
 - ref: nats
   name: "#nats"
-  url: ""
+  url: "https://nats.io/"
 - ref: kafka
   name: "#kafka"
-  url: ""
+  url: "https://kafka.apache.org/"
 - ref: pulsar
   name: "#pulsar"
-  url: ""
+  url: "https://pulsar.apache.org/"
 - ref: json
   name: "#json"
-  url: ""
+  url: "https://www.json.org/json-en.html"
 - ref: json-schema
   name: "#json-schema"
-  url: ""
+  url: "https://json-schema.org/learn/getting-started-step-by-step"
 - ref: avro
   name: "#avro"
-  url: ""
+  url: "https://avro.apache.org/docs/"
 - ref: schema-registry
   name: "#schema-registry"
-  url: ""
+  url: "https://docs.confluent.io/platform/current/schema-registry/index.html"
 - ref: lambda-architecture
   name: "#lambda-architecture"
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Lambda_architecture"
 - ref: kappa-architecture
   name: "#kappa-architecture"
-  url: ""
+  url: "https://hazelcast.com/glossary/kappa-architecture/"
 - ref: container-runtime
   name: "#container-runtime"
-  url: ""
+  url: "https://sysdig.com/learn-cloud-native/container-security/what-are-container-runtimes/"
 - ref: ingress
   name: "#ingress"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/services-networking/ingress/"
 - ref: controller
   name: "#controller"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/architecture/controller/"
 - ref: crd
   name: "#crd"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
 - ref: operator
   name: "#operator"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/"
 - ref: csi-driver
   name: "#csi-driver"
-  url: ""
+  url: "https://kubernetes-csi.github.io/docs/"
 - ref: cni-driver
   name: "#cni-driver"
-  url: ""
+  url: "https://www.tigera.io/learn/guides/kubernetes-networking/kubernetes-cni/"
 - ref: admission-controller
   name: "#admission-controller"
-  url: ""
+  url: "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#what-are-they"
 - ref: service-mesh
   name: "#service-mesh"
-  url: ""
+  url: "https://www.tigera.io/learn/guides/kubernetes-security/service-mesh-kubernetes/"
 - ref: cold-start
   name: "#cold-start"
-  url: ""
+  url: "https://www.stacksense.io/p/on-the-serverless-cold-start-problem-69ca6dbd3113"
 - ref: scale-to-zero
   name: "#scale-to-zero"
-  url: ""
+  url: "https://www.fermyon.com/blog/scale-to-zero-problem"
 - ref: pod
   name: "#pod"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/workloads/pods/"
 - ref: deployment
   name: "#deployment"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
 - ref: statefulset
   name: "#statefulset"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/"
 - ref: confimap
   name: "#confimap"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/configuration/configmap/"
 - ref: secret
   name: "#secret"
-  url: ""
+  url: "https://kubernetes.io/docs/concepts/configuration/secret/"
 - ref: adapter-pattern
   name: "#adapter-pattern"
   url: ""

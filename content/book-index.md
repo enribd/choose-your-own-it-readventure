@@ -47,6 +47,6 @@
 | ![img](/assets/books/covers/sre-workbook.jpeg) | [**The Site Reliability Workbook: Practical Ways to Implement SRE**](https://sre.google/workbook/table-of-contents/) <br> *Betsy Beyer, Niall Myrphy, David K. Rensin, Kent Kawahara, Stephen Thorne* <br> *Published in 2018* <br> *512 pages* <br> :dog2: :orange_book: | <ul><li>[Site Reliability Engineering (SRE)](/content/learning-paths/{sre foundational %!s(int=1) %!s(int=1)}.md)</li></ul> |
 
 ---
-<sub>Last modified 2024-04-08</sub>
+<sub>Last modified 2024-04-09</sub>
 
 [**⬆ back to top**](#book-index)
